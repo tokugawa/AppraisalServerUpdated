@@ -95,3 +95,19 @@
 [2014-09-11 21:07:14.976] [DEBUG] UserRoute - apiKey validated correct
 [2014-09-11 21:07:14.976] [INFO] UserRoute - passeds value=somenath.ghosh84@gmail.com ghos
 [2014-09-11 21:07:15.931] [ERROR] http - 127.0.0.1 - - "GET /api/v1/checkUserCredential?userName=somenath.ghosh84@gmail.com&password=ghos&apiKey=df5cb700-395b-11e4-916c-0800200c9a66 HTTP/1.1" 401 - "" "curl/7.26.0"
+[2014-09-11 21:14:30.921] [INFO] ResourceLoader - Creating first instance of ResourceLoader
+[2014-09-11 21:14:30.924] [INFO] ResourceLoader - c:\Users\Somenath\AppraisalServer\config\properties.json
+[2014-09-11 21:14:30.926] [INFO] ResourceLoader - sending instanceOf ResourceLoader[object Object]
+[2014-09-11 21:14:30.931] [INFO] ResourceLoader - sending instanceOf ResourceLoader[object Object]
+[2014-09-11 21:14:31.314] [DEBUG] ResourceLoader - DB DB_USER_NAME
+[2014-09-11 21:14:31.314] [DEBUG] ResourceLoader - DB DB_PASSWORD
+[2014-09-11 21:14:31.315] [DEBUG] ResourceLoader - DB DB_CONNECTION_URL
+[2014-09-11 21:14:31.316] [DEBUG] ResourceLoader - DB DB_CONNECTION_PORT
+[2014-09-11 21:14:31.316] [DEBUG] ResourceLoader - DB DB_DATABASE_SCHEMA
+[2014-09-11 21:14:31.317] [INFO] ConnectDBInstance - Connection Starts
+[2014-09-11 21:14:31.327] [INFO] ConnectDBInstance - Connection Class Ends
+[2014-09-11 21:14:31.336] [INFO] ResourceLoader - sending instanceOf ResourceLoader[object Object]
+[2014-09-11 21:14:31.337] [DEBUG] ResourceLoader - Constant SALT_WORK_FACTOR
+[2014-09-11 21:14:31.348] [INFO] UserVO - Creating first instance of UserVO
+[2014-09-11 21:14:31.349] [DEBUG] UserVO - sending object = [object Object]
+[2014-09-11 21:14:31.349] [DEBUG] ResourceLoader - API_KEY VALIDATE_USER

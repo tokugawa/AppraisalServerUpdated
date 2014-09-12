@@ -17,9 +17,7 @@
   	"mongoose":"~3.8.16",
   	"passport" : "~0.1.17", 		
      "passport-local" : "~0.1.6", 
-  	"bcrypt-nodejs" : "latest" ,
-    "jsonfile": "~2.0.0",
-    "node-uuid":"~1.4.1"
+  	"bcrypt-nodejs" : "latest" 
 
 	
   }
