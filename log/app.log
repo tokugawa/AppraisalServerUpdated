@@ -111,3 +111,20 @@
 [2014-09-11 21:14:31.348] [INFO] UserVO - Creating first instance of UserVO
 [2014-09-11 21:14:31.349] [DEBUG] UserVO - sending object = [object Object]
 [2014-09-11 21:14:31.349] [DEBUG] ResourceLoader - API_KEY VALIDATE_USER
+[2014-09-11 21:20:46.656] [INFO] ResourceLoader - Creating first instance of ResourceLoader
+[2014-09-11 21:20:46.659] [INFO] ResourceLoader - c:\Users\Somenath\AppraisalServer\config\properties.json
+[2014-09-11 21:20:46.661] [INFO] ResourceLoader - sending instanceOf ResourceLoader[object Object]
+[2014-09-11 21:20:46.666] [INFO] ResourceLoader - sending instanceOf ResourceLoader[object Object]
+[2014-09-11 21:20:47.045] [DEBUG] ResourceLoader - DB DB_USER_NAME
+[2014-09-11 21:20:47.046] [DEBUG] ResourceLoader - DB DB_PASSWORD
+[2014-09-11 21:20:47.047] [DEBUG] ResourceLoader - DB DB_CONNECTION_URL
+[2014-09-11 21:20:47.047] [DEBUG] ResourceLoader - DB DB_CONNECTION_PORT
+[2014-09-11 21:20:47.048] [DEBUG] ResourceLoader - DB DB_DATABASE_SCHEMA
+[2014-09-11 21:20:47.048] [INFO] ConnectDBInstance - Connection Starts
+[2014-09-11 21:20:47.059] [INFO] ConnectDBInstance - Connection Class Ends
+[2014-09-11 21:20:47.068] [INFO] ResourceLoader - sending instanceOf ResourceLoader[object Object]
+[2014-09-11 21:20:47.069] [DEBUG] ResourceLoader - Constant SALT_WORK_FACTOR
+[2014-09-11 21:20:47.079] [INFO] UserVO - Creating first instance of UserVO
+[2014-09-11 21:20:47.080] [DEBUG] UserVO - sending object = [object Object]
+[2014-09-11 21:20:47.081] [DEBUG] ResourceLoader - API_KEY VALIDATE_USER
+[2014-09-11 21:20:47.145] [INFO] app - Express server listening on port 3000
