@@ -1,0 +1,9 @@
+[2014-09-11 20:59:05.763] [ERROR] UserRoute - apiKey wrong df5cb700-395b-11e4-916c-0800200c9a6
+[2014-09-11 20:59:05.766] [ERROR] http - 127.0.0.1 - - "GET /api/v1/checkUserCredential?userName=somenath.ghosh84@gmail.com&password=ghosh&apiKey=df5cb700-395b-11e4-916c-0800200c9a6 HTTP/1.1" 403 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.103 Safari/537.36"
+[2014-09-11 21:00:31.803] [ERROR] UserRoute - apiKey wrong undefined
+[2014-09-11 21:00:31.804] [ERROR] http - 127.0.0.1 - - "GET /api/v1/checkUserCredential?userName=somenath.ghosh84@gmail.com HTTP/1.1" 403 - "" "curl/7.26.0"
+[2014-09-11 21:02:01.404] [ERROR] UserRoute - apiKey wrong undefined
+[2014-09-11 21:02:01.405] [ERROR] http - 127.0.0.1 - - "GET /api/v1/checkUserCredential?userName=somenath.ghosh84@gmail.com HTTP/1.1" 403 - "" "curl/7.26.0"
+[2014-09-11 21:06:53.714] [ERROR] UserRoute - apiKey wrong df5cb700-395b-11e4-916c-0800200c9a6
+[2014-09-11 21:06:53.715] [ERROR] http - 127.0.0.1 - - "GET /api/v1/checkUserCredential?userName=somenath.ghosh84@gmail.com&password=ghosh&apiKey=df5cb700-395b-11e4-916c-0800200c9a6 HTTP/1.1" 403 - "" "curl/7.26.0"
+[2014-09-11 21:07:15.931] [ERROR] http - 127.0.0.1 - - "GET /api/v1/checkUserCredential?userName=somenath.ghosh84@gmail.com&password=ghos&apiKey=df5cb700-395b-11e4-916c-0800200c9a66 HTTP/1.1" 401 - "" "curl/7.26.0"

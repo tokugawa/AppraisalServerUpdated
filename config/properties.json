@@ -1,0 +1,37 @@
+{
+	"Constant":{
+		"SALT_WORK_FACTOR": 10
+	},
+	"DB" :{
+	
+		"DB_USER_NAME": "heroku",
+		"DB_PASSWORD": "97aa100aa71b190805c41b70bed0e20b",
+		"DB_CONNECTION_URL": "troup.mongohq.com",
+		"DB_CONNECTION_PORT": 10097,
+		"DB_DATABASE_SCHEMA":"app22192444"
+	},
+	"Collection":{
+	"DB_COLLECTION_USER": "UserCollection",
+	"DB_COLLECTION_ORDER": "OrderDetail",
+	"DB_COLLECTION_PROPERTY": "PropertyDetail",
+	"DB_COLLECTION_ADDRESS": "AddressDetail",
+	"DB_COLLECTION_CUSTOMER": "CustomerDetail",
+	"DB_COLLECTION_IMAGE": "ImageList",
+	"DB_COLLECTION_APPRAISAL": "AppraisalDetail"
+	},
+	
+	"ENV_VAR":{
+	
+	},
+
+	"API_KEY":{
+
+		"VALIDATE_USER" : 	"df5cb700-395b-11e4-916c-0800200c9a66",
+		"CREATE_USER"	:	"f7549440-395b-11e4-916c-0800200c9a66",
+		"GET_ORDER_DTL"	:	"1dca7720-395c-11e4-916c-0800200c9a66"
+
+	}
+
+}
+
+
