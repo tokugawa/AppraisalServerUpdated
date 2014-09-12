@@ -14,6 +14,7 @@ var log4js = require('log4js');
 var log = log4js.getLogger("UserVO");
 var paException = require('../util/PAException');
 
+
 var conn = require('../util/ConnectDBInstance').getInstance();
 var user = require('../model/User.js');
 
@@ -24,12 +25,15 @@ var UserVO = (function(){
 	var instance;
 	function createInstance() {
 
-		this.createNewUser = function (user_id, password, firstName, lastName, user_address, isUserActive, cb  ){
+		this.createNewUser = function (userName, password, firstName, lastName, user_address, isUserActive, cb  ){
 
+			log.info(' Class:UserVO Method:createNewUser starts');
 			var newUser = new user();
-			var passwordHashed = newUser.generateHash('ghosh');
+			var passwordHashed = newUser.generateHash(password);
+
 		
-			newUser._id		  		= user_id;
+			newUser._id		  		= userName;
+			newUser.user_id_id		= newUser.generateID();
 			newUser.password 		= passwordHashed ;
 			newUser.firstName		= firstName;
 			newUser.lastName 		= lastName;
@@ -37,24 +41,48 @@ var UserVO = (function(){
 			newUser.isUserActive	= isUserActive;
 			newUser.order_list 		= new Array();
 
-
-			newUser.save(function saveUserCb(err, doc){
-				if(err) {
+			log.info('user_id ' , userName);
+			log.info(' user user_address' , user_address);
+			user.findOne({_id: userName }, function findOneCb(err, data){
+				if(err){
 					log.error(err);
-					throw new paException('UserVO', 'Save User Exception');
-					cb(false);
-
+					cb(null);
 				}
-				else {
+				if(data){
 
-					log.info('successful');
-					cb(true);
+					log.error('Class:UserVO - Error Message: UserId already taken');
+					cb(false);
+				}
+
+				if(!data){
+					log.info(' Class:UserVO - Info:No duplicate record found');
+					newUser.save(function saveUserCb(err, doc){
+						if(err) {
+							log.error(err);
+							throw new paException('UserVO', 'Save User Exception');
+							cb(null);
+
+						}
+						else {
+
+							log.info('Class:UserVO - Info: Successful');
+							cb(true);
+						}
+
+
+					});
+
+
 				}
 
 
 			});
+			
 
 		};
+
+
+
 
 		this.validateUser = function(userName , password, cb){
 			
@@ -65,19 +93,19 @@ var UserVO = (function(){
 				if (err){
 					log.error(err);
 					throw new paException('UserVO', 'Get User Exception for id = ' + userName);
-					cb(null);
+					cb(null, null);
 
 				}
 
 				if(data){
-					var userObj = new user();
-					//log.info(data);
+					//var userObj = new user();
+					log.info(data.user_id_id);
 					if(data.validatePassword(password)){
 						//log.info('validated');
-						cb(true);
+						cb(true, data.user_id_id);
 					}
 					else{
-						cb(false);
+						cb(false, null);
 									
 					}
 				}

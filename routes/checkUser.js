@@ -17,6 +17,7 @@ var log4js = require('log4js');
 var log = log4js.getLogger("UserRoute");
 var resourceLoader = require('../util/ResourceLoader').getInstance();
 var userVO = require('../vo/UserVO').getInstance();
+
 //
 
 var GET_USER_DETAIL_KEY = resourceLoader.getResourceById('API_KEY' , 'VALIDATE_USER');
@@ -42,7 +43,7 @@ var authenticateAPIKey = function(req, res, next){
 
 	if(apiKey !== GET_USER_DETAIL_KEY){
 		log.error('apiKey wrong' , apiKey);	
-		res.status(403).end('forbidden');
+		res.status(403).send('forbidden');
 	}
 	else {
 		log.debug('apiKey validated correct');	
@@ -59,38 +60,45 @@ var validateUserCredential = function (req, res) {
 		var password = req.password;
 		log.info('passeds value=' + userName , password);
 
-		
+		try{
 
-		userVO.validateUser(userName,password, function returnCb (returnParam){
+			userVO.validateUser(userName,password, function returnCb (returnParam, data){
 
-			if(returnParam === null){
+				if(returnParam === null){
+					
+					res.status(500).send();
+					
+				}
+
+				if(returnParam == false){
+					
+					res.status(401).send({message:'ERR-401'});
+					
+				}
+
+
+				if(returnParam === true){
+					
+					res.header('Access-Control-Allow-Origin', '*');
+					log.info(data);
+					res.status(200).send('successful', {data: data});
+					
+				}
+
 				
-				res.status(500).end('Internal Server Error');
-				//cb(returnParam);
-			}
 
-			if(returnParam == false){
-				
-				res.status(401).end('unauthorized');
-				//cb(returnParam);
-			}
+			});
+		}
+		catch(error){
 
+			log.error('Class:CheckUser  Error Message: Error Occured', error);
+		}
 
-			if(returnParam === true){
-				
-				res.header('Access-Control-Allow-Origin', '*');
-				res.status(200).end('successful');
-				//cb(returnParam);
-			}
-
-			
-
-		});
 
 	}
 
 
-/* Validate users listing. */
+
 
 module.exports = [setHeaderForCORS,authenticateAPIKey,validateUserCredential];
 

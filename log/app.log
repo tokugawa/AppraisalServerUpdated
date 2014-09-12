@@ -1,130 +1,72 @@
-[2014-09-11 20:51:57.095] [INFO] ResourceLoader - Creating first instance of ResourceLoader
-[2014-09-11 20:51:57.099] [INFO] ResourceLoader - c:\Users\Somenath\AppraisalServer\config\properties.json
-[2014-09-11 20:51:57.100] [INFO] ResourceLoader - sending instanceOf ResourceLoader[object Object]
-[2014-09-11 20:51:57.106] [INFO] ResourceLoader - sending instanceOf ResourceLoader[object Object]
-[2014-09-11 20:51:57.490] [DEBUG] ResourceLoader - DB DB_USER_NAME
-[2014-09-11 20:51:57.491] [DEBUG] ResourceLoader - DB DB_PASSWORD
-[2014-09-11 20:51:57.492] [DEBUG] ResourceLoader - DB DB_CONNECTION_URL
-[2014-09-11 20:51:57.492] [DEBUG] ResourceLoader - DB DB_CONNECTION_PORT
-[2014-09-11 20:51:57.493] [DEBUG] ResourceLoader - DB DB_DATABASE_SCHEMA
-[2014-09-11 20:51:57.493] [INFO] ConnectDBInstance - Connection Starts
-[2014-09-11 20:51:57.504] [INFO] ConnectDBInstance - Connection Class Ends
-[2014-09-11 20:51:57.513] [INFO] ResourceLoader - sending instanceOf ResourceLoader[object Object]
-[2014-09-11 20:51:57.514] [DEBUG] ResourceLoader - Constant SALT_WORK_FACTOR
-[2014-09-11 20:51:57.525] [INFO] UserVO - Creating first instance of UserVO
-[2014-09-11 20:51:57.526] [DEBUG] UserVO - sending object = [object Object]
-[2014-09-11 20:51:57.527] [DEBUG] ResourceLoader - API_KEY VALIDATE_USER
-[2014-09-11 20:52:00.571] [DEBUG] UserRoute - Setting up CORS for services
-[2014-09-11 20:52:00.573] [DEBUG] UserRoute - apiKey check
-[2014-09-11 20:52:00.575] [DEBUG] UserRoute - apiKey validated correct
-[2014-09-11 20:52:00.576] [INFO] UserRoute - passeds value=somenath.ghosh84@gmail.com ghosh
-[2014-09-11 20:52:01.416] [INFO] http - 127.0.0.1 - - "GET /api/v1/checkUserCredential?userName=somenath.ghosh84@gmail.com&password=ghosh&apiKey=df5cb700-395b-11e4-916c-0800200c9a66 HTTP/1.1" 200 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.103 Safari/537.36"
-[2014-09-11 20:55:03.055] [DEBUG] UserRoute - Setting up CORS for services
-[2014-09-11 20:55:03.057] [DEBUG] UserRoute - apiKey check
-[2014-09-11 20:55:03.059] [DEBUG] UserRoute - apiKey validated correct
-[2014-09-11 20:55:03.063] [INFO] UserRoute - passeds value=somenath.ghosh84@gmail.com ghosh
-[2014-09-11 20:55:04.140] [INFO] http - 127.0.0.1 - - "GET /api/v1/checkUserCredential?userName=somenath.ghosh84@gmail.com&password=ghosh&apiKey=df5cb700-395b-11e4-916c-0800200c9a66&tags=mount+rainier&tagmode=any&format=json HTTP/1.1" 200 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.103 Safari/537.36"
-[2014-09-11 20:55:34.205] [DEBUG] UserRoute - Setting up CORS for services
-[2014-09-11 20:55:34.220] [DEBUG] UserRoute - apiKey check
-[2014-09-11 20:55:34.222] [DEBUG] UserRoute - apiKey validated correct
-[2014-09-11 20:55:34.223] [INFO] UserRoute - passeds value=somenath.ghosh84@gmail.com ghosh
-[2014-09-11 20:55:35.292] [INFO] http - 127.0.0.1 - - "GET /api/v1/checkUserCredential?userName=somenath.ghosh84@gmail.com&password=ghosh&apiKey=df5cb700-395b-11e4-916c-0800200c9a66&tags=mount+rainier&tagmode=any&format=json HTTP/1.1" 200 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.103 Safari/537.36"
-[2014-09-11 20:55:39.292] [DEBUG] UserRoute - Setting up CORS for services
-[2014-09-11 20:55:39.293] [DEBUG] UserRoute - apiKey check
-[2014-09-11 20:55:39.294] [DEBUG] UserRoute - apiKey validated correct
-[2014-09-11 20:55:39.297] [INFO] UserRoute - passeds value=somenath.ghosh84@gmail.com ghosh
-[2014-09-11 20:55:40.307] [INFO] http - 127.0.0.1 - - "GET /api/v1/checkUserCredential?userName=somenath.ghosh84@gmail.com&password=ghosh&apiKey=df5cb700-395b-11e4-916c-0800200c9a66&tags=mount+rainier&tagmode=any&format=json HTTP/1.1" 200 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.103 Safari/537.36"
-[2014-09-11 20:56:29.588] [DEBUG] UserRoute - Setting up CORS for services
-[2014-09-11 20:56:29.590] [DEBUG] UserRoute - apiKey check
-[2014-09-11 20:56:29.591] [DEBUG] UserRoute - apiKey validated correct
-[2014-09-11 20:56:29.592] [INFO] UserRoute - passeds value=somenath.ghosh84@gmail.com ghosh
-[2014-09-11 20:56:30.956] [INFO] http - 127.0.0.1 - - "GET /api/v1/checkUserCredential?userName=somenath.ghosh84@gmail.com&password=ghosh&apiKey=df5cb700-395b-11e4-916c-0800200c9a66&tags=mount+rainier&tagmode=any&format=json HTTP/1.1" 200 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.103 Safari/537.36"
-[2014-09-11 20:57:07.724] [DEBUG] UserRoute - Setting up CORS for services
-[2014-09-11 20:57:07.725] [DEBUG] UserRoute - apiKey check
-[2014-09-11 20:57:07.726] [DEBUG] UserRoute - apiKey validated correct
-[2014-09-11 20:57:07.727] [INFO] UserRoute - passeds value=somenath.ghosh84@gmail.com ghosh
-[2014-09-11 20:57:08.788] [INFO] http - 127.0.0.1 - - "GET /api/v1/checkUserCredential?userName=somenath.ghosh84@gmail.com&password=ghosh&apiKey=df5cb700-395b-11e4-916c-0800200c9a66 HTTP/1.1" 200 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.103 Safari/537.36"
-[2014-09-11 20:57:08.791] [DEBUG] UserRoute - Setting up CORS for services
-[2014-09-11 20:57:08.792] [DEBUG] UserRoute - apiKey check
-[2014-09-11 20:57:08.793] [DEBUG] UserRoute - apiKey validated correct
-[2014-09-11 20:57:08.794] [INFO] UserRoute - passeds value=somenath.ghosh84@gmail.com ghosh
-[2014-09-11 20:57:09.765] [INFO] http - 127.0.0.1 - - "GET /api/v1/checkUserCredential?userName=somenath.ghosh84@gmail.com&password=ghosh&apiKey=df5cb700-395b-11e4-916c-0800200c9a66 HTTP/1.1" 200 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.103 Safari/537.36"
-[2014-09-11 20:57:09.769] [DEBUG] UserRoute - Setting up CORS for services
-[2014-09-11 20:57:09.770] [DEBUG] UserRoute - apiKey check
-[2014-09-11 20:57:09.771] [DEBUG] UserRoute - apiKey validated correct
-[2014-09-11 20:57:09.772] [INFO] UserRoute - passeds value=somenath.ghosh84@gmail.com ghosh
-[2014-09-11 20:57:10.755] [INFO] http - 127.0.0.1 - - "GET /api/v1/checkUserCredential?userName=somenath.ghosh84@gmail.com&password=ghosh&apiKey=df5cb700-395b-11e4-916c-0800200c9a66 HTTP/1.1" 200 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.103 Safari/537.36"
-[2014-09-11 20:57:36.542] [DEBUG] UserRoute - Setting up CORS for services
-[2014-09-11 20:57:36.543] [DEBUG] UserRoute - apiKey check
-[2014-09-11 20:57:36.545] [DEBUG] UserRoute - apiKey validated correct
-[2014-09-11 20:57:36.546] [INFO] UserRoute - passeds value=somenath.ghosh84@gmail.com ghosh
-[2014-09-11 20:57:37.586] [INFO] http - 127.0.0.1 - - "GET /api/v1/checkUserCredential?userName=somenath.ghosh84@gmail.com&password=ghosh&apiKey=df5cb700-395b-11e4-916c-0800200c9a66 HTTP/1.1" 200 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.103 Safari/537.36"
-[2014-09-11 20:59:05.760] [DEBUG] UserRoute - Setting up CORS for services
-[2014-09-11 20:59:05.762] [DEBUG] UserRoute - apiKey check
-[2014-09-11 20:59:05.763] [ERROR] UserRoute - apiKey wrong df5cb700-395b-11e4-916c-0800200c9a6
-[2014-09-11 20:59:05.766] [ERROR] http - 127.0.0.1 - - "GET /api/v1/checkUserCredential?userName=somenath.ghosh84@gmail.com&password=ghosh&apiKey=df5cb700-395b-11e4-916c-0800200c9a6 HTTP/1.1" 403 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.103 Safari/537.36"
-[2014-09-11 20:59:31.405] [DEBUG] UserRoute - Setting up CORS for services
-[2014-09-11 20:59:31.406] [DEBUG] UserRoute - apiKey check
-[2014-09-11 20:59:31.407] [DEBUG] UserRoute - apiKey validated correct
-[2014-09-11 20:59:31.408] [INFO] UserRoute - passeds value=somenath.ghosh84@gmail.com ghosh
-[2014-09-11 20:59:32.451] [INFO] http - 127.0.0.1 - - "GET /api/v1/checkUserCredential?userName=somenath.ghosh84@gmail.com&password=ghosh&apiKey=df5cb700-395b-11e4-916c-0800200c9a66 HTTP/1.1" 200 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.103 Safari/537.36"
-[2014-09-11 21:00:31.801] [DEBUG] UserRoute - Setting up CORS for services
-[2014-09-11 21:00:31.802] [DEBUG] UserRoute - apiKey check
-[2014-09-11 21:00:31.803] [ERROR] UserRoute - apiKey wrong undefined
-[2014-09-11 21:00:31.804] [ERROR] http - 127.0.0.1 - - "GET /api/v1/checkUserCredential?userName=somenath.ghosh84@gmail.com HTTP/1.1" 403 - "" "curl/7.26.0"
-[2014-09-11 21:02:01.402] [DEBUG] UserRoute - Setting up CORS for services
-[2014-09-11 21:02:01.403] [DEBUG] UserRoute - apiKey check
-[2014-09-11 21:02:01.404] [ERROR] UserRoute - apiKey wrong undefined
-[2014-09-11 21:02:01.405] [ERROR] http - 127.0.0.1 - - "GET /api/v1/checkUserCredential?userName=somenath.ghosh84@gmail.com HTTP/1.1" 403 - "" "curl/7.26.0"
-[2014-09-11 21:04:00.185] [DEBUG] UserRoute - Setting up CORS for services
-[2014-09-11 21:04:00.187] [DEBUG] UserRoute - apiKey check
-[2014-09-11 21:04:00.188] [DEBUG] UserRoute - apiKey validated correct
-[2014-09-11 21:04:00.188] [INFO] UserRoute - passeds value=somenath.ghosh84@gmail.com ghosh
-[2014-09-11 21:04:01.146] [INFO] http - 127.0.0.1 - - "GET /api/v1/checkUserCredential?userName=somenath.ghosh84@gmail.com&password=ghosh&apiKey=df5cb700-395b-11e4-916c-0800200c9a66 HTTP/1.1" 200 - "" "curl/7.26.0"
-[2014-09-11 21:05:32.726] [DEBUG] UserRoute - Setting up CORS for services
-[2014-09-11 21:05:32.727] [DEBUG] UserRoute - apiKey check
-[2014-09-11 21:05:32.728] [DEBUG] UserRoute - apiKey validated correct
-[2014-09-11 21:05:32.729] [INFO] UserRoute - passeds value=somenath.ghosh84@gmail.com ghosh
-[2014-09-11 21:05:33.699] [INFO] http - 127.0.0.1 - - "GET /api/v1/checkUserCredential?userName=somenath.ghosh84@gmail.com&password=ghosh&apiKey=df5cb700-395b-11e4-916c-0800200c9a66 HTTP/1.1" 200 - "" "curl/7.26.0"
-[2014-09-11 21:06:53.712] [DEBUG] UserRoute - Setting up CORS for services
-[2014-09-11 21:06:53.713] [DEBUG] UserRoute - apiKey check
-[2014-09-11 21:06:53.714] [ERROR] UserRoute - apiKey wrong df5cb700-395b-11e4-916c-0800200c9a6
-[2014-09-11 21:06:53.715] [ERROR] http - 127.0.0.1 - - "GET /api/v1/checkUserCredential?userName=somenath.ghosh84@gmail.com&password=ghosh&apiKey=df5cb700-395b-11e4-916c-0800200c9a6 HTTP/1.1" 403 - "" "curl/7.26.0"
-[2014-09-11 21:07:14.973] [DEBUG] UserRoute - Setting up CORS for services
-[2014-09-11 21:07:14.974] [DEBUG] UserRoute - apiKey check
-[2014-09-11 21:07:14.976] [DEBUG] UserRoute - apiKey validated correct
-[2014-09-11 21:07:14.976] [INFO] UserRoute - passeds value=somenath.ghosh84@gmail.com ghos
-[2014-09-11 21:07:15.931] [ERROR] http - 127.0.0.1 - - "GET /api/v1/checkUserCredential?userName=somenath.ghosh84@gmail.com&password=ghos&apiKey=df5cb700-395b-11e4-916c-0800200c9a66 HTTP/1.1" 401 - "" "curl/7.26.0"
-[2014-09-11 21:14:30.921] [INFO] ResourceLoader - Creating first instance of ResourceLoader
-[2014-09-11 21:14:30.924] [INFO] ResourceLoader - c:\Users\Somenath\AppraisalServer\config\properties.json
-[2014-09-11 21:14:30.926] [INFO] ResourceLoader - sending instanceOf ResourceLoader[object Object]
-[2014-09-11 21:14:30.931] [INFO] ResourceLoader - sending instanceOf ResourceLoader[object Object]
-[2014-09-11 21:14:31.314] [DEBUG] ResourceLoader - DB DB_USER_NAME
-[2014-09-11 21:14:31.314] [DEBUG] ResourceLoader - DB DB_PASSWORD
-[2014-09-11 21:14:31.315] [DEBUG] ResourceLoader - DB DB_CONNECTION_URL
-[2014-09-11 21:14:31.316] [DEBUG] ResourceLoader - DB DB_CONNECTION_PORT
-[2014-09-11 21:14:31.316] [DEBUG] ResourceLoader - DB DB_DATABASE_SCHEMA
-[2014-09-11 21:14:31.317] [INFO] ConnectDBInstance - Connection Starts
-[2014-09-11 21:14:31.327] [INFO] ConnectDBInstance - Connection Class Ends
-[2014-09-11 21:14:31.336] [INFO] ResourceLoader - sending instanceOf ResourceLoader[object Object]
-[2014-09-11 21:14:31.337] [DEBUG] ResourceLoader - Constant SALT_WORK_FACTOR
-[2014-09-11 21:14:31.348] [INFO] UserVO - Creating first instance of UserVO
-[2014-09-11 21:14:31.349] [DEBUG] UserVO - sending object = [object Object]
-[2014-09-11 21:14:31.349] [DEBUG] ResourceLoader - API_KEY VALIDATE_USER
-[2014-09-11 21:20:46.656] [INFO] ResourceLoader - Creating first instance of ResourceLoader
-[2014-09-11 21:20:46.659] [INFO] ResourceLoader - c:\Users\Somenath\AppraisalServer\config\properties.json
-[2014-09-11 21:20:46.661] [INFO] ResourceLoader - sending instanceOf ResourceLoader[object Object]
-[2014-09-11 21:20:46.666] [INFO] ResourceLoader - sending instanceOf ResourceLoader[object Object]
-[2014-09-11 21:20:47.045] [DEBUG] ResourceLoader - DB DB_USER_NAME
-[2014-09-11 21:20:47.046] [DEBUG] ResourceLoader - DB DB_PASSWORD
-[2014-09-11 21:20:47.047] [DEBUG] ResourceLoader - DB DB_CONNECTION_URL
-[2014-09-11 21:20:47.047] [DEBUG] ResourceLoader - DB DB_CONNECTION_PORT
-[2014-09-11 21:20:47.048] [DEBUG] ResourceLoader - DB DB_DATABASE_SCHEMA
-[2014-09-11 21:20:47.048] [INFO] ConnectDBInstance - Connection Starts
-[2014-09-11 21:20:47.059] [INFO] ConnectDBInstance - Connection Class Ends
-[2014-09-11 21:20:47.068] [INFO] ResourceLoader - sending instanceOf ResourceLoader[object Object]
-[2014-09-11 21:20:47.069] [DEBUG] ResourceLoader - Constant SALT_WORK_FACTOR
-[2014-09-11 21:20:47.079] [INFO] UserVO - Creating first instance of UserVO
-[2014-09-11 21:20:47.080] [DEBUG] UserVO - sending object = [object Object]
-[2014-09-11 21:20:47.081] [DEBUG] ResourceLoader - API_KEY VALIDATE_USER
-[2014-09-11 21:20:47.145] [INFO] app - Express server listening on port 3000
+[2014-09-12 15:22:09.033] [INFO] ResourceLoader - Creating first instance of ResourceLoader
+[2014-09-12 15:22:09.036] [INFO] ResourceLoader - c:\Users\Somenath\AppraisalServer\config\properties.json
+[2014-09-12 15:22:09.038] [INFO] ResourceLoader - sending instanceOf ResourceLoader[object Object]
+[2014-09-12 15:22:09.043] [INFO] ResourceLoader - sending instanceOf ResourceLoader[object Object]
+[2014-09-12 15:22:09.423] [DEBUG] ResourceLoader - DB DB_USER_NAME
+[2014-09-12 15:22:09.425] [DEBUG] ResourceLoader - DB DB_PASSWORD
+[2014-09-12 15:22:09.425] [DEBUG] ResourceLoader - DB DB_CONNECTION_URL
+[2014-09-12 15:22:09.426] [DEBUG] ResourceLoader - DB DB_CONNECTION_PORT
+[2014-09-12 15:22:09.426] [DEBUG] ResourceLoader - DB DB_DATABASE_SCHEMA
+[2014-09-12 15:22:09.427] [INFO] ConnectDBInstance - Connection Starts
+[2014-09-12 15:22:09.438] [INFO] ConnectDBInstance - Connection Class Ends
+[2014-09-12 15:22:09.446] [INFO] ResourceLoader - sending instanceOf ResourceLoader[object Object]
+[2014-09-12 15:22:09.447] [DEBUG] ResourceLoader - Constant SALT_WORK_FACTOR
+[2014-09-12 15:22:09.457] [INFO] UserVO - Creating first instance of UserVO
+[2014-09-12 15:22:09.458] [DEBUG] UserVO - sending object = [object Object]
+[2014-09-12 15:22:09.458] [DEBUG] ResourceLoader - API_KEY VALIDATE_USER
+[2014-09-12 15:22:09.460] [DEBUG] UserVO - sending object = [object Object]
+[2014-09-12 15:22:09.522] [INFO] app - Express server listening on port 3000
+[2014-09-12 15:22:50.009] [INFO] UserVO -  Class:UserVO Method:createNewUser starts
+[2014-09-12 15:22:51.428] [INFO] UserVO - user_id  somenath.ghosh@gmail.com
+[2014-09-12 15:22:51.429] [INFO] UserVO -  user user_address { addressLine1: '2114 Piedmont Hills Place',
+  addressLine2: 'apt 2303',
+  city: 'charlotte',
+  state: 'NC',
+  zip: '28217' }
+[2014-09-12 15:22:51.460] [INFO] UserVO -  Class:UserVO - Info:No duplicate record found
+[2014-09-12 15:22:51.505] [INFO] UserVO - Class:UserVO - Info: Successful
+[2014-09-12 15:22:51.507] [INFO] CreateUser -  Class:CreateUser Method:createNewUser.returnCb() starts
+[2014-09-12 15:22:51.517] [INFO] http - 127.0.0.1 - - "POST /createUser HTTP/1.1" 200 24 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.120 Safari/537.36"
+[2014-09-12 15:22:51.519] [INFO] CreateUser -  Class:CreateUser Method:createNewUser.returnCb() ends
+[2014-09-12 15:23:26.045] [INFO] UserVO -  Class:UserVO Method:createNewUser starts
+[2014-09-12 15:23:27.041] [INFO] UserVO - user_id  somenath.ghosh@gmail.com
+[2014-09-12 15:23:27.042] [INFO] UserVO -  user user_address { addressLine1: '2114 Piedmont Hills Place',
+  addressLine2: 'apt 2303',
+  city: 'charlotte',
+  state: 'NC',
+  zip: '28217' }
+[2014-09-12 15:23:27.067] [ERROR] UserVO - Class:UserVO - Error Message: UserId already taken
+[2014-09-12 15:23:27.068] [INFO] CreateUser -  Class:CreateUser Method:createNewUser.returnCb() starts
+[2014-09-12 15:23:27.070] [INFO] http - 127.0.0.1 - - "POST /createUser HTTP/1.1" 200 21 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.120 Safari/537.36"
+[2014-09-12 15:23:27.072] [INFO] CreateUser -  Class:CreateUser Method:createNewUser.returnCb() ends
+[2014-09-12 15:24:29.434] [INFO] UserVO -  Class:UserVO Method:createNewUser starts
+[2014-09-12 15:24:30.417] [INFO] UserVO - user_id  somenath.ghosh@gmail.com
+[2014-09-12 15:24:30.418] [INFO] UserVO -  user user_address { addressLine1: '800 W Trande Street',
+  addressLine2: '900',
+  city: 'charlotte',
+  state: 'NC',
+  zip: '28217' }
+[2014-09-12 15:24:30.443] [INFO] UserVO -  Class:UserVO - Info:No duplicate record found
+[2014-09-12 15:24:30.476] [INFO] UserVO - Class:UserVO - Info: Successful
+[2014-09-12 15:24:30.477] [INFO] CreateUser -  Class:CreateUser Method:createNewUser.returnCb() starts
+[2014-09-12 15:24:30.478] [INFO] http - 127.0.0.1 - - "POST /createUser HTTP/1.1" 200 24 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.120 Safari/537.36"
+[2014-09-12 15:24:30.480] [INFO] CreateUser -  Class:CreateUser Method:createNewUser.returnCb() ends
+[2014-09-12 15:24:52.370] [INFO] UserVO -  Class:UserVO Method:createNewUser starts
+[2014-09-12 15:24:53.371] [INFO] UserVO - user_id  somenath.ghosh@gmail.com
+[2014-09-12 15:24:53.371] [INFO] UserVO -  user user_address { addressLine1: '800 W Trade Street',
+  addressLine2: '900',
+  city: 'charlotte',
+  state: 'NC',
+  zip: '28217' }
+[2014-09-12 15:24:53.393] [INFO] UserVO -  Class:UserVO - Info:No duplicate record found
+[2014-09-12 15:24:53.418] [INFO] UserVO - Class:UserVO - Info: Successful
+[2014-09-12 15:24:53.419] [INFO] CreateUser -  Class:CreateUser Method:createNewUser.returnCb() starts
+[2014-09-12 15:24:53.421] [INFO] http - 127.0.0.1 - - "POST /createUser HTTP/1.1" 200 24 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.120 Safari/537.36"
+[2014-09-12 15:24:53.424] [INFO] CreateUser -  Class:CreateUser Method:createNewUser.returnCb() ends
+[2014-09-12 15:25:20.869] [DEBUG] UserRoute - Setting up CORS for services
+[2014-09-12 15:25:20.870] [DEBUG] UserRoute - apiKey check
+[2014-09-12 15:25:20.873] [DEBUG] UserRoute - apiKey validated correct
+[2014-09-12 15:25:20.874] [INFO] UserRoute - passeds value=somenath.ghosh@gmail.com ghosh
+[2014-09-12 15:25:20.898] [INFO] UserVO - 54134885f192d43c178708f9
+[2014-09-12 15:25:21.810] [INFO] UserRoute - 54134885f192d43c178708f9
+[2014-09-12 15:25:21.815] [INFO] http - 127.0.0.1 - - "GET /api/v1/checkUserCredential?userName=somenath.ghosh@gmail.com&password=ghosh&apiKey=df5cb700-395b-11e4-916c-0800200c9a66 HTTP/1.1" successful 35 "" "curl/7.26.0"

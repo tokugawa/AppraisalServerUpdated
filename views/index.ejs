@@ -1,11 +1,230 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+	<head>
+		<title>Admin Console</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href = "stylesheets/bootstrap.min.css" rel = "stylesheet">
+		
+		<link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+		<style type="text/css">
+			
+			
+		</style>
+		
+		
+
+			
+		</script>
+
+	</head>
+	<body>
+	
+		<div class = "navbar navbar-inverse navbar-static-top">
+			<div class = "container">
+				
+				<a href = "#" class = "navbar-brand"><font face="trebuchet MS" size="5" color="white">Reservation</font></a>
+				
+				<button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+					<span class = "icon-bar"></span>
+					<span class = "icon-bar"></span>
+					<span class = "icon-bar"></span>
+				</button>
+				
+				<div class = "collapse navbar-collapse navHeaderCollapse">
+				
+					<ul class = "nav navbar-nav navbar-right">
+					
+						<li class = "active"><a href = "/">Home</a></li>
+						<!--
+						<li><a href = "/about">About</a></li>
+						<li><a href = "#contact" data-toggle="modal">Feedback</a></li>
+						-->
+					</ul>
+				
+				</div>
+				
+			</div>
+		</div>
+		
+		
+		
+	
+		<!--
+		<div class = "container">
+		<div class="panel panel-default">
+			<div class = "panel-heading">
+			<center>
+				<h1><font face="trebuchet MS" size="8"><span class="fa fa-globe"></span> Admin Console</font></h1></center>
+							
+			</div>
+		</div>
+		</div>
+		-->
+		
+		
+        <div class="container">
+			
+		
+				<div class="row">
+					
+					<div class="col-lg-9 col-md-9 col-sm-9 ">
+						<div class="panel panel-success">
+							<div class="panel-heading"><center><font face="trebuchet MS" size="5">Create User</font><br><font face="trebuchet MS" size="3"></font></center></div>
+							
+								
+							<div class="panel-body" >
+							
+								
+							
+							<div id="formWrap" >
+							<form name ="myForm" id="reservation" action="/createUser" class="form form-horizontal">
+								<div class="control-group">
+									<!--label class="control-label">Email</label-->
+									
+									<div id="msg">
+									
+									</div>
+									<div class="controls">
+										<div class="table-responsive">
+										<table class="table" width="100%">
+										
+																		
+										<tr>
+												<td width="15%" align="left"> <font color="green">UserID</font></td>
+												<td width="85%"><input id="userName" type="email"  class="form-control"></td>
+										</tr>
+
+
+										<tr>
+												<td width="15%" align="left"> <font color="green">Password</font></td>
+												<td width="85%"><input  id="password" type="password" class="form-control"></td>
+										</tr>
+
+
+										
+										<tr>
+												<td width="15%" align="left"><font color="green">First Name</font></td>
+												<td width="85%"><input   id="firstName" type="text"  style="color:#aaa"  class="form-control"></td>
+										</tr>	
+
+
+										<tr>
+												<td width="15%" align="left"><font color="green">Last Name</font></td>
+												<td width="85%"><input id="lastName" type="text"  style="color:#aaa"  class="form-control"></td>
+										</tr>	
+											
+
+										<tr>
+												<td width="15%" align="left"><font color="green">Address Line1</font></td>
+												<td width="85%"><input id="addressLine1" type="text"  style="color:#aaa"  class="form-control"></td>
+										</tr>	
+	
+										<tr>
+												<td width="15%" align="left"><font color="green">Address Line2</font></td>
+												<td width="85%"><input id="addressLine2" type="text"  style="color:#aaa"  class="form-control"></td>
+										</tr>	
+
+										<tr>
+												<td width="15%" align="left"><font color="green">City</font></td>
+												<td width="85%"><input id="city" type="text"  style="color:#aaa"  class="form-control"></td>
+										</tr>	
+
+
+
+										<tr>
+												<td width="15%" align="left"><font color="green">State</font></td>
+												<td width="85%"><input id="state" type="text"  style="color:#aaa"  class="form-control"></td>
+										</tr>	
+										
+
+										<tr>
+												<td width="15%" align="left"><font color="green">Zip code</td>
+												<td width="85%"><input id="zip" type="text"  style="color:#aaa"  class="form-control"></td>
+										</tr>	
+
+
+										
+														
+										
+										
+										
+										</table>
+										<center><button class = "btn btn-success btn-large"  id="subButtton" type = "submit">Create</button><center>
+										</div>
+										
+									</div>
+								</div>
+							</form>
+							</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		<script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src = "javascripts/bootstrap.min.js"></script>
+		
+		
+		
+		<script>
+		jQuery(function($){
+			$("#subButtton").click(function(e){
+				e.preventDefault();
+				
+
+
+				dataR = {};
+				dataR.userName	= $('#userName').val();
+				dataR.password 	= $('#password').val();
+				dataR.firstName 	= $('#firstName').val();
+				dataR.lastName 	= $('#lastName').val();
+				dataR.addressLine1 	= $('#addressLine1').val();
+				dataR.addressLine2 	= $('#addressLine2').val();
+				dataR.city 	= $('#city').val();
+				dataR.state 	= $('#state').val();
+				dataR.zip 	= $('#zip').val();
+
+
+				
+				$.ajax({
+					type: 'POST',
+					data: JSON.stringify(dataR),
+					contentType: 'application/json',
+					url: '/createUser',						
+					success: function(data) {
+						if(data.message === 'ERR-403'){
+
+							alert('user already taken');
+
+						}
+						else{
+							alert('Successful');
+						}
+						
+												
+					},
+					error: function (error) {
+						
+						alert('error connecting Server');
+					}
+					
+				});	
+				
+				
+			});
+			
+		});
+	</script>
+	
+
+	</body>
 </html>
