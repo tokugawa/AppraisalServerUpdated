@@ -15,7 +15,7 @@ var log = log4js.getLogger("UserVO");
 var paException = require('../util/PAException');
 
 
-var conn = require('../util/ConnectDBInstance').getInstance();
+/*var conn = require('../util/ConnectDBInstance').getInstance();*/
 var user = require('../model/User.js');
 
 
@@ -32,8 +32,8 @@ var UserVO = (function(){
 			var passwordHashed = newUser.generateHash(password);
 
 		
-			newUser._id		  		= userName;
-			newUser.user_id_id		= newUser.generateID();
+			newUser.user_id		  		= userName;
+			//newUser.user_id_id		= newUser.generateID();
 			newUser.password 		= passwordHashed ;
 			newUser.firstName		= firstName;
 			newUser.lastName 		= lastName;
@@ -43,7 +43,7 @@ var UserVO = (function(){
 
 			log.info('user_id ' , userName);
 			log.info(' user user_address' , user_address);
-			user.findOne({_id: userName }, function findOneCb(err, data){
+			user.findOne({user_id: userName }, function findOneCb(err, data){
 				if(err){
 					log.error(err);
 					cb(null);
@@ -87,9 +87,12 @@ var UserVO = (function(){
 		this.validateUser = function(userName , password, cb){
 			
 			var validationResult = false;
+			//log.info(conn);
 
-			user.findOne({_id: userName }, function findOneCb(err, data){
-				
+			log.info(' UseVO: validateUser Starts')
+
+			user.findOne({user_id: userName }, function findOneCb(err, data){
+				//log.info('in Call back');
 				if (err){
 					log.error(err);
 					throw new paException('UserVO', 'Get User Exception for id = ' + userName);
@@ -99,10 +102,10 @@ var UserVO = (function(){
 
 				if(data){
 					//var userObj = new user();
-					log.info(data.user_id_id);
+					log.info(data._id);
 					if(data.validatePassword(password)){
 						//log.info('validated');
-						cb(true, data.user_id_id);
+						cb(true, data._id);
 					}
 					else{
 						cb(false, null);

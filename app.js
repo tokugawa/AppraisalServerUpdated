@@ -6,13 +6,41 @@ var log4js = require('log4js');
 var log = log4js.getLogger("app");
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var cluster     = require('cluster');
+var numCPUs = require('os').cpus().length;
+var mongoose = require('mongoose');
+
+conn = require('./util/ConnectDBInstance').getInstance();
+
+
+log.info(numCPUs);
+
+if(cluster.isMaster){
+
+    for(var i=0 ; i< numCPUs ; i++){
+
+        cluster.fork();
+
+        cluster.on('exit', function exitWorkCb( worker, code, signal){
+
+            log.info('worker' + worker.process.pid + 'died');
+
+        });
+    }
+}
+else {
+
 
 var routes = require('./routes/index');
 var users = require('./routes/users').list;
 var user = require('./routes/checkUser');
 var userCreate = require('./routes/CreateUser');
+var order = require('./routes/getOrderListTemp');
 
 var app = express();
+
+app.set('port', process.env.PORT || 3000);
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -30,6 +58,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 app.use('/users', users);
 app.get('/api/v1/checkUserCredential', user);
+app.get('/api/v1/getOrderDetail', order);
+
+
 app.post('/createUser', userCreate);
 
 // catch 404 and forward to error handler
@@ -64,10 +95,27 @@ app.use(function(err, req, res, next) {
 });
 
 
-app.set('port', process.env.PORT || 3000);
 
-var server = app.listen(app.get('port'), function() {
-  log.info('Express server listening on port ' + server.address().port);
+process.on('uncaughtException', function (){
+
+
+    conn.close(function(){
+
+        log.info('Conncection Ended due to uncaughtException');
+
+        process.exit(0);
+
+    });
+
 });
 
-//module.exports = app;
+
+
+
+    var server = app.listen(app.get('port'), function() {
+      log.info('Express server listening on port ' + server.address().port);
+    });
+
+}
+
+

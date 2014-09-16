@@ -14,16 +14,16 @@
 var mongoose = require('mongoose');
 var bcrypt   = require('bcrypt-nodejs');
 var resourceLoader = require('../util/ResourceLoader').getInstance();
+var conn = require('../util/ConnectDBInstance').getInstance();
 
 
 var SALT_WORK_FACTOR = resourceLoader.getResourceById('Constant','SALT_WORK_FACTOR');
 
-// define the schema for our user model
-var UserSchema = mongoose.Schema({
+var UserSchema = new mongoose.Schema({
 
 		
-		_id		     : { type: String, required: true},
-		user_id_id	 : { type: mongoose.Schema.Types.ObjectId , required: true } ,
+		user_id		 : { type: String, required: true, unique: true},
+		//user_id_id	 : { type: mongoose.Schema.Types.ObjectId , required: true } ,
         password     : { type:String, required: true },
 		firstName    : { type:String, required: true },
 		lastName     : { type:String, required: true },
@@ -37,9 +37,15 @@ var UserSchema = mongoose.Schema({
 		},
 		isUserActive : Boolean,
 		
-		order_list   : []
+		order_list   : [{type:mongoose.Schema.Types.ObjectId, ref: 'Order'}]
+	},
 
-})
+	{
+
+		collection: 'UserCollection'
+	}
+
+)
 
 // generating a hash
 UserSchema.methods.generateHash = function(password) {
@@ -65,4 +71,4 @@ UserSchema.methods.generateID = function(){
 
 
 // create the model for users and expose it to our app
-module.exports = mongoose.model('User', UserSchema);
+module.exports = conn.model('User', UserSchema);

@@ -17,7 +17,8 @@
   	"mongoose":"~3.8.16",
   	"passport" : "~0.1.17", 		
      "passport-local" : "~0.1.6", 
-  	"bcrypt-nodejs" : "latest" 
+  	"bcrypt-nodejs" : "latest",
+    "mongoose-auto-increment": "~3.0.8"
 
 	
   }

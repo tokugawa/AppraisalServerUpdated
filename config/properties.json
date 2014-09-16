@@ -21,6 +21,7 @@
 	},
 	
 	"ENV_VAR":{
+		"MAX_LISTENERS" : 10
 	
 	},
 

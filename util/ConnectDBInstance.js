@@ -1,5 +1,5 @@
 /*******************************************************************************************************/
-/************************************Place Holder*********************************/
+/************************************ConnectDBInstance.js *********************************/
 /*
 /*========================================== Change Log ===============================================*/
 /* Author: Somenath Ghosh       Date: Sep, 2014         Desc: Initial Built
@@ -24,38 +24,88 @@ var port = resourceLoader.getResourceById('DB' , 'DB_CONNECTION_PORT');
 var ts = resourceLoader.getResourceById('DB' , 'DB_DATABASE_SCHEMA');
 
 
-var prepareConnectionString = 'mongodb://' + user +':'+password+'@'+url+':'+port+'/'+ts;
+//var prepareConnectionString = 'mongodb://' + user +':'+password+'@'+url+':'+port+'/'+ts;
+var prepareConnectionString = 'mongodb://'+url+':'+port+'/'+ts;
 
 
 
 var conn = (function (){
 
-	var instance = undefined;
+	var instance;
+
+	var options = {
+		  db: { native_parser: true },
+		  server: { poolSize: 5,
+		  			socketOptions:  { keepAlive: 1 }
+		  	 	},
+		  user: user,
+		  pass: password
+		};
+	
 	function createInstance(){
 		
-		log.info('Connection Starts');
+		log.info('ConnectDBInstance: Connection Starts');
 		try{
 
-			return mongoose.connect(prepareConnectionString); 
+			//return mongoose.connect(prepareConnectionString);
+			var connectionOfDB = mongoose.createConnection(prepareConnectionString, options);
+
+
+			connectionOfDB.on('connected', function successfulConnectionCb(){
+
+				log.info('Successful Connection');
+
+
+			});
+
+
+			connectionOfDB.on('error', function errorConnectionCb(){
+
+				log.info('Error in Connection');
+
+
+			});
+
+
+			connectionOfDB.on('disconnected', function disconnectedConnectionCb(){
+
+				log.info('Disconnected Connection');
+
+
+			});
+
+			process.on('SIGINT', function sigintConnectionCloseCb(){
+
+				log.info(' Server Termination');
+				mongoose.connection.close(function connectionCloseCb () {
+					log.info('Disconnected through Server Termination');
+					process.exit(0);
+				});
+
+
+			});
+
+
+
+
+			return connectionOfDB;
+
 		}
 		catch(err){
 
 			throw new PAExpection('ConncetionDBInstance' , 'Exception in Connceting MongoDB');
 
 		}
-		finally{
-
-
-		}
+		
 
 	}
 
 	 return {
         getInstance: function () {
-            if (instance === undefined) {
+            if (!instance) {
                 instance = createInstance();
             }
-            log.info('Connection Class Ends');
+            //log.info('ConnectDBInstance: Connection Class Ends');
             return instance;
         }
 
@@ -72,6 +122,5 @@ var conn = (function (){
 
 
 module.exports = conn;
-
 
 
