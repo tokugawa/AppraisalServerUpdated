@@ -81,7 +81,7 @@ var validateUserCredential = function (req, res) {
 					
 					res.header('Access-Control-Allow-Origin', '*');
 					log.info(data);
-					res.status(200).send('successful', {data: data});
+					res.status(200).send({data: data});
 					
 				}
 

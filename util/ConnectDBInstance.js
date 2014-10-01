@@ -50,6 +50,7 @@ var conn = (function (){
 			//return mongoose.connect(prepareConnectionString);
 			var connectionOfDB = mongoose.createConnection(prepareConnectionString, options);
 
+			//console.log(connectionOfDB);
 
 			connectionOfDB.on('connected', function successfulConnectionCb(){
 
@@ -85,6 +86,19 @@ var conn = (function (){
 
 			});
 
+			process.on('SIGTERM', function (){
+
+
+		        connectionOfDB.close(function(){
+
+		            log.info('Conncection Ended due to SIGTERM');
+
+		            process.exit(1);
+
+		        });
+
+		    });
+
 
 
 
@@ -103,6 +117,7 @@ var conn = (function (){
 	 return {
         getInstance: function () {
             if (!instance) {
+            	log.warn(' Creating new instance');
                 instance = createInstance();
             }
             //log.info('ConnectDBInstance: Connection Class Ends');

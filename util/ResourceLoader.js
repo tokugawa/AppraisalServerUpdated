@@ -51,7 +51,7 @@ var ResourceLoader = (function(){
         }
 
         this.getResourceById = function(resourceType, resourceId){
-            log.debug(resourceType , resourceId);
+            //log.debug(resourceType , resourceId);
             try {
                 return this.data[resourceType][resourceId];
             }
@@ -70,10 +70,10 @@ var ResourceLoader = (function(){
         getInstance: function () {
 
             if (!instance) {
-                log.info('Creating first instance of ResourceLoader');
+                log.warn('Creating first instance of ResourceLoader');
                 instance = new createInstance();
             }
-            log.info('sending instanceOf ResourceLoader' + instance);
+            //log.info('sending instanceOf ResourceLoader' + instance);
             return instance;
         }
     };

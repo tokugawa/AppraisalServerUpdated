@@ -1,14 +1,15 @@
-[2014-09-15 17:53:36.462] [ERROR] UserRoute - apiKey wrong null
-[2014-09-15 17:53:36.464] [ERROR] http - 127.0.0.1 - - "GET /api/v1/checkUserCredential HTTP/1.1" 403 9 "" "curl/7.26.0"
-[2014-09-15 17:54:37.455] [ERROR] UserRoute - apiKey wrong null
-[2014-09-15 17:54:37.457] [ERROR] http - 127.0.0.1 - - "GET /api/v1/checkUserCredential?userName=somenath.ghosh84@gmail.com HTTP/1.1" 403 9 "" "curl/7.26.0"
-[2014-09-15 17:54:48.399] [ERROR] UserRoute - apiKey wrong null
-[2014-09-15 17:54:48.402] [ERROR] http - 127.0.0.1 - - "GET /api/v1/checkUserCredential?userName=somenath.ghosh@gmail.com HTTP/1.1" 403 9 "" "curl/7.26.0"
-[2014-09-15 17:55:05.311] [ERROR] UserRoute - apiKey wrong null
-[2014-09-15 17:55:05.312] [ERROR] http - 127.0.0.1 - - "GET /api/v1/checkUserCredential?userName=somenath.ghosh@gmail.com HTTP/1.1" 403 9 "" "curl/7.26.0"
-[2014-09-15 17:55:43.400] [ERROR] UserRoute - apiKey wrong null
-[2014-09-15 17:55:43.400] [ERROR] http - 127.0.0.1 - - "GET /api/v1/checkUserCredential?userName=somenath.ghosh@gmail.com HTTP/1.1" 403 9 "" "curl/7.26.0"
-[2014-09-15 17:57:34.348] [ERROR] http - 127.0.0.1 - - "GET /api/v1/checkUserCredential?userName=somenath.ghosh84@gmail.com&password=ghosh&apiKey=df5cb700-395b-11e4-916c-0800200c9a66 HTTP/1.1" 401 21 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.120 Safari/537.36"
-[2014-09-15 17:57:56.715] [ERROR] http - 127.0.0.1 - - "GET /api/v1/checkUserCredential?userName=somenath.ghosh84@gmail.com&password=ghosh&apiKey=df5cb700-395b-11e4-916c-0800200c9a66 HTTP/1.1" 401 21 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.120 Safari/537.36"
-[2014-09-15 18:01:48.517] [ERROR] UserRoute - apiKey wrong null
-[2014-09-15 18:01:48.518] [ERROR] http - 127.0.0.1 - - "GET /api/v1/checkUserCredential?userName=somenath.ghosh@gmail.com HTTP/1.1" 403 9 "" "curl/7.26.0"
+[2014-09-30 20:35:29.837] [ERROR] http - 127.0.0.1 - - "GET /favicon.ico HTTP/1.1" 404 1073 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-09-30 20:40:59.755] [ERROR] http - 127.0.0.1 - - "OPTIONS /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t HTTP/1.1" 404 1073 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-09-30 20:48:15.047] [ERROR] app - Worker server died (ID: 1, PID: 4612)
+[2014-09-30 20:48:15.052] [ERROR] app - Worker server died (ID: 2, PID: 3192)
+[2014-09-30 20:49:10.128] [ERROR] http - 127.0.0.1 - - "OPTIONS /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t HTTP/1.1" 404 1051 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-09-30 20:53:55.419] [ERROR] http - 127.0.0.1 - - "OPTIONS /api/v1/uploadFile HTTP/1.1" 404 1051 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-09-30 20:59:57.006] [ERROR] http - 127.0.0.1 - - "OPTIONS /api/v1/uploadFile HTTP/1.1" 404 1051 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-09-30 21:01:30.507] [ERROR] http - 127.0.0.1 - - "OPTIONS /api/v1/uploadFile HTTP/1.1" 404 1051 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-09-30 21:02:47.921] [ERROR] http - 127.0.0.1 - - "OPTIONS /api/v1/uploadFile HTTP/1.1" 404 1051 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-09-30 21:15:56.081] [ERROR] http - 127.0.0.1 - - "POST /api/v1/uploadFile HTTP/1.1" 500 1114 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-09-30 21:18:09.313] [ERROR] UploadImageFiles - apiKey wrong null
+[2014-09-30 21:18:09.316] [ERROR] http - 127.0.0.1 - - "POST /api/v1/uploadFile HTTP/1.1" 403 9 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-09-30 21:22:26.192] [ERROR] http - 127.0.0.1 - - "GET /api/v1/uploadedFile/file/rest_api_256x256.png HTTP/1.1" 404 1074 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-09-30 21:22:26.535] [ERROR] http - 127.0.0.1 - - "GET /favicon.ico HTTP/1.1" 404 1074 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-09-30 21:23:25.082] [ERROR] http - 127.0.0.1 - - "GET /api/v1/uploadedFile/file/rest_api_256x256.png HTTP/1.1" 404 1074 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"

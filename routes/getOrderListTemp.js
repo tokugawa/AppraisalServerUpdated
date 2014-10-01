@@ -154,7 +154,7 @@ var orderList = [
 		order_party_name: 'Steven Pettit'
 
 
-	},
+	}
 
 
 

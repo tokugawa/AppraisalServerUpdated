@@ -1,0 +1,28 @@
+{
+  "appenders": [
+    {
+      "type": "clustered",
+      "appenders": [
+        {
+          "type": "dateFile",
+          "filename": "log/access.log",
+          "pattern": "-yyyy-MM-dd",
+          "category": "http"
+        },
+        {
+          "type": "logLevelFilter",
+          "level": "WARN",
+          "appender": {
+            "type": "file",
+            "filename": "log/errorsProduction.log",
+            "maxLogSize": 10485760,
+            "numBackups": 3,
+            "layout": { 
+                "type": "messagePassThrough" 
+            } 
+          }
+        }
+      ]
+    }
+  ]
+}

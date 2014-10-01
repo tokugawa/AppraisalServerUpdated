@@ -129,10 +129,10 @@ var UserVO = (function(){
         getInstance: function () {
 
             if (!instance) {
-                log.info('Creating first instance of UserVO');
+                log.warn('Creating first instance of UserVO');
                 instance = new createInstance();
             }
-            log.debug('sending object = ' + instance);
+            //log.debug('sending object = ' + instance);
             return instance;
         }
     };
