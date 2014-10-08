@@ -13,7 +13,7 @@
       "debug": "~1.0.4",
       "ejs": "~0.8.5",
 	     "log4js":"~0.6.20",
-	     "blueimp-file-upload-expressjs": "~0.2.10",
+	     "blueimp-file-upload-expressjs": "~0.2.12",
   	   "mongoose":"~3.8.16",
   	   "bcrypt-nodejs" : "latest",
        "portscanner" : "latest",

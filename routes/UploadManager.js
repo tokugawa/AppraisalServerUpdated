@@ -13,8 +13,13 @@ var log4js = require('log4js');
 var log = log4js.getLogger("UploadImageFiles");
 var resourceLoader = require('../util/ResourceLoader').getInstance();
 var url = require('url');
+var path = require('path');
+
+var ImageUrlVO = require('../vo/ImageUrlVO').getInstance(); 
 
 var UPLOAD_FILE = resourceLoader.getResourceById('API_KEY' , 'UPLOAD_FILE');
+var GET_IMAGE_LIST  = resourceLoader.getResourceById('API_KEY' , 'GET_IMAGE_LIST');
+var GET_IMAGES = resourceLoader.getResourceById('API_KEY' , 'GET_IMAGES');
 
 
 var options = {
@@ -51,18 +56,141 @@ var uploader = require('blueimp-file-upload-expressjs')(options);
 
 
 module.exports = function (router) {
-    router.get('/api/v1/uploadFile', function(req, res) {
-      uploader.get(req, res, function (obj) {
-            res.send(JSON.stringify(obj)); 
-      });
+    router.get('/api/v1/uploadedFile', function(req, res) {
+        var query = url.parse(req.url,true).query;
+        var apiKey  = query.apiKey;
+        var orderID = query.orderID;
+        var fileName = query.name;
+        var filePath = path.resolve(__dirname , '../public/uploaded/files');
+        console.log(filePath);
+        var options = {
+            root: filePath,
+            dotfiles: 'deny',
+            headers: {
+                'x-timestamp': Date.now(),
+                'x-sent': true
+            }
+          };
+
+        console.log(fileName);
+        if(apiKey !== GET_IMAGES){
+            log.error('apiKey wrong' , apiKey); 
+            res.header('Access-Control-Allow-Origin', '*');
+            res.status(403).send('forbidden');
+        }
+        else {
+
+            ImageUrlVO.retrieveImage(orderID, function retrieveImageListCb(flag, list){
+                if(flag === null){
+
+                    log.error('error');
+                    res.header('Access-Control-Allow-Origin', '*');
+                    res.send({message:'ERR'});
+                }
+
+                if(flag === false){
+                    res.header('Access-Control-Allow-Origin', '*');
+                    res.send({message: 'NOIMG'});
+                }
+
+                if(flag === true){
+                    res.header('Access-Control-Allow-Origin', '*');
+                    //res.send({message: 'IMGLST', list:list});
+                    if(list.indexOf(fileName) !== -1){
+                        res.sendFile(fileName, options, function(err){
+
+                            if(err){
+
+                                console.log(err);
+                                res.status(err.status).end();
+                            }
+
+                            else{
+                                
+                                console.log('sent:' , fileName);
+                            }
+                        });
+                    }
+                    else{
+                        console.log(' No image found for orderID ' + orderID);
+                        res.header('Access-Control-Allow-Origin', '*');
+                        res.send({message: 'NOACSS'});
+                    }
+
+                }
+
+
+            });
+           /* res.header('Access-Control-Allow-Origin', '*');
+            
+            res.sendFile(fileName, options, function(err){
+
+                if(err){
+
+                    console.log(err);
+                    res.status(err.status).end();
+                }
+
+                else{
+                    
+                    console.log('sent:' , fileName);
+                }
+            });*/
+            
+
+        }
+
+       
       
     });
+
+
+    router.get('/api/v1/uploadedFileList', function(req, res) {
+        var query = url.parse(req.url,true).query;
+        var apiKey  = query.apiKey;
+        var orderID = query.orderID;
+        if(apiKey !== GET_IMAGE_LIST){
+            log.error('apiKey wrong' , apiKey); 
+            res.header('Access-Control-Allow-Origin', '*');
+            res.status(403).send('forbidden');
+        }
+        else {
+            ImageUrlVO.retrieveImage(orderID, function retrieveImageListCb(flag, list){
+                if(flag === null){
+
+                    log.error('error');
+                    res.header('Access-Control-Allow-Origin', '*');
+                    res.send({message:'ERR'});
+                }
+
+                if(flag === false){
+                    res.header('Access-Control-Allow-Origin', '*');
+                    res.send({message: 'NOIMG'});
+                }
+
+                if(flag === true){
+                    res.header('Access-Control-Allow-Origin', '*');
+                    res.send({message: 'IMGLST', list:list});
+
+                }
+
+
+            });
+
+        }
+
+
+    });
+
+
+
 
     router.post('/api/v1/uploadFile', function(req, res) {
 
         var query = url.parse(req.url,true).query;
         var apiKey  = query.apiKey;
-        log.info(apiKey);
+        var orderID = query.orderID;
+        //log.info(apiKey);
         if(apiKey !== UPLOAD_FILE){
             log.error('apiKey wrong' , apiKey); 
             res.header('Access-Control-Allow-Origin', '*');
@@ -70,10 +198,43 @@ module.exports = function (router) {
         }
         else {
             uploader.post(req, res, function (obj) {
-                console.log(obj);
-                //res.send(JSON.stringify(obj)); 
+
+                //console.log(req);
+                var returnedObj = obj.files;
+                var arrayLength = returnedObj.length;
+                var imageArray = [];
+                for ( var i=0 ; i< arrayLength ; i++){
+                    imageArray.push(returnedObj[i].name);
+
+                }
+                console.log(imageArray);
                 res.header('Access-Control-Allow-Origin', '*');
-                res.send(); 
+                ImageUrlVO.addOrUpdate(orderID, imageArray , function cb(returnFlag, data){
+                    if(returnFlag === null){
+
+                        res.Status(500).end();
+                    }
+                    if(returnFlag === false){
+
+                        res.send({message: 'NOIMG'});
+
+
+                    }
+
+                    if(returnFlag === true){
+                        console.log(data);
+                        res.send({message: 'IMGLST', list:data});
+                    }
+
+
+
+                });
+                
+
+
+                
+                //res.header('Access-Control-Allow-Origin', '*');
+                 
             });
            
         }

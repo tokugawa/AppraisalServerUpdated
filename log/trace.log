@@ -1,160 +1,946 @@
-[2014-09-30 20:35:14.903] [WARN] ResourceLoader - Creating first instance of ResourceLoader
-[2014-09-30 20:35:14.902] [WARN] ResourceLoader - Creating first instance of ResourceLoader
-[2014-09-30 20:35:16.338] [WARN] ConnectDBInstance -  Creating new instance
-[2014-09-30 20:35:16.338] [WARN] ConnectDBInstance -  Creating new instance
-[2014-09-30 20:35:16.338] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
-[2014-09-30 20:35:16.338] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
-[2014-09-30 20:35:16.353] [WARN] UserVO - Creating first instance of UserVO
-[2014-09-30 20:35:16.369] [WARN] UserVO - Creating first instance of UserVO
-[2014-09-30 20:35:18.522] [INFO] app - Worker server started on port 3000 (ID: 1, PID: 1144)
-[2014-09-30 20:35:18.522] [INFO] app - Worker server started on port 3000 (ID: 2, PID: 4408)
-[2014-09-30 20:35:18.740] [INFO] ConnectDBInstance - Successful Connection
-[2014-09-30 20:35:18.740] [INFO] ConnectDBInstance - Successful Connection
-[2014-09-30 20:35:28.687] [WARN] http - 127.0.0.1 - - "GET / HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
-[2014-09-30 20:35:29.271] [WARN] http - 127.0.0.1 - - "GET /stylesheets/bootstrap.min.css HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
-[2014-09-30 20:35:29.351] [WARN] http - 127.0.0.1 - - "GET /javascripts/bootstrap.min.js HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
-[2014-09-30 20:35:29.837] [ERROR] http - 127.0.0.1 - - "GET /favicon.ico HTTP/1.1" 404 1073 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
-[2014-09-30 20:38:01.097] [DEBUG] UserRoute - Setting up CORS for services
-[2014-09-30 20:38:01.098] [DEBUG] UserRoute - apiKey check
-[2014-09-30 20:38:01.103] [DEBUG] UserRoute - apiKey validated correct
-[2014-09-30 20:38:01.104] [INFO] UserRoute - passeds value=somenath.ghosh@gmail.com ghosh
-[2014-09-30 20:38:01.104] [INFO] UserVO -  UseVO: validateUser Starts
-[2014-09-30 20:38:01.227] [INFO] UserVO - 54163b9e656b1f6c1b2ca6dd
-[2014-09-30 20:38:02.066] [INFO] UserRoute - 54163b9e656b1f6c1b2ca6dd
-[2014-09-30 20:38:02.069] [WARN] http - 127.0.0.1 - - "GET /api/v1/checkUserCredential?userName=somenath.ghosh@gmail.com&password=ghosh&apiKey=df5cb700-395b-11e4-916c-0800200c9a66 HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
-[2014-09-30 20:40:59.755] [ERROR] http - 127.0.0.1 - - "OPTIONS /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t HTTP/1.1" 404 1073 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
-[2014-09-30 20:48:14.517] [WARN] ResourceLoader - Creating first instance of ResourceLoader
-[2014-09-30 20:48:14.526] [WARN] ResourceLoader - Creating first instance of ResourceLoader
-[2014-09-30 20:48:14.998] [WARN] ConnectDBInstance -  Creating new instance
-[2014-09-30 20:48:14.998] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
-[2014-09-30 20:48:15.002] [WARN] ConnectDBInstance -  Creating new instance
-[2014-09-30 20:48:15.003] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
-[2014-09-30 20:48:15.018] [WARN] UserVO - Creating first instance of UserVO
-[2014-09-30 20:48:15.024] [WARN] UserVO - Creating first instance of UserVO
-[2014-09-30 20:48:15.047] [ERROR] app - Worker server died (ID: 1, PID: 4612)
-[2014-09-30 20:48:15.052] [ERROR] app - Worker server died (ID: 2, PID: 3192)
-[2014-09-30 20:48:41.016] [WARN] ResourceLoader - Creating first instance of ResourceLoader
-[2014-09-30 20:48:41.072] [WARN] ResourceLoader - Creating first instance of ResourceLoader
-[2014-09-30 20:48:41.517] [WARN] ConnectDBInstance -  Creating new instance
-[2014-09-30 20:48:41.519] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
-[2014-09-30 20:48:41.541] [WARN] UserVO - Creating first instance of UserVO
-[2014-09-30 20:48:41.562] [WARN] ConnectDBInstance -  Creating new instance
-[2014-09-30 20:48:41.563] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
-[2014-09-30 20:48:41.584] [WARN] UserVO - Creating first instance of UserVO
-[2014-09-30 20:48:41.874] [INFO] app - Worker server started on port 3000 (ID: 1, PID: 4772)
-[2014-09-30 20:48:41.898] [INFO] app - Worker server started on port 3000 (ID: 2, PID: 5084)
-[2014-09-30 20:48:42.213] [INFO] ConnectDBInstance - Successful Connection
-[2014-09-30 20:48:42.213] [INFO] ConnectDBInstance - Successful Connection
-[2014-09-30 20:49:10.128] [ERROR] http - 127.0.0.1 - - "OPTIONS /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t HTTP/1.1" 404 1051 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
-[2014-09-30 20:52:42.388] [WARN] ResourceLoader - Creating first instance of ResourceLoader
-[2014-09-30 20:52:42.394] [WARN] ResourceLoader - Creating first instance of ResourceLoader
-[2014-09-30 20:52:42.887] [WARN] ConnectDBInstance -  Creating new instance
-[2014-09-30 20:52:42.887] [WARN] ConnectDBInstance -  Creating new instance
-[2014-09-30 20:52:42.887] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
-[2014-09-30 20:52:42.887] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
-[2014-09-30 20:52:42.906] [WARN] UserVO - Creating first instance of UserVO
-[2014-09-30 20:52:42.911] [WARN] UserVO - Creating first instance of UserVO
-[2014-09-30 20:52:43.225] [INFO] app - Worker server started on port 3000 (ID: 1, PID: 4940)
-[2014-09-30 20:52:43.225] [INFO] app - Worker server started on port 3000 (ID: 2, PID: 476)
-[2014-09-30 20:52:43.514] [INFO] ConnectDBInstance - Successful Connection
-[2014-09-30 20:52:43.514] [INFO] ConnectDBInstance - Successful Connection
-[2014-09-30 20:53:55.419] [ERROR] http - 127.0.0.1 - - "OPTIONS /api/v1/uploadFile HTTP/1.1" 404 1051 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
-[2014-09-30 20:59:39.878] [WARN] ResourceLoader - Creating first instance of ResourceLoader
-[2014-09-30 20:59:39.891] [WARN] ResourceLoader - Creating first instance of ResourceLoader
-[2014-09-30 20:59:40.362] [WARN] ConnectDBInstance -  Creating new instance
-[2014-09-30 20:59:40.363] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
-[2014-09-30 20:59:40.368] [WARN] ConnectDBInstance -  Creating new instance
-[2014-09-30 20:59:40.369] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
-[2014-09-30 20:59:40.386] [WARN] UserVO - Creating first instance of UserVO
-[2014-09-30 20:59:40.389] [WARN] UserVO - Creating first instance of UserVO
-[2014-09-30 20:59:40.700] [INFO] app - Worker server started on port 3000 (ID: 1, PID: 5020)
-[2014-09-30 20:59:40.705] [INFO] app - Worker server started on port 3000 (ID: 2, PID: 4192)
-[2014-09-30 20:59:40.987] [INFO] ConnectDBInstance - Successful Connection
-[2014-09-30 20:59:40.996] [INFO] ConnectDBInstance - Successful Connection
-[2014-09-30 20:59:57.006] [ERROR] http - 127.0.0.1 - - "OPTIONS /api/v1/uploadFile HTTP/1.1" 404 1051 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
-[2014-09-30 21:01:17.236] [WARN] ResourceLoader - Creating first instance of ResourceLoader
-[2014-09-30 21:01:17.261] [WARN] ResourceLoader - Creating first instance of ResourceLoader
-[2014-09-30 21:01:17.741] [WARN] ConnectDBInstance -  Creating new instance
-[2014-09-30 21:01:17.741] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
-[2014-09-30 21:01:17.764] [WARN] UserVO - Creating first instance of UserVO
-[2014-09-30 21:01:17.818] [WARN] ConnectDBInstance -  Creating new instance
-[2014-09-30 21:01:17.819] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
-[2014-09-30 21:01:17.843] [WARN] UserVO - Creating first instance of UserVO
-[2014-09-30 21:01:18.108] [INFO] app - Worker server started on port 3000 (ID: 1, PID: 5700)
-[2014-09-30 21:01:18.182] [INFO] app - Worker server started on port 3000 (ID: 2, PID: 5712)
-[2014-09-30 21:01:18.358] [INFO] ConnectDBInstance - Successful Connection
-[2014-09-30 21:01:18.390] [INFO] ConnectDBInstance - Successful Connection
-[2014-09-30 21:01:30.507] [ERROR] http - 127.0.0.1 - - "OPTIONS /api/v1/uploadFile HTTP/1.1" 404 1051 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
-[2014-09-30 21:02:31.039] [INFO] ConnectDBInstance -  Server Termination
-[2014-09-30 21:02:32.299] [WARN] ResourceLoader - Creating first instance of ResourceLoader
-[2014-09-30 21:02:32.347] [WARN] ResourceLoader - Creating first instance of ResourceLoader
-[2014-09-30 21:02:32.782] [WARN] ConnectDBInstance -  Creating new instance
-[2014-09-30 21:02:32.782] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
-[2014-09-30 21:02:32.802] [WARN] UserVO - Creating first instance of UserVO
-[2014-09-30 21:02:32.852] [WARN] ConnectDBInstance -  Creating new instance
-[2014-09-30 21:02:32.854] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
-[2014-09-30 21:02:32.878] [WARN] UserVO - Creating first instance of UserVO
-[2014-09-30 21:02:33.132] [INFO] app - Worker server started on port 3000 (ID: 1, PID: 4900)
-[2014-09-30 21:02:33.208] [INFO] app - Worker server started on port 3000 (ID: 2, PID: 5364)
-[2014-09-30 21:02:33.399] [INFO] ConnectDBInstance - Successful Connection
-[2014-09-30 21:02:33.408] [INFO] ConnectDBInstance - Successful Connection
-[2014-09-30 21:02:47.921] [ERROR] http - 127.0.0.1 - - "OPTIONS /api/v1/uploadFile HTTP/1.1" 404 1051 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
-[2014-09-30 21:04:55.638] [WARN] ResourceLoader - Creating first instance of ResourceLoader
-[2014-09-30 21:04:55.657] [WARN] ResourceLoader - Creating first instance of ResourceLoader
-[2014-09-30 21:04:56.136] [WARN] ConnectDBInstance -  Creating new instance
-[2014-09-30 21:04:56.137] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
-[2014-09-30 21:04:56.152] [WARN] ConnectDBInstance -  Creating new instance
-[2014-09-30 21:04:56.154] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
-[2014-09-30 21:04:56.160] [WARN] UserVO - Creating first instance of UserVO
-[2014-09-30 21:04:56.177] [WARN] UserVO - Creating first instance of UserVO
-[2014-09-30 21:04:56.485] [INFO] app - Worker server started on port 3000 (ID: 1, PID: 5312)
-[2014-09-30 21:04:56.494] [INFO] app - Worker server started on port 3000 (ID: 2, PID: 4272)
-[2014-09-30 21:04:56.751] [INFO] ConnectDBInstance - Successful Connection
-[2014-09-30 21:04:56.755] [INFO] ConnectDBInstance - Successful Connection
-[2014-09-30 21:05:08.261] [INFO] http - 127.0.0.1 - - "OPTIONS /api/v1/uploadFile HTTP/1.1" 204 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
-[2014-09-30 21:05:08.302] [INFO] http - 127.0.0.1 - - "POST /api/v1/uploadFile HTTP/1.1" 200 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
-[2014-09-30 21:15:40.337] [WARN] ResourceLoader - Creating first instance of ResourceLoader
-[2014-09-30 21:15:40.574] [WARN] ResourceLoader - Creating first instance of ResourceLoader
-[2014-09-30 21:15:40.914] [WARN] ConnectDBInstance -  Creating new instance
-[2014-09-30 21:15:40.915] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
-[2014-09-30 21:15:40.938] [WARN] UserVO - Creating first instance of UserVO
-[2014-09-30 21:15:41.358] [INFO] app - Worker server started on port 3000 (ID: 1, PID: 3172)
-[2014-09-30 21:15:41.383] [WARN] ConnectDBInstance -  Creating new instance
-[2014-09-30 21:15:41.385] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
-[2014-09-30 21:15:41.420] [WARN] UserVO - Creating first instance of UserVO
-[2014-09-30 21:15:41.716] [INFO] ConnectDBInstance - Successful Connection
-[2014-09-30 21:15:41.806] [INFO] app - Worker server started on port 3000 (ID: 2, PID: 1220)
-[2014-09-30 21:15:42.010] [INFO] ConnectDBInstance - Successful Connection
-[2014-09-30 21:15:56.037] [INFO] http - 127.0.0.1 - - "OPTIONS /api/v1/uploadFile HTTP/1.1" 204 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
-[2014-09-30 21:15:56.081] [ERROR] http - 127.0.0.1 - - "POST /api/v1/uploadFile HTTP/1.1" 500 1114 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
-[2014-09-30 21:17:56.979] [WARN] ResourceLoader - Creating first instance of ResourceLoader
-[2014-09-30 21:17:57.222] [WARN] ResourceLoader - Creating first instance of ResourceLoader
-[2014-09-30 21:17:57.600] [WARN] ConnectDBInstance -  Creating new instance
-[2014-09-30 21:17:57.600] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
-[2014-09-30 21:17:57.622] [WARN] UserVO - Creating first instance of UserVO
-[2014-09-30 21:17:57.942] [WARN] ConnectDBInstance -  Creating new instance
-[2014-09-30 21:17:57.944] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
-[2014-09-30 21:17:57.989] [WARN] UserVO - Creating first instance of UserVO
-[2014-09-30 21:17:58.005] [INFO] app - Worker server started on port 3000 (ID: 1, PID: 4272)
-[2014-09-30 21:17:58.289] [INFO] ConnectDBInstance - Successful Connection
-[2014-09-30 21:17:58.368] [INFO] app - Worker server started on port 3000 (ID: 2, PID: 616)
-[2014-09-30 21:17:58.578] [INFO] ConnectDBInstance - Successful Connection
-[2014-09-30 21:18:09.295] [INFO] http - 127.0.0.1 - - "OPTIONS /api/v1/uploadFile HTTP/1.1" 204 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
-[2014-09-30 21:18:09.312] [INFO] UploadImageFiles - null
-[2014-09-30 21:18:09.313] [ERROR] UploadImageFiles - apiKey wrong null
-[2014-09-30 21:18:09.316] [ERROR] http - 127.0.0.1 - - "POST /api/v1/uploadFile HTTP/1.1" 403 9 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
-[2014-09-30 21:18:49.189] [INFO] http - 127.0.0.1 - - "OPTIONS /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t HTTP/1.1" 204 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
-[2014-09-30 21:18:49.216] [INFO] UploadImageFiles - 2AC86B2C-C32B5-7EA-E6DC-26D35519C00t
-[2014-09-30 21:18:49.245] [INFO] http - 127.0.0.1 - - "POST /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t HTTP/1.1" 200 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
-[2014-09-30 21:19:12.402] [INFO] http - 127.0.0.1 - - "OPTIONS /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t HTTP/1.1" 204 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
-[2014-09-30 21:19:12.421] [INFO] UploadImageFiles - 2AC86B2C-C32B5-7EA-E6DC-26D35519C00t
-[2014-09-30 21:19:12.444] [INFO] http - 127.0.0.1 - - "POST /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t HTTP/1.1" 200 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
-[2014-09-30 21:19:46.175] [INFO] http - 127.0.0.1 - - "OPTIONS /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t HTTP/1.1" 204 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
-[2014-09-30 21:19:46.302] [INFO] UploadImageFiles - 2AC86B2C-C32B5-7EA-E6DC-26D35519C00t
-[2014-09-30 21:19:47.113] [INFO] http - 127.0.0.1 - - "POST /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t HTTP/1.1" 200 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
-[2014-09-30 21:21:05.188] [INFO] http - 127.0.0.1 - - "OPTIONS /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t HTTP/1.1" 204 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
-[2014-09-30 21:21:05.215] [INFO] UploadImageFiles - 2AC86B2C-C32B5-7EA-E6DC-26D35519C00t
-[2014-09-30 21:21:05.307] [INFO] http - 127.0.0.1 - - "POST /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t HTTP/1.1" 200 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
-[2014-09-30 21:22:26.192] [ERROR] http - 127.0.0.1 - - "GET /api/v1/uploadedFile/file/rest_api_256x256.png HTTP/1.1" 404 1074 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
-[2014-09-30 21:22:26.535] [ERROR] http - 127.0.0.1 - - "GET /favicon.ico HTTP/1.1" 404 1074 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
-[2014-09-30 21:23:25.082] [ERROR] http - 127.0.0.1 - - "GET /api/v1/uploadedFile/file/rest_api_256x256.png HTTP/1.1" 404 1074 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 17:38:19.215] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-07 17:38:19.242] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-07 17:38:19.680] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-07 17:38:19.680] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-07 17:38:19.699] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-07 17:38:19.722] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-07 17:38:19.724] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-07 17:38:19.744] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-07 17:38:20.009] [INFO] app - Worker server started on port 3000 (ID: 1, PID: 6328)
+[2014-10-07 17:38:20.062] [INFO] app - Worker server started on port 3000 (ID: 2, PID: 6360)
+[2014-10-07 17:38:21.926] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-07 17:38:21.927] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-07 17:38:26.684] [INFO] http - 127.0.0.1 - - "OPTIONS /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 204 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 17:38:26.695] [INFO] UploadImageFiles - 2AC86B2C-C32B5-7EA-E6DC-26D35519C00t
+[2014-10-07 17:38:26.848] [INFO] http - 127.0.0.1 - - "POST /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 200 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 17:40:12.691] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-07 17:40:12.739] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-07 17:40:13.247] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-07 17:40:13.247] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-07 17:40:13.267] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-07 17:40:13.275] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-07 17:40:13.276] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-07 17:40:13.298] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-07 17:40:13.592] [INFO] app - Worker server started on port 3000 (ID: 1, PID: 6692)
+[2014-10-07 17:40:13.618] [INFO] app - Worker server started on port 3000 (ID: 2, PID: 6368)
+[2014-10-07 17:40:13.896] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-07 17:40:13.932] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-07 17:40:19.548] [INFO] http - 127.0.0.1 - - "OPTIONS /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 204 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 17:40:19.560] [INFO] UploadImageFiles - 2AC86B2C-C32B5-7EA-E6DC-26D35519C00t
+[2014-10-07 17:40:19.595] [INFO] http - 127.0.0.1 - - "POST /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 200 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 17:47:30.586] [INFO] http - 127.0.0.1 - - "OPTIONS /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 204 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 17:47:30.609] [INFO] UploadImageFiles - 2AC86B2C-C32B5-7EA-E6DC-26D35519C00t
+[2014-10-07 17:47:30.649] [INFO] http - 127.0.0.1 - - "POST /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 200 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 17:48:04.664] [INFO] http - 127.0.0.1 - - "OPTIONS /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 204 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 17:48:04.691] [INFO] UploadImageFiles - 2AC86B2C-C32B5-7EA-E6DC-26D35519C00t
+[2014-10-07 17:48:04.726] [INFO] http - 127.0.0.1 - - "POST /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 200 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 18:02:57.751] [INFO] http - 127.0.0.1 - - "OPTIONS /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 204 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 18:02:57.772] [INFO] UploadImageFiles - 2AC86B2C-C32B5-7EA-E6DC-26D35519C00t
+[2014-10-07 18:02:57.800] [INFO] http - 127.0.0.1 - - "POST /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 200 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 18:05:41.155] [INFO] http - 127.0.0.1 - - "OPTIONS /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 204 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 18:05:41.161] [INFO] UploadImageFiles - 2AC86B2C-C32B5-7EA-E6DC-26D35519C00t
+[2014-10-07 18:05:41.191] [INFO] http - 127.0.0.1 - - "POST /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 200 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 18:06:06.991] [INFO] http - 127.0.0.1 - - "OPTIONS /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 204 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 18:06:07.007] [INFO] UploadImageFiles - 2AC86B2C-C32B5-7EA-E6DC-26D35519C00t
+[2014-10-07 18:06:07.029] [INFO] http - 127.0.0.1 - - "POST /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 200 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 18:07:37.330] [INFO] http - 127.0.0.1 - - "OPTIONS /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 204 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 18:07:37.351] [INFO] UploadImageFiles - 2AC86B2C-C32B5-7EA-E6DC-26D35519C00t
+[2014-10-07 18:07:37.385] [INFO] http - 127.0.0.1 - - "POST /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 200 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 18:08:50.921] [INFO] http - 127.0.0.1 - - "OPTIONS /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 204 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 18:08:50.941] [INFO] UploadImageFiles - 2AC86B2C-C32B5-7EA-E6DC-26D35519C00t
+[2014-10-07 18:08:50.972] [INFO] http - 127.0.0.1 - - "POST /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 200 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 18:10:07.919] [INFO] http - 127.0.0.1 - - "OPTIONS /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 204 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 18:10:07.942] [INFO] UploadImageFiles - 2AC86B2C-C32B5-7EA-E6DC-26D35519C00t
+[2014-10-07 18:10:07.970] [INFO] ConnectDBInstance - Disconnected Connection
+[2014-10-07 18:10:07.970] [INFO] app - Conncection Ended due to uncaughtException
+[2014-10-07 18:10:08.017] [ERROR] app - Worker server died (ID: 2, PID: 6368)
+[2014-10-07 18:10:08.009] [INFO] UploadImageFiles - 2AC86B2C-C32B5-7EA-E6DC-26D35519C00t
+[2014-10-07 18:10:08.059] [INFO] http - 127.0.0.1 - - "POST /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 200 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 18:11:07.120] [INFO] http - 127.0.0.1 - - "OPTIONS /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 204 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 18:11:07.136] [INFO] UploadImageFiles - 2AC86B2C-C32B5-7EA-E6DC-26D35519C00t
+[2014-10-07 18:11:07.169] [INFO] http - 127.0.0.1 - - "POST /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 200 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 18:12:29.202] [INFO] http - 127.0.0.1 - - "OPTIONS /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 204 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 18:12:29.221] [INFO] UploadImageFiles - 2AC86B2C-C32B5-7EA-E6DC-26D35519C00t
+[2014-10-07 18:12:29.250] [INFO] http - 127.0.0.1 - - "POST /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 200 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 18:13:09.759] [INFO] http - 127.0.0.1 - - "OPTIONS /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 204 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 18:13:09.779] [INFO] UploadImageFiles - 2AC86B2C-C32B5-7EA-E6DC-26D35519C00t
+[2014-10-07 18:13:09.811] [INFO] http - 127.0.0.1 - - "POST /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 200 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 18:17:07.081] [INFO] http - 127.0.0.1 - - "OPTIONS /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 204 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 18:17:07.099] [INFO] UploadImageFiles - 2AC86B2C-C32B5-7EA-E6DC-26D35519C00t
+[2014-10-07 18:17:07.131] [INFO] http - 127.0.0.1 - - "POST /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 200 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 18:18:38.100] [INFO] http - 127.0.0.1 - - "OPTIONS /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 204 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 18:18:38.121] [INFO] UploadImageFiles - 2AC86B2C-C32B5-7EA-E6DC-26D35519C00t
+[2014-10-07 18:18:38.154] [INFO] http - 127.0.0.1 - - "POST /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 200 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 18:21:23.860] [INFO] http - 127.0.0.1 - - "OPTIONS /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 204 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 18:21:23.875] [INFO] UploadImageFiles - 2AC86B2C-C32B5-7EA-E6DC-26D35519C00t
+[2014-10-07 18:21:23.920] [INFO] http - 127.0.0.1 - - "POST /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 200 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 18:23:02.283] [INFO] http - 127.0.0.1 - - "OPTIONS /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 204 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 18:23:02.303] [INFO] UploadImageFiles - 2AC86B2C-C32B5-7EA-E6DC-26D35519C00t
+[2014-10-07 18:23:02.330] [INFO] http - 127.0.0.1 - - "POST /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 200 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 18:23:47.892] [INFO] http - 127.0.0.1 - - "OPTIONS /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 204 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 18:23:47.913] [INFO] UploadImageFiles - 2AC86B2C-C32B5-7EA-E6DC-26D35519C00t
+[2014-10-07 18:23:47.942] [INFO] http - 127.0.0.1 - - "POST /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 200 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 18:29:30.520] [INFO] http - 127.0.0.1 - - "OPTIONS /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 204 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 18:29:30.545] [INFO] UploadImageFiles - 2AC86B2C-C32B5-7EA-E6DC-26D35519C00t
+[2014-10-07 18:29:30.572] [INFO] http - 127.0.0.1 - - "POST /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 200 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 18:29:53.770] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-07 18:29:54.205] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-07 18:29:54.374] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-07 18:29:54.375] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-07 18:29:54.398] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-07 18:29:54.793] [INFO] app - Worker server started on port 3000 (ID: 2, PID: 4628)
+[2014-10-07 18:29:55.065] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-07 18:29:55.121] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-07 18:29:55.121] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-07 18:29:55.144] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-07 18:29:55.496] [INFO] app - Worker server started on port 3000 (ID: 1, PID: 5584)
+[2014-10-07 18:29:55.705] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-07 18:30:17.517] [INFO] http - 127.0.0.1 - - "OPTIONS /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 204 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 18:30:17.533] [INFO] UploadImageFiles - 2AC86B2C-C32B5-7EA-E6DC-26D35519C00t
+[2014-10-07 18:30:17.607] [INFO] http - 127.0.0.1 - - "POST /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 200 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 18:30:28.493] [INFO] http - 127.0.0.1 - - "OPTIONS /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 204 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 18:30:28.502] [INFO] UploadImageFiles - 2AC86B2C-C32B5-7EA-E6DC-26D35519C00t
+[2014-10-07 18:30:28.587] [INFO] http - 127.0.0.1 - - "POST /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 200 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 18:39:18.440] [INFO] http - 127.0.0.1 - - "OPTIONS /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 204 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 18:39:18.450] [INFO] UploadImageFiles - 2AC86B2C-C32B5-7EA-E6DC-26D35519C00t
+[2014-10-07 18:39:18.481] [INFO] http - 127.0.0.1 - - "POST /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 200 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 18:41:23.121] [INFO] http - 127.0.0.1 - - "OPTIONS /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 204 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 18:41:23.147] [INFO] UploadImageFiles - 2AC86B2C-C32B5-7EA-E6DC-26D35519C00t
+[2014-10-07 18:41:23.170] [INFO] http - 127.0.0.1 - - "POST /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 200 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 18:42:52.445] [INFO] http - 127.0.0.1 - - "OPTIONS /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 204 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 18:42:52.469] [INFO] UploadImageFiles - 2AC86B2C-C32B5-7EA-E6DC-26D35519C00t
+[2014-10-07 18:42:52.493] [INFO] http - 127.0.0.1 - - "POST /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 200 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 18:43:50.663] [INFO] http - 127.0.0.1 - - "OPTIONS /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 204 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 18:43:50.682] [INFO] UploadImageFiles - 2AC86B2C-C32B5-7EA-E6DC-26D35519C00t
+[2014-10-07 18:43:50.713] [INFO] http - 127.0.0.1 - - "POST /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 200 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 18:44:48.009] [INFO] http - 127.0.0.1 - - "OPTIONS /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 204 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 18:44:48.033] [INFO] UploadImageFiles - 2AC86B2C-C32B5-7EA-E6DC-26D35519C00t
+[2014-10-07 18:44:48.047] [INFO] ConnectDBInstance - Disconnected Connection
+[2014-10-07 18:44:48.048] [INFO] app - Conncection Ended due to uncaughtException
+[2014-10-07 18:44:48.100] [ERROR] app - Worker server died (ID: 1, PID: 5584)
+[2014-10-07 18:44:48.091] [INFO] UploadImageFiles - 2AC86B2C-C32B5-7EA-E6DC-26D35519C00t
+[2014-10-07 18:44:48.121] [INFO] ConnectDBInstance - Disconnected Connection
+[2014-10-07 18:44:48.122] [INFO] app - Conncection Ended due to uncaughtException
+[2014-10-07 18:44:48.141] [ERROR] app - Worker server died (ID: 2, PID: 4628)
+[2014-10-07 18:48:20.582] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-07 18:48:20.596] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-07 18:48:21.089] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-07 18:48:21.090] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-07 18:48:21.112] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-07 18:48:21.113] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-07 18:48:21.115] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-07 18:48:21.136] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-07 18:48:21.455] [INFO] app - Worker server started on port 3000 (ID: 2, PID: 5784)
+[2014-10-07 18:48:21.473] [INFO] app - Worker server started on port 3000 (ID: 1, PID: 3316)
+[2014-10-07 18:48:21.712] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-07 18:48:21.712] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-07 18:48:38.184] [INFO] http - 127.0.0.1 - - "OPTIONS /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 204 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 18:48:38.200] [INFO] UploadImageFiles - 2AC86B2C-C32B5-7EA-E6DC-26D35519C00t
+[2014-10-07 18:48:38.231] [INFO] ConnectDBInstance - Disconnected Connection
+[2014-10-07 18:48:38.232] [INFO] app - Conncection Ended due to uncaughtException
+[2014-10-07 18:48:38.245] [ERROR] app - Worker server died (ID: 1, PID: 3316)
+[2014-10-07 18:48:38.261] [INFO] UploadImageFiles - 2AC86B2C-C32B5-7EA-E6DC-26D35519C00t
+[2014-10-07 18:48:38.284] [INFO] ConnectDBInstance - Disconnected Connection
+[2014-10-07 18:48:38.284] [INFO] app - Conncection Ended due to uncaughtException
+[2014-10-07 18:48:38.297] [ERROR] app - Worker server died (ID: 2, PID: 5784)
+[2014-10-07 18:51:53.788] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-07 18:51:53.822] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-07 18:51:54.410] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-07 18:51:54.411] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-07 18:51:54.433] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-07 18:51:54.482] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-07 18:51:54.483] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-07 18:51:54.504] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-07 18:51:54.773] [INFO] app - Worker server started on port 3000 (ID: 2, PID: 6184)
+[2014-10-07 18:51:54.848] [INFO] app - Worker server started on port 3000 (ID: 1, PID: 6912)
+[2014-10-07 18:51:55.039] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-07 18:51:55.051] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-07 18:52:03.279] [INFO] http - 127.0.0.1 - - "OPTIONS /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 204 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 18:52:03.291] [INFO] UploadImageFiles - 2AC86B2C-C32B5-7EA-E6DC-26D35519C00t
+[2014-10-07 18:52:03.337] [INFO] http - 127.0.0.1 - - "POST /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 200 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 18:53:25.067] [INFO] http - 127.0.0.1 - - "OPTIONS /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 204 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 18:53:25.130] [INFO] UploadImageFiles - 2AC86B2C-C32B5-7EA-E6DC-26D35519C00t
+[2014-10-07 18:53:25.334] [INFO] http - 127.0.0.1 - - "POST /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 200 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 18:54:15.562] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-07 18:54:16.387] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-07 18:54:16.491] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-07 18:54:16.492] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-07 18:54:16.547] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-07 18:54:16.940] [INFO] app - Worker server started on port 3000 (ID: 2, PID: 3012)
+[2014-10-07 18:54:17.303] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-07 18:54:17.304] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-07 18:54:17.329] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-07 18:54:17.733] [INFO] app - Worker server started on port 3000 (ID: 1, PID: 5812)
+[2014-10-07 18:54:17.899] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-07 18:54:17.941] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-07 19:24:29.327] [INFO] ConnectDBInstance - Error in Connection
+[2014-10-07 19:24:29.327] [INFO] ConnectDBInstance - Error in Connection
+[2014-10-07 19:24:30.739] [INFO] ConnectDBInstance - Error in Connection
+[2014-10-07 19:24:30.758] [INFO] ConnectDBInstance - Error in Connection
+[2014-10-07 20:12:56.696] [INFO] ConnectDBInstance - Error in Connection
+[2014-10-07 20:12:56.703] [INFO] ConnectDBInstance - Error in Connection
+[2014-10-07 20:13:45.616] [INFO] http - 127.0.0.1 - - "OPTIONS /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 204 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 20:13:45.631] [INFO] UploadImageFiles - 2AC86B2C-C32B5-7EA-E6DC-26D35519C00t
+[2014-10-07 20:13:45.717] [INFO] http - 127.0.0.1 - - "POST /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 200 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 20:25:35.078] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-07 20:25:35.087] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-07 20:25:35.554] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-07 20:25:35.555] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-07 20:25:35.564] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-07 20:25:35.564] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-07 20:25:35.576] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-07 20:25:35.588] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-07 20:25:35.644] [ERROR] app - Worker server died (ID: 1, PID: 2824)
+[2014-10-07 20:25:35.649] [ERROR] app - Worker server died (ID: 2, PID: 392)
+[2014-10-07 20:27:00.994] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-07 20:27:00.996] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-07 20:27:01.461] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-07 20:27:01.462] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-07 20:27:01.469] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-07 20:27:01.471] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-07 20:27:01.480] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-07 20:27:01.493] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-07 20:27:01.835] [INFO] app - Worker server started on port 3000 (ID: 1, PID: 6456)
+[2014-10-07 20:27:01.868] [INFO] app - Worker server started on port 3000 (ID: 2, PID: 5644)
+[2014-10-07 20:27:02.063] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-07 20:27:02.083] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-07 20:27:21.916] [INFO] http - 127.0.0.1 - - "OPTIONS /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 204 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 20:27:21.951] [INFO] UploadImageFiles - 2AC86B2C-C32B5-7EA-E6DC-26D35519C00t
+[2014-10-07 20:27:21.984] [INFO] http - 127.0.0.1 - - "POST /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 200 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 20:27:44.249] [INFO] http - 127.0.0.1 - - "OPTIONS /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 204 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 20:27:44.276] [INFO] UploadImageFiles - 2AC86B2C-C32B5-7EA-E6DC-26D35519C00t
+[2014-10-07 20:27:44.303] [INFO] http - 127.0.0.1 - - "POST /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 200 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 20:35:23.882] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-07 20:35:23.926] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-07 20:35:24.386] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-07 20:35:24.386] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-07 20:35:24.406] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-07 20:35:24.456] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-07 20:35:24.456] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-07 20:35:24.478] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-07 20:35:24.730] [INFO] app - Worker server started on port 3000 (ID: 2, PID: 1956)
+[2014-10-07 20:35:24.794] [INFO] app - Worker server started on port 3000 (ID: 1, PID: 6520)
+[2014-10-07 20:35:25.007] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-07 20:35:25.014] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-07 20:35:46.260] [INFO] http - 127.0.0.1 - - "OPTIONS /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 204 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 20:35:46.278] [INFO] UploadImageFiles - 2AC86B2C-C32B5-7EA-E6DC-26D35519C00t
+[2014-10-07 20:35:46.323] [INFO] ConnectDBInstance - Disconnected Connection
+[2014-10-07 20:35:46.324] [INFO] app - Conncection Ended due to uncaughtException
+[2014-10-07 20:35:46.338] [ERROR] app - Worker server died (ID: 1, PID: 6520)
+[2014-10-07 20:35:46.354] [INFO] UploadImageFiles - 2AC86B2C-C32B5-7EA-E6DC-26D35519C00t
+[2014-10-07 20:35:46.390] [INFO] ConnectDBInstance - Disconnected Connection
+[2014-10-07 20:35:46.390] [INFO] app - Conncection Ended due to uncaughtException
+[2014-10-07 20:35:46.430] [ERROR] app - Worker server died (ID: 2, PID: 1956)
+[2014-10-07 20:38:35.232] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-07 20:38:35.274] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-07 20:38:35.722] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-07 20:38:35.723] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-07 20:38:35.742] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-07 20:38:35.788] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-07 20:38:35.789] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-07 20:38:35.811] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-07 20:38:36.061] [INFO] app - Worker server started on port 3000 (ID: 1, PID: 5380)
+[2014-10-07 20:38:36.127] [INFO] app - Worker server started on port 3000 (ID: 2, PID: 4836)
+[2014-10-07 20:38:36.545] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-07 20:38:36.547] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-07 20:38:45.084] [INFO] http - 127.0.0.1 - - "OPTIONS /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 204 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 20:38:45.107] [INFO] UploadImageFiles - 2AC86B2C-C32B5-7EA-E6DC-26D35519C00t
+[2014-10-07 20:38:45.135] [INFO] ConnectDBInstance - Disconnected Connection
+[2014-10-07 20:38:45.135] [INFO] app - Conncection Ended due to uncaughtException
+[2014-10-07 20:38:45.160] [INFO] UploadImageFiles - 2AC86B2C-C32B5-7EA-E6DC-26D35519C00t
+[2014-10-07 20:38:45.165] [ERROR] app - Worker server died (ID: 2, PID: 4836)
+[2014-10-07 20:38:45.185] [INFO] ConnectDBInstance - Disconnected Connection
+[2014-10-07 20:38:45.185] [INFO] app - Conncection Ended due to uncaughtException
+[2014-10-07 20:38:45.195] [ERROR] app - Worker server died (ID: 1, PID: 5380)
+[2014-10-07 20:40:42.375] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-07 20:40:42.388] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-07 20:40:42.855] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-07 20:40:42.855] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-07 20:40:42.876] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-07 20:40:42.876] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-07 20:40:42.879] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-07 20:40:42.895] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-07 20:40:42.898] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-07 20:40:42.916] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-07 20:40:43.200] [INFO] app - Worker server started on port 3000 (ID: 2, PID: 6036)
+[2014-10-07 20:40:43.221] [INFO] app - Worker server started on port 3000 (ID: 1, PID: 4844)
+[2014-10-07 20:40:43.486] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-07 20:40:43.491] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-07 20:41:21.440] [INFO] http - 127.0.0.1 - - "OPTIONS /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 204 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 20:41:21.460] [INFO] UploadImageFiles - 2AC86B2C-C32B5-7EA-E6DC-26D35519C00t
+[2014-10-07 20:41:21.479] [INFO] ImageUrlVO -  Class:ImageUrlVO Method:addOrUpdate starts
+[2014-10-07 20:41:21.569] [INFO] http - 127.0.0.1 - - "POST /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 200 20 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 20:41:40.512] [INFO] http - 127.0.0.1 - - "OPTIONS /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 204 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 20:41:40.526] [INFO] UploadImageFiles - 2AC86B2C-C32B5-7EA-E6DC-26D35519C00t
+[2014-10-07 20:41:40.566] [INFO] ImageUrlVO -  Class:ImageUrlVO Method:addOrUpdate starts
+[2014-10-07 20:41:40.726] [INFO] http - 127.0.0.1 - - "POST /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 200 29 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 20:42:16.889] [INFO] http - 127.0.0.1 - - "OPTIONS /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 204 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 20:42:16.899] [INFO] UploadImageFiles - 2AC86B2C-C32B5-7EA-E6DC-26D35519C00t
+[2014-10-07 20:42:17.055] [INFO] ImageUrlVO -  Class:ImageUrlVO Method:addOrUpdate starts
+[2014-10-07 20:42:17.112] [INFO] http - 127.0.0.1 - - "POST /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 200 29 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 20:43:26.926] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-07 20:43:27.650] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-07 20:43:27.650] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-07 20:43:27.672] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-07 20:43:27.696] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-07 20:43:27.711] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-07 20:43:28.138] [INFO] app - Worker server started on port 3000 (ID: 1, PID: 7028)
+[2014-10-07 20:43:28.566] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-07 20:43:28.566] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-07 20:43:28.589] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-07 20:43:28.609] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-07 20:43:28.963] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-07 20:43:29.062] [INFO] app - Worker server started on port 3000 (ID: 2, PID: 6336)
+[2014-10-07 20:43:29.286] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-07 20:44:00.419] [INFO] http - 127.0.0.1 - - "OPTIONS /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 204 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 20:44:00.437] [INFO] UploadImageFiles - 2AC86B2C-C32B5-7EA-E6DC-26D35519C00t
+[2014-10-07 20:44:00.474] [INFO] ImageUrlVO -  Class:ImageUrlVO Method:addOrUpdate starts
+[2014-10-07 20:44:00.566] [INFO] http - 127.0.0.1 - - "POST /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 200 20 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 20:44:14.809] [INFO] http - 127.0.0.1 - - "OPTIONS /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 204 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 20:44:14.820] [INFO] UploadImageFiles - 2AC86B2C-C32B5-7EA-E6DC-26D35519C00t
+[2014-10-07 20:44:14.837] [INFO] ImageUrlVO -  Class:ImageUrlVO Method:addOrUpdate starts
+[2014-10-07 20:44:14.895] [INFO] http - 127.0.0.1 - - "POST /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 200 29 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 20:46:45.477] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-07 20:46:45.494] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-07 20:46:45.989] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-07 20:46:45.989] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-07 20:46:45.989] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-07 20:46:45.990] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-07 20:46:46.010] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-07 20:46:46.012] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-07 20:46:46.027] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-07 20:46:46.032] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-07 20:46:46.340] [INFO] app - Worker server started on port 3000 (ID: 2, PID: 5796)
+[2014-10-07 20:46:46.368] [INFO] app - Worker server started on port 3000 (ID: 1, PID: 5128)
+[2014-10-07 20:46:46.568] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-07 20:46:46.590] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-07 20:46:59.427] [INFO] http - 127.0.0.1 - - "OPTIONS /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 204 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 20:46:59.446] [INFO] UploadImageFiles - 2AC86B2C-C32B5-7EA-E6DC-26D35519C00t
+[2014-10-07 20:46:59.487] [INFO] ImageUrlVO -  Class:ImageUrlVO Method:addOrUpdate starts
+[2014-10-07 20:46:59.521] [INFO] ConnectDBInstance - Disconnected Connection
+[2014-10-07 20:46:59.521] [INFO] app - Conncection Ended due to uncaughtException
+[2014-10-07 20:46:59.548] [ERROR] app - Worker server died (ID: 1, PID: 5128)
+[2014-10-07 20:46:59.545] [INFO] UploadImageFiles - 2AC86B2C-C32B5-7EA-E6DC-26D35519C00t
+[2014-10-07 20:46:59.579] [INFO] ImageUrlVO -  Class:ImageUrlVO Method:addOrUpdate starts
+[2014-10-07 20:46:59.621] [INFO] ConnectDBInstance - Disconnected Connection
+[2014-10-07 20:46:59.621] [INFO] app - Conncection Ended due to uncaughtException
+[2014-10-07 20:46:59.640] [ERROR] app - Worker server died (ID: 2, PID: 5796)
+[2014-10-07 20:49:53.516] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-07 20:49:53.548] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-07 20:49:54.025] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-07 20:49:54.027] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-07 20:49:54.049] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-07 20:49:54.083] [ERROR] app - Worker server died (ID: 2, PID: 1772)
+[2014-10-07 20:49:54.090] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-07 20:49:54.090] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-07 20:49:54.109] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-07 20:49:54.137] [ERROR] app - Worker server died (ID: 1, PID: 6584)
+[2014-10-07 20:50:25.462] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-07 20:50:25.519] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-07 20:50:26.003] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-07 20:50:26.003] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-07 20:50:26.032] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-07 20:50:26.050] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-07 20:50:26.182] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-07 20:50:26.183] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-07 20:50:26.206] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-07 20:50:26.228] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-07 20:50:26.365] [INFO] app - Worker server started on port 3000 (ID: 1, PID: 6624)
+[2014-10-07 20:50:26.529] [INFO] app - Worker server started on port 3000 (ID: 2, PID: 2396)
+[2014-10-07 20:50:26.613] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-07 20:50:26.753] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-07 20:50:57.674] [INFO] http - 127.0.0.1 - - "OPTIONS /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 204 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 20:50:57.709] [INFO] UploadImageFiles - 2AC86B2C-C32B5-7EA-E6DC-26D35519C00t
+[2014-10-07 20:50:57.735] [INFO] ImageUrlVO -  Class:ImageUrlVO Method:addOrUpdate starts
+[2014-10-07 20:50:57.840] [INFO] http - 127.0.0.1 - - "POST /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 200 129 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 20:51:50.131] [INFO] http - 127.0.0.1 - - "OPTIONS /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 204 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 20:51:50.159] [INFO] UploadImageFiles - 2AC86B2C-C32B5-7EA-E6DC-26D35519C00t
+[2014-10-07 20:51:50.195] [INFO] ImageUrlVO -  Class:ImageUrlVO Method:addOrUpdate starts
+[2014-10-07 20:51:50.246] [INFO] http - 127.0.0.1 - - "POST /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 200 20 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 20:53:32.035] [INFO] ConnectDBInstance -  Server Termination
+[2014-10-07 20:53:34.062] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-07 20:53:34.231] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-07 20:53:34.657] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-07 20:53:34.658] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-07 20:53:34.680] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-07 20:53:34.699] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-07 20:53:35.082] [INFO] app - Worker server started on port 3000 (ID: 1, PID: 6672)
+[2014-10-07 20:53:35.258] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-07 20:53:35.258] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-07 20:53:35.285] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-07 20:53:35.307] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-07 20:53:35.417] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-07 20:53:35.692] [INFO] app - Worker server started on port 3000 (ID: 2, PID: 5700)
+[2014-10-07 20:53:35.949] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-07 20:53:51.357] [INFO] http - 127.0.0.1 - - "OPTIONS /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 204 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 20:53:51.386] [INFO] UploadImageFiles - 2AC86B2C-C32B5-7EA-E6DC-26D35519C00t
+[2014-10-07 20:53:51.427] [INFO] ImageUrlVO -  Class:ImageUrlVO Method:addOrUpdate starts
+[2014-10-07 20:53:51.731] [INFO] http - 127.0.0.1 - - "POST /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 200 104 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 20:54:30.913] [INFO] http - 127.0.0.1 - - "OPTIONS /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 204 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 20:54:30.941] [INFO] UploadImageFiles - 2AC86B2C-C32B5-7EA-E6DC-26D35519C00t
+[2014-10-07 20:54:30.971] [INFO] ImageUrlVO -  Class:ImageUrlVO Method:addOrUpdate starts
+[2014-10-07 20:54:31.045] [INFO] http - 127.0.0.1 - - "POST /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 200 129 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-07 21:20:22.385] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-07 21:20:22.393] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-07 21:20:22.864] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-07 21:20:22.864] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-07 21:20:22.864] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-07 21:20:22.864] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-07 21:20:22.883] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-07 21:20:22.885] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-07 21:20:22.901] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-07 21:20:22.905] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-07 21:20:23.210] [INFO] app - Worker server started on port 3000 (ID: 1, PID: 4212)
+[2014-10-07 21:20:23.213] [INFO] app - Worker server started on port 3000 (ID: 2, PID: 5804)
+[2014-10-07 21:20:23.450] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-07 21:20:23.524] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-08 12:58:51.890] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-08 12:58:51.890] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-08 12:58:57.538] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-08 12:58:57.538] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-08 12:58:57.553] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-08 12:58:57.553] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-08 12:58:57.553] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-08 12:58:57.568] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-08 12:58:57.756] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-08 12:58:57.755] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-08 12:59:01.203] [INFO] app - Worker server started on port 3000 (ID: 2, PID: 4968)
+[2014-10-08 12:59:01.204] [INFO] app - Worker server started on port 3000 (ID: 1, PID: 4952)
+[2014-10-08 12:59:01.453] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-08 12:59:01.453] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-08 13:03:32.528] [INFO] http - 127.0.0.1 - - "OPTIONS /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 204 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 13:03:32.568] [INFO] ImageUrlVO -  Class:ImageUrlVO Method:addOrUpdate starts
+[2014-10-08 13:03:32.649] [INFO] http - 127.0.0.1 - - "POST /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 200 79 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 13:04:09.792] [ERROR] http - 127.0.0.1 - - "GET /api/v1/uploadedFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002&name=background2_674660 HTTP/1.1" 500 1116 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 13:04:10.573] [ERROR] http - 127.0.0.1 - - "GET /api/v1/uploadedFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002&name=background2_674660 HTTP/1.1" 500 1116 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 13:05:54.164] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-08 13:05:54.164] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-08 13:05:55.749] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-08 13:05:55.749] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-08 13:05:55.749] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-08 13:05:55.753] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-08 13:05:55.769] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-08 13:05:55.778] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-08 13:05:55.821] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-08 13:05:55.823] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-08 13:05:57.549] [INFO] app - Worker server started on port 3000 (ID: 1, PID: 1244)
+[2014-10-08 13:05:57.549] [INFO] app - Worker server started on port 3000 (ID: 2, PID: 5064)
+[2014-10-08 13:05:57.760] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-08 13:05:57.762] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-08 13:06:06.032] [ERROR] http - 127.0.0.1 - - "GET /api/v1/uploadedFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002&name=background2_674660 HTTP/1.1" 500 1116 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 13:06:41.236] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-08 13:06:41.247] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-08 13:06:41.740] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-08 13:06:41.741] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-08 13:06:41.745] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-08 13:06:41.747] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-08 13:06:41.764] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-08 13:06:41.768] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-08 13:06:41.785] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-08 13:06:41.792] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-08 13:06:42.097] [INFO] app - Worker server started on port 3000 (ID: 1, PID: 4304)
+[2014-10-08 13:06:42.109] [INFO] app - Worker server started on port 3000 (ID: 2, PID: 2688)
+[2014-10-08 13:06:42.385] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-08 13:06:42.386] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-08 13:06:49.800] [ERROR] http - 127.0.0.1 - - "GET /api/v1/uploadedFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002&name=background2_674660 HTTP/1.1" 500 1116 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 13:07:56.336] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-08 13:07:56.372] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-08 13:07:56.825] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-08 13:07:56.826] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-08 13:07:56.847] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-08 13:07:56.862] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-08 13:07:56.864] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-08 13:07:56.866] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-08 13:07:56.887] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-08 13:07:56.909] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-08 13:07:57.173] [INFO] app - Worker server started on port 3000 (ID: 1, PID: 3644)
+[2014-10-08 13:07:57.213] [INFO] app - Worker server started on port 3000 (ID: 2, PID: 1900)
+[2014-10-08 13:07:57.468] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-08 13:07:57.472] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-08 13:08:02.619] [ERROR] http - 127.0.0.1 - - "GET /api/v1/uploadedFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002&name=background2_674660 HTTP/1.1" 404 160 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 13:09:30.774] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-08 13:09:30.783] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-08 13:09:31.257] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-08 13:09:31.258] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-08 13:09:31.270] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-08 13:09:31.275] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-08 13:09:31.284] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-08 13:09:31.298] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-08 13:09:31.302] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-08 13:09:31.320] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-08 13:09:31.607] [INFO] app - Worker server started on port 3000 (ID: 1, PID: 224)
+[2014-10-08 13:09:31.627] [INFO] app - Worker server started on port 3000 (ID: 2, PID: 3864)
+[2014-10-08 13:09:31.865] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-08 13:09:31.866] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-08 13:09:35.366] [ERROR] http - 127.0.0.1 - - "GET /api/v1/uploadedFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002&name=background2_674660 HTTP/1.1" 500 1194 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 13:11:03.448] [ERROR] http - 127.0.0.1 - - "GET /api/v1/uploadedFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002&name=background2_674660 HTTP/1.1" 500 1194 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 13:15:53.312] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-08 13:15:53.318] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-08 13:15:53.792] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-08 13:15:53.792] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-08 13:15:53.793] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-08 13:15:53.796] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-08 13:15:53.812] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-08 13:15:53.817] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-08 13:15:53.831] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-08 13:15:53.838] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-08 13:15:54.134] [INFO] app - Worker server started on port 3000 (ID: 1, PID: 1120)
+[2014-10-08 13:15:54.142] [INFO] app - Worker server started on port 3000 (ID: 2, PID: 3764)
+[2014-10-08 13:15:54.397] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-08 13:15:54.400] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-08 13:16:01.985] [ERROR] http - 127.0.0.1 - - "GET /api/v1/uploadedFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002&name=background2_674660.jpg HTTP/1.1" 404 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 13:19:19.677] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-08 13:19:19.698] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-08 13:19:20.169] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-08 13:19:20.170] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-08 13:19:20.182] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-08 13:19:20.183] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-08 13:19:20.192] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-08 13:19:20.206] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-08 13:19:20.211] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-08 13:19:20.229] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-08 13:19:20.527] [INFO] app - Worker server started on port 3000 (ID: 1, PID: 4936)
+[2014-10-08 13:19:20.547] [INFO] app - Worker server started on port 3000 (ID: 2, PID: 716)
+[2014-10-08 13:19:20.813] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-08 13:19:20.815] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-08 13:19:26.326] [INFO] http - 127.0.0.1 - - "GET /api/v1/uploadedFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002&name=background2_674660.jpg HTTP/1.1" 200 76945 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 13:20:23.964] [WARN] http - 127.0.0.1 - - "GET /api/v1/uploadedFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002&name=background2_674660.jpg HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 13:21:16.216] [WARN] http - 127.0.0.1 - - "GET /api/v1/uploadedFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002&name=background2_674660.jpg HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 13:22:33.906] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-08 13:22:33.940] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-08 13:22:34.439] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-08 13:22:34.440] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-08 13:22:34.463] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-08 13:22:34.473] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-08 13:22:34.474] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-08 13:22:34.482] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-08 13:22:34.498] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-08 13:22:34.521] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-08 13:22:34.815] [INFO] app - Worker server started on port 3000 (ID: 1, PID: 5104)
+[2014-10-08 13:22:34.867] [INFO] app - Worker server started on port 3000 (ID: 2, PID: 4888)
+[2014-10-08 13:22:35.043] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-08 13:22:35.065] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-08 13:22:40.378] [WARN] http - 127.0.0.1 - - "GET /api/v1/uploadedFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002&name=background2_674660.jpg HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 13:23:19.951] [INFO] ConnectDBInstance -  Server Termination
+[2014-10-08 13:23:21.721] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-08 13:23:21.758] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-08 13:23:22.194] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-08 13:23:22.195] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-08 13:23:22.216] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-08 13:23:22.233] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-08 13:23:22.258] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-08 13:23:22.259] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-08 13:23:22.281] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-08 13:23:22.301] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-08 13:23:22.542] [INFO] app - Worker server started on port 3000 (ID: 1, PID: 4232)
+[2014-10-08 13:23:22.607] [INFO] app - Worker server started on port 3000 (ID: 2, PID: 3764)
+[2014-10-08 13:23:22.760] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-08 13:23:22.797] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-08 13:23:25.276] [WARN] http - 127.0.0.1 - - "GET /api/v1/uploadedFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002&name=background2_674660.jpg HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 13:25:19.495] [INFO] ConnectDBInstance -  Server Termination
+[2014-10-08 13:27:43.077] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-08 13:27:43.084] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-08 13:27:43.628] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-08 13:27:43.630] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-08 13:27:43.643] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-08 13:27:43.644] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-08 13:27:43.656] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-08 13:27:43.669] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-08 13:27:43.679] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-08 13:27:43.691] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-08 13:27:43.993] [INFO] app - Worker server started on port 3000 (ID: 2, PID: 4184)
+[2014-10-08 13:27:44.003] [INFO] app - Worker server started on port 3000 (ID: 1, PID: 3460)
+[2014-10-08 13:27:44.280] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-08 13:27:44.280] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-08 13:27:51.939] [ERROR] http - 127.0.0.1 - - "GET /api/v1/uploadedFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002&name=background2_674660 HTTP/1.1" 404 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 13:28:19.017] [WARN] http - 127.0.0.1 - - "GET /api/v1/uploadedFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002&name=background2_674660.jpg HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 13:29:51.517] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-08 13:29:51.918] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-08 13:29:51.919] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-08 13:29:51.940] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-08 13:29:51.950] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-08 13:29:52.394] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-08 13:30:12.272] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-08 13:30:12.665] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-08 13:30:12.666] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-08 13:30:12.688] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-08 13:30:12.698] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-08 13:30:13.137] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-08 13:31:05.922] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-08 13:31:06.311] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-08 13:31:06.313] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-08 13:31:06.333] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-08 13:31:06.343] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-08 13:31:06.787] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-08 13:31:20.468] [WARN] http - 127.0.0.1 - - "GET /api/v1/uploadedFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002&name=background2_674660.jpg HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 13:31:51.197] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-08 13:31:51.234] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-08 13:31:51.677] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-08 13:31:51.677] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-08 13:31:51.705] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-08 13:31:51.721] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-08 13:31:51.721] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-08 13:31:51.724] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-08 13:31:51.746] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-08 13:31:51.766] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-08 13:31:52.036] [INFO] app - Worker server started on port 3000 (ID: 1, PID: 1816)
+[2014-10-08 13:31:52.085] [INFO] app - Worker server started on port 3000 (ID: 2, PID: 4924)
+[2014-10-08 13:31:52.392] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-08 13:31:52.392] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-08 13:32:36.738] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-08 13:32:37.224] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-08 13:32:37.225] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-08 13:32:37.243] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-08 13:32:37.258] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-08 13:32:37.555] [INFO] app - Worker server started on port 3000 (ID: 1, PID: 2520)
+[2014-10-08 13:32:37.968] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-08 13:32:38.249] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-08 13:32:38.405] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-08 13:32:38.406] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-08 13:32:38.424] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-08 13:32:38.438] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-08 13:32:38.686] [INFO] app - Worker server started on port 3000 (ID: 2, PID: 4700)
+[2014-10-08 13:32:38.892] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-08 13:32:53.897] [WARN] http - 127.0.0.1 - - "GET /api/v1/uploadedFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002&name=background2_674660.jpg HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 13:33:43.452] [WARN] http - 127.0.0.1 - - "GET /api/v1/uploadedFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002&name=background2_674660.jpg HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 13:35:30.220] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-08 13:35:30.233] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-08 13:35:30.714] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-08 13:35:30.715] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-08 13:35:30.729] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-08 13:35:30.729] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-08 13:35:30.742] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-08 13:35:30.752] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-08 13:35:30.765] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-08 13:35:30.772] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-08 13:35:31.078] [INFO] app - Worker server started on port 3000 (ID: 1, PID: 1852)
+[2014-10-08 13:35:31.090] [INFO] app - Worker server started on port 3000 (ID: 2, PID: 4208)
+[2014-10-08 13:35:31.331] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-08 13:35:31.334] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-08 13:35:36.664] [WARN] http - 127.0.0.1 - - "GET /api/v1/uploadedFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002&name=background2_674660.jpg HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 13:36:35.292] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-08 13:36:35.356] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-08 13:36:35.780] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-08 13:36:35.780] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-08 13:36:35.803] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-08 13:36:35.820] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-08 13:36:35.862] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-08 13:36:35.863] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-08 13:36:35.887] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-08 13:36:35.907] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-08 13:36:36.133] [INFO] app - Worker server started on port 3000 (ID: 1, PID: 4824)
+[2014-10-08 13:36:36.216] [INFO] app - Worker server started on port 3000 (ID: 2, PID: 1256)
+[2014-10-08 13:36:36.396] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-08 13:36:36.409] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-08 13:36:40.028] [INFO] http - 127.0.0.1 - - "GET /api/v1/uploadedFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002&name=background2_674660.jpg HTTP/1.1" 200 15 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 13:48:51.050] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-08 13:48:51.074] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-08 13:48:51.546] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-08 13:48:51.546] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-08 13:48:51.566] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-08 13:48:51.568] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-08 13:48:51.569] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-08 13:48:51.587] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-08 13:48:51.593] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-08 13:48:51.614] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-08 13:48:51.898] [INFO] app - Worker server started on port 3000 (ID: 1, PID: 496)
+[2014-10-08 13:48:51.921] [INFO] app - Worker server started on port 3000 (ID: 2, PID: 2472)
+[2014-10-08 13:48:52.174] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-08 13:48:52.175] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-08 13:49:00.999] [ERROR] http - 127.0.0.1 - - "GET /api/v1/uploadedFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002&name=background2_674660.jpg HTTP/1.1" 500 1112 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 13:49:43.921] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-08 13:49:43.941] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-08 13:49:44.397] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-08 13:49:44.398] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-08 13:49:44.419] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-08 13:49:44.431] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-08 13:49:44.433] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-08 13:49:44.439] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-08 13:49:44.456] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-08 13:49:44.477] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-08 13:49:44.749] [INFO] app - Worker server started on port 3000 (ID: 1, PID: 1244)
+[2014-10-08 13:49:44.785] [INFO] app - Worker server started on port 3000 (ID: 2, PID: 2720)
+[2014-10-08 13:49:44.971] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-08 13:49:44.981] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-08 13:49:49.734] [ERROR] http - 127.0.0.1 - - "GET /api/v1/uploadedFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002&name=background2_674660.jpg HTTP/1.1" 500 1112 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 13:51:00.336] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-08 13:51:00.374] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-08 13:51:00.832] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-08 13:51:00.833] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-08 13:51:00.854] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-08 13:51:00.867] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-08 13:51:00.868] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-08 13:51:00.873] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-08 13:51:00.893] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-08 13:51:00.914] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-08 13:51:01.185] [INFO] app - Worker server started on port 3000 (ID: 1, PID: 3712)
+[2014-10-08 13:51:01.224] [INFO] app - Worker server started on port 3000 (ID: 2, PID: 4192)
+[2014-10-08 13:51:01.478] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-08 13:51:01.480] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-08 13:51:05.736] [INFO] http - 127.0.0.1 - - "GET /api/v1/uploadedFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002&name=background2_674660.jpg HTTP/1.1" 200 76945 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 13:51:44.095] [INFO] ConnectDBInstance -  Server Termination
+[2014-10-08 13:51:44.095] [INFO] ConnectDBInstance -  Server Termination
+[2014-10-08 13:51:44.096] [INFO] ConnectDBInstance - Disconnected through Server Termination
+[2014-10-08 13:51:44.095] [INFO] ConnectDBInstance - Disconnected through Server Termination
+[2014-10-08 13:51:45.957] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-08 13:51:45.991] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-08 13:51:46.429] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-08 13:51:46.430] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-08 13:51:46.451] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-08 13:51:46.469] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-08 13:51:46.481] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-08 13:51:46.482] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-08 13:51:46.504] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-08 13:51:46.525] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-08 13:51:46.776] [INFO] app - Worker server started on port 3000 (ID: 1, PID: 2472)
+[2014-10-08 13:51:46.829] [INFO] app - Worker server started on port 3000 (ID: 2, PID: 1180)
+[2014-10-08 13:51:46.991] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-08 13:51:47.026] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-08 13:52:24.121] [INFO] http - 127.0.0.1 - - "GET /api/v1/uploadedFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002&name=background2_674660.jpg HTTP/1.1" 200 268956 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 14:00:29.604] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-08 14:00:29.613] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-08 14:00:30.126] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-08 14:00:30.128] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-08 14:00:30.136] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-08 14:00:30.136] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-08 14:00:30.152] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-08 14:00:30.159] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-08 14:00:30.171] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-08 14:00:30.178] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-08 14:00:30.482] [INFO] app - Worker server started on port 3000 (ID: 2, PID: 4556)
+[2014-10-08 14:00:30.486] [INFO] app - Worker server started on port 3000 (ID: 1, PID: 3400)
+[2014-10-08 14:00:30.703] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-08 14:00:30.703] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-08 14:00:50.119] [INFO] http - 127.0.0.1 - - "GET /api/v1/uploadedFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002&name=background2_674660.jpg HTTP/1.1" 200 76945 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 14:00:50.318] [ERROR] http - 127.0.0.1 - - "GET /favicon.ico HTTP/1.1" 404 1074 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 14:01:06.426] [WARN] http - 127.0.0.1 - - "GET /api/v1/uploadedFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002&name=background2_674660.jpg HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 14:01:31.426] [WARN] http - 127.0.0.1 - - "GET /api/v1/uploadedFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002&name=background2_674660.jpg HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 14:02:12.891] [INFO] http - 127.0.0.1 - - "GET /api/v1/uploadedFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002&name=background2_929434.jpg HTTP/1.1" 200 76945 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 14:03:24.443] [WARN] http - 127.0.0.1 - - "GET /api/v1/uploadedFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002&name=background2_674660.jpg HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 14:03:32.397] [WARN] http - 127.0.0.1 - - "GET /api/v1/uploadedFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002&name=background2_674660.jpg HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 14:05:30.472] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-08 14:05:30.517] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-08 14:05:30.995] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-08 14:05:30.995] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-08 14:05:31.015] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-08 14:05:31.033] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-08 14:05:31.057] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-08 14:05:31.059] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-08 14:05:31.083] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-08 14:05:31.106] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-08 14:05:31.352] [INFO] app - Worker server started on port 3000 (ID: 1, PID: 4220)
+[2014-10-08 14:05:31.425] [INFO] app - Worker server started on port 3000 (ID: 2, PID: 2364)
+[2014-10-08 14:05:31.627] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-08 14:05:31.631] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-08 14:05:44.214] [INFO] http - 127.0.0.1 - - "OPTIONS /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 204 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 14:05:44.276] [INFO] ImageUrlVO -  Class:ImageUrlVO Method:addOrUpdate starts
+[2014-10-08 14:05:44.370] [INFO] http - 127.0.0.1 - - "POST /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 200 185 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 14:07:05.257] [INFO] http - 127.0.0.1 - - "GET /api/v1/uploadedFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002&name=server-png_680796.png HTTP/1.1" 200 39985 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 14:12:44.211] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-08 14:12:44.234] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-08 14:12:44.684] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-08 14:12:44.685] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-08 14:12:44.706] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-08 14:12:44.709] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-08 14:12:44.710] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-08 14:12:44.724] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-08 14:12:44.733] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-08 14:12:44.753] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-08 14:12:45.030] [INFO] app - Worker server started on port 3000 (ID: 1, PID: 3180)
+[2014-10-08 14:12:45.065] [INFO] app - Worker server started on port 3000 (ID: 2, PID: 2320)
+[2014-10-08 14:12:45.289] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-08 14:12:45.290] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-08 14:14:26.395] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-08 14:14:26.399] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-08 14:14:26.877] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-08 14:14:26.877] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-08 14:14:26.894] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-08 14:14:26.895] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-08 14:14:26.900] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-08 14:14:26.917] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-08 14:14:26.920] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-08 14:14:26.939] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-08 14:14:27.244] [INFO] app - Worker server started on port 3000 (ID: 2, PID: 4876)
+[2014-10-08 14:14:27.261] [INFO] app - Worker server started on port 3000 (ID: 1, PID: 3756)
+[2014-10-08 14:14:27.453] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-08 14:14:27.457] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-08 14:15:30.533] [INFO] http - 127.0.0.1 - - "GET /api/v1/uploadedFileList?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 200 185 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 14:19:44.371] [INFO] http - 127.0.0.1 - - "GET /api/v1/uploadedFileList?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002&tags=mount+rainier&tagmode=any&format=json HTTP/1.1" 200 185 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 14:20:16.014] [WARN] http - 127.0.0.1 - - "GET /api/v1/uploadedFileList?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 14:20:51.667] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-08 14:20:51.692] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-08 14:20:52.186] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-08 14:20:52.202] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-08 14:20:52.188] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-08 14:20:52.202] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-08 14:20:52.208] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-08 14:20:52.221] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-08 14:20:52.224] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-08 14:20:52.246] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-08 14:20:52.541] [INFO] app - Worker server started on port 3000 (ID: 1, PID: 4280)
+[2014-10-08 14:20:52.572] [INFO] app - Worker server started on port 3000 (ID: 2, PID: 684)
+[2014-10-08 14:20:52.800] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-08 14:20:52.804] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-08 14:21:03.773] [WARN] http - 127.0.0.1 - - "GET /api/v1/uploadedFileList?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 14:21:03.841] [WARN] http - 127.0.0.1 - - "GET /api/v1/uploadedFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002&name=background2_674660.jpg HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 14:21:03.857] [WARN] http - 127.0.0.1 - - "GET /api/v1/uploadedFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002&name=background2_929434.jpg HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 14:21:03.874] [WARN] http - 127.0.0.1 - - "GET /api/v1/uploadedFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002&name=server-png_680796.png HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 14:21:03.890] [INFO] http - 127.0.0.1 - - "GET /api/v1/uploadedFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002&name=mongodb-leaf_830720.png HTTP/1.1" 200 12510 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 14:21:03.891] [INFO] http - 127.0.0.1 - - "GET /api/v1/uploadedFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002&name=nodejs-light_743390.png HTTP/1.1" 200 14684 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 14:21:03.900] [INFO] http - 127.0.0.1 - - "GET /api/v1/uploadedFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002&name=rest_api_256x256_972077.png HTTP/1.1" 200 11330 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 14:21:23.356] [WARN] http - 127.0.0.1 - - "GET /api/v1/uploadedFileList?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 14:22:02.684] [WARN] http - 127.0.0.1 - - "GET /api/v1/uploadedFileList?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 14:22:02.705] [WARN] http - 127.0.0.1 - - "GET /api/v1/uploadedFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002&name=background2_674660.jpg HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 14:22:02.722] [WARN] http - 127.0.0.1 - - "GET /api/v1/uploadedFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002&name=server-png_680796.png HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 14:22:02.736] [WARN] http - 127.0.0.1 - - "GET /api/v1/uploadedFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002&name=background2_929434.jpg HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 14:22:02.737] [WARN] http - 127.0.0.1 - - "GET /api/v1/uploadedFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002&name=mongodb-leaf_830720.png HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 14:22:02.739] [WARN] http - 127.0.0.1 - - "GET /api/v1/uploadedFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002&name=nodejs-light_743390.png HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 14:22:02.740] [WARN] http - 127.0.0.1 - - "GET /api/v1/uploadedFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002&name=rest_api_256x256_972077.png HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 14:22:05.253] [WARN] http - 127.0.0.1 - - "GET /api/v1/uploadedFileList?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 14:23:32.229] [WARN] http - 127.0.0.1 - - "GET /api/v1/uploadedFileList?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 14:38:37.439] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-08 14:38:37.457] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-08 14:38:38.028] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-08 14:38:38.029] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-08 14:38:38.044] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-08 14:38:38.046] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-08 14:38:38.060] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-08 14:38:38.071] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-08 14:38:38.087] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-08 14:38:38.091] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-08 14:38:38.454] [INFO] app - Worker server started on port 3000 (ID: 1, PID: 1852)
+[2014-10-08 14:38:38.475] [INFO] app - Worker server started on port 3000 (ID: 2, PID: 324)
+[2014-10-08 14:38:38.718] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-08 14:38:38.718] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-08 14:38:43.130] [ERROR] UploadImageFiles - apiKey wrong 2AC86B2C-C32B5-7EA-E6DC-26D35519C00t
+[2014-10-08 14:38:43.143] [ERROR] http - 127.0.0.1 - - "GET /api/v1/uploadedFileList?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 403 9 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 14:39:37.724] [INFO] http - 127.0.0.1 - - "GET /api/v1/uploadedFileList?apiKey=50d30b77-dbae-491b-81b9-c957c8a6d23d&orderID=10002 HTTP/1.1" 200 185 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 14:39:37.781] [INFO] http - 127.0.0.1 - - "GET /api/v1/uploadedFile?apiKey=c400e7db-97c2-4007-909f-2f1a52aebba8&orderID=10002&name=background2_674660.jpg HTTP/1.1" 200 76945 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 14:39:37.792] [INFO] http - 127.0.0.1 - - "GET /api/v1/uploadedFile?apiKey=c400e7db-97c2-4007-909f-2f1a52aebba8&orderID=10002&name=background2_929434.jpg HTTP/1.1" 200 76945 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 14:39:37.836] [INFO] http - 127.0.0.1 - - "GET /api/v1/uploadedFile?apiKey=c400e7db-97c2-4007-909f-2f1a52aebba8&orderID=10002&name=rest_api_256x256_972077.png HTTP/1.1" 200 11330 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 14:39:37.839] [INFO] http - 127.0.0.1 - - "GET /api/v1/uploadedFile?apiKey=c400e7db-97c2-4007-909f-2f1a52aebba8&orderID=10002&name=server-png_680796.png HTTP/1.1" 200 39985 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 14:39:37.843] [INFO] http - 127.0.0.1 - - "GET /api/v1/uploadedFile?apiKey=c400e7db-97c2-4007-909f-2f1a52aebba8&orderID=10002&name=mongodb-leaf_830720.png HTTP/1.1" 200 12510 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 14:39:37.845] [INFO] http - 127.0.0.1 - - "GET /api/v1/uploadedFile?apiKey=c400e7db-97c2-4007-909f-2f1a52aebba8&orderID=10002&name=nodejs-light_743390.png HTTP/1.1" 200 14684 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 14:39:49.977] [WARN] http - 127.0.0.1 - - "GET /api/v1/uploadedFileList?apiKey=50d30b77-dbae-491b-81b9-c957c8a6d23d&orderID=10002 HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 14:40:44.370] [INFO] http - 127.0.0.1 - - "GET /api/v1/uploadedFileList?apiKey=50d30b77-dbae-491b-81b9-c957c8a6d23d&orderID=10001 HTTP/1.1" 200 19 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 14:41:21.845] [INFO] http - 127.0.0.1 - - "OPTIONS /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 204 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 14:41:21.916] [INFO] ImageUrlVO -  Class:ImageUrlVO Method:addOrUpdate starts
+[2014-10-08 14:41:22.003] [INFO] http - 127.0.0.1 - - "POST /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 200 260 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 14:41:24.547] [WARN] http - 127.0.0.1 - - "GET /api/v1/uploadedFileList?apiKey=50d30b77-dbae-491b-81b9-c957c8a6d23d&orderID=10001 HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 14:41:36.649] [WARN] http - 127.0.0.1 - - "GET /api/v1/uploadedFileList?apiKey=50d30b77-dbae-491b-81b9-c957c8a6d23d&orderID=10001 HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 14:42:14.226] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-08 14:42:14.758] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-08 14:42:14.988] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-08 14:42:14.988] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-08 14:42:15.011] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-08 14:42:15.036] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-08 14:42:15.447] [INFO] app - Worker server started on port 3000 (ID: 1, PID: 3016)
+[2014-10-08 14:42:15.752] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-08 14:42:15.754] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-08 14:42:15.794] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-08 14:42:15.806] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-08 14:42:15.828] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-08 14:42:16.210] [INFO] app - Worker server started on port 3000 (ID: 2, PID: 3128)
+[2014-10-08 14:42:16.408] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-08 14:42:22.421] [WARN] http - 127.0.0.1 - - "GET /api/v1/uploadedFileList?apiKey=50d30b77-dbae-491b-81b9-c957c8a6d23d&orderID=10001 HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 14:43:17.402] [WARN] http - 127.0.0.1 - - "GET /api/v1/uploadedFileList?apiKey=50d30b77-dbae-491b-81b9-c957c8a6d23d&orderID=10001 HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 14:43:20.374] [WARN] http - 127.0.0.1 - - "GET /api/v1/uploadedFileList?apiKey=50d30b77-dbae-491b-81b9-c957c8a6d23d&orderID=10001 HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 14:43:48.871] [INFO] http - 127.0.0.1 - - "GET /api/v1/uploadedFileList?apiKey=50d30b77-dbae-491b-81b9-c957c8a6d23d&orderID=10002 HTTP/1.1" 200 260 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 14:43:48.991] [WARN] http - 127.0.0.1 - - "GET /api/v1/uploadedFile?apiKey=c400e7db-97c2-4007-909f-2f1a52aebba8&orderID=10002&name=mongodb-leaf_830720.png HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 14:43:48.999] [WARN] http - 127.0.0.1 - - "GET /api/v1/uploadedFile?apiKey=c400e7db-97c2-4007-909f-2f1a52aebba8&orderID=10002&name=nodejs-light_743390.png HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 14:43:49.021] [WARN] http - 127.0.0.1 - - "GET /api/v1/uploadedFile?apiKey=c400e7db-97c2-4007-909f-2f1a52aebba8&orderID=10002&name=rest_api_256x256_972077.png HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 14:43:49.022] [WARN] http - 127.0.0.1 - - "GET /api/v1/uploadedFile?apiKey=c400e7db-97c2-4007-909f-2f1a52aebba8&orderID=10002&name=server-png_680796.png HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 14:43:49.024] [WARN] http - 127.0.0.1 - - "GET /api/v1/uploadedFile?apiKey=c400e7db-97c2-4007-909f-2f1a52aebba8&orderID=10002&name=background2_674660.jpg HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 14:43:49.024] [WARN] http - 127.0.0.1 - - "GET /api/v1/uploadedFile?apiKey=c400e7db-97c2-4007-909f-2f1a52aebba8&orderID=10002&name=background2_929434.jpg HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 14:43:49.065] [INFO] http - 127.0.0.1 - - "GET /api/v1/uploadedFile?apiKey=c400e7db-97c2-4007-909f-2f1a52aebba8&orderID=10002&name=html5css3js_986703.png HTTP/1.1" 200 22564 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 14:43:49.085] [INFO] http - 127.0.0.1 - - "GET /api/v1/uploadedFile?apiKey=c400e7db-97c2-4007-909f-2f1a52aebba8&orderID=10002&name=file_server_459864.png HTTP/1.1" 200 77015 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 14:43:49.103] [INFO] http - 127.0.0.1 - - "GET /api/v1/uploadedFile?apiKey=c400e7db-97c2-4007-909f-2f1a52aebba8&orderID=10002&name=background2_259143.jpg HTTP/1.1" 200 76945 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 15:04:26.488] [INFO] http - 127.0.0.1 - - "OPTIONS /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10001 HTTP/1.1" 204 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 15:04:26.591] [INFO] ImageUrlVO -  Class:ImageUrlVO Method:addOrUpdate starts
+[2014-10-08 15:04:26.646] [INFO] http - 127.0.0.1 - - "POST /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10001 HTTP/1.1" 200 148 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 15:04:28.319] [INFO] http - 127.0.0.1 - - "GET /api/v1/uploadedFileList?apiKey=50d30b77-dbae-491b-81b9-c957c8a6d23d&orderID=10001 HTTP/1.1" 200 148 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 15:04:28.387] [INFO] http - 127.0.0.1 - - "GET /api/v1/uploadedFile?apiKey=c400e7db-97c2-4007-909f-2f1a52aebba8&orderID=10001&name=background2_58336.jpg HTTP/1.1" 200 76945 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 15:04:28.500] [INFO] http - 127.0.0.1 - - "GET /api/v1/uploadedFile?apiKey=c400e7db-97c2-4007-909f-2f1a52aebba8&orderID=10001&name=cordova_bot_951489.png HTTP/1.1" 200 35964 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 15:04:28.510] [INFO] http - 127.0.0.1 - - "GET /api/v1/uploadedFile?apiKey=c400e7db-97c2-4007-909f-2f1a52aebba8&orderID=10001&name=device-ipad_754014.png HTTP/1.1" 200 100187 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 15:04:28.514] [INFO] http - 127.0.0.1 - - "GET /api/v1/uploadedFile?apiKey=c400e7db-97c2-4007-909f-2f1a52aebba8&orderID=10001&name=Database_1_356411.png HTTP/1.1" 200 120651 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 15:04:28.557] [INFO] http - 127.0.0.1 - - "GET /api/v1/uploadedFile?apiKey=c400e7db-97c2-4007-909f-2f1a52aebba8&orderID=10001&name=ET_Logo_180052.png HTTP/1.1" 200 100698 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 15:04:51.397] [WARN] http - 127.0.0.1 - - "GET /api/v1/uploadedFileList?apiKey=50d30b77-dbae-491b-81b9-c957c8a6d23d&orderID=10001 HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 15:05:50.440] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-08 15:05:50.781] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-08 15:05:50.954] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-08 15:05:50.955] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-08 15:05:50.975] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-08 15:05:50.994] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-08 15:05:51.479] [INFO] app - Worker server started on port 3000 (ID: 1, PID: 4200)
+[2014-10-08 15:05:51.690] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-08 15:05:51.692] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-08 15:05:51.740] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-08 15:05:51.765] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-08 15:05:52.174] [INFO] app - Worker server started on port 3000 (ID: 2, PID: 4012)
+[2014-10-08 15:05:52.179] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-08 15:05:52.454] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-08 15:05:56.275] [INFO] http - 127.0.0.1 - - "GET /api/v1/uploadedFileList?apiKey=50d30b77-dbae-491b-81b9-c957c8a6d23d&orderID=10001 HTTP/1.1" 200 19 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 15:08:02.464] [WARN] http - 127.0.0.1 - - "GET /api/v1/uploadedFileList?apiKey=50d30b77-dbae-491b-81b9-c957c8a6d23d&orderID=10001 HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 15:08:19.512] [WARN] http - 127.0.0.1 - - "GET /api/v1/uploadedFileList?apiKey=50d30b77-dbae-491b-81b9-c957c8a6d23d&orderID=10001 HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 15:15:13.498] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-08 15:15:13.557] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-08 15:15:14.016] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-08 15:15:14.016] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-08 15:15:14.039] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-08 15:15:14.058] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-08 15:15:14.185] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-08 15:15:14.186] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-08 15:15:14.211] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-08 15:15:14.246] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-08 15:15:14.399] [INFO] app - Worker server started on port 3000 (ID: 2, PID: 5600)
+[2014-10-08 15:15:14.634] [INFO] app - Worker server started on port 3000 (ID: 1, PID: 996)
+[2014-10-08 15:15:14.764] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-08 15:15:14.829] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-08 15:15:18.653] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-08 15:15:18.849] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-08 15:15:19.190] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-08 15:15:19.190] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-08 15:15:19.210] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-08 15:15:19.228] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-08 15:15:19.557] [INFO] app - Worker server started on port 3000 (ID: 1, PID: 5512)
+[2014-10-08 15:15:19.594] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-08 15:15:19.595] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-08 15:15:19.618] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-08 15:15:19.637] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-08 15:15:19.790] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-08 15:15:19.955] [INFO] app - Worker server started on port 3000 (ID: 2, PID: 5520)
+[2014-10-08 15:15:20.165] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-08 15:15:50.971] [INFO] http - 127.0.0.1 - - "OPTIONS /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10001 HTTP/1.1" 204 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 15:15:51.048] [INFO] ImageUrlVO -  Class:ImageUrlVO Method:addOrUpdate starts
+[2014-10-08 15:15:51.121] [INFO] http - 127.0.0.1 - - "POST /api/v1/uploadFile?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10001 HTTP/1.1" 200 100 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 15:15:55.992] [INFO] http - 127.0.0.1 - - "GET /api/v1/uploadedFileList?apiKey=50d30b77-dbae-491b-81b9-c957c8a6d23d&orderID=10001 HTTP/1.1" 200 100 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 15:15:56.088] [INFO] http - 127.0.0.1 - - "GET /api/v1/uploadedFile?apiKey=c400e7db-97c2-4007-909f-2f1a52aebba8&orderID=10001&name=background2_928921.jpg HTTP/1.1" 200 76945 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 15:15:56.093] [INFO] http - 127.0.0.1 - - "GET /api/v1/uploadedFile?apiKey=c400e7db-97c2-4007-909f-2f1a52aebba8&orderID=10001&name=device-ipad_971524.png HTTP/1.1" 200 100187 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 15:15:56.143] [INFO] http - 127.0.0.1 - - "GET /api/v1/uploadedFile?apiKey=c400e7db-97c2-4007-909f-2f1a52aebba8&orderID=10001&name=ET_Logo_694863.png HTTP/1.1" 200 100698 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 15:16:53.244] [WARN] http - 127.0.0.1 - - "GET /api/v1/uploadedFileList?apiKey=50d30b77-dbae-491b-81b9-c957c8a6d23d&orderID=10001 HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 15:16:53.331] [INFO] http - 127.0.0.1 - - "GET /api/v1/uploadedFile?apiKey=c400e7db-97c2-4007-909f-2f1a52aebba8&orderID=10001&name=device-ipad_971524.pngxxx HTTP/1.1" 200 20 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 15:16:53.332] [INFO] http - 127.0.0.1 - - "GET /api/v1/uploadedFile?apiKey=c400e7db-97c2-4007-909f-2f1a52aebba8&orderID=10001&name=ET_Logo_694863.pngxxx HTTP/1.1" 200 20 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 15:16:53.344] [INFO] http - 127.0.0.1 - - "GET /api/v1/uploadedFile?apiKey=c400e7db-97c2-4007-909f-2f1a52aebba8&orderID=10001&name=background2_928921.jpgxxx HTTP/1.1" 200 20 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 15:18:13.885] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-08 15:18:14.457] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-08 15:18:14.559] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-08 15:18:14.560] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-08 15:18:14.583] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-08 15:18:14.617] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-08 15:18:14.947] [INFO] app - Worker server started on port 3000 (ID: 2, PID: 4888)
+[2014-10-08 15:18:15.253] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-08 15:18:15.254] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-08 15:18:15.279] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-08 15:18:15.301] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-08 15:18:15.683] [INFO] app - Worker server started on port 3000 (ID: 1, PID: 2884)
+[2014-10-08 15:18:15.858] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-08 15:18:15.931] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-08 15:18:20.298] [WARN] http - 127.0.0.1 - - "GET /api/v1/uploadedFileList?apiKey=50d30b77-dbae-491b-81b9-c957c8a6d23d&orderID=10001 HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 15:18:20.394] [WARN] http - 127.0.0.1 - - "GET /api/v1/uploadedFile?apiKey=c400e7db-97c2-4007-909f-2f1a52aebba8&orderID=10001&name=device-ipad_971524.pngxxx HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 15:18:20.400] [WARN] http - 127.0.0.1 - - "GET /api/v1/uploadedFile?apiKey=c400e7db-97c2-4007-909f-2f1a52aebba8&orderID=10001&name=ET_Logo_694863.pngxxx HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 15:18:20.456] [WARN] http - 127.0.0.1 - - "GET /api/v1/uploadedFile?apiKey=c400e7db-97c2-4007-909f-2f1a52aebba8&orderID=10001&name=background2_928921.jpgxxx HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 15:20:14.839] [WARN] http - 127.0.0.1 - - "GET /api/v1/uploadedFileList?apiKey=50d30b77-dbae-491b-81b9-c957c8a6d23d&orderID=10001 HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 15:20:14.885] [WARN] http - 127.0.0.1 - - "GET /api/v1/uploadedFile?apiKey=c400e7db-97c2-4007-909f-2f1a52aebba8&orderID=10001&name=background2_928921.jpg HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 15:20:14.894] [WARN] http - 127.0.0.1 - - "GET /api/v1/uploadedFile?apiKey=c400e7db-97c2-4007-909f-2f1a52aebba8&orderID=10001&name=device-ipad_971524.png HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 15:20:14.902] [WARN] http - 127.0.0.1 - - "GET /api/v1/uploadedFile?apiKey=c400e7db-97c2-4007-909f-2f1a52aebba8&orderID=10001&name=ET_Logo_694863.png HTTP/1.1" 304 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-08 15:26:41.193] [INFO] ConnectDBInstance -  Server Termination

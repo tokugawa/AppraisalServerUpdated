@@ -91,7 +91,10 @@ else {
     app.get('/api/v1/getOrderDetail', order);
     app.post('/createUser', userCreate);
     app.options('/api/v1/uploadFile', cors());
+    //app.options('/api/v1/uploadedFile', cors());
     app.post('/api/v1/uploadFile', uploadFile);
+    app.get('/api/v1/uploadedFile', uploadFile);
+    app.get('/api/v1/uploadedFileList', uploadFile);
 
 
 
