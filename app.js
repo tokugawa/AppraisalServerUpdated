@@ -61,6 +61,7 @@ else {
     var userCreate = require('./routes/CreateUser');
     var order = require('./routes/getOrderListTemp');
     var uploadFile = require('./routes/UploadFile');
+    var formData = require('./routes/FormDataRouter');
 
     var app = express();
 
@@ -95,6 +96,8 @@ else {
     app.post('/api/v1/uploadFile', uploadFile);
     app.get('/api/v1/uploadedFile', uploadFile);
     app.get('/api/v1/uploadedFileList', uploadFile);
+    app.post('/api/v1/formData', formData);
+    app.get('/api/v1/formData', formData);
 
 
 

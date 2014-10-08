@@ -243,11 +243,11 @@ module.exports = function (router) {
       
     });
 
-    router.delete('/api/v1/uploadedFile/file/:name', function(req, res) {
+    /*router.delete('/api/v1/uploadedFile/file/:name', function(req, res) {
       uploader.delete(req, res, function (obj) {
             res.send(JSON.stringify(obj)); 
       });
       
-    });
+    });*/
     return router;
 }
