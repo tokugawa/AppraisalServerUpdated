@@ -29,3 +29,129 @@
 [2014-10-08 14:38:43.143] [ERROR] http - 127.0.0.1 - - "GET /api/v1/uploadedFileList?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10002 HTTP/1.1" 403 9 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
 [2014-10-08 16:22:35.550] [ERROR] FormDataManager - apiKey wrong 2AC86B2C-C32B5-7EA-E6DC-26D35519C00t
 [2014-10-08 16:22:35.562] [ERROR] http - 127.0.0.1 - - "GET /api/v1/formData?apiKey=2AC86B2C-C32B5-7EA-E6DC-26D35519C00t&orderID=10001 HTTP/1.1" 403 9 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-13 12:53:39.820] [ERROR] http - 127.0.0.1 - - "GET /favicon.ico HTTP/1.1" 404 1074 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-13 12:56:38.591] [ERROR] http - 127.0.0.1 - - "GET /api/v1/getCompletedOrderDetail?apiKey=95e7d038-6354-4b27-b8f1-db4decd586e1 HTTP/1.1" 403 21 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-13 12:57:03.286] [ERROR] http - 127.0.0.1 - - "GET /api/v1/getCompletedOrderDetail?orderid=%2710001%27&apiKey=95e7d038-6354-4b27-b8f1-db4decd586e1 HTTP/1.1" 403 21 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-13 12:57:17.622] [ERROR] GetCompletedOrderList - apiKey wrong 95e7d038-6354-4b28-b8f1-db4decd586e1
+[2014-10-13 12:57:17.623] [ERROR] http - 127.0.0.1 - - "GET /api/v1/getCompletedOrderDetail?orderID=%2710001%27&apiKey=95e7d038-6354-4b28-b8f1-db4decd586e1 HTTP/1.1" 403 20 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-13 13:36:09.016] [ERROR] app - Worker server died (ID: 1, PID: 4112)
+[2014-10-13 13:36:09.026] [ERROR] app - Worker server died (ID: 2, PID: 4244)
+[2014-10-13 13:36:27.373] [ERROR] app - Worker server died (ID: 2, PID: 1420)
+[2014-10-13 13:36:27.380] [ERROR] app - Worker server died (ID: 1, PID: 5020)
+[2014-10-13 13:40:02.365] [ERROR] app - Worker server died (ID: 1, PID: 1952)
+[2014-10-13 13:40:02.402] [ERROR] app - Worker server died (ID: 2, PID: 2524)
+[2014-10-13 13:40:30.229] [ERROR] http - 127.0.0.1 - - "GET /api/v1/checkUserCredential?userName=somenath.ghosh84@gmail.com&password=ghosh&apiKey=df5cb700-395b-11e4-916c-0800200c9a66 HTTP/1.1" 401 21 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-13 13:44:53.455] [ERROR] app - Worker server died (ID: 2, PID: 2432)
+[2014-10-13 13:44:53.488] [ERROR] app - Worker server died (ID: 1, PID: 4628)
+[2014-10-13 14:02:10.827] [ERROR] app - Worker server died (ID: 1, PID: 2504)
+[2014-10-13 14:02:10.872] [ERROR] app - Worker server died (ID: 2, PID: 4144)
+[2014-10-13 14:02:53.305] [ERROR] app - Worker server died (ID: 1, PID: 3416)
+[2014-10-13 14:02:53.326] [ERROR] app - Worker server died (ID: 2, PID: 3500)
+[2014-10-13 14:05:11.296] [ERROR] app - Worker server died (ID: 1, PID: 2724)
+[2014-10-13 14:05:11.314] [ERROR] app - Worker server died (ID: 2, PID: 308)
+[2014-10-13 14:15:48.073] [ERROR] FormDataManager - apiKey wrong null
+[2014-10-13 14:15:48.075] [ERROR] http - 127.0.0.1 - - "GET /api/v1/formData?orderID=10001 HTTP/1.1" 403 9 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-13 14:16:27.273] [ERROR] FormDataManager - apiKey wrong f5812148-64e5-45d1-9f44-ce51b5a9b741
+[2014-10-13 14:16:27.274] [ERROR] http - 127.0.0.1 - - "GET /api/v1/formData?orderID=10001&apiKey=f5812148-64e5-45d1-9f44-ce51b5a9b741 HTTP/1.1" 403 9 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-13 14:16:44.524] [ERROR] http - 127.0.0.1 - - "POST /api/v1/formData?orderID=10001&apiKey=f5812148-64e5-45d1-9f44-ce51b5a9b741 HTTP/1.1" 500 1126 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-13 14:19:27.555] [ERROR] http - 127.0.0.1 - - "POST /api/v1/formData?orderID=10001&apiKey=f5812148-64e5-45d1-9f44-ce51b5a9b741 HTTP/1.1" 500 1126 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-13 14:25:26.560] [ERROR] FormDataVO - { message: 'Validation failed',
+  name: 'ValidationError',
+  errors: 
+   { formDataJSON: 
+      { message: 'Path `formDataJSON` is required.',
+        name: 'ValidatorError',
+        path: 'formDataJSON',
+        type: 'required' } } }
+[2014-10-13 14:26:34.236] [ERROR] FormDataVO - { message: 'Validation failed',
+  name: 'ValidationError',
+  errors: 
+   { formDataJSON: 
+      { message: 'Path `formDataJSON` is required.',
+        name: 'ValidatorError',
+        path: 'formDataJSON',
+        type: 'required' } } }
+[2014-10-13 14:27:19.846] [ERROR] FormDataVO - { message: 'Validation failed',
+  name: 'ValidationError',
+  errors: 
+   { formDataJSON: 
+      { message: 'Path `formDataJSON` is required.',
+        name: 'ValidatorError',
+        path: 'formDataJSON',
+        type: 'required' } } }
+[2014-10-13 14:27:19.857] [ERROR] http - 127.0.0.1 - - "POST /api/v1/formData?orderID=10001&apiKey=f5812148-64e5-45d1-9f44-ce51b5a9b741 HTTP/1.1" 500 17 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-13 14:28:50.801] [ERROR] FormDataVO - { message: 'Validation failed',
+  name: 'ValidationError',
+  errors: 
+   { formDataJSON: 
+      { message: 'Path `formDataJSON` is required.',
+        name: 'ValidatorError',
+        path: 'formDataJSON',
+        type: 'required' } } }
+[2014-10-13 14:28:50.803] [ERROR] http - 127.0.0.1 - - "POST /api/v1/formData?orderID=10001&apiKey=f5812148-64e5-45d1-9f44-ce51b5a9b741 HTTP/1.1" 500 17 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-13 14:29:16.899] [ERROR] FormDataVO - { message: 'Validation failed',
+  name: 'ValidationError',
+  errors: 
+   { formDataJSON: 
+      { message: 'Path `formDataJSON` is required.',
+        name: 'ValidatorError',
+        path: 'formDataJSON',
+        type: 'required' } } }
+[2014-10-13 14:29:16.901] [ERROR] http - 127.0.0.1 - - "POST /api/v1/formData?orderID=10001&apiKey=f5812148-64e5-45d1-9f44-ce51b5a9b741 HTTP/1.1" 500 17 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-13 14:30:06.905] [ERROR] FormDataVO - { message: 'Validation failed',
+  name: 'ValidationError',
+  errors: 
+   { formDataJSON: 
+      { message: 'Path `formDataJSON` is required.',
+        name: 'ValidatorError',
+        path: 'formDataJSON',
+        type: 'required' } } }
+[2014-10-13 14:30:06.916] [ERROR] http - 127.0.0.1 - - "POST /api/v1/formData?orderID=10001&apiKey=f5812148-64e5-45d1-9f44-ce51b5a9b741 HTTP/1.1" 500 17 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-13 14:30:55.250] [ERROR] FormDataVO - { message: 'Validation failed',
+  name: 'ValidationError',
+  errors: 
+   { formDataJSON: 
+      { message: 'Path `formDataJSON` is required.',
+        name: 'ValidatorError',
+        path: 'formDataJSON',
+        type: 'required' } } }
+[2014-10-13 14:30:55.253] [ERROR] http - 127.0.0.1 - - "POST /api/v1/formData?orderID=10001&apiKey=f5812148-64e5-45d1-9f44-ce51b5a9b741 HTTP/1.1" 500 17 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-13 14:35:28.974] [ERROR] FormDataVO - { message: 'Validation failed',
+  name: 'ValidationError',
+  errors: 
+   { formDataJSON: 
+      { message: 'Path `formDataJSON` is required.',
+        name: 'ValidatorError',
+        path: 'formDataJSON',
+        type: 'required' } } }
+[2014-10-13 14:35:28.977] [ERROR] http - 127.0.0.1 - - "POST /api/v1/formData?orderID=10001&apiKey=f5812148-64e5-45d1-9f44-ce51b5a9b741 HTTP/1.1" 500 17 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-13 14:35:57.641] [ERROR] FormDataVO - { message: 'Validation failed',
+  name: 'ValidationError',
+  errors: 
+   { formDataJSON: 
+      { message: 'Path `formDataJSON` is required.',
+        name: 'ValidatorError',
+        path: 'formDataJSON',
+        type: 'required' } } }
+[2014-10-13 14:35:57.643] [ERROR] http - 127.0.0.1 - - "POST /api/v1/formData?orderID=10001&apiKey=f5812148-64e5-45d1-9f44-ce51b5a9b741 HTTP/1.1" 500 17 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-13 14:37:27.950] [ERROR] FormDataVO - { message: 'Validation failed',
+  name: 'ValidationError',
+  errors: 
+   { formDataJSON: 
+      { message: 'Path `formDataJSON` is required.',
+        name: 'ValidatorError',
+        path: 'formDataJSON',
+        type: 'required' } } }
+[2014-10-13 14:37:27.963] [ERROR] http - 127.0.0.1 - - "POST /api/v1/formData?orderID=10001&apiKey=f5812148-64e5-45d1-9f44-ce51b5a9b741&formData=%22{%22x%22:%221%22}%22 HTTP/1.1" 500 17 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-13 14:39:32.343] [ERROR] FormDataVO -  Error occured while Saving
+[2014-10-13 14:39:32.343] [ERROR] FormDataVO - { message: 'Validation failed',
+  name: 'ValidationError',
+  errors: 
+   { formDataJSON: 
+      { message: 'Path `formDataJSON` is required.',
+        name: 'ValidatorError',
+        path: 'formDataJSON',
+        type: 'required' } } }
+[2014-10-13 14:39:32.353] [ERROR] http - 127.0.0.1 - - "POST /api/v1/formData?orderID=10001&apiKey=f5812148-64e5-45d1-9f44-ce51b5a9b741&formData=%22{%22x%22:%221%22}%22 HTTP/1.1" 500 17 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-13 14:47:51.586] [ERROR] FormDataManager - apiKey wrong f5812148-64e5-45d1-9f44-ce51b5a9b741
+[2014-10-13 14:47:51.591] [ERROR] http - 127.0.0.1 - - "GET /api/v1/formData?orderID=10001&apiKey=f5812148-64e5-45d1-9f44-ce51b5a9b741 HTTP/1.1" 403 9 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"

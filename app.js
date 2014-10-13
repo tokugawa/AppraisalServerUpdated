@@ -11,7 +11,7 @@ var port= 3000;
 if(cluster.isMaster){
 
    
-    if (process.env.NODE_ENV == 'production') {
+    if (process.env.NODE_ENV === 'production') {
       log4js.configure('./config/log4jsConfigProduction.json');
     }
     else {
@@ -60,6 +60,7 @@ else {
     var user = require('./routes/checkUser');
     var userCreate = require('./routes/CreateUser');
     var order = require('./routes/getOrderListTemp');
+    var orderCom = require('./routes/GetOrderDetailCompletedTemp');
     var uploadFile = require('./routes/UploadFile');
     var formData = require('./routes/FormDataRouter');
 
@@ -90,6 +91,8 @@ else {
     app.use('/users', users);
     app.get('/api/v1/checkUserCredential', user);
     app.get('/api/v1/getOrderDetail', order);
+    app.get('/api/v1/getCompletedOrderDetail', orderCom);
+
     app.post('/createUser', userCreate);
     app.options('/api/v1/uploadFile', cors());
     //app.options('/api/v1/uploadedFile', cors());

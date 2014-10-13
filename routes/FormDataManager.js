@@ -69,7 +69,12 @@ module.exports = function (router) {
         var query = url.parse(req.url,true).query;
         var apiKey  = query.apiKey;
         var orderID = query.orderID;
-        
+        console.log('POST FormData', orderID);
+        var formData = req.body.formData;
+
+        console.log(req.body.formData);
+
+
         if(apiKey !== POST_FORM_DATA){
             log.error('apiKey wrong' , apiKey); 
             res.header('Access-Control-Allow-Origin', '*');
@@ -81,7 +86,7 @@ module.exports = function (router) {
                 FormDataVO.addOrUpdate(orderID, formData , function cb(returnFlag, data){
                     if(returnFlag === null){
 
-                        res.send({message: 'ERR'});
+                        res.status(500).send({message: 'ERR'});
                     }
                     if(returnFlag === false){
 

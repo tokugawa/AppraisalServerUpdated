@@ -105,7 +105,7 @@ var UserVO = (function(){
 					log.info(data._id);
 					if(data.validatePassword(password)){
 						//log.info('validated');
-						cb(true, data._id);
+						cb(true, {id:data._id, firstName: data.firstName, lastName:data.lastName} );
 					}
 					else{
 						cb(false, null);

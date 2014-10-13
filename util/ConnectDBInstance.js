@@ -12,10 +12,11 @@ var mongoose = require('mongoose');
 var log4js = require('log4js');
 var log = log4js.getLogger("ConnectDBInstance");
 var PAExpection = require('./PAException');
+var d = require('domain').create();
+
 //
 
 
-//log.debug(resourceLoader);
 
 var user = resourceLoader.getResourceById('DB' , 'DB_USER_NAME');
 var password = resourceLoader.getResourceById('DB' , 'DB_PASSWORD');
@@ -52,28 +53,33 @@ var conn = (function (){
 
 			//console.log(connectionOfDB);
 
-			connectionOfDB.on('connected', function successfulConnectionCb(){
+			connectionOfDB.on('connected', d.bind(function successfulConnectionCb(){
 
 				log.info('Successful Connection');
+				//throw new Error('Successful Connection');
 
 
-			});
+			}));
 
 
-			connectionOfDB.on('error', function errorConnectionCb(){
+			connectionOfDB.on('error', d.bind(function errorConnectionCb(err){
 
-				log.info('Error in Connection');
+				//log.info('Error in Connection');
+				console.log(err);
+				throw new Error('Error in Connection');
 
 
-			});
+			}));
 
 
-			connectionOfDB.on('disconnected', function disconnectedConnectionCb(){
+			connectionOfDB.on('disconnected', d.bind(function disconnectedConnectionCb(err){
 
 				log.info('Disconnected Connection');
+				console.log(err);
+				throw new Error('Disconnected');
 
 
-			});
+			}));
 
 			process.on('SIGINT', function sigintConnectionCloseCb(){
 
@@ -100,7 +106,10 @@ var conn = (function (){
 		    });
 
 
+			d.on('error', function(){
 
+				console.log(error.message);
+			})
 
 			return connectionOfDB;
 
@@ -120,7 +129,7 @@ var conn = (function (){
             	log.warn(' Creating new instance');
                 instance = createInstance();
             }
-            //log.info('ConnectDBInstance: Connection Class Ends');
+            
             return instance;
         }
 
@@ -137,5 +146,7 @@ var conn = (function (){
 
 
 module.exports = conn;
+
+
 
 

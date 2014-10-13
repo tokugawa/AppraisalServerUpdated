@@ -29,6 +29,7 @@ var FormDataVO = (function(){
 			FormData.findOne({order_id : orderID}, function findOneCb(err, data){
 
 				if(err){
+					log.error(' Error occured while findOneCb addOrUpdate');
 					log.error(err);
 					cb(null);
 				}
@@ -38,11 +39,11 @@ var FormDataVO = (function(){
 					var newFormData = new FormData();
 					newFormData.order_id = orderID;
 					newFormData.formData = formData;
-
+					//console.log(formData);
 					newFormData.save(function saveCb(err, data){
 
 						if(err){
-
+							log.error(' Error occured while Saving');
 							log.error(err);
 							cb(null);
 						}
@@ -67,6 +68,7 @@ var FormDataVO = (function(){
 						function updateCb(err, result ){
 
 							if(err){
+								log.error(' Error occured while Saving updateCb');
 								log.error(err);
 								cb(null);
 							}
@@ -111,6 +113,7 @@ var FormDataVO = (function(){
 			FormData.findOne({order_id: orderID}, function findOneCb(err, data){
 
 				if(err){
+					log.error(' Error occured while findOneCb retrieveFormData');
 					log.error(err);
 					cb(null);
 				}
