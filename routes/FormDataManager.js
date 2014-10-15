@@ -20,9 +20,10 @@ var GET_FORM_DATA  = resourceLoader.getResourceById('API_KEY' , 'GET_FORM_DATA')
 
 module.exports = function (router) {
     router.get('/api/v1/formData', function(req, res) {
-        var query = url.parse(req.url,true).query;
+        var query   = url.parse(req.url,true).query;
         var apiKey  = query.apiKey;
         var orderID = query.orderID;
+
         
         if(apiKey !== GET_FORM_DATA){
             log.error('apiKey wrong' , apiKey); 
@@ -71,8 +72,9 @@ module.exports = function (router) {
         var orderID = query.orderID;
         console.log('POST FormData', orderID);
         var formData = req.body.formData;
+        var orderStatus = req.body.orderStatus;
 
-        console.log(req.body.formData);
+        //console.log(req.body.formData);
 
 
         if(apiKey !== POST_FORM_DATA){
@@ -83,7 +85,7 @@ module.exports = function (router) {
         else {
             
                 res.header('Access-Control-Allow-Origin', '*');
-                FormDataVO.addOrUpdate(orderID, formData , function cb(returnFlag, data){
+                FormDataVO.addOrUpdate(orderID, orderStatus, formData , function cb(returnFlag, data){
                     if(returnFlag === null){
 
                         res.status(500).send({message: 'ERR'});
@@ -96,7 +98,7 @@ module.exports = function (router) {
                     }
 
                     if(returnFlag === true){
-                        console.log(data);
+                        //console.log(data);
                         res.send({message: 'FORM', data:data});
                     }
 

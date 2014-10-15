@@ -33,7 +33,7 @@ if(cluster.isMaster){
 
     cluster.on('exit', function (worker, code, signal) {
         log.error('Worker server died (ID: %d, PID: %d)', worker.id, worker.process.pid);
-        //cluster.fork(); switch on it in prod env
+        //cluster.fork(); //switch on it in prod env
     });
 
 

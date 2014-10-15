@@ -96,7 +96,7 @@ var authenticateAPIKey = function(req, res, next){
 	log.debug('apiKey check');
 	var query = url.parse(req.url,true).query;
 	var apiKey 	= query.apiKey;
-	var orderID = query.orderID;
+	var orderPartyID = query.orderPartyID;
 
 
 	if(apiKey !== GET_USER_DETAIL_KEY){
@@ -105,9 +105,9 @@ var authenticateAPIKey = function(req, res, next){
 	}
 	else {
 		log.debug('apiKey validated correct');	
-		if(orderID){
+		if(orderPartyID){
 
-			req.orderID = orderID;
+			req.orderPartyID = orderPartyID;
 			return next();	
 
 		}

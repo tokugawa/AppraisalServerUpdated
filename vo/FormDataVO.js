@@ -15,6 +15,7 @@ var log = log4js.getLogger("FormDataVO");
 var paException = require('../util/PAException');
 
 var FormData = require('../model/FormData.js');
+var Order = require('../model/OrderModelTemp.js');
 
 
 var FormDataVO = (function(){
@@ -22,7 +23,7 @@ var FormDataVO = (function(){
 	var instance;
 	function createInstance() {
 
-		this.addOrUpdate = function (orderID, formData, cb  ){
+		this.addOrUpdate = function (orderID, orderStatus, formData, cb  ){
 
 			log.info(' Class:FormData Method:addOrUpdate starts');
 
@@ -49,8 +50,40 @@ var FormDataVO = (function(){
 						}
 
 						if(data){
+							//console.log(orderStatus);
+							if(orderStatus){
+								console.log(orderID);
+								Order.update(
+									{orderID: orderID},
+									{$set : {orderStatus : orderStatus}},
+									function updateOrderCb(err, result){
+										if(err){
+											console.log(err);
+											cb(null);
+										}
 
-							cb(true, data.formData);
+										if(result){
+											cb(true, data.formData);
+
+										}
+										if(!result){
+											console.log('update failed', result);
+											cb(false);
+										}
+
+									}
+
+
+
+								);
+
+							}
+							else{
+								cb(true, data.formData);
+
+							}
+
+							//cb(true, data.formData);
 						}
 
 					});
@@ -78,8 +111,6 @@ var FormDataVO = (function(){
 									if(err){
 										log.error(err.message);
 										cb(null);
-
-
 									}
 
 									if(!data){
@@ -88,11 +119,44 @@ var FormDataVO = (function(){
 									}
 
 									if(data){
+										//console.log(orderStatus);
+										if(orderStatus){
+											//console.log(orderID);
+											Order.update(
+												{orderID: orderID},
+												{$set : {orderStatus : orderStatus}},
+												function updateOrderCb(err, result){
+													if(err){
+														console.log(err);
+														cb(null);
+													}
 
-										cb(true, data.formData);
+													if(result){
+														cb(true, data.formData);
+
+													}
+													if(!result){
+														console.log('update failed', result);
+														cb(false);
+													}
+
+												}
+
+
+
+											);
+
+										}
+										else{
+											cb(true, data.formData);
+
+										}
+										
+
+										
 									}
 
-								})
+								});
 								
 							}
 

@@ -155,3 +155,20 @@
 [2014-10-13 14:39:32.353] [ERROR] http - 127.0.0.1 - - "POST /api/v1/formData?orderID=10001&apiKey=f5812148-64e5-45d1-9f44-ce51b5a9b741&formData=%22{%22x%22:%221%22}%22 HTTP/1.1" 500 17 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
 [2014-10-13 14:47:51.586] [ERROR] FormDataManager - apiKey wrong f5812148-64e5-45d1-9f44-ce51b5a9b741
 [2014-10-13 14:47:51.591] [ERROR] http - 127.0.0.1 - - "GET /api/v1/formData?orderID=10001&apiKey=f5812148-64e5-45d1-9f44-ce51b5a9b741 HTTP/1.1" 403 9 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-14 19:25:37.653] [ERROR] app - Worker server died (ID: 2, PID: 4196)
+[2014-10-14 19:25:37.653] [ERROR] app - Worker server died (ID: 1, PID: 4184)
+[2014-10-14 20:27:32.959] [ERROR] app - Worker server died (ID: 1, PID: 4176)
+[2014-10-14 20:27:32.969] [ERROR] app - Worker server died (ID: 2, PID: 2600)
+[2014-10-14 20:33:10.204] [ERROR] http - 127.0.0.1 - - "GET /api/v1/getgetOrderDetail?orderPartyID=10001&apiKey=95e7d038-6354-4b27-b8f1-db4decd586e1 HTTP/1.1" 404 1074 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-14 20:33:21.642] [ERROR] GetOrderList - apiKey wrong 95e7d038-6354-4b27-b8f1-db4decd586e1
+[2014-10-14 20:33:21.643] [ERROR] http - 127.0.0.1 - - "GET /api/v1/getOrderDetail?orderPartyID=10001&apiKey=95e7d038-6354-4b27-b8f1-db4decd586e1 HTTP/1.1" 403 20 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-14 20:34:02.312] [ERROR] http - 127.0.0.1 - - "GET /api/v1/getOrderDetail?orderPartyID=10001&apiKey=1dca7720-395c-11e4-916c-0800200c9a66 HTTP/1.1" 400 26 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-14 20:38:20.401] [ERROR] app - Worker server died (ID: 1, PID: 316)
+[2014-10-14 20:38:20.425] [ERROR] app - Worker server died (ID: 2, PID: 3392)
+[2014-10-14 20:47:10.956] [ERROR] http - 127.0.0.1 - - "GET /api/v1/getOrderDetail?orderPartyID=10001&orderStatus=1&apiKey=1dca7720-395c-11e4-916c-0800200c9a66 HTTP/1.1" 500 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-14 20:48:11.115] [ERROR] http - 127.0.0.1 - - "GET /api/v1/getOrderDetail?orderPartyID=10001&orderStatus=1&apiKey=1dca7720-395c-11e4-916c-0800200c9a66 HTTP/1.1" 500 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-14 20:49:39.994] [ERROR] http - 127.0.0.1 - - "GET /api/v1/getOrderDetail?orderPartyID=ljds;lkfjdslkfjds%27;gjfds&orderStatus=&apiKey=1dca7720-395c-11e4-916c-0800200c9a66 HTTP/1.1" 400 26 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-14 21:14:55.120] [ERROR] http - 127.0.0.1 - - "GET /api/v1/getCompletedOrderDetail?orderID=10001&apiKey=95e7d038-6354-4b27-b8f1-db4decd586e1 HTTP/1.1" 403 21 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-14 21:16:07.302] [ERROR] GetOrderList - apiKey wrong 95e7d038-6354-4b27-b8f1-db4decd586e1
+[2014-10-14 21:16:07.302] [ERROR] http - 127.0.0.1 - - "GET /api/v1/getOrderDetail?orderPartyID=10001&apiKey=95e7d038-6354-4b27-b8f1-db4decd586e1 HTTP/1.1" 403 20 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-14 21:16:23.832] [ERROR] http - 127.0.0.1 - - "GET /api/v1/getOrderDetail?orderPartyID=10001&apiKey=1dca7720-395c-11e4-916c-0800200c9a66 HTTP/1.1" 400 26 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"

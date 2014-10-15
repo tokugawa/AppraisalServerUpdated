@@ -5,12 +5,14 @@ var url = require('url');
 var log4js = require('log4js');
 var log = log4js.getLogger("GetOrderList");
 var resourceLoader = require('../util/ResourceLoader').getInstance();
+var OrderVO = require('../vo/OrderDetailVOTemp').getInstance();
+var domain = require('domain').create();
 
 
 var GET_USER_DETAIL_KEY = resourceLoader.getResourceById('API_KEY' , 'GET_ORDER_DTL');
 
 
-var orderList = [
+/*var orderList = [
 
 	{
 
@@ -161,7 +163,7 @@ var orderList = [
 
 
 ];
-
+*/
 
 
 var setHeaderForCORS = function(req, res, next) {
@@ -179,7 +181,8 @@ var authenticateAPIKey = function(req, res, next){
 	log.debug('apiKey check');
 	var query = url.parse(req.url,true).query;
 	var apiKey 	= query.apiKey;
-	var orderID = query.orderID;
+	var orderPartyID = query.orderPartyID;
+	var orderStatus = query.orderStatus;
 
 
 	if(apiKey !== GET_USER_DETAIL_KEY){
@@ -189,14 +192,24 @@ var authenticateAPIKey = function(req, res, next){
 	else {
 		log.debug('apiKey validated correct');	
 
-		if(orderID){
-			req.orderID = orderID;
-			return next();
+		if(orderPartyID ){
+			req.orderPartyID = orderPartyID;
+			if(orderStatus){
+				req.orderStatus = orderStatus;
+				return next();
+
+
+			}
+			else{
+				res.status(400).send({data: 'NO-ORDER-STATUS'});
+
+			}
+			
 		}
 
 		else{
 
-			res.status(403).send({data: 'NO-ORDERID'});
+			res.status(400).send({data: 'NO-ORDER-PARTYID'});
 
 		}
 
@@ -206,8 +219,50 @@ var authenticateAPIKey = function(req, res, next){
 
 var getOrderList = function (req, res) {
 
+
+		var orderPartyID = req.orderPartyID;
+		var orderStatus = req.orderStatus;
+		domain.run(function(){
+			handleRequest(orderPartyID, orderStatus, function(err, data){
+				if(err){
+
+					log.error(err);
+					
+					throw new Error('DB Error');
+					
+				}
+
+				if(!data){
+
+					
+					res.status(200).send({data:'NO-ORDER-FOUND'});
+
+
+				}
+
+				if(data){
+
+
+					res.status(200).send({data:data});
+				}
+
+
+
+
+			});
+
+
+
+		});
+
+		domain.on('error', function(err){
+			res.status(500).send();
+
+		});
+
+
 		
-		try{
+		/*try{
 
 			res.status(200).send({data: orderList});
 
@@ -216,12 +271,37 @@ var getOrderList = function (req, res) {
 		catch(error){
 
 			log.error('Class:GetOrderList  Error Message: Error Occured', error.message);
-		}
+		}*/
 
 
 	}
 
 
+
+var handleRequest= function(orderPartyID, orderStatus,callBack){
+	OrderVO.getOrderDetail(orderPartyID, orderStatus, function (err, data){
+
+		if(err){
+
+			callBack(err);
+		}
+
+		if(data){
+
+			callBack(null, data);
+		}
+
+		if(!data){
+			//console.log('NO Data');
+			callBack(null, null);
+		}
+
+
+	});
+
+
+
+};
 
 
 module.exports = [setHeaderForCORS,authenticateAPIKey,getOrderList];

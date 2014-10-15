@@ -1576,3 +1576,586 @@
 [2014-10-13 14:50:23.025] [INFO] FormDataVO -  Class:FormData Method:addOrUpdate starts
 [2014-10-13 14:50:23.081] [INFO] http - 127.0.0.1 - - "POST /api/v1/formData?orderID=10001&apiKey=f5812148-64e5-45d1-9f44-ce51b5a9b741 HTTP/1.1" 200 58 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
 [2014-10-13 14:50:27.047] [INFO] http - 127.0.0.1 - - "GET /api/v1/formData?orderID=10001&apiKey=ffa13b8d-de71-4c73-a48d-1bcb56bc2386 HTTP/1.1" 200 58 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-14 18:53:38.654] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-14 18:53:38.653] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-14 18:53:48.715] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-14 18:53:48.715] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-14 18:53:48.731] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-14 18:53:48.731] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-14 18:53:48.731] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-14 18:53:48.747] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-14 18:53:49.181] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-14 18:53:49.181] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-14 18:53:54.220] [WARN] FormDataVO - Creating first instance of FormDataVO
+[2014-10-14 18:53:54.220] [WARN] FormDataVO - Creating first instance of FormDataVO
+[2014-10-14 18:53:55.203] [INFO] app - Worker server started on port 3000 (ID: 2, PID: 4196)
+[2014-10-14 18:53:55.203] [INFO] app - Worker server started on port 3000 (ID: 1, PID: 4184)
+[2014-10-14 18:53:55.530] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-14 18:53:55.531] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-14 19:25:37.653] [ERROR] app - Worker server died (ID: 2, PID: 4196)
+[2014-10-14 19:25:37.653] [ERROR] app - Worker server died (ID: 1, PID: 4184)
+[2014-10-14 19:26:36.674] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-14 19:26:36.706] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-14 19:26:37.174] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-14 19:26:37.174] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-14 19:26:37.189] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-14 19:26:37.189] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-14 19:26:37.205] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-14 19:26:37.205] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-14 19:26:37.220] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-14 19:26:37.220] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-14 19:26:37.470] [WARN] FormDataVO - Creating first instance of FormDataVO
+[2014-10-14 19:26:37.486] [WARN] FormDataVO - Creating first instance of FormDataVO
+[2014-10-14 19:26:37.564] [INFO] app - Worker server started on port 3000 (ID: 1, PID: 4232)
+[2014-10-14 19:26:37.579] [INFO] app - Worker server started on port 3000 (ID: 2, PID: 4692)
+[2014-10-14 19:26:37.907] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-14 19:26:37.907] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-14 20:27:32.403] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-14 20:27:32.409] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-14 20:27:32.879] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-14 20:27:32.880] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-14 20:27:32.901] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-14 20:27:32.902] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-14 20:27:32.903] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-14 20:27:32.927] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-14 20:27:32.959] [ERROR] app - Worker server died (ID: 1, PID: 4176)
+[2014-10-14 20:27:32.969] [ERROR] app - Worker server died (ID: 2, PID: 2600)
+[2014-10-14 20:28:03.980] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-14 20:28:04.009] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-14 20:28:04.454] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-14 20:28:04.455] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-14 20:28:04.477] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-14 20:28:04.492] [WARN] OrderDetailVOTemp - Creating first instance of OrderDetailVOTemp
+[2014-10-14 20:28:04.503] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-14 20:28:04.527] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-14 20:28:04.528] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-14 20:28:04.553] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-14 20:28:04.568] [WARN] OrderDetailVOTemp - Creating first instance of OrderDetailVOTemp
+[2014-10-14 20:28:04.577] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-14 20:28:04.738] [WARN] FormDataVO - Creating first instance of FormDataVO
+[2014-10-14 20:28:04.818] [WARN] FormDataVO - Creating first instance of FormDataVO
+[2014-10-14 20:28:04.835] [INFO] app - Worker server started on port 3000 (ID: 1, PID: 2068)
+[2014-10-14 20:28:04.915] [INFO] app - Worker server started on port 3000 (ID: 2, PID: 4820)
+[2014-10-14 20:28:05.059] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-14 20:28:05.108] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-14 20:28:55.728] [DEBUG] GetCompletedOrderList - Setting up CORS for services
+[2014-10-14 20:28:55.729] [DEBUG] GetCompletedOrderList - apiKey check
+[2014-10-14 20:28:55.741] [DEBUG] GetCompletedOrderList - apiKey validated correct
+[2014-10-14 20:28:55.751] [INFO] http - 127.0.0.1 - - "GET /api/v1/getCompletedOrderDetail?orderPartyID=10001&apiKey=95e7d038-6354-4b27-b8f1-db4decd586e1 HTTP/1.1" 200 803 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-14 20:31:59.723] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-14 20:31:59.755] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-14 20:32:00.206] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-14 20:32:00.207] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-14 20:32:00.229] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-14 20:32:00.241] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-14 20:32:00.241] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-14 20:32:00.245] [WARN] OrderDetailVOTemp - Creating first instance of OrderDetailVOTemp
+[2014-10-14 20:32:00.257] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-14 20:32:00.270] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-14 20:32:00.294] [WARN] OrderDetailVOTemp - Creating first instance of OrderDetailVOTemp
+[2014-10-14 20:32:00.305] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-14 20:32:00.490] [WARN] FormDataVO - Creating first instance of FormDataVO
+[2014-10-14 20:32:00.537] [WARN] FormDataVO - Creating first instance of FormDataVO
+[2014-10-14 20:32:00.584] [INFO] app - Worker server started on port 3000 (ID: 1, PID: 4484)
+[2014-10-14 20:32:00.630] [INFO] app - Worker server started on port 3000 (ID: 2, PID: 2816)
+[2014-10-14 20:32:00.813] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-14 20:32:00.824] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-14 20:32:12.982] [DEBUG] GetCompletedOrderList - Setting up CORS for services
+[2014-10-14 20:32:12.983] [DEBUG] GetCompletedOrderList - apiKey check
+[2014-10-14 20:32:12.994] [DEBUG] GetCompletedOrderList - apiKey validated correct
+[2014-10-14 20:32:13.004] [INFO] http - 127.0.0.1 - - "GET /api/v1/getCompletedOrderDetail?orderPartyID=10001&apiKey=95e7d038-6354-4b27-b8f1-db4decd586e1 HTTP/1.1" 200 803 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-14 20:33:10.204] [ERROR] http - 127.0.0.1 - - "GET /api/v1/getgetOrderDetail?orderPartyID=10001&apiKey=95e7d038-6354-4b27-b8f1-db4decd586e1 HTTP/1.1" 404 1074 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-14 20:33:21.639] [DEBUG] GetOrderList - Setting up CORS for services
+[2014-10-14 20:33:21.640] [DEBUG] GetOrderList - apiKey check
+[2014-10-14 20:33:21.642] [ERROR] GetOrderList - apiKey wrong 95e7d038-6354-4b27-b8f1-db4decd586e1
+[2014-10-14 20:33:21.643] [ERROR] http - 127.0.0.1 - - "GET /api/v1/getOrderDetail?orderPartyID=10001&apiKey=95e7d038-6354-4b27-b8f1-db4decd586e1 HTTP/1.1" 403 20 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-14 20:34:02.311] [DEBUG] GetOrderList - Setting up CORS for services
+[2014-10-14 20:34:02.311] [DEBUG] GetOrderList - apiKey check
+[2014-10-14 20:34:02.311] [DEBUG] GetOrderList - apiKey validated correct
+[2014-10-14 20:34:02.312] [ERROR] http - 127.0.0.1 - - "GET /api/v1/getOrderDetail?orderPartyID=10001&apiKey=1dca7720-395c-11e4-916c-0800200c9a66 HTTP/1.1" 400 26 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-14 20:34:22.196] [DEBUG] GetOrderList - Setting up CORS for services
+[2014-10-14 20:34:22.197] [DEBUG] GetOrderList - apiKey check
+[2014-10-14 20:34:22.197] [DEBUG] GetOrderList - apiKey validated correct
+[2014-10-14 20:34:22.230] [INFO] http - 127.0.0.1 - - "GET /api/v1/getOrderDetail?orderPartyID=10001&apiKey=1dca7720-395c-11e4-916c-0800200c9a66&orderStatus=0 HTTP/1.1" 200 11 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-14 20:34:51.692] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-14 20:34:51.710] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-14 20:34:52.169] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-14 20:34:52.169] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-14 20:34:52.184] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-14 20:34:52.186] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-14 20:34:52.191] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-14 20:34:52.205] [WARN] OrderDetailVOTemp - Creating first instance of OrderDetailVOTemp
+[2014-10-14 20:34:52.211] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-14 20:34:52.216] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-14 20:34:52.231] [WARN] OrderDetailVOTemp - Creating first instance of OrderDetailVOTemp
+[2014-10-14 20:34:52.242] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-14 20:34:52.450] [WARN] FormDataVO - Creating first instance of FormDataVO
+[2014-10-14 20:34:52.491] [WARN] FormDataVO - Creating first instance of FormDataVO
+[2014-10-14 20:34:52.558] [INFO] app - Worker server started on port 3000 (ID: 1, PID: 3408)
+[2014-10-14 20:34:52.582] [INFO] app - Worker server started on port 3000 (ID: 2, PID: 4444)
+[2014-10-14 20:34:52.821] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-14 20:34:52.827] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-14 20:34:57.401] [DEBUG] GetOrderList - Setting up CORS for services
+[2014-10-14 20:34:57.402] [DEBUG] GetOrderList - apiKey check
+[2014-10-14 20:34:57.413] [DEBUG] GetOrderList - apiKey validated correct
+[2014-10-14 20:34:57.450] [INFO] http - 127.0.0.1 - - "GET /api/v1/getOrderDetail?orderPartyID=10001&apiKey=1dca7720-395c-11e4-916c-0800200c9a66&orderStatus=0 HTTP/1.1" 200 11 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-14 20:38:17.380] [INFO] ConnectDBInstance -  Server Termination
+[2014-10-14 20:38:19.876] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-14 20:38:19.884] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-14 20:38:20.349] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-14 20:38:20.350] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-14 20:38:20.363] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-14 20:38:20.364] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-14 20:38:20.371] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-14 20:38:20.385] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-14 20:38:20.401] [ERROR] app - Worker server died (ID: 1, PID: 316)
+[2014-10-14 20:38:20.425] [ERROR] app - Worker server died (ID: 2, PID: 3392)
+[2014-10-14 20:39:00.820] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-14 20:39:00.834] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-14 20:39:01.298] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-14 20:39:01.299] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-14 20:39:01.320] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-14 20:39:01.331] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-14 20:39:01.332] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-14 20:39:01.335] [WARN] OrderDetailVOTemp - Creating first instance of OrderDetailVOTemp
+[2014-10-14 20:39:01.346] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-14 20:39:01.358] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-14 20:39:01.373] [WARN] OrderDetailVOTemp - Creating first instance of OrderDetailVOTemp
+[2014-10-14 20:39:01.383] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-14 20:39:01.573] [WARN] FormDataVO - Creating first instance of FormDataVO
+[2014-10-14 20:39:01.611] [WARN] FormDataVO - Creating first instance of FormDataVO
+[2014-10-14 20:39:01.668] [INFO] app - Worker server started on port 3000 (ID: 1, PID: 3480)
+[2014-10-14 20:39:01.708] [INFO] app - Worker server started on port 3000 (ID: 2, PID: 2548)
+[2014-10-14 20:39:01.974] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-14 20:39:01.976] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-14 20:39:06.642] [DEBUG] GetOrderList - Setting up CORS for services
+[2014-10-14 20:39:06.643] [DEBUG] GetOrderList - apiKey check
+[2014-10-14 20:39:06.651] [DEBUG] GetOrderList - apiKey validated correct
+[2014-10-14 20:39:06.745] [INFO] http - 127.0.0.1 - - "GET /api/v1/getOrderDetail?orderPartyID=10001&apiKey=1dca7720-395c-11e4-916c-0800200c9a66&orderStatus=0 HTTP/1.1" 200 2488 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-14 20:39:35.724] [DEBUG] GetOrderList - Setting up CORS for services
+[2014-10-14 20:39:35.724] [DEBUG] GetOrderList - apiKey check
+[2014-10-14 20:39:35.725] [DEBUG] GetOrderList - apiKey validated correct
+[2014-10-14 20:39:35.750] [INFO] http - 127.0.0.1 - - "GET /api/v1/getOrderDetail?orderPartyID=10001&apiKey=1dca7720-395c-11e4-916c-0800200c9a66&orderStatus=1 HTTP/1.1" 200 262 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-14 20:40:05.132] [DEBUG] GetOrderList - Setting up CORS for services
+[2014-10-14 20:40:05.132] [DEBUG] GetOrderList - apiKey check
+[2014-10-14 20:40:05.133] [DEBUG] GetOrderList - apiKey validated correct
+[2014-10-14 20:40:05.158] [INFO] http - 127.0.0.1 - - "GET /api/v1/getOrderDetail?orderPartyID=10001&apiKey=1dca7720-395c-11e4-916c-0800200c9a66&orderStatus=2 HTTP/1.1" 200 262 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-14 20:40:25.878] [DEBUG] GetOrderList - Setting up CORS for services
+[2014-10-14 20:40:25.879] [DEBUG] GetOrderList - apiKey check
+[2014-10-14 20:40:25.880] [DEBUG] GetOrderList - apiKey validated correct
+[2014-10-14 20:40:25.930] [INFO] http - 127.0.0.1 - - "GET /api/v1/getOrderDetail?orderPartyID=10001&apiKey=1dca7720-395c-11e4-916c-0800200c9a66&orderStatus=0 HTTP/1.1" 200 2488 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-14 20:40:53.138] [DEBUG] GetOrderList - Setting up CORS for services
+[2014-10-14 20:40:53.139] [DEBUG] GetOrderList - apiKey check
+[2014-10-14 20:40:53.139] [DEBUG] GetOrderList - apiKey validated correct
+[2014-10-14 20:40:53.192] [INFO] http - 127.0.0.1 - - "GET /api/v1/getOrderDetail?orderPartyID=10001&orderStatus=0&apiKey=1dca7720-395c-11e4-916c-0800200c9a66 HTTP/1.1" 200 2488 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-14 20:41:13.489] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-14 20:41:13.499] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-14 20:41:14.014] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-14 20:41:14.015] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-14 20:41:14.038] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-14 20:41:14.042] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-14 20:41:14.043] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-14 20:41:14.055] [WARN] OrderDetailVOTemp - Creating first instance of OrderDetailVOTemp
+[2014-10-14 20:41:14.064] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-14 20:41:14.071] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-14 20:41:14.080] [WARN] OrderDetailVOTemp - Creating first instance of OrderDetailVOTemp
+[2014-10-14 20:41:14.090] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-14 20:41:14.308] [WARN] FormDataVO - Creating first instance of FormDataVO
+[2014-10-14 20:41:14.343] [WARN] FormDataVO - Creating first instance of FormDataVO
+[2014-10-14 20:41:14.406] [INFO] app - Worker server started on port 3000 (ID: 2, PID: 4448)
+[2014-10-14 20:41:14.433] [INFO] app - Worker server started on port 3000 (ID: 1, PID: 2028)
+[2014-10-14 20:41:14.677] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-14 20:41:14.677] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-14 20:41:18.941] [DEBUG] GetOrderList - Setting up CORS for services
+[2014-10-14 20:41:18.942] [DEBUG] GetOrderList - apiKey check
+[2014-10-14 20:41:18.948] [DEBUG] GetOrderList - apiKey validated correct
+[2014-10-14 20:41:18.984] [INFO] http - 127.0.0.1 - - "GET /api/v1/getOrderDetail?orderPartyID=10001&orderStatus=1&apiKey=1dca7720-395c-11e4-916c-0800200c9a66 HTTP/1.1" 200 11 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-14 20:42:39.920] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-14 20:42:39.926] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-14 20:42:40.404] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-14 20:42:40.404] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-14 20:42:40.405] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-14 20:42:40.405] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-14 20:42:40.424] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-14 20:42:40.427] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-14 20:42:40.439] [WARN] OrderDetailVOTemp - Creating first instance of OrderDetailVOTemp
+[2014-10-14 20:42:40.443] [WARN] OrderDetailVOTemp - Creating first instance of OrderDetailVOTemp
+[2014-10-14 20:42:40.450] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-14 20:42:40.454] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-14 20:42:40.678] [WARN] FormDataVO - Creating first instance of FormDataVO
+[2014-10-14 20:42:40.681] [WARN] FormDataVO - Creating first instance of FormDataVO
+[2014-10-14 20:42:40.768] [INFO] app - Worker server started on port 3000 (ID: 1, PID: 4816)
+[2014-10-14 20:42:40.774] [INFO] app - Worker server started on port 3000 (ID: 2, PID: 4116)
+[2014-10-14 20:42:41.042] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-14 20:42:41.044] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-14 20:42:44.847] [DEBUG] GetOrderList - Setting up CORS for services
+[2014-10-14 20:42:44.848] [DEBUG] GetOrderList - apiKey check
+[2014-10-14 20:42:44.859] [DEBUG] GetOrderList - apiKey validated correct
+[2014-10-14 20:42:44.891] [INFO] http - 127.0.0.1 - - "GET /api/v1/getOrderDetail?orderPartyID=10001&orderStatus=1&apiKey=1dca7720-395c-11e4-916c-0800200c9a66 HTTP/1.1" 200 11 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-14 20:43:28.306] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-14 20:43:28.340] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-14 20:43:28.784] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-14 20:43:28.784] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-14 20:43:28.804] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-14 20:43:28.819] [WARN] OrderDetailVOTemp - Creating first instance of OrderDetailVOTemp
+[2014-10-14 20:43:28.825] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-14 20:43:28.826] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-14 20:43:28.828] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-14 20:43:28.852] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-14 20:43:28.867] [WARN] OrderDetailVOTemp - Creating first instance of OrderDetailVOTemp
+[2014-10-14 20:43:28.880] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-14 20:43:29.052] [WARN] FormDataVO - Creating first instance of FormDataVO
+[2014-10-14 20:43:29.119] [WARN] FormDataVO - Creating first instance of FormDataVO
+[2014-10-14 20:43:29.144] [INFO] app - Worker server started on port 3000 (ID: 1, PID: 4220)
+[2014-10-14 20:43:29.209] [INFO] app - Worker server started on port 3000 (ID: 2, PID: 5084)
+[2014-10-14 20:43:29.355] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-14 20:43:29.408] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-14 20:43:31.229] [DEBUG] GetOrderList - Setting up CORS for services
+[2014-10-14 20:43:31.230] [DEBUG] GetOrderList - apiKey check
+[2014-10-14 20:43:31.238] [DEBUG] GetOrderList - apiKey validated correct
+[2014-10-14 20:43:31.275] [INFO] http - 127.0.0.1 - - "GET /api/v1/getOrderDetail?orderPartyID=10001&orderStatus=1&apiKey=1dca7720-395c-11e4-916c-0800200c9a66 HTTP/1.1" 200 11 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-14 20:43:35.710] [DEBUG] GetOrderList - Setting up CORS for services
+[2014-10-14 20:43:35.710] [DEBUG] GetOrderList - apiKey check
+[2014-10-14 20:43:35.712] [DEBUG] GetOrderList - apiKey validated correct
+[2014-10-14 20:43:35.738] [INFO] http - 127.0.0.1 - - "GET /api/v1/getOrderDetail?orderPartyID=10001&orderStatus=1&apiKey=1dca7720-395c-11e4-916c-0800200c9a66 HTTP/1.1" 200 11 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-14 20:45:33.135] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-14 20:45:33.168] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-14 20:45:33.620] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-14 20:45:33.622] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-14 20:45:33.643] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-14 20:45:33.654] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-14 20:45:33.655] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-14 20:45:33.659] [WARN] OrderDetailVOTemp - Creating first instance of OrderDetailVOTemp
+[2014-10-14 20:45:33.669] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-14 20:45:33.681] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-14 20:45:33.695] [WARN] OrderDetailVOTemp - Creating first instance of OrderDetailVOTemp
+[2014-10-14 20:45:33.715] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-14 20:45:33.903] [WARN] FormDataVO - Creating first instance of FormDataVO
+[2014-10-14 20:45:33.944] [WARN] FormDataVO - Creating first instance of FormDataVO
+[2014-10-14 20:45:33.996] [INFO] app - Worker server started on port 3000 (ID: 1, PID: 672)
+[2014-10-14 20:45:34.043] [INFO] app - Worker server started on port 3000 (ID: 2, PID: 2988)
+[2014-10-14 20:45:34.217] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-14 20:45:34.252] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-14 20:45:38.478] [DEBUG] GetOrderList - Setting up CORS for services
+[2014-10-14 20:45:38.479] [DEBUG] GetOrderList - apiKey check
+[2014-10-14 20:45:38.489] [DEBUG] GetOrderList - apiKey validated correct
+[2014-10-14 20:45:38.525] [INFO] http - 127.0.0.1 - - "GET /api/v1/getOrderDetail?orderPartyID=10001&orderStatus=1&apiKey=1dca7720-395c-11e4-916c-0800200c9a66 HTTP/1.1" 200 25 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-14 20:47:05.764] [INFO] ConnectDBInstance -  Server Termination
+[2014-10-14 20:47:05.764] [INFO] ConnectDBInstance -  Server Termination
+[2014-10-14 20:47:07.290] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-14 20:47:07.346] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-14 20:47:07.814] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-14 20:47:07.815] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-14 20:47:07.836] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-14 20:47:07.850] [WARN] OrderDetailVOTemp - Creating first instance of OrderDetailVOTemp
+[2014-10-14 20:47:07.860] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-14 20:47:07.898] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-14 20:47:07.899] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-14 20:47:07.923] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-14 20:47:07.937] [WARN] OrderDetailVOTemp - Creating first instance of OrderDetailVOTemp
+[2014-10-14 20:47:07.948] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-14 20:47:08.096] [WARN] FormDataVO - Creating first instance of FormDataVO
+[2014-10-14 20:47:08.189] [INFO] app - Worker server started on port 3000 (ID: 1, PID: 3040)
+[2014-10-14 20:47:08.193] [WARN] FormDataVO - Creating first instance of FormDataVO
+[2014-10-14 20:47:08.276] [INFO] app - Worker server started on port 3000 (ID: 2, PID: 3448)
+[2014-10-14 20:47:08.504] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-14 20:47:08.506] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-14 20:47:10.912] [DEBUG] GetOrderList - Setting up CORS for services
+[2014-10-14 20:47:10.913] [DEBUG] GetOrderList - apiKey check
+[2014-10-14 20:47:10.922] [DEBUG] GetOrderList - apiKey validated correct
+[2014-10-14 20:47:10.956] [ERROR] http - 127.0.0.1 - - "GET /api/v1/getOrderDetail?orderPartyID=10001&orderStatus=1&apiKey=1dca7720-395c-11e4-916c-0800200c9a66 HTTP/1.1" 500 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-14 20:48:04.192] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-14 20:48:04.258] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-14 20:48:04.714] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-14 20:48:04.715] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-14 20:48:04.735] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-14 20:48:04.750] [WARN] OrderDetailVOTemp - Creating first instance of OrderDetailVOTemp
+[2014-10-14 20:48:04.761] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-14 20:48:04.795] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-14 20:48:04.797] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-14 20:48:04.820] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-14 20:48:04.836] [WARN] OrderDetailVOTemp - Creating first instance of OrderDetailVOTemp
+[2014-10-14 20:48:04.846] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-14 20:48:04.999] [WARN] FormDataVO - Creating first instance of FormDataVO
+[2014-10-14 20:48:05.089] [WARN] FormDataVO - Creating first instance of FormDataVO
+[2014-10-14 20:48:05.099] [INFO] app - Worker server started on port 3000 (ID: 1, PID: 4896)
+[2014-10-14 20:48:05.181] [INFO] app - Worker server started on port 3000 (ID: 2, PID: 1852)
+[2014-10-14 20:48:05.325] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-14 20:48:05.378] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-14 20:48:11.036] [DEBUG] GetOrderList - Setting up CORS for services
+[2014-10-14 20:48:11.037] [DEBUG] GetOrderList - apiKey check
+[2014-10-14 20:48:11.049] [DEBUG] GetOrderList - apiKey validated correct
+[2014-10-14 20:48:11.115] [ERROR] http - 127.0.0.1 - - "GET /api/v1/getOrderDetail?orderPartyID=10001&orderStatus=1&apiKey=1dca7720-395c-11e4-916c-0800200c9a66 HTTP/1.1" 500 - "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-14 20:48:35.078] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-14 20:48:35.108] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-14 20:48:35.553] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-14 20:48:35.553] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-14 20:48:35.574] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-14 20:48:35.588] [WARN] OrderDetailVOTemp - Creating first instance of OrderDetailVOTemp
+[2014-10-14 20:48:35.593] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-14 20:48:35.594] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-14 20:48:35.600] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-14 20:48:35.618] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-14 20:48:35.632] [WARN] OrderDetailVOTemp - Creating first instance of OrderDetailVOTemp
+[2014-10-14 20:48:35.643] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-14 20:48:35.831] [WARN] FormDataVO - Creating first instance of FormDataVO
+[2014-10-14 20:48:35.875] [WARN] FormDataVO - Creating first instance of FormDataVO
+[2014-10-14 20:48:35.923] [INFO] app - Worker server started on port 3000 (ID: 1, PID: 904)
+[2014-10-14 20:48:35.967] [INFO] app - Worker server started on port 3000 (ID: 2, PID: 1416)
+[2014-10-14 20:48:36.183] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-14 20:48:36.185] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-14 20:48:58.652] [INFO] ConnectDBInstance -  Server Termination
+[2014-10-14 20:49:00.434] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-14 20:49:00.455] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-14 20:49:00.914] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-14 20:49:00.915] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-14 20:49:00.938] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-14 20:49:00.941] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-14 20:49:00.942] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-14 20:49:00.954] [WARN] OrderDetailVOTemp - Creating first instance of OrderDetailVOTemp
+[2014-10-14 20:49:00.963] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-14 20:49:00.967] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-14 20:49:00.984] [WARN] OrderDetailVOTemp - Creating first instance of OrderDetailVOTemp
+[2014-10-14 20:49:00.994] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-14 20:49:01.200] [WARN] FormDataVO - Creating first instance of FormDataVO
+[2014-10-14 20:49:01.228] [WARN] FormDataVO - Creating first instance of FormDataVO
+[2014-10-14 20:49:01.293] [INFO] app - Worker server started on port 3000 (ID: 1, PID: 4300)
+[2014-10-14 20:49:01.325] [INFO] app - Worker server started on port 3000 (ID: 2, PID: 1484)
+[2014-10-14 20:49:01.507] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-14 20:49:01.525] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-14 20:49:08.218] [DEBUG] GetOrderList - Setting up CORS for services
+[2014-10-14 20:49:08.219] [DEBUG] GetOrderList - apiKey check
+[2014-10-14 20:49:08.229] [DEBUG] GetOrderList - apiKey validated correct
+[2014-10-14 20:49:08.267] [INFO] http - 127.0.0.1 - - "GET /api/v1/getOrderDetail?orderPartyID=10001&orderStatus=1&apiKey=1dca7720-395c-11e4-916c-0800200c9a66 HTTP/1.1" 200 25 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-14 20:49:12.699] [DEBUG] GetOrderList - Setting up CORS for services
+[2014-10-14 20:49:12.700] [DEBUG] GetOrderList - apiKey check
+[2014-10-14 20:49:12.701] [DEBUG] GetOrderList - apiKey validated correct
+[2014-10-14 20:49:12.724] [INFO] http - 127.0.0.1 - - "GET /api/v1/getOrderDetail?orderPartyID=10001&orderStatus=2&apiKey=1dca7720-395c-11e4-916c-0800200c9a66 HTTP/1.1" 200 25 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-14 20:49:17.868] [DEBUG] GetOrderList - Setting up CORS for services
+[2014-10-14 20:49:17.868] [DEBUG] GetOrderList - apiKey check
+[2014-10-14 20:49:17.869] [DEBUG] GetOrderList - apiKey validated correct
+[2014-10-14 20:49:17.914] [INFO] http - 127.0.0.1 - - "GET /api/v1/getOrderDetail?orderPartyID=10001&orderStatus=2000000000000000000000000000&apiKey=1dca7720-395c-11e4-916c-0800200c9a66 HTTP/1.1" 200 25 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-14 20:49:27.335] [DEBUG] GetOrderList - Setting up CORS for services
+[2014-10-14 20:49:27.336] [DEBUG] GetOrderList - apiKey check
+[2014-10-14 20:49:27.336] [DEBUG] GetOrderList - apiKey validated correct
+[2014-10-14 20:49:27.386] [INFO] http - 127.0.0.1 - - "GET /api/v1/getOrderDetail?orderPartyID=10001&orderStatus=0000000000000000000000000000000&apiKey=1dca7720-395c-11e4-916c-0800200c9a66 HTTP/1.1" 200 2488 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-14 20:49:39.993] [DEBUG] GetOrderList - Setting up CORS for services
+[2014-10-14 20:49:39.993] [DEBUG] GetOrderList - apiKey check
+[2014-10-14 20:49:39.994] [DEBUG] GetOrderList - apiKey validated correct
+[2014-10-14 20:49:39.994] [ERROR] http - 127.0.0.1 - - "GET /api/v1/getOrderDetail?orderPartyID=ljds;lkfjdslkfjds%27;gjfds&orderStatus=&apiKey=1dca7720-395c-11e4-916c-0800200c9a66 HTTP/1.1" 400 26 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-14 20:49:52.718] [DEBUG] GetOrderList - Setting up CORS for services
+[2014-10-14 20:49:52.718] [DEBUG] GetOrderList - apiKey check
+[2014-10-14 20:49:52.719] [DEBUG] GetOrderList - apiKey validated correct
+[2014-10-14 20:49:52.740] [INFO] http - 127.0.0.1 - - "GET /api/v1/getOrderDetail?orderPartyID=ljds;lkfjdslkfjds%27;gjfds&orderStatus=-1&apiKey=1dca7720-395c-11e4-916c-0800200c9a66 HTTP/1.1" 200 25 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-14 20:49:57.540] [DEBUG] GetOrderList - Setting up CORS for services
+[2014-10-14 20:49:57.541] [DEBUG] GetOrderList - apiKey check
+[2014-10-14 20:49:57.541] [DEBUG] GetOrderList - apiKey validated correct
+[2014-10-14 20:49:57.590] [INFO] http - 127.0.0.1 - - "GET /api/v1/getOrderDetail?orderPartyID=ljds;lkfjdslkfjds%27;gjfds&orderStatus=0&apiKey=1dca7720-395c-11e4-916c-0800200c9a66 HTTP/1.1" 200 2488 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-14 21:10:56.275] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-14 21:10:56.306] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-14 21:10:56.746] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-14 21:10:56.747] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-14 21:10:56.767] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-14 21:10:56.782] [WARN] OrderDetailVOTemp - Creating first instance of OrderDetailVOTemp
+[2014-10-14 21:10:56.783] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-14 21:10:56.784] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-14 21:10:56.794] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-14 21:10:56.808] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-14 21:10:56.824] [WARN] OrderDetailVOTemp - Creating first instance of OrderDetailVOTemp
+[2014-10-14 21:10:56.834] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-14 21:10:57.022] [WARN] FormDataVO - Creating first instance of FormDataVO
+[2014-10-14 21:10:57.060] [WARN] FormDataVO - Creating first instance of FormDataVO
+[2014-10-14 21:10:57.116] [INFO] app - Worker server started on port 3000 (ID: 1, PID: 4744)
+[2014-10-14 21:10:57.152] [INFO] app - Worker server started on port 3000 (ID: 2, PID: 3164)
+[2014-10-14 21:10:57.372] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-14 21:10:57.373] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-14 21:11:06.570] [INFO] FormDataVO -  Class:FormData Method:addOrUpdate starts
+[2014-10-14 21:11:06.657] [INFO] http - 127.0.0.1 - - "POST /api/v1/formData?orderID=10001&apiKey=f5812148-64e5-45d1-9f44-ce51b5a9b741 HTTP/1.1" 200 58 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-14 21:11:25.820] [INFO] FormDataVO -  Class:FormData Method:addOrUpdate starts
+[2014-10-14 21:11:25.908] [INFO] http - 127.0.0.1 - - "POST /api/v1/formData?orderID=10001&apiKey=f5812148-64e5-45d1-9f44-ce51b5a9b741 HTTP/1.1" 200 20 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-14 21:12:22.729] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-14 21:12:22.730] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-14 21:12:23.218] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-14 21:12:23.219] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-14 21:12:23.225] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-14 21:12:23.226] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-14 21:12:23.241] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-14 21:12:23.246] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-14 21:12:23.256] [WARN] OrderDetailVOTemp - Creating first instance of OrderDetailVOTemp
+[2014-10-14 21:12:23.262] [WARN] OrderDetailVOTemp - Creating first instance of OrderDetailVOTemp
+[2014-10-14 21:12:23.272] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-14 21:12:23.276] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-14 21:12:23.506] [WARN] FormDataVO - Creating first instance of FormDataVO
+[2014-10-14 21:12:23.521] [WARN] FormDataVO - Creating first instance of FormDataVO
+[2014-10-14 21:12:23.610] [INFO] app - Worker server started on port 3000 (ID: 2, PID: 960)
+[2014-10-14 21:12:23.618] [INFO] app - Worker server started on port 3000 (ID: 1, PID: 4344)
+[2014-10-14 21:12:23.829] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-14 21:12:23.834] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-14 21:12:29.794] [INFO] FormDataVO -  Class:FormData Method:addOrUpdate starts
+[2014-10-14 21:12:29.903] [INFO] http - 127.0.0.1 - - "POST /api/v1/formData?orderID=10001&apiKey=f5812148-64e5-45d1-9f44-ce51b5a9b741 HTTP/1.1" 200 20 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-14 21:13:09.459] [INFO] ConnectDBInstance -  Server Termination
+[2014-10-14 21:13:10.954] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-14 21:13:10.973] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-14 21:13:11.462] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-14 21:13:11.463] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-14 21:13:11.483] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-14 21:13:11.500] [WARN] OrderDetailVOTemp - Creating first instance of OrderDetailVOTemp
+[2014-10-14 21:13:11.510] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-14 21:13:11.514] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-14 21:13:11.515] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-14 21:13:11.540] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-14 21:13:11.555] [WARN] OrderDetailVOTemp - Creating first instance of OrderDetailVOTemp
+[2014-10-14 21:13:11.568] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-14 21:13:11.758] [WARN] FormDataVO - Creating first instance of FormDataVO
+[2014-10-14 21:13:11.828] [WARN] FormDataVO - Creating first instance of FormDataVO
+[2014-10-14 21:13:11.863] [INFO] app - Worker server started on port 3000 (ID: 1, PID: 4632)
+[2014-10-14 21:13:11.942] [INFO] app - Worker server started on port 3000 (ID: 2, PID: 1596)
+[2014-10-14 21:13:12.091] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-14 21:13:12.134] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-14 21:13:14.196] [INFO] FormDataVO -  Class:FormData Method:addOrUpdate starts
+[2014-10-14 21:13:14.305] [INFO] http - 127.0.0.1 - - "POST /api/v1/formData?orderID=10001&apiKey=f5812148-64e5-45d1-9f44-ce51b5a9b741 HTTP/1.1" 200 20 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-14 21:13:39.816] [INFO] FormDataVO -  Class:FormData Method:addOrUpdate starts
+[2014-10-14 21:13:39.871] [INFO] http - 127.0.0.1 - - "POST /api/v1/formData?orderID=100001&apiKey=f5812148-64e5-45d1-9f44-ce51b5a9b741 HTTP/1.1" 200 58 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-14 21:14:08.436] [INFO] ConnectDBInstance -  Server Termination
+[2014-10-14 21:14:10.085] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-14 21:14:10.114] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-14 21:14:10.575] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-14 21:14:10.575] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-14 21:14:10.595] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-14 21:14:10.609] [WARN] OrderDetailVOTemp - Creating first instance of OrderDetailVOTemp
+[2014-10-14 21:14:10.615] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-14 21:14:10.617] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-14 21:14:10.619] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-14 21:14:10.644] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-14 21:14:10.659] [WARN] OrderDetailVOTemp - Creating first instance of OrderDetailVOTemp
+[2014-10-14 21:14:10.670] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-14 21:14:10.848] [WARN] FormDataVO - Creating first instance of FormDataVO
+[2014-10-14 21:14:10.901] [WARN] FormDataVO - Creating first instance of FormDataVO
+[2014-10-14 21:14:10.940] [INFO] app - Worker server started on port 3000 (ID: 1, PID: 4948)
+[2014-10-14 21:14:10.991] [INFO] app - Worker server started on port 3000 (ID: 2, PID: 4116)
+[2014-10-14 21:14:11.197] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-14 21:14:11.209] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-14 21:14:13.707] [INFO] FormDataVO -  Class:FormData Method:addOrUpdate starts
+[2014-10-14 21:14:13.818] [INFO] http - 127.0.0.1 - - "POST /api/v1/formData?orderID=100001&apiKey=f5812148-64e5-45d1-9f44-ce51b5a9b741 HTTP/1.1" 200 58 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-14 21:14:37.677] [INFO] FormDataVO -  Class:FormData Method:addOrUpdate starts
+[2014-10-14 21:14:37.764] [INFO] http - 127.0.0.1 - - "POST /api/v1/formData?orderID=100001&apiKey=f5812148-64e5-45d1-9f44-ce51b5a9b741 HTTP/1.1" 200 58 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-14 21:14:55.118] [DEBUG] GetCompletedOrderList - Setting up CORS for services
+[2014-10-14 21:14:55.118] [DEBUG] GetCompletedOrderList - apiKey check
+[2014-10-14 21:14:55.119] [DEBUG] GetCompletedOrderList - apiKey validated correct
+[2014-10-14 21:14:55.120] [ERROR] http - 127.0.0.1 - - "GET /api/v1/getCompletedOrderDetail?orderID=10001&apiKey=95e7d038-6354-4b27-b8f1-db4decd586e1 HTTP/1.1" 403 21 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-14 21:15:20.614] [DEBUG] GetCompletedOrderList - Setting up CORS for services
+[2014-10-14 21:15:20.614] [DEBUG] GetCompletedOrderList - apiKey check
+[2014-10-14 21:15:20.615] [DEBUG] GetCompletedOrderList - apiKey validated correct
+[2014-10-14 21:15:20.616] [INFO] http - 127.0.0.1 - - "GET /api/v1/getCompletedOrderDetail?orderPartyID=10001&apiKey=95e7d038-6354-4b27-b8f1-db4decd586e1 HTTP/1.1" 200 803 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-14 21:16:07.301] [DEBUG] GetOrderList - Setting up CORS for services
+[2014-10-14 21:16:07.301] [DEBUG] GetOrderList - apiKey check
+[2014-10-14 21:16:07.302] [ERROR] GetOrderList - apiKey wrong 95e7d038-6354-4b27-b8f1-db4decd586e1
+[2014-10-14 21:16:07.302] [ERROR] http - 127.0.0.1 - - "GET /api/v1/getOrderDetail?orderPartyID=10001&apiKey=95e7d038-6354-4b27-b8f1-db4decd586e1 HTTP/1.1" 403 20 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-14 21:16:23.828] [DEBUG] GetOrderList - Setting up CORS for services
+[2014-10-14 21:16:23.828] [DEBUG] GetOrderList - apiKey check
+[2014-10-14 21:16:23.831] [DEBUG] GetOrderList - apiKey validated correct
+[2014-10-14 21:16:23.832] [ERROR] http - 127.0.0.1 - - "GET /api/v1/getOrderDetail?orderPartyID=10001&apiKey=1dca7720-395c-11e4-916c-0800200c9a66 HTTP/1.1" 400 26 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-14 21:16:32.149] [DEBUG] GetOrderList - Setting up CORS for services
+[2014-10-14 21:16:32.149] [DEBUG] GetOrderList - apiKey check
+[2014-10-14 21:16:32.149] [DEBUG] GetOrderList - apiKey validated correct
+[2014-10-14 21:16:32.182] [INFO] http - 127.0.0.1 - - "GET /api/v1/getOrderDetail?orderPartyID=10001&apiKey=1dca7720-395c-11e4-916c-0800200c9a66&orderStatus=0 HTTP/1.1" 200 2236 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-14 21:16:59.911] [INFO] FormDataVO -  Class:FormData Method:addOrUpdate starts
+[2014-10-14 21:16:59.967] [INFO] http - 127.0.0.1 - - "POST /api/v1/formData?orderID=100002&apiKey=f5812148-64e5-45d1-9f44-ce51b5a9b741 HTTP/1.1" 200 58 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-14 21:19:23.421] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-14 21:19:23.432] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-14 21:19:23.898] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-14 21:19:23.899] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-14 21:19:23.911] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-14 21:19:23.912] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-14 21:19:23.918] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-14 21:19:23.931] [WARN] OrderDetailVOTemp - Creating first instance of OrderDetailVOTemp
+[2014-10-14 21:19:23.938] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-14 21:19:23.941] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-14 21:19:23.955] [WARN] OrderDetailVOTemp - Creating first instance of OrderDetailVOTemp
+[2014-10-14 21:19:23.965] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-14 21:19:24.167] [WARN] FormDataVO - Creating first instance of FormDataVO
+[2014-10-14 21:19:24.194] [WARN] FormDataVO - Creating first instance of FormDataVO
+[2014-10-14 21:19:24.260] [INFO] app - Worker server started on port 3000 (ID: 1, PID: 3392)
+[2014-10-14 21:19:24.292] [INFO] app - Worker server started on port 3000 (ID: 2, PID: 4628)
+[2014-10-14 21:19:24.566] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-14 21:19:24.566] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-14 21:19:34.460] [INFO] FormDataVO -  Class:FormData Method:addOrUpdate starts
+[2014-10-14 21:19:34.536] [INFO] http - 127.0.0.1 - - "POST /api/v1/formData?orderID=100002&apiKey=f5812148-64e5-45d1-9f44-ce51b5a9b741 HTTP/1.1" 200 58 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-14 21:20:40.220] [INFO] FormDataVO -  Class:FormData Method:addOrUpdate starts
+[2014-10-14 21:20:40.295] [INFO] http - 127.0.0.1 - - "POST /api/v1/formData?orderID=100002&apiKey=f5812148-64e5-45d1-9f44-ce51b5a9b741 HTTP/1.1" 200 58 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-14 21:21:29.707] [INFO] FormDataVO -  Class:FormData Method:addOrUpdate starts
+[2014-10-14 21:21:29.773] [INFO] http - 127.0.0.1 - - "POST /api/v1/formData?orderID=100002&apiKey=f5812148-64e5-45d1-9f44-ce51b5a9b741 HTTP/1.1" 200 58 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-14 21:24:45.597] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-14 21:24:45.605] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-14 21:24:46.254] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-14 21:24:46.254] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-14 21:24:46.273] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-14 21:24:46.274] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-14 21:24:46.276] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-14 21:24:46.289] [WARN] OrderDetailVOTemp - Creating first instance of OrderDetailVOTemp
+[2014-10-14 21:24:46.299] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-14 21:24:46.307] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-14 21:24:46.320] [WARN] OrderDetailVOTemp - Creating first instance of OrderDetailVOTemp
+[2014-10-14 21:24:46.331] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-14 21:24:46.542] [WARN] FormDataVO - Creating first instance of FormDataVO
+[2014-10-14 21:24:46.562] [WARN] FormDataVO - Creating first instance of FormDataVO
+[2014-10-14 21:24:46.635] [INFO] app - Worker server started on port 3000 (ID: 1, PID: 3184)
+[2014-10-14 21:24:46.659] [INFO] app - Worker server started on port 3000 (ID: 2, PID: 4500)
+[2014-10-14 21:24:46.929] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-14 21:24:46.973] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-14 21:24:49.229] [INFO] FormDataVO -  Class:FormData Method:addOrUpdate starts
+[2014-10-14 21:24:49.342] [INFO] http - 127.0.0.1 - - "POST /api/v1/formData?orderID=100002&apiKey=f5812148-64e5-45d1-9f44-ce51b5a9b741 HTTP/1.1" 200 58 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-14 21:25:21.018] [INFO] FormDataVO -  Class:FormData Method:addOrUpdate starts
+[2014-10-14 21:25:21.077] [INFO] http - 127.0.0.1 - - "POST /api/v1/formData?orderID=100001&apiKey=f5812148-64e5-45d1-9f44-ce51b5a9b741 HTTP/1.1" 200 58 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-14 21:27:07.153] [INFO] FormDataVO -  Class:FormData Method:addOrUpdate starts
+[2014-10-14 21:27:07.238] [INFO] http - 127.0.0.1 - - "POST /api/v1/formData?orderID=100002&apiKey=f5812148-64e5-45d1-9f44-ce51b5a9b741 HTTP/1.1" 200 58 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-14 21:27:21.786] [INFO] FormDataVO -  Class:FormData Method:addOrUpdate starts
+[2014-10-14 21:27:21.871] [INFO] http - 127.0.0.1 - - "POST /api/v1/formData?orderID=100001&apiKey=f5812148-64e5-45d1-9f44-ce51b5a9b741 HTTP/1.1" 200 58 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-14 21:27:28.550] [INFO] FormDataVO -  Class:FormData Method:addOrUpdate starts
+[2014-10-14 21:27:28.640] [INFO] http - 127.0.0.1 - - "POST /api/v1/formData?orderID=100001&apiKey=f5812148-64e5-45d1-9f44-ce51b5a9b741 HTTP/1.1" 200 58 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-14 21:27:34.731] [INFO] FormDataVO -  Class:FormData Method:addOrUpdate starts
+[2014-10-14 21:27:34.815] [INFO] http - 127.0.0.1 - - "POST /api/v1/formData?orderID=100002&apiKey=f5812148-64e5-45d1-9f44-ce51b5a9b741 HTTP/1.1" 200 58 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-14 21:27:48.231] [DEBUG] GetOrderList - Setting up CORS for services
+[2014-10-14 21:27:48.232] [DEBUG] GetOrderList - apiKey check
+[2014-10-14 21:27:48.232] [DEBUG] GetOrderList - apiKey validated correct
+[2014-10-14 21:27:48.269] [INFO] http - 127.0.0.1 - - "GET /api/v1/getOrderDetail?orderPartyID=10001&apiKey=1dca7720-395c-11e4-916c-0800200c9a66&orderStatus=0 HTTP/1.1" 200 2488 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-14 21:28:05.326] [INFO] FormDataVO -  Class:FormData Method:addOrUpdate starts
+[2014-10-14 21:28:05.412] [INFO] http - 127.0.0.1 - - "POST /api/v1/formData?orderID=100002&apiKey=f5812148-64e5-45d1-9f44-ce51b5a9b741 HTTP/1.1" 200 58 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-14 21:33:23.245] [INFO] FormDataVO -  Class:FormData Method:addOrUpdate starts
+[2014-10-14 21:33:23.332] [INFO] http - 127.0.0.1 - - "POST /api/v1/formData?orderID=100002&apiKey=f5812148-64e5-45d1-9f44-ce51b5a9b741 HTTP/1.1" 200 58 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-14 21:34:33.629] [INFO] FormDataVO -  Class:FormData Method:addOrUpdate starts
+[2014-10-14 21:34:33.732] [INFO] http - 127.0.0.1 - - "POST /api/v1/formData?orderID=100002&apiKey=f5812148-64e5-45d1-9f44-ce51b5a9b741 HTTP/1.1" 200 58 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-14 21:36:38.605] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-14 21:36:38.626] [WARN] ResourceLoader - Creating first instance of ResourceLoader
+[2014-10-14 21:36:39.074] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-14 21:36:39.074] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-14 21:36:39.095] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-14 21:36:39.107] [WARN] ConnectDBInstance -  Creating new instance
+[2014-10-14 21:36:39.108] [INFO] ConnectDBInstance - ConnectDBInstance: Connection Starts
+[2014-10-14 21:36:39.109] [WARN] OrderDetailVOTemp - Creating first instance of OrderDetailVOTemp
+[2014-10-14 21:36:39.118] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-14 21:36:39.136] [WARN] UserVO - Creating first instance of UserVO
+[2014-10-14 21:36:39.151] [WARN] OrderDetailVOTemp - Creating first instance of OrderDetailVOTemp
+[2014-10-14 21:36:39.163] [WARN] ImageUrlVO - Creating first instance of ImageUrlVO
+[2014-10-14 21:36:39.344] [WARN] FormDataVO - Creating first instance of FormDataVO
+[2014-10-14 21:36:39.398] [WARN] FormDataVO - Creating first instance of FormDataVO
+[2014-10-14 21:36:39.467] [INFO] app - Worker server started on port 3000 (ID: 1, PID: 604)
+[2014-10-14 21:36:39.490] [INFO] app - Worker server started on port 3000 (ID: 2, PID: 1580)
+[2014-10-14 21:36:39.699] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-14 21:36:39.700] [INFO] ConnectDBInstance - Successful Connection
+[2014-10-14 21:36:46.343] [INFO] FormDataVO -  Class:FormData Method:addOrUpdate starts
+[2014-10-14 21:36:46.441] [INFO] http - 127.0.0.1 - - "POST /api/v1/formData?orderID=100002&apiKey=f5812148-64e5-45d1-9f44-ce51b5a9b741 HTTP/1.1" 200 58 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-14 21:37:06.361] [INFO] FormDataVO -  Class:FormData Method:addOrUpdate starts
+[2014-10-14 21:37:07.126] [INFO] http - 127.0.0.1 - - "POST /api/v1/formData?orderID=100002&apiKey=f5812148-64e5-45d1-9f44-ce51b5a9b741 HTTP/1.1" 200 58 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-14 21:37:46.678] [DEBUG] GetOrderList - Setting up CORS for services
+[2014-10-14 21:37:46.678] [DEBUG] GetOrderList - apiKey check
+[2014-10-14 21:37:46.679] [DEBUG] GetOrderList - apiKey validated correct
+[2014-10-14 21:37:46.707] [INFO] http - 127.0.0.1 - - "GET /api/v1/getOrderDetail?orderPartyID=10001&apiKey=1dca7720-395c-11e4-916c-0800200c9a66&orderStatus=0 HTTP/1.1" 200 2242 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-14 21:38:06.386] [INFO] FormDataVO -  Class:FormData Method:addOrUpdate starts
+[2014-10-14 21:38:06.486] [INFO] http - 127.0.0.1 - - "POST /api/v1/formData?orderID=100002&apiKey=f5812148-64e5-45d1-9f44-ce51b5a9b741 HTTP/1.1" 200 58 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-14 21:38:11.304] [INFO] FormDataVO -  Class:FormData Method:addOrUpdate starts
+[2014-10-14 21:38:11.390] [INFO] http - 127.0.0.1 - - "POST /api/v1/formData?orderID=100002&apiKey=f5812148-64e5-45d1-9f44-ce51b5a9b741 HTTP/1.1" 200 58 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
+[2014-10-14 21:38:15.838] [DEBUG] GetOrderList - Setting up CORS for services
+[2014-10-14 21:38:15.838] [DEBUG] GetOrderList - apiKey check
+[2014-10-14 21:38:15.839] [DEBUG] GetOrderList - apiKey validated correct
+[2014-10-14 21:38:15.871] [INFO] http - 127.0.0.1 - - "GET /api/v1/getOrderDetail?orderPartyID=10001&apiKey=1dca7720-395c-11e4-916c-0800200c9a66&orderStatus=0 HTTP/1.1" 200 2488 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36"
