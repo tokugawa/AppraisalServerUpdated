@@ -99,6 +99,7 @@ else {
     app.post('/api/v1/uploadFile', uploadFile);
     app.get('/api/v1/uploadedFile', uploadFile);
     app.get('/api/v1/uploadedFileList', uploadFile);
+    app.options('/api/v1/formData', cors());
     app.post('/api/v1/formData', formData);
     app.get('/api/v1/formData', formData);
 
