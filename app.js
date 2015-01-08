@@ -12,7 +12,8 @@ if(cluster.isMaster){
 
    
     if (process.env.NODE_ENV === 'production') {
-      log4js.configure('./config/log4jsConfigProduction.json');
+      /*log4js.configure('./config/log4jsConfigProduction.json');*/
+      log4js.configure('./config/log4jsConfig.json');
     }
     else {
       log4js.configure('./config/log4jsConfig.json');
