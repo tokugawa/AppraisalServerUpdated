@@ -140,9 +140,9 @@ else {
    
     conn = require('./util/ConnectDBInstance').getInstance();
 
-    process.on('uncaughtException', function (){
+    /*process.on('uncaughtException', function (){
 
-
+        
         conn.close(function(){
 
             log.info('Conncection Ended due to uncaughtException');
@@ -175,7 +175,7 @@ else {
 
         });
 
-    });
+    });*/
 
 
 

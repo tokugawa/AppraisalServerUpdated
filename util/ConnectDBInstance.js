@@ -64,9 +64,9 @@ var conn = (function (){
 
 			connectionOfDB.on('error', d.bind(function errorConnectionCb(err){
 
-				//log.info('Error in Connection');
+				log.info('Error in Connection');
 				console.log(err);
-				throw new Error('Error in Connection');
+				//throw new Error('Error in Connection');
 
 
 			}));
@@ -76,7 +76,7 @@ var conn = (function (){
 
 				log.info('Disconnected Connection');
 				console.log(err);
-				throw new Error('Disconnected');
+				//throw new Error('Disconnected');
 
 
 			}));

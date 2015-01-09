@@ -54,11 +54,15 @@ var fs = require("fs"),
 
 var mime = require("mime");
 
-/*var dataUri = base64Image("./icon4.png");
-console.log(dataUri);*/
-
 function base64Image(src) {
+
     var data = fs.readFileSync(src).toString("base64");
+
+    fs.unlink(src, function (err) {
+      if (err) throw err;
+      console.log('successfully deleted ' + src);
+    });
+
     return util.format("data:%s;base64,%s", mime.lookup(src), data);
 }
 
@@ -215,30 +219,35 @@ module.exports = function (router) {
             res.status(403).send('forbidden');
         }
         else {
-            //console.log('I am in upload File -2 ');
+            console.log('I am in upload File -2 ');
             uploader.post(req, res, function (obj) {
 
                 //console.log(req);
+                //console.log(obj);
                 var returnedObj = obj.files;
                 var arrayLength = returnedObj.length;
+                console.log(arrayLength);
                 var imageArray = [];
                 for ( var i=0 ; i< arrayLength ; i++){
-                    //imageArray.push(returnedObj[i].name);
+
+                    var filePath = path.resolve(__dirname , '../public/uploaded/files/');
+
                     filePath = path.resolve(filePath , returnedObj[i].name);
-                    //console.log(filePath);
-                    //console.log(base64Image(filePath));
+   
 
                     imageArray.push(base64Image(filePath));
-                    fs.unlink(filePath, function (err) {
+                 
+                    /*fs.unlink(filePath, function (err) {
                       if (err) throw err;
                       console.log('successfully deleted ' + filePath);
-                    });
+                    });*/
 
 
                 }
-                //console.log(imageArray);
+                console.log(imageArray.length);
                 res.header('Access-Control-Allow-Origin', '*');
                 ImageUrlVO.addOrUpdate(orderID, imageArray , function cb(returnFlag, data){
+                    //console.log('200');
                     if(returnFlag === null){
 
                         res.Status(500).end();
