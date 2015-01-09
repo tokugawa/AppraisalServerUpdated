@@ -228,7 +228,7 @@ module.exports = function (router) {
             res.status(403).send('forbidden');
         }
         else {
-            uploader.post(req, res, function (obj) {
+            /*uploader.post(req, res, function (obj) {
 
                 console.log(obj);
                 var returnedObj = obj.files;
@@ -260,8 +260,12 @@ module.exports = function (router) {
 
 
                 });
-                
+                */
 
+                uploader.post(req, res, function (obj) {
+                        console.log(obj);
+                        res.send(JSON.stringify(obj)); 
+                });
 
                 
                 //res.header('Access-Control-Allow-Origin', '*');
