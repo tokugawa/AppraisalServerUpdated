@@ -270,7 +270,7 @@ module.exports = function (router) {
                 
                 //res.header('Access-Control-Allow-Origin', '*');
                  
-            });
+            /*});*/
            
         }
 
