@@ -21,10 +21,10 @@ if(cluster.isMaster){
 
     cluster.setupMaster({silent: false});
 
-    require('os').cpus().forEach(function () {
+    /*require('os').cpus().forEach(function () {
         cluster.fork();
-    });
-    
+    });*/
+    cluster.fork();
     require('portscanner').checkPortStatus(process.env.PORT || port, '127.0.0.1', function (error, status) {
         if (status === 'open') {
           log.error('Master server failed to start on port %d due to port conflict', port);

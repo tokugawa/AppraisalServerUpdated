@@ -17,7 +17,9 @@
   	   "mongoose":"~3.8.16",
   	   "bcrypt-nodejs" : "latest",
        "portscanner" : "latest",
-       "cors" : "2.4.2"
+       "cors" : "2.4.2",
+       "util":"latest",
+       "mime":"latest"
 
 	
   }

@@ -22,7 +22,7 @@ var GET_IMAGE_LIST  = resourceLoader.getResourceById('API_KEY' , 'GET_IMAGE_LIST
 var GET_IMAGES = resourceLoader.getResourceById('API_KEY' , 'GET_IMAGES');
 
 
-/*var options = {
+var options = {
     tmpDir:  __dirname + '/../public/uploaded/tmp',
     publicDir: __dirname + '/../public/uploaded',
     uploadDir: __dirname + '/../public/uploaded/files',
@@ -47,39 +47,20 @@ var GET_IMAGES = resourceLoader.getResourceById('API_KEY' , 'GET_IMAGES');
     nodeStatic: {
         cache:  3600 // seconds to cache served files
     }
-};*/
-
-
-var options = {
-    tmpDir:  __dirname + '/../public/uploaded/tmp',
-    uploadUrl:  '/uploaded/files/',
-    maxPostSize: 11000000000, // 11 GB
-    minFileSize:  1,
-    maxFileSize:  10000000000, // 10 GB
-    acceptFileTypes:  /.+/i,
-    // Files not matched by this regular expression force a download dialog,
-    // to prevent executing any scripts in the context of the service domain:
-    inlineFileTypes:  /\.(gif|jpe?g|png)$/i,
-    imageTypes:  /\.(gif|jpe?g|png)$/i,
-
-    accessControl: {
-        allowOrigin: '*',
-        allowMethods: 'OPTIONS, HEAD, GET, POST, PUT, DELETE',
-        allowHeaders: 'Content-Type, Content-Range, Content-Disposition'
-    },
-
-
-    storage : {
-        type : 'aws',
-         aws : {
-            accessKeyId :  'AKIAIHOWZYUTDAJZKG6Q',
-            secretAccessKey : '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',
-            region : 'us-west-1', //make sure you know the region, else leave this option out
-            bucketName : 'myfilesamazons3'
-        }
-    }
 };
 
+var fs = require("fs"),
+    util = require("util");
+
+var mime = require("mime");
+
+/*var dataUri = base64Image("./icon4.png");
+console.log(dataUri);*/
+
+function base64Image(src) {
+    var data = fs.readFileSync(src).toString("base64");
+    return util.format("data:%s;base64,%s", mime.lookup(src), data);
+}
 
 
 
@@ -93,7 +74,7 @@ module.exports = function (router) {
         var orderID = query.orderID;
         var fileName = query.name;
         var filePath = path.resolve(__dirname , '../public/uploaded/files');
-        console.log(filePath);
+        //console.log(filePath);
         var options = {
             root: filePath,
             dotfiles: 'deny',
@@ -103,7 +84,7 @@ module.exports = function (router) {
             }
           };
 
-        console.log(fileName);
+        //console.log(fileName);
         if(apiKey !== GET_IMAGES){
             log.error('apiKey wrong' , apiKey); 
             res.header('Access-Control-Allow-Origin', '*');
@@ -218,27 +199,44 @@ module.exports = function (router) {
 
     router.post('/api/v1/uploadFile', function(req, res) {
 
+        //console.log('I am in upload File');
+
+
         var query = url.parse(req.url,true).query;
         var apiKey  = query.apiKey;
         var orderID = query.orderID;
-        //log.info(apiKey);
+        var filePath = path.resolve(__dirname , '../public/uploaded/files/');
+
+
+        log.info(apiKey);
         if(apiKey !== UPLOAD_FILE){
             log.error('apiKey wrong' , apiKey); 
             res.header('Access-Control-Allow-Origin', '*');
             res.status(403).send('forbidden');
         }
         else {
-            /*uploader.post(req, res, function (obj) {
+            //console.log('I am in upload File -2 ');
+            uploader.post(req, res, function (obj) {
 
-                console.log(obj);
+                //console.log(req);
                 var returnedObj = obj.files;
                 var arrayLength = returnedObj.length;
                 var imageArray = [];
                 for ( var i=0 ; i< arrayLength ; i++){
-                    imageArray.push(returnedObj[i].name);
+                    //imageArray.push(returnedObj[i].name);
+                    filePath = path.resolve(filePath , returnedObj[i].name);
+                    //console.log(filePath);
+                    //console.log(base64Image(filePath));
+
+                    imageArray.push(base64Image(filePath));
+                    fs.unlink(filePath, function (err) {
+                      if (err) throw err;
+                      console.log('successfully deleted ' + filePath);
+                    });
+
 
                 }
-                console.log(imageArray);
+                //console.log(imageArray);
                 res.header('Access-Control-Allow-Origin', '*');
                 ImageUrlVO.addOrUpdate(orderID, imageArray , function cb(returnFlag, data){
                     if(returnFlag === null){
@@ -253,24 +251,20 @@ module.exports = function (router) {
                     }
 
                     if(returnFlag === true){
-                        console.log(data);
+                        //console.log(data);
                         res.send({message: 'IMGLST', list:data});
                     }
 
 
 
                 });
-                */
+                
 
-                uploader.post(req, res, function (obj) {
-                        console.log(obj);
-                        res.send(JSON.stringify(obj)); 
-                });
 
                 
                 //res.header('Access-Control-Allow-Origin', '*');
                  
-            /*});*/
+            });
            
         }
 
