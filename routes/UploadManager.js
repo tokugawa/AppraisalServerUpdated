@@ -22,7 +22,7 @@ var GET_IMAGE_LIST  = resourceLoader.getResourceById('API_KEY' , 'GET_IMAGE_LIST
 var GET_IMAGES = resourceLoader.getResourceById('API_KEY' , 'GET_IMAGES');
 
 
-var options = {
+/*var options = {
     tmpDir:  __dirname + '/../public/uploaded/tmp',
     publicDir: __dirname + '/../public/uploaded',
     uploadDir: __dirname + '/../public/uploaded/files',
@@ -46,6 +46,37 @@ var options = {
     },
     nodeStatic: {
         cache:  3600 // seconds to cache served files
+    }
+};*/
+
+
+var options = {
+    tmpDir:  __dirname + '/../public/uploaded/tmp',
+    uploadUrl:  '/uploaded/files/',
+    maxPostSize: 11000000000, // 11 GB
+    minFileSize:  1,
+    maxFileSize:  10000000000, // 10 GB
+    acceptFileTypes:  /.+/i,
+    // Files not matched by this regular expression force a download dialog,
+    // to prevent executing any scripts in the context of the service domain:
+    inlineFileTypes:  /\.(gif|jpe?g|png)$/i,
+    imageTypes:  /\.(gif|jpe?g|png)$/i,
+
+    accessControl: {
+        allowOrigin: '*',
+        allowMethods: 'OPTIONS, HEAD, GET, POST, PUT, DELETE',
+        allowHeaders: 'Content-Type, Content-Range, Content-Disposition'
+    },
+
+
+    storage : {
+        type : 'aws',
+         aws : {
+            accessKeyId :  'AKIAIHOWZYUTDAJZKG6Q',
+            secretAccessKey : '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',
+            region : 'us-west-1', //make sure you know the region, else leave this option out
+            bucketName : 'myfilesamazons3'
+        }
     }
 };
 
@@ -199,7 +230,7 @@ module.exports = function (router) {
         else {
             uploader.post(req, res, function (obj) {
 
-                //console.log(req);
+                console.log(obj);
                 var returnedObj = obj.files;
                 var arrayLength = returnedObj.length;
                 var imageArray = [];
