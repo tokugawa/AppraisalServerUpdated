@@ -70,7 +70,7 @@ module.exports = function (router) {
         var query = url.parse(req.url,true).query;
         var apiKey  = query.apiKey;
         var orderID = query.orderID;
-        console.log('POST FormData', orderID);
+        //console.log('POST FormData', orderID);
         var formData = req.body.formData;
         var orderStatus = req.body.orderStatus;
 

@@ -62,7 +62,8 @@ else {
     var userCreate = require('./routes/CreateUser');
     var order = require('./routes/getOrderListTemp');
     var orderCom = require('./routes/GetOrderDetailCompletedTemp');
-    var uploadFile = require('./routes/UploadFile');
+    //var uploadFile = require('./routes/UploadFile');
+    var uploadFile = require('./routes/ImageUploader');
     var formData = require('./routes/FormDataRouter');
 
     var app = express();
