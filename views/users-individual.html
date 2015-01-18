@@ -1,0 +1,182 @@
+<div class="page-content-wrapper">
+	<div class="page-content">
+		<!-- BEGIN PAGE HEAD -->
+		<div class="page-head">
+			<!-- BEGIN PAGE TITLE -->
+			<div class="page-title">
+				<h1>User - <span id="user-id-title"></span> </h1>
+			</div>
+			<!-- END PAGE TITLE -->
+		</div>
+		<!-- END PAGE HEAD -->
+		<!-- BEGIN PAGE BREADCRUMB -->
+		<ul class="page-breadcrumb breadcrumb hide">
+			<li>
+				<a href="#">Home</a><i class="fa fa-circle"></i>
+			</li>
+			<li class="active">
+				 Users
+			</li>
+		</ul>
+		<!-- END PAGE BREADCRUMB -->
+		<!-- BEGIN PAGE CONTENT INNER -->
+		<div class="row margin-top-10">
+			<div class="col-md-6">
+				<div class="portlet light">
+					<div class="portlet-title">
+						<div class="caption caption-md">
+							<i class="icon-bar-chart theme-font-color hide"></i>
+							<span class="caption-subject theme-font-color bold uppercase">Completion Rate</span>
+							<span class="caption-helper hide">default</span>
+						</div>
+					</div>
+					<div class="portlet-body">
+						<div id="appraiser-completion-rate-chart" style="height: 250px;"></div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6" >
+				<div class="portlet light">
+					<div class="portlet-title">
+						<div class="caption caption-md">
+							<i class="icon-bar-chart theme-font-color hide"></i>
+							<span class="caption-subject theme-font-color bold uppercase">Monthly Completion</span>
+							<span class="caption-helper hide">default</span>
+						</div>
+					</div>
+					<div class="portlet-body">
+						<div id="appraiser-monthly-completion-chart" style="height: 250px;"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12" >
+				<div class="portlet light">
+					<div class="portlet-title">
+						<div class="caption caption-md">
+							<i class="icon-bar-chart theme-font-color hide"></i>
+							<span class="caption-subject theme-font-color bold uppercase">User Orders</span>
+							<span class="caption-helper hide">default</span>
+						</div>
+						<div class="actions">
+							<div id="user-orders-table-button-group" class="btn-group btn-group-devided" data-toggle="buttons">
+								<label class="btn btn-transparent grey-salsa btn-circle btn-sm active">
+								<input type="radio" name="options" class="toggle" id="option1">All</label>
+								<label class="btn btn-transparent grey-salsa btn-circle btn-sm">
+								<input type="radio" name="options" class="toggle" id="option2">Current</label>
+								<label class="btn btn-transparent grey-salsa btn-circle btn-sm">
+								<input type="radio" name="options" class="toggle" id="option2">Completed</label>
+							</div>
+						</div>
+					</div>
+				  	<div class="portlet-body">
+				  		<div id="orders-table-all-div" style="display:none; width: 100%;">
+			    			<table id="orders-table-all" class="table table-hover dt-responsive dataTable" style="width: 100%">
+						  		<!-- Users orders will be populated here based on selected action -->
+						  	</table>
+					  	</div>
+					  	<div id="orders-table-current-div" style="display:none; width: 100%;">
+					    	<table id="orders-table-current" class="table table-hover dt-responsive dataTable" style="width: 100%">
+						  		<!-- Users orders will be populated here based on selected action -->
+						  	</table>
+					  	</div>
+					  	<div id="orders-table-completed-div" style="display:none; width: 100%;">
+						    <table id="orders-table-completed" class="table table-hover dt-responsive dataTable" style="width: 100%">
+						  		<!-- Users orders will be populated here based on selected action -->
+						  	</table>
+					  	</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12" >
+				<div class="portlet light">
+					<div class="portlet-title">
+						<div class="caption caption-md">
+							<i class="icon-bar-chart theme-font-color hide"></i>
+							<span class="caption-subject theme-font-color bold uppercase">User Information</span>
+							<span class="caption-helper hide">default</span>
+						</div>
+					</div>
+				  	<div class="portlet-body">
+				  		<form class="form-horizontal">
+					  		<div class="form-group">
+					  			<div class="col-md-2">
+				  					<label for="user-first-name">First Name</label>
+					  			</div>
+								<div class="col-md-4">
+									<input type="text" id="user-first-name" class="disableToggle form-control" disabled="disabled" style="width:100%;"/>
+								</div>
+								<div class="col-md-2">
+				  					<label for="user-last-name">Last Name</label>
+					  			</div>
+								<div class="col-md-4">
+									<input type="text" id="user-last-name" class="disableToggle form-control" disabled="disabled" style="width:100%;"/>
+								</div>
+					  		</div>
+					  		<div class="form-group">
+					  			<div class="col-md-2">
+									<label for="user-email">Email</label>
+								</div>
+								<div class="col-md-4">
+									<input type="text" id="user-email" class="disableToggle form-control" disabled="disabled" style="width:100%;"/>
+								</div>
+								<div class="col-md-2">
+									<label for="user-phone-number">Phone Number</label>
+								</div>
+								<div class="col-md-4">
+									<input type="text" id="user-phone-number" class="disableToggle form-control" disabled="disabled" style="width:100%;"/>
+								</div>
+					  		</div>
+							<div class="form-group">
+								<div class="col-md-2">
+									<label for="user-address-one">Address Line 1</label>
+								</div>
+								<div class="col-md-4">
+									<input type="text" id="user-address-one" class="disableToggle form-control" disabled="disabled" style="width:100%;"/>
+								</div>
+								<div class="col-md-2">
+									<label for="user-address-two">Address Line 2</label>
+								</div>
+								<div class="col-md-4">
+									<input type="text" id="user-address-two" class="disableToggle form-control" disabled="disabled" style="width:100%;"/>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-md-2">
+									<label for="user-city">City</label>
+								</div>
+								<div class="col-md-4">
+									<input type="text" id="user-city" class="disableToggle form-control" disabled="disabled" style="width:100%;"/>
+								</div>
+								<div class="col-md-2">
+									<label for="user-state">State</label>
+								</div>
+								<div class="col-md-4">
+									<input type="text" id="user-state" class="disableToggle form-control" disabled="disabled" style="width:100%;"/>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-md-2">
+									<label for="user-zip">Zip Code</label>
+								</div>
+								<div class="col-md-4">
+									<input type="text" id="user-zip" class="disableToggle form-control" disabled="disabled" style="width:100%;"/>
+								</div>
+								<div class="col-md-6">
+									<div class="pull-right" >
+										<a class="btn btn-default" id="save-user-info" role="button" style="display:none;" onclick="disableInput(); $('#save-user-info').css('display', 'none');">Save</a>
+							  			<a class="btn btn-default" role="button" onclick="enableDisabled(); $('#save-user-info').css('display', 'inline-block');">Edit</a>
+					  				</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--END PAGE CONTENT INNER -->
+	</div>
+</div>

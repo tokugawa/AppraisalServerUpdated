@@ -1,0 +1,200 @@
+<div class="page-content-wrapper">
+	<div class="page-content">
+		<!-- BEGIN PAGE HEAD -->
+		<div class="page-head">
+			<!-- BEGIN PAGE TITLE -->
+			<div class="page-title">
+				<h1>Order - <span id="order-number"></span></h1>
+			</div>
+			<!-- END PAGE TITLE -->
+		</div>
+		<!-- END PAGE HEAD -->
+		<!-- BEGIN PAGE BREADCRUMB -->
+		<ul class="page-breadcrumb breadcrumb hide">
+			<li>
+				<a href="#">Home</a><i class="fa fa-circle"></i>
+			</li>
+			<li class="active">
+				 Users
+			</li>
+		</ul>
+		<!-- END PAGE BREADCRUMB -->
+		<!-- BEGIN PAGE CONTENT INNER -->
+		<div class="row">
+			<div class="col-md-12" >
+				<div class="cbt board" style="width:100%;">
+					<!-- <h2>Welcome to IGHALO!<sup>™</sup></h2>-->
+					<div class="cbt board-inner">
+						<ul class="cbt nav nav-tabs" id="myTab">
+							<div class="cbt liner"></div>
+							<li class="cbt">
+								<a href="#order-start" data-toggle="tab" title="start" class="cbt">
+									<span class="cbt round-tabs one">
+										<i class="cbt glyphicon glyphicon-home"></i>
+									</span> 
+								</a></li>
+
+							<li class="cbt">
+								<a href="#order-appraiser-added" data-toggle="tab" title="assign-appraiser" class="cbt">
+									<span class="cbt round-tabs two">
+										<i class="cbt glyphicon glyphicon-user"></i>
+									</span> 
+								</a>
+							</li>
+							<li class="cbt">
+								<a href="#order-processing" data-toggle="tab" title="Order in Progress" class="cbt">
+									<span class="cbt round-tabs three">
+										<i class="cbt glyphicon glyphicon-file"></i>
+									</span> 
+								</a>
+							</li >
+
+							<li class="cbt">
+								<a href="#order-audit" data-toggle="tab" title="Audit" class="cbt">
+									<span class="cbt round-tabs four">
+										<i class="cbt glyphicon glyphicon-inbox"></i>
+									</span> 
+								</a>
+							</li>
+
+							<li class="cbt">
+								<a href="#order-accepted" data-toggle="tab" title="Accepted" class="cbt">
+									<span class="cbt round-tabs five">
+										<i class="cbt glyphicon glyphicon-ok"></i>
+									</span> 
+								</a>
+							</li >
+
+						</ul>
+					</div>
+
+					<div class="cbt tab-content">
+						<div class="cbt tab-pane fade" id="order-start">
+
+							<h3 class="cbt head text-center">Start</h3>
+							<p class="cbt narrow text-center">
+								The appraisal has been submitted and will be assigned to and appraiser shortly.
+							</p>
+						</div>
+						<div class="cbt tab-pane fade" id="order-appraiser-added">
+							<h3 class="cbt head text-center">Assigned Appraiser</h3>
+							<p class="cbt narrow text-center">
+								The appraisal has been assigned to <strong>Steve Harvey</strong>.
+							</p>
+						</div>
+						<div class="cbt tab-pane fade" id="order-processing">
+							<h3 class="cbt head text-center">Order in Progress</h3>
+							<p class="cbt narrow text-center">
+								The order has been assigned to the appraiser and will be completed shortly.
+							</p>
+						</div>
+						<div class="cbt tab-pane fade" id="order-audit">
+							<h3 class="cbt head text-center">Audit</h3>
+							<p class="cbt narrow text-center">
+								The appraiser has completed the appraisal and it is now going under review.
+							</p>
+						</div>
+						<div class="cbt tab-pane fade" id="order-accepted">
+							<div class="cbt text-center">
+								<i class="cbt img-intro icon-checkmark-circle"></i>
+							</div>
+							<h3 class="cbt head text-center">Accepted</h3>
+							<p class="cbt narrow text-center">
+								The appraisal has been accepted.
+							</p>
+						</div>
+						<div class="cbt clearfix"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row margin-top-20">
+			<div class="col-md-12" >
+				<div class="portlet light">
+					<div class="portlet-title">
+						<div class="caption caption-md">
+							<i class="icon-bar-chart theme-font-color hide"></i>
+							<span class="caption-subject theme-font-color bold uppercase">Order Information</span>
+							<span class="caption-helper hide">default</span>
+						</div>
+					</div>
+					<div class="portlet-body">
+				  		<form class="form-horizontal">
+					  		<div class="form-group">
+					  			<div class="col-md-2">
+				  					<label for="order-assigned-appraiser">Assigned Appraiser</label>
+					  			</div>
+								<div class="col-md-4">
+									<input type="text" id="order-assigned-appraiser" class="disableToggle form-control" disabled="disabled" style="width:100%;"/>
+								</div>
+								<div class="col-md-2">
+				  					<label for="order-customer">Customer</label>
+					  			</div>
+								<div class="col-md-4">
+									<input type="text" id="order-customer" class="disableToggle form-control" disabled="disabled" style="width:100%;"/>
+								</div>
+					  		</div>
+					  		<div class="form-group">
+					  			<div class="col-md-2">
+									<label for="order-email">Email</label>
+								</div>
+								<div class="col-md-4">
+									<input type="text" id="order-email" class="disableToggle form-control" disabled="disabled" style="width:100%;"/>
+								</div>
+								<div class="col-md-2">
+									<label for="order-phone-number">Phone Number</label>
+								</div>
+								<div class="col-md-4">
+									<input type="text" id="order-phone-number" class="disableToggle form-control" disabled="disabled" style="width:100%;"/>
+								</div>
+					  		</div>
+							<div class="form-group">
+								<div class="col-md-2">
+									<label for="order-address-one">Address Line 1</label>
+								</div>
+								<div class="col-md-4">
+									<input type="text" id="order-address-one" class="disableToggle form-control" disabled="disabled" style="width:100%;"/>
+								</div>
+								<div class="col-md-2">
+									<label for="order-address-two">Address Line 2</label>
+								</div>
+								<div class="col-md-4">
+									<input type="text" id="order-address-two" class="disableToggle form-control" disabled="disabled" style="width:100%;"/>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-md-2">
+									<label for="order-city">City</label>
+								</div>
+								<div class="col-md-4">
+									<input type="text" id="order-city" class="disableToggle form-control" disabled="disabled" style="width:100%;"/>
+								</div>
+								<div class="col-md-2">
+									<label for="order-state">State</label>
+								</div>
+								<div class="col-md-4">
+									<input type="text" id="order-state" class="disableToggle form-control" disabled="disabled" style="width:100%;"/>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-md-2">
+									<label for="order-zip">Zip Code</label>
+								</div>
+								<div class="col-md-4">
+									<input type="text" id="order-zip" class="disableToggle form-control" disabled="disabled" style="width:100%;"/>
+								</div>
+								<div class="col-md-6">
+									<div class="pull-right" >
+										<a class="btn btn-default" id="save-user-info" role="button" style="display:none;" onclick="disableInput(); $('#save-user-info').css('display', 'none');">Save</a>
+							  			<a class="btn btn-default" role="button" onclick="enableDisabled(); $('#save-user-info').css('display', 'inline-block');">Edit</a>
+					  				</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--END PAGE CONTENT INNER -->
+	</div>
+</div>
