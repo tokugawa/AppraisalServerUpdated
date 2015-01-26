@@ -1,0 +1,188 @@
+<html lang="en" class="no-js"><!--<![endif]--><!-- BEGIN HEAD --><head>
+<meta charset="utf-8">
+<title>Admin Dashboard </title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<meta content="" name="description">
+<meta content="" name="author">
+
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&amp;subset=all" rel="stylesheet" type="text/css">
+<link href="./css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="./css/simple-line-icons.min.css" rel="stylesheet" type="text/css">
+<link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="./css/uniform.default.css" rel="stylesheet" type="text/css">
+<link href="./css/bootstrap-switch.min.css" rel="stylesheet" type="text/css">
+
+<link href="./css/daterangepicker-bs3.css" rel="stylesheet" type="text/css">
+<link href="./css/fullcalendar.min.css" rel="stylesheet" type="text/css">
+<link href="./css/jqvmap.css" rel="stylesheet" type="text/css">
+<link href="./css/morris.css" rel="stylesheet" type="text/css">
+
+<link href="./css/tasks.css" rel="stylesheet" type="text/css">
+
+<link href="./css/components-rounded.css" id="style_components" rel="stylesheet" type="text/css">
+<link href="./css/plugins.css" rel="stylesheet" type="text/css">
+<link href="./css/layout.css" rel="stylesheet" type="text/css">
+<link href="./css/light.css" rel="stylesheet" type="text/css" id="style_color">
+<link href="./css/custom.css" rel="stylesheet" type="text/css">
+<link href="./DataTables-1.10.4/media/css/jquery.dataTables.css" rel="stylesheet" type="text/css">
+<link href="./css/circular-bootstrap-tabs.css" rel="stylesheet" type="text/css">
+<link href="./dhtmlxScheduler_v4.2.0/codebase/dhtmlxscheduler_flat.css" rel="stylesheet" type="text/css">
+<link href="./css/kitchen-sink.css" rel="stylesheet" type="text/css">
+<!-- END THEME STYLES -->
+
+
+
+<link rel="shortcut icon" href="favicon.ico">
+<style type="text/css">.jqstooltip { position: absolute;left: 0px;top: 0px;visibility: hidden;background: rgb(0, 0, 0) transparent;background-color: rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";color: white;font: 10px arial, san serif;text-align: left;white-space: nowrap;padding: 5px;border: 1px solid white;z-index: 10000;}.jqsfield { color: white;font: 10px arial, san serif;text-align: left;}
+</style>
+</head>
+<!-- END HEAD -->
+<!-- BEGIN BODY -->
+<!-- DOC: Apply "page-header-fixed-mobile" and "page-footer-fixed-mobile" class to body element to force fixed header or footer in mobile devices -->
+<!-- DOC: Apply "page-sidebar-closed" class to the body and "page-sidebar-menu-closed" class to the sidebar menu element to hide the sidebar by default -->
+<!-- DOC: Apply "page-sidebar-hide" class to the body to make the sidebar completely hidden on toggle -->
+<!-- DOC: Apply "page-sidebar-closed-hide-logo" class to the body element to make the logo hidden on sidebar toggle -->
+<!-- DOC: Apply "page-sidebar-hide" class to body element to completely hide the sidebar on sidebar toggle -->
+<!-- DOC: Apply "page-sidebar-fixed" class to have fixed sidebar -->
+<!-- DOC: Apply "page-footer-fixed" class to the body element to have fixed footer -->
+<!-- DOC: Apply "page-sidebar-reversed" class to put the sidebar on the right side -->
+<!-- DOC: Apply "page-full-width" class to the body element to have full width page without the sidebar menu -->
+<body id="template-body" class="page-header-fixed page-sidebar-closed-hide-logo page-sidebar-closed-hide-logo page-sidebar-closed">
+	<div id="login-page-wrapper" class="login-body">
+		<div id="login-page-form" class="login-form">
+			<form id="login-form" action="/login" method="post">
+				<h2>Login</h2>
+				<div class="form-group">
+					<input type="text" id="login-username" name="username" class="form-control" placeholder="Login" style="width:100%;" onchange="loadSelectRoles()"/>
+				</div>
+				<div class="form-group">
+					<select id="login-role" class="form-control" style="width:100%;">
+						<option>Select a role</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<input type="password" id="login-password" name="password" class="form-control" placeholder="Password" style="width:100%;"/>
+				</div>
+				<div class="form-group">
+					<input class="btn btn-default blue-sharp" role="button" type="submit" value="Login" style="width:100%" />
+				</div>
+				<div class="form-group pull-right">
+					<a href="#" style="width:100%" onclick="growLoginToSignup();">
+						New User
+					</a>
+				</div>
+			</form>
+		</div>
+		<div id="new-user-page-form" class="login-form login-form-grow" style="display:none">
+			<form id="new-user-form">
+			<h2>New User</h2>
+				<div class="form-group">
+					<input type="text" id="new-user-id" class="form-control" placeholder="Employee ID" style="width:100%;"/>
+				</div>
+				<div class="form-group">
+					<input type="text" id="new-user-email" class="form-control" placeholder="Email" style="width:100%;"/>
+				</div>
+				<div class="form-group">
+					<select id="new-user-role" class="form-control" style="width:100%;">
+						<option>Choose Role</option>
+						<option>Administrator</option>
+						<option>Appraiser</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<input type="password" id="new-user-password" class="form-control" placeholder="Password" style="width:100%;"/>
+				</div>
+				<div class="form-group">
+					<input type="password" id="new-user-confirm-password" class="form-control" placeholder="ConfirmPassword" style="width:100%;"/>
+				</div>
+				<div class="form-group">
+					<input type="text" id="new-user-street-address-one" class="form-control" placeholder="Street Address" style="width:100%;"/>
+				</div>
+				<div class="form-group">
+					<input type="text" id="new-user-street-address-one" class="form-control" placeholder="Apartment" style="width:100%;"/>
+				</div>
+				<div class="form-group">
+					<div class="row">
+						<div class="col-md-4">
+							<input type="text" id="new-user-city" class="form-control" placeholder="City" style="width:100%;"/>
+						</div>
+						<div class="col-md-4">
+							<input type="text" id="new-user-state" class="form-control" placeholder="State" style="width:100%;"/>
+						</div>
+						<div class="col-md-4">
+							<input type="text" id="new-user-zip" class="form-control" placeholder="Zip" style="width:100%;"/>
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="row">
+						<div class="col-md-6">
+							<a class="btn btn-default red" href="#" role="button" style="width:100%" onclick="shrinkSignupToLogin();">
+								Cancel
+							</a>
+						</div>
+						<div class="col-md-6">
+							<a class="btn btn-default blue-sharp" href="#" role="button" style="width:100%" onclick="">
+								Submit
+							</a>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+		
+	<div class="jqvmap-label"></div>
+	<div class="jqvmap-label"></div>
+	<div class="jqvmap-label"></div>
+	<div class="jqvmap-label"></div>
+	<div class="jqvmap-label"></div>
+</body>
+<!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+<!-- BEGIN CORE PLUGINS -->
+
+<script src="./js/jquery.min.js" type="text/javascript"></script>
+<script src="./js/jquery-migrate.min.js" type="text/javascript"></script>
+<!-- IMPORTANT! Load jquery-ui-1.10.3.custom.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
+<script src="./js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+<script src="./js/bootstrap.min.js" type="text/javascript"></script>
+<script src="./js/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
+<script src="./js/jquery.slimscroll.min.js" type="text/javascript"></script>
+<script src="./js/jquery.blockui.min.js" type="text/javascript"></script>
+<script src="./js/jquery.cokie.min.js" type="text/javascript"></script>
+<script src="./js/jquery.uniform.min.js" type="text/javascript"></script>
+<script src="./js/bootstrap-switch.min.js" type="text/javascript"></script>
+<!-- END CORE PLUGINS -->
+<!-- BEGIN PAGE LEVEL PLUGINS -->
+<script src="./js/jquery.vmap.js" type="text/javascript"></script>
+<script src="./js/jquery.vmap.world.js" type="text/javascript"></script>
+<script src="./js/jquery.vmap.russia.js" type="text/javascript"></script>
+<script src="./js/jquery.vmap.europe.js" type="text/javascript"></script>
+<script src="./js/jquery.vmap.germany.js" type="text/javascript"></script>
+<script src="./js/jquery.vmap.usa.js" type="text/javascript"></script>
+<script src="./js/jquery.vmap.sampledata.js" type="text/javascript"></script>
+<!-- IMPORTANT! fullcalendar depends on jquery-ui-1.10.3.custom.min.js for drag & drop support -->
+<script src="./js/morris.min.js" type="text/javascript"></script>
+<script src="./js/raphael-min.js" type="text/javascript"></script>
+<script src="./js/jquery.sparkline.min.js" type="text/javascript"></script>
+<!-- END PAGE LEVEL PLUGINS -->
+<!-- BEGIN PAGE LEVEL SCRIPTS -->
+<script src="./js/metronic.js" type="text/javascript"></script>
+<script src="./js/layout.js" type="text/javascript"></script>
+<script src="./js/demo.js" type="text/javascript"></script>
+<script src="./js/index3.js" type="text/javascript"></script>
+<script src="./js/tasks.js" type="text/javascript"></script>
+<!-- END PAGE LEVEL SCRIPTS -->
+<!-- BEGIN DATA-TABLE SCRIPTS -->
+<script src="./DataTables-1.10.4/media/js/jquery.dataTables.js" type="text/javascript"></script>
+<script src="./DataTables-1.10.4/data-tables/integration/bootstrap/3/dataTables.bootstrap.js" type="text/javascript"></script>
+<!-- END DATA_TABLE SCRPTS -->
+<!-- BEGIN DHTMLX SCRIPTS -->
+<script src="./dhtmlxScheduler_v4.2.0/codebase/dhtmlxscheduler.js" type="text/javascript"></script>
+<!-- END DHTMLX SCRIPTS -->
+<!-- BEGIN CUSTOM SCRIPTS -->
+<script src="./js/kitchen-sink.js" type="text/javascript"></script>
+<!-- END CUSTOM SCRIPTS -->
+<!-- END JAVASCRIPTS -->
+</html>

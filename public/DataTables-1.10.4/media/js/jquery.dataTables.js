@@ -2746,14 +2746,19 @@
 			'class': classes.sFilter
 		} )
 		.append(''+
-			'<form class="search-form" action="extra_search.html" method="GET">'+
-				'<div class="input-group">'+
-					'<input type="text" class="form-control input-sm" placeholder="Search..." name="query">'+
-					'<span class="input-group-btn">'+
-						'<a href="javascript:;" class="btn submit"><i class="icon-magnifier"></i></a>'+
-					'</span>'+
-				'</div>'+
-			'</form>'+
+			//'<div class="page-header navbar">'+
+			//'<div class="page-header-inner">'+
+			'<div class="page-top">'+
+				'<form class="search-form" action="extra_search.html" method="GET">'+
+					'<div class="input-group">'+
+						'<input type="text" class="form-control input-sm" placeholder="Search..." name="query">'+
+						'<span class="input-group-btn">'+
+							'<a href="javascript:;" class="btn submit"><i class="icon-magnifier"></i></a>'+
+						'</span>'+
+					'</div>'+
+				'</form>'+
+			//'</div></div>'+
+			'</div>'+
 		'');
 		/////////////////////////////////////////////////////////////////////////////////////////////
 			

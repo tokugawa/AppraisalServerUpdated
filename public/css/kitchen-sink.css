@@ -3,5 +3,101 @@
 */
 
 .scrollStyle{
-	overflow-x:auto;
+	overflow-x: auto;
+}
+.login-body{
+	height: 100%; 
+	width: 100%;
+	/*freedigitalphotos.net*/
+	background-image: url('../img/backgroud.jpg');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.login-form{
+	width: 35%; 
+	height: 320px; 
+	margin: auto; 
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	right: 0; 
+	bottom: 0;
+	padding: 10px;
+	border: solid grey 1px;
+	background: ghostwhite;
+	box-shadow: 10px 15px 117px 4px black;
+	/*-webkit-transition: width .5s ease, height .5s ease;  
+    -moz-transition: width .5s ease, height .5s ease;  
+    -o-transition: width .5s ease, height .5s ease;  
+    -ms-transition: width 5s ease, height .5s ease;  
+    transition: width .5s ease, height .5s ease;*/ 
+}
+.login-form-grow{
+	width: 40%;
+	height: 530px;
+}
+.form-shake{
+	-webkit-animation: formShake .2s linear 0s 3;
+	animation: formShake .2s linear 0s 3;
+}
+.b-form{
+	opacity: 0;
+	display: none;
+	-webkit-transition: opacity .5s ease-in;
+   	-moz-transition: opacity .5s ease-in;
+	-ms-transition: opacity .5s ease-in;
+ 	-o-transition: opacity .5s ease-in;
+	transition: opacity .5s ease-in;
+}
+.fade-in{
+	opacity: 1;
+	display: block;
+}
+@keyframes formShake {
+	0%   {transform: translateX(0px);}
+    25%  {transform: translateX(-10px);}
+    50%  {transform: translateX(0px);}
+    75%  {transform: translateX(10px);}
+    100% {transform: translateX(0px);}
+}
+@-webkit-keyframes formShake {
+	0%   {-webkit-transform: translateX(0px);}
+    25%  {-webkit-transform: translateX(-10px);}
+    50%  {-webkit-transform: translateX(0px);}
+    75%  {-webkit-transform: translateX(10px);}
+    100% {-webkit-transform: translateX(0px);}
+}
+#preloader-wrapper{
+	display: none;
+	position: fixed;
+	margin: auto;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 999;
+	width: 200px;
+	height: 70px;
+	background-color: ghostwhite;
+	border-radius: 5px;
+	padding: 10px;
+}
+#preloader{
+	display: block;
+	margin: auto;
+	width: 50px;
+	height: 50px;
+	vertical-align: middle;
+}
+/*DHTMLX Scheduler*/
+.well {
+	text-align: right;
+}
+.container-fluid #scheduler_here {
+	height: 700px;
+	width: 100%;
+	border: 1px solid #cecece;
+}
+#scheduler_here {
+	border-radius: 4px;
 }

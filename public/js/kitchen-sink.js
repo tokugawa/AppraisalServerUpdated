@@ -4,18 +4,52 @@
 */
 
 //Initial Page Load
-loadOverview();
+var loggedInId;
+var chartColors = ['#f36a5a', '#5C9BD1', '#4DB3A2', '#8877a9'];
+
+$(document).ready(function(){
+
+	$.ajaxSetup({ cache: false });
+
+	Metronic.init(); // init metronic core componets
+	Layout.init(); // init layout
+	Demo.init(); // init demo features
+
+	$('form').on('submit', function(e){
+		e.preventDefault();
+      	$.post($(this).attr('action'), $(this).serialize(), function(response){
+
+      		console.log(response);
+            //login(response);
+
+      	},'json');
+      	return false;
+   	});
+});
 ///////////////////////////////////
 
 //Load Pages Functions
+function login(response){
+
+	if(response.loginStatus == 'success'){
+		console.log(response);
+		showPreloader();
+		$('#template-body').empty();
+		$('#template-body').load('./index.html', function(){
+			loadOverview();
+			hidePreloader();
+		});
+	}
+	else{
+		badLoginShake('login-page-form', 'login-page-wrapper');
+	}
+}
 function loadOverview(){
 
+	showPreloader();
 	$('#content-location').empty();
 	$('#content-location').load('./overview.html', function(){
 
-   		Metronic.init(); // init metronic core componets
-   		Layout.init(); // init layout
-   		Demo.init(); // init demo features
 		Index.init(); // init index page
  		Tasks.initDashboardWidget(); // init tash dashboard widget
 
@@ -29,10 +63,12 @@ function loadOverview(){
 		  	],
 	    	colors: chartColors
 	  	});
+	  	hidePreloader();
 	});
 }
 function loadUsersHome(){
 
+	showPreloader();
 	$('#content-location').empty();
 	$('#content-location').load('./users-home.html', function(){
 
@@ -41,10 +77,12 @@ function loadUsersHome(){
 
 			$(this).wrap('<div class="scrollStyle" />');
 		});
+		hidePreloader();
 	});
 }
 function loadUsersIndividual(userId){
 
+	showPreloader();
 	$('#content-location').empty();
 	$('#content-location').load('./users-individual.html', function(){
 
@@ -130,10 +168,12 @@ function loadUsersIndividual(userId){
 				$('#user-zip').val(users[x].zip);
 			}
 		}
+		hidePreloader();
 	});
 }
 function loadOrdersHome(){
 
+	showPreloader();
 	$('#content-location').empty();
 	$('#content-location').load('./orders-home.html', function(){
 
@@ -160,10 +200,12 @@ function loadOrdersHome(){
 		  	],
 	    	colors: chartColors
 	  	});
+	  	hidePreloader();
 	});
 }
 function loadOrdersIndividual(orderId){
 
+	showPreloader();
 	$('#content-location').empty();
 	$('#content-location').load('./orders-individual.html', function(){
 
@@ -180,18 +222,77 @@ function loadOrdersIndividual(orderId){
 				//$('#order-address-one').val(orders[x].addressOne);
 				//$('#order-address-two').val(orders[x].addressTwo);
 				$('#order-city').val(orders[x].city);
-				$('#order-state').val(useordersrs[x].state);
-				$('#order-zip').val(useordersrs[x].zip);
+				//$('#order-state').val(useordersrs[x].state);
+				//$('#order-zip').val(useordersrs[x].zip);
 			}
 		}
+		hidePreloader();
+	});
+}
+function loadTasks(){
+
+	showPreloader();
+	$('#content-location').empty();
+	$('#content-location').load('./tasks.html', function(){
+
+		new Morris.Donut({
+		  	element: 'pending-tasks-chart',
+		  	data: [
+		    	{ label: 'User Applications', value: 30 },
+			    { label: 'Review Orders', value: 10 },
+			    { label: 'Meetings', value: 25 },
+			    { label: 'Support', value: 82 }
+		  	],
+	    	colors: chartColors
+	  	});
+	  	new Morris.Line({
+		  	element: 'weekly-task-completion-chart',
+		  	data: [
+			    { date: '2014-01-21', completed: 2 },
+			    { date: '2014-01-22', completed: 5 },
+			    { date: '2014-01-23', completed: 9 },
+		    	{ date: '2014-01-24', completed: 1 },
+		    	{ date: '2014-01-25', completed: 7 },
+		    	{ date: '2014-01-26', completed: 3 },
+		    	{ date: '2014-01-27', completed: 13 },
+		  	],
+		  	xkey: 'date',
+		  	ykeys: ['completed'],
+		  	labels: ['Completed'],
+		  	xLabelFormat: function (x) { 
+		  		var days = ['Sun.', 'Mon.', 'Tues.', 'Wed.', 'Thur.', 'Fri.', 'Sat.'];
+
+		  		return days[x.getDay()]; 
+		  	}
+		});
+		loadTableData('tasks-table', harveyTasks, 2, tasksTableColumns, tasksTableColumnDefs);
+		$('.dataTable').each(function(){
+
+			$(this).wrap('<div class="scrollStyle" />');
+		});
+
+		hidePreloader();
+	});
+}
+function loadCalendar(){
+
+	showPreloader();
+	$('#content-location').empty();
+	$('#content-location').load('./calendar.html', function(){
+
+		initCalendar();
+
+		hidePreloader();
 	});
 }
 function loadSupport(){
 
+	showPreloader();
 	$('#content-location').empty();
 	$('#content-location').load('./support.html', function(){
 
 		//TODO
+		hidePreloader();
 	});
 }
 /////////////////////////////////////////////////
@@ -234,6 +335,14 @@ function Completed(userId, orderId, dateCompleted, timeTaken){
 	this.orderId = orderId;
 	this.dateCompleted = dateCompleted;
 	this.timeTaken = timeTaken;
+}
+function Task(id, type, description, link, dateAssigned, dateCompleted){
+	this.id = id;
+	this.type = type;
+	this.description = description;
+	this.link = link;
+	this.dateAssigned = dateAssigned;
+	this.dateCompleted = dateCompleted
 }
 ////////////////////////////////////////////////
 
@@ -294,7 +403,25 @@ users[0].orders = ([orders[1], orders[6], orders[9]]);
 users[1].orders = ([orders[0], orders[2], orders[3], orders[4], orders[8]]);
 users[2].orders = ([orders[5], orders[7]]);
 
-var chartColors = ['#f36a5a', '#5C9BD1', '#4DB3A2'];
+var harveyTasks = [
+	new Task(1001, 'User Application', 'stv@gmail.com Application', '', new Date(), ''),
+	new Task(1002, 'User Application', 'fed@tcs.com Application', '', new Date(), ''),
+	new Task(1003, 'Meeting', 'Fri, Dec. 13 with Gary', '', new Date(), ''),
+	new Task(1004, 'Review Order', '103 Some Street by Gary', '', new Date(), ''),
+	new Task(1005, 'Review Order', '43 Another Street by Alice', '', new Date(), ''),
+];
+var tasksTableColumns = [
+	{data: "id"},
+	{data: "type"},
+	{data: "description"},
+	{data: "dateAssigned"}
+];
+var tasksTableColumnDefs = [
+	{ "title": "ID", "targets": 0 },
+	{ "title": "Type", "targets": 1 },
+	{ "title": "Description", "targets": 2 },
+	{ "title": "Date Assigned", "targets": 3 },
+];
 /////////////////////////////////////////////
 
 //load all users into the user table
@@ -312,6 +439,7 @@ function loadTableData(tableId, dataArray, sizePerPage, columns, columnDefs){
  	 	//bFilter: false, 
  	 	//bInfo: false,
  	 	bDestroy: true,
+ 	 	"sFilterInput": "form-control input-sm",
  	 	"sDom": '<"row view-filter"<"col-sm-12"<"pull-left"l><"pull-right"f><"clearfix">>>t<"row view-pager"<"col-sm-12"<"text-center"ip>>>',
     });
     if(tableId == 'users-table'){
@@ -556,6 +684,22 @@ function enableDisabled(){
 function disableInput(){
 	$('.disableToggle').attr("disabled", "disabled");
 }
+function loadSelectRoles(){
+
+	//$("#login-role").html('').append("<option>Loading options</option>");
+	$("#login-role").html('').append(''+
+		'<option>Appraiser</option>'+
+		'<option>Administrator</option>'+
+	'');
+    /*$.ajax({
+        url: 'http://www.your_server.com/your_page',
+        success: function (data) {
+            $("#login-role").empty().append(data); //your data being: <option>1</option> <option>2</option> <option>3</option><option>4</option>
+        }
+    });*/
+	//$("#login-role").selectpicker('refresh');
+	$("#login-role").hide().show();
+}
 //////////////////////////////////////////////////////////////////////
 
 //Functions for random calculations
@@ -576,6 +720,91 @@ function createUser(){
 	}
 }
 function createOrder(){
+
 	//TODO
 }
 ///////////////////////////////////////////////////////////////////////////////
+
+//Animation functions
+function badLoginShake(elementId, wrapperId){
+
+    var heading = $('#'+elementId).clone().removeClass('form-shake');
+    $('#'+elementId).remove();
+    $('#'+wrapperId).append(heading);
+    $('#'+elementId).addClass('form-shake');
+
+    $('form').on('submit', function(e){
+		e.preventDefault();
+      	$.post($(this).attr('action'), $(this).serialize(), function(response){
+
+      		//console.log(response);
+            login(response);
+
+      	},'json');
+      	return false;
+   	});
+}
+function growLoginToSignup(){
+
+	$('#login-page-form').fadeOut('200', function(){
+
+		$('#new-user-page-form').fadeIn('200');
+
+	});
+}
+function shrinkSignupToLogin(){
+	
+	$('#new-user-page-form').fadeOut('200', function(){
+
+		$('#login-page-form').fadeIn('200');
+
+	});
+}
+function showPreloader(){
+
+	$('body').append(''+
+		'<div id="preloader-wrapper">'+
+			'<span style="width:100%; height:100%; display:inline-block;">'+
+		    	'<img id="preloader" src="../img/preloader.gif" />'+
+	    	'</span>'+
+		'</div>'+
+	'');
+	$('#preloader-wrapper').fadeIn(150);
+}
+function hidePreloader(){
+
+	$('#preloader-wrapper').fadeOut(300, function(){
+		$('#preloader-wrapper').remove();
+	});
+}
+/////////////////////////////////////////////////////////////////////////////////
+
+//DHTMLXSchedular Calendar 
+function initCalendar(){
+	scheduler.config.xml_date = "%Y-%m-%d %H:%i";
+
+	scheduler.config.first_hour = 8;
+	scheduler.config.limit_time_select = true;
+
+
+	scheduler.init('scheduler_here',new Date(2009,5,30),"week");
+	scheduler.parse([
+		{ start_date: "2009-06-30 09:00", end_date: "2009-06-30 12:00", text:"Task A-12458", section_id:1},
+		{ start_date: "2009-06-30 10:00", end_date: "2009-06-30 16:00", text:"Task A-89411", section_id:1},
+		{ start_date: "2009-06-30 10:00", end_date: "2009-06-30 14:00", text:"Task A-64168", section_id:1},
+		{ start_date: "2009-06-30 16:00", end_date: "2009-06-30 17:00", text:"Task A-46598", section_id:1},
+
+		{ start_date: "2009-06-30 12:00", end_date: "2009-06-30 20:00", text:"Task B-48865", section_id:2},
+		{ start_date: "2009-06-30 14:00", end_date: "2009-06-30 16:00", text:"Task B-44864", section_id:2},
+		{ start_date: "2009-06-30 16:30", end_date: "2009-06-30 18:00", text:"Task B-46558", section_id:2},
+		{ start_date: "2009-06-30 18:30", end_date: "2009-06-30 20:00", text:"Task B-45564", section_id:2},
+
+		{ start_date: "2009-06-30 08:00", end_date: "2009-06-30 12:00", text:"Task C-32421", section_id:3},
+		{ start_date: "2009-06-30 14:30", end_date: "2009-06-30 16:45", text:"Task C-14244", section_id:3},
+
+		{ start_date: "2009-06-30 09:20", end_date: "2009-06-30 12:20", text:"Task D-52688", section_id:4},
+		{ start_date: "2009-06-30 11:40", end_date: "2009-06-30 16:30", text:"Task D-46588", section_id:4},
+		{ start_date: "2009-06-30 12:00", end_date: "2009-06-30 18:00", text:"Task D-12458", section_id:4}
+	],"json");
+}
+/////////////////////////////////////////////////////////////////////////////////
