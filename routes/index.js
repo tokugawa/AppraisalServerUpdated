@@ -15,13 +15,11 @@ router.get('/index.html', function(req, res) {
 });
 
 router.post('/login', function(req, res) {
-  console.log(req.param);
   console.log(req.param('username'));
-  console.log(req.query.username);
   console.log(req.body);
   console.log(req.route);
   //console.log(req);
-  if(false){
+  if(req.param('username')=='123' && req.param('password')=='test'){
     res.send({'loginStatus' : 'success'});
   }
   else{

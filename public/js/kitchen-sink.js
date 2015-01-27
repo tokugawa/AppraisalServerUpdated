@@ -18,10 +18,8 @@ $(document).ready(function(){
 	$('form').on('submit', function(e){
 		e.preventDefault();
       	$.post($(this).attr('action'), $(this).serialize(), function(response){
-
-      		console.log(response);
-            //login(response);
-
+      		//console.log(response);
+            login(response);
       	},'json');
       	return false;
    	});

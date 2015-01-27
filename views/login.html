@@ -50,68 +50,79 @@
 <!-- DOC: Apply "page-full-width" class to the body element to have full width page without the sidebar menu -->
 <body id="template-body" class="page-header-fixed page-sidebar-closed-hide-logo page-sidebar-closed-hide-logo page-sidebar-closed">
 	<div id="login-page-wrapper" class="login-body">
-		<div id="login-page-form" class="login-form">
-			<form id="login-form" action="/login" method="post">
+		<div id="login-page-form" class="login-form-wrapper panel">
+			<form id="login-form" class="login-form" action="/login" method="post">
 				<h2>Login</h2>
 				<div class="form-group">
-					<input type="text" id="login-username" name="username" class="form-control" placeholder="Login" style="width:100%;" onchange="loadSelectRoles()"/>
+					<div class="input-group">
+						<span class="input-group-addon" style="background: white">
+							<i class="glyphicon glyphicon-user" style="color: #5C9BD1"></i>
+						</span> 
+						<input type="text" id="username" name="username" class="form-control login-input" placeholder="Login" style="width:100%;" onchange="loadSelectRoles()"/>
+					</div>
 				</div>
 				<div class="form-group">
-					<select id="login-role" class="form-control" style="width:100%;">
+					<div class="input-group">
+						<span class="input-group-addon" style="background: white">
+							<i class="glyphicon glyphicon-th-list" style="color: #5C9BD1"></i>
+						</span> 
+						<select id="login-role" class="form-control login-input" style="width:100%;">
 						<option>Select a role</option>
 					</select>
+					</div>
 				</div>
 				<div class="form-group">
-					<input type="password" id="login-password" name="password" class="form-control" placeholder="Password" style="width:100%;"/>
+					<div class="input-group">
+						<span class="input-group-addon" style="background: white">
+							<i class="glyphicon glyphicon-lock" style="color: #5C9BD1"></i>
+						</span> 
+						<input type="password" id="login-password login-input" name="password" class="form-control" placeholder="Password" style="width:100%;"/>
+					</div>
 				</div>
 				<div class="form-group">
-					<input class="btn btn-default blue-sharp" role="button" type="submit" value="Login" style="width:100%" />
-				</div>
-				<div class="form-group pull-right">
-					<a href="#" style="width:100%" onclick="growLoginToSignup();">
-						New User
-					</a>
+					<input class="btn btn-default blue-sharp login-input" role="button" type="submit" value="Login" style="width:100%" />
 				</div>
 			</form>
+			<div class="panel-footer login-input" style="border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; font-size: 16px">
+				<a href="#" style="width:100%" onclick="growLoginToSignup();" >
+					New User
+				</a>
+			</div>
 		</div>
-		<div id="new-user-page-form" class="login-form login-form-grow" style="display:none">
-			<form id="new-user-form">
-			<h2>New User</h2>
+		<div id="new-user-page-form" class="login-form-wrapper login-form-grow panel" style="display:none">
+			<form id="new-user-form" class="login-form">
+				<h2>New User</h2>
 				<div class="form-group">
-					<input type="text" id="new-user-id" class="form-control" placeholder="Employee ID" style="width:100%;"/>
+					<input type="text" id="new-user-id" class="form-control login-input" placeholder="Employee ID" style="width:100%;"/>
 				</div>
 				<div class="form-group">
-					<input type="text" id="new-user-email" class="form-control" placeholder="Email" style="width:100%;"/>
+					<input type="text" id="new-user-email" class="form-control login-input" placeholder="Email" style="width:100%;"/>
 				</div>
 				<div class="form-group">
-					<select id="new-user-role" class="form-control" style="width:100%;">
-						<option>Choose Role</option>
-						<option>Administrator</option>
-						<option>Appraiser</option>
-					</select>
+					<input type="text" id="new-user-invitation-code" class="form-control login-input" placeholder="Invitation Code" style="width:100%;"/>
 				</div>
 				<div class="form-group">
-					<input type="password" id="new-user-password" class="form-control" placeholder="Password" style="width:100%;"/>
+					<input type="password" id="new-user-password" class="form-control login-input" placeholder="Password" style="width:100%;"/>
 				</div>
 				<div class="form-group">
-					<input type="password" id="new-user-confirm-password" class="form-control" placeholder="ConfirmPassword" style="width:100%;"/>
+					<input type="password" id="new-user-confirm-password" class="form-control login-input" placeholder="ConfirmPassword" style="width:100%;"/>
 				</div>
 				<div class="form-group">
-					<input type="text" id="new-user-street-address-one" class="form-control" placeholder="Street Address" style="width:100%;"/>
+					<input type="text" id="new-user-street-address-one" class="form-control login-input" placeholder="Street Address" style="width:100%;"/>
 				</div>
 				<div class="form-group">
-					<input type="text" id="new-user-street-address-one" class="form-control" placeholder="Apartment" style="width:100%;"/>
+					<input type="text" id="new-user-street-address-one" class="form-control login-input" placeholder="Apartment" style="width:100%;"/>
 				</div>
 				<div class="form-group">
 					<div class="row">
 						<div class="col-md-4">
-							<input type="text" id="new-user-city" class="form-control" placeholder="City" style="width:100%;"/>
+							<input type="text" id="new-user-city" class="form-control login-input" placeholder="City" style="width:100%;"/>
 						</div>
 						<div class="col-md-4">
-							<input type="text" id="new-user-state" class="form-control" placeholder="State" style="width:100%;"/>
+							<input type="text" id="new-user-state" class="form-control login-input" placeholder="State" style="width:100%;"/>
 						</div>
 						<div class="col-md-4">
-							<input type="text" id="new-user-zip" class="form-control" placeholder="Zip" style="width:100%;"/>
+							<input type="text" id="new-user-zip" class="form-control login-input" placeholder="Zip" style="width:100%;"/>
 						</div>
 					</div>
 				</div>
