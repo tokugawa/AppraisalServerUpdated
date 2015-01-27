@@ -6,29 +6,37 @@
 	overflow-x: auto;
 }
 .login-body{
-	height: 100%; 
-	width: 100%;
+	min-height: 100%; 
+	min-width: 100%;
 	/*freedigitalphotos.net*/
-	background-image: url('../img/backgroud.jpg');
+	/*background-image: url('../img/backgroud.jpg');
 	background-size: 100% 100%;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat;*/
+	background: rgb(71,91,137); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(71,91,137,1) 0%, rgba(55,98,167,1) 15%, rgba(55,98,167,1) 29%, rgba(55,98,167,1) 39%, rgba(65,110,183,1) 50%, rgba(55,98,167,1) 63%, rgba(55,98,167,1) 80%, rgba(55,98,167,1) 86%, rgba(55,98,167,1) 100%, rgba(129,163,211,1) 100%, rgba(55,98,167,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(71,91,137,1)), color-stop(15%,rgba(55,98,167,1)), color-stop(29%,rgba(55,98,167,1)), color-stop(39%,rgba(55,98,167,1)), color-stop(50%,rgba(65,110,183,1)), color-stop(63%,rgba(55,98,167,1)), color-stop(80%,rgba(55,98,167,1)), color-stop(86%,rgba(55,98,167,1)), color-stop(100%,rgba(55,98,167,1)), color-stop(100%,rgba(129,163,211,1)), color-stop(100%,rgba(55,98,167,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(71,91,137,1) 0%,rgba(55,98,167,1) 15%,rgba(55,98,167,1) 29%,rgba(55,98,167,1) 39%,rgba(65,110,183,1) 50%,rgba(55,98,167,1) 63%,rgba(55,98,167,1) 80%,rgba(55,98,167,1) 86%,rgba(55,98,167,1) 100%,rgba(129,163,211,1) 100%,rgba(55,98,167,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(71,91,137,1) 0%,rgba(55,98,167,1) 15%,rgba(55,98,167,1) 29%,rgba(55,98,167,1) 39%,rgba(65,110,183,1) 50%,rgba(55,98,167,1) 63%,rgba(55,98,167,1) 80%,rgba(55,98,167,1) 86%,rgba(55,98,167,1) 100%,rgba(129,163,211,1) 100%,rgba(55,98,167,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(71,91,137,1) 0%,rgba(55,98,167,1) 15%,rgba(55,98,167,1) 29%,rgba(55,98,167,1) 39%,rgba(65,110,183,1) 50%,rgba(55,98,167,1) 63%,rgba(55,98,167,1) 80%,rgba(55,98,167,1) 86%,rgba(55,98,167,1) 100%,rgba(129,163,211,1) 100%,rgba(55,98,167,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(71,91,137,1) 0%,rgba(55,98,167,1) 15%,rgba(55,98,167,1) 29%,rgba(55,98,167,1) 39%,rgba(65,110,183,1) 50%,rgba(55,98,167,1) 63%,rgba(55,98,167,1) 80%,rgba(55,98,167,1) 86%,rgba(55,98,167,1) 100%,rgba(129,163,211,1) 100%,rgba(55,98,167,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#475b89', endColorstr='#3762a7',GradientType=0 ); /* IE6-9 */
+
+	padding: 90px;
 }
 .login-form-wrapper{
 	width: 450px; 
 	margin: auto; 
-	position: absolute; 
+	position: relative; 
 	border-radius: 10px;
 	background: white;
-	box-shadow: 10px 15px 117px 4px black;
 	left: 0; 
 	right: 0; 
-	top: 100px;
-
 }
 .login-form{
 	margin: 0;
 	padding: 30px;
-	
+	box-shadow: 0px 15px 20px 1px rgba(0, 0, 0, 0.1);
+	top: 30px;
 	/*-webkit-transition: width .5s ease, height .5s ease;  
     -moz-transition: width .5s ease, height .5s ease;  
     -o-transition: width .5s ease, height .5s ease;  
@@ -37,10 +45,9 @@
 }
 .login-form-grow{
 	width: 500px;
-	
 }
 .login-input{
-	height: 44px;
+	height: 40px;
 }
 .form-shake{
 	-webkit-animation: formShake .2s linear 0s 3;
