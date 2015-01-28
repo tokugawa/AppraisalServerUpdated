@@ -1,9 +1,18 @@
 var express = require('express');
 var router = express.Router();
 var bodyParser = require('body-parser');
+var session = require('express-session');
 
 router.use(bodyParser.urlencoded({ extended: false }));
 router.use(bodyParser.json())
+
+//https://github.com/strongloop/express/blob/master/examples/auth/index.js
+/*router.use(session({
+  resave: false, // don't save session if unmodified
+  saveUninitialized: false, // don't create session until something stored
+  secret: 'shhhh, very secret'
+}));*/
+///////////////////////////////////////////////////////////////////////////
 
 /* GET home page. */
 router.get('/', function(req, res) {
@@ -12,19 +21,6 @@ router.get('/', function(req, res) {
 
 router.get('/index.html', function(req, res) {
   res.render('index.html');
-});
-
-router.post('/login', function(req, res) {
-  console.log(req.param('username'));
-  console.log(req.body);
-  console.log(req.route);
-  //console.log(req);
-  if(req.param('username')=='123' && req.param('password')=='test'){
-    res.send({'loginStatus' : 'success'});
-  }
-  else{
-    res.send({'loginStatus' : 'fail'});
-  }
 });
 
 router.get('/overview.html', function(req, res) {
@@ -60,5 +56,20 @@ router.get('/tasks.html', function(req, res) {
 router.get('/calendar.html', function(req, res) {
   res.render('calendar.html');
 });
+
+//POST
+router.post('/login', function(req, res) {
+  console.log(req.param('username'));
+  console.log(req.body);
+  console.log(req.route);
+  //console.log(req);
+  if(req.param('username')=='123' && req.param('password')=='test'){
+    res.send({'loginStatus' : 'success'});
+  }
+  else{
+    res.send({'loginStatus' : 'fail'});
+  }
+});
+///////////////////////////////////////////////////////////////////////////
 
 module.exports = router;

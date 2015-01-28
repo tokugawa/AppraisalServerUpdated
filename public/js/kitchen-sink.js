@@ -44,6 +44,7 @@ function login(response){
 }
 function loadOverview(){
 
+	//TODO ajax calls for dynamic content
 	showPreloader();
 	$('#content-location').empty();
 	$('#content-location').load('./overview.html', function(){
@@ -66,6 +67,7 @@ function loadOverview(){
 }
 function loadUsersHome(){
 
+	//TODO ajax calls for dynamic content
 	showPreloader();
 	$('#content-location').empty();
 	$('#content-location').load('./users-home.html', function(){
@@ -80,6 +82,7 @@ function loadUsersHome(){
 }
 function loadUsersIndividual(userId){
 
+	//TODO ajax calls for dynamic content
 	showPreloader();
 	$('#content-location').empty();
 	$('#content-location').load('./users-individual.html', function(){
@@ -171,6 +174,7 @@ function loadUsersIndividual(userId){
 }
 function loadOrdersHome(){
 
+	//TODO ajax calls for dynamic content
 	showPreloader();
 	$('#content-location').empty();
 	$('#content-location').load('./orders-home.html', function(){
@@ -203,6 +207,7 @@ function loadOrdersHome(){
 }
 function loadOrdersIndividual(orderId){
 
+	//TODO ajax calls for dynamic content
 	showPreloader();
 	$('#content-location').empty();
 	$('#content-location').load('./orders-individual.html', function(){
@@ -229,6 +234,7 @@ function loadOrdersIndividual(orderId){
 }
 function loadTasks(){
 
+	//TODO ajax calls for dynamic content
 	showPreloader();
 	$('#content-location').empty();
 	$('#content-location').load('./tasks.html', function(){
@@ -274,6 +280,7 @@ function loadTasks(){
 }
 function loadCalendar(){
 
+	//TODO ajax call for specific calendar
 	showPreloader();
 	$('#content-location').empty();
 	$('#content-location').load('./calendar.html', function(){
@@ -285,6 +292,7 @@ function loadCalendar(){
 }
 function loadSupport(){
 
+	//TODO ajax calls for dynamic content
 	showPreloader();
 	$('#content-location').empty();
 	$('#content-location').load('./support.html', function(){
@@ -334,11 +342,11 @@ function Completed(userId, orderId, dateCompleted, timeTaken){
 	this.dateCompleted = dateCompleted;
 	this.timeTaken = timeTaken;
 }
-function Task(id, type, description, link, dateAssigned, dateCompleted){
+function Task(id, type, description, loadFunction, dateAssigned, dateCompleted){
 	this.id = id;
 	this.type = type;
 	this.description = description;
-	this.link = link;
+	this.loadFunction = loadFunction;
 	this.dateAssigned = dateAssigned;
 	this.dateCompleted = dateCompleted
 }
@@ -402,11 +410,11 @@ users[1].orders = ([orders[0], orders[2], orders[3], orders[4], orders[8]]);
 users[2].orders = ([orders[5], orders[7]]);
 
 var harveyTasks = [
-	new Task(1001, 'User Application', 'stv@gmail.com Application', '', new Date(), ''),
-	new Task(1002, 'User Application', 'fed@tcs.com Application', '', new Date(), ''),
-	new Task(1003, 'Meeting', 'Fri, Dec. 13 with Gary', '', new Date(), ''),
-	new Task(1004, 'Review Order', '103 Some Street by Gary', '', new Date(), ''),
-	new Task(1005, 'Review Order', '43 Another Street by Alice', '', new Date(), ''),
+	new Task(1001, 'User Application', 'stv@gmail.com Application', 'loadUsersIndividual(800745)', dateToMMDDYYYY(new Date()), ''),
+	new Task(1002, 'User Application', 'fed@tcs.com Application', 'loadUsersIndividual(800745)', dateToMMDDYYYY(new Date()), ''),
+	new Task(1003, 'Meeting', 'Fri, Dec. 13 with Gary', 'loadCalendar()', dateToMMDDYYYY(new Date()), ''),
+	new Task(1004, 'Review Order', '103 Some Street by Gary', 'loadOrdersIndividual(100002)', dateToMMDDYYYY(new Date()), ''),
+	new Task(1005, 'Review Order', '43 Another Street by Alice', 'loadOrdersIndividual(100002)', dateToMMDDYYYY(new Date()), ''),
 ];
 var tasksTableColumns = [
 	{data: "id"},
@@ -450,6 +458,12 @@ function loadTableData(tableId, dataArray, sizePerPage, columns, columnDefs){
 		oTable.$('tr').click( function () {
 	    	
 			loadOrdersIndividual(oTable.fnGetData(this, 0));
+	  	});
+	}
+	else if(tableId == 'tasks-table'){
+		oTable.$('tr').click( function () {
+	    	
+			eval((oTable.fnGetData(this)).loadFunction);
 	  	});
 	}
 	/*createPaginator(tableId, paginatorId, users, sizePerPage);
@@ -689,7 +703,7 @@ function loadSelectRoles(){
 		'<option>Appraiser</option>'+
 		'<option>Administrator</option>'+
 	'');
-    /*$.ajax({
+    /*$.ajax({ //TODO ajax call to load roles
         url: 'http://www.your_server.com/your_page',
         success: function (data) {
             $("#login-role").empty().append(data); //your data being: <option>1</option> <option>2</option> <option>3</option><option>4</option>
@@ -720,6 +734,17 @@ function createUser(){
 function createOrder(){
 
 	//TODO
+}
+function dateToMMDDYYYY(date){//Convert Date() to dd/mm/yyyy
+
+	var datetime = (date.getMonth()+1) + "/"
+					+ date.getDate()  + "/" 
+					+ date.getFullYear();
+	/*datetime to Date()
+	from = $("#datepicker").val().split("-");
+	f = new Date(from[2], from[1] - 1, from[0]);*/
+
+	return datetime;
 }
 ///////////////////////////////////////////////////////////////////////////////
 
@@ -778,31 +803,40 @@ function hidePreloader(){
 /////////////////////////////////////////////////////////////////////////////////
 
 //DHTMLXSchedular Calendar 
+var calendarJSON = [
+	{ start_date: "2015-01-30 09:00", end_date: "2015-01-30 12:00", text:"Task A-12458", section_id:1},
+	{ start_date: "2015-01-30 10:00", end_date: "2015-01-30 16:00", text:"Task A-89411", section_id:1},
+	{ start_date: "2015-01-30 10:00", end_date: "2015-01-30 14:00", text:"Task A-64168", section_id:1},
+	{ start_date: "2015-01-30 16:00", end_date: "2015-01-30 17:00", text:"Task A-46598", section_id:1},
+
+	{ start_date: "2015-01-30 12:00", end_date: "2015-01-30 20:00", text:"Task B-48865", section_id:2},
+	{ start_date: "2015-01-30 14:00", end_date: "2015-01-30 16:00", text:"Task B-44864", section_id:2},
+	{ start_date: "2015-01-30 16:30", end_date: "2015-01-30 18:00", text:"Task B-46558", section_id:2},
+	{ start_date: "2015-01-30 18:30", end_date: "2015-01-30 20:00", text:"Task B-45564", section_id:2},
+
+	{ start_date: "2015-01-30 08:00", end_date: "2015-01-30 12:00", text:"Task C-32421", section_id:3},
+	{ start_date: "2015-01-30 14:30", end_date: "2015-01-30 16:45", text:"Task C-14244", section_id:3},
+
+	{ start_date: "2015-01-30 09:20", end_date: "2015-01-30 12:20", text:"Task D-52688", section_id:4},
+	{ start_date: "2015-01-30 11:40", end_date: "2015-01-30 16:30", text:"Task D-46588", section_id:4},
+	{ start_date: "2015-01-30 12:00", end_date: "2015-01-30 18:00", text:"Task D-12458", section_id:4},
+
+	{ start_date: "2015-01-31 12:00", end_date: "2015-01-31 18:00", text:"Task D-12458", section_id:5}
+];
 function initCalendar(){
 	scheduler.config.xml_date = "%Y-%m-%d %H:%i";
 
 	scheduler.config.first_hour = 8;
+	scheduler.config.last_hour = 22;
 	scheduler.config.limit_time_select = true;
 
 
-	scheduler.init('scheduler_here',new Date(2009,5,30),"week");
-	scheduler.parse([
-		{ start_date: "2009-06-30 09:00", end_date: "2009-06-30 12:00", text:"Task A-12458", section_id:1},
-		{ start_date: "2009-06-30 10:00", end_date: "2009-06-30 16:00", text:"Task A-89411", section_id:1},
-		{ start_date: "2009-06-30 10:00", end_date: "2009-06-30 14:00", text:"Task A-64168", section_id:1},
-		{ start_date: "2009-06-30 16:00", end_date: "2009-06-30 17:00", text:"Task A-46598", section_id:1},
-
-		{ start_date: "2009-06-30 12:00", end_date: "2009-06-30 20:00", text:"Task B-48865", section_id:2},
-		{ start_date: "2009-06-30 14:00", end_date: "2009-06-30 16:00", text:"Task B-44864", section_id:2},
-		{ start_date: "2009-06-30 16:30", end_date: "2009-06-30 18:00", text:"Task B-46558", section_id:2},
-		{ start_date: "2009-06-30 18:30", end_date: "2009-06-30 20:00", text:"Task B-45564", section_id:2},
-
-		{ start_date: "2009-06-30 08:00", end_date: "2009-06-30 12:00", text:"Task C-32421", section_id:3},
-		{ start_date: "2009-06-30 14:30", end_date: "2009-06-30 16:45", text:"Task C-14244", section_id:3},
-
-		{ start_date: "2009-06-30 09:20", end_date: "2009-06-30 12:20", text:"Task D-52688", section_id:4},
-		{ start_date: "2009-06-30 11:40", end_date: "2009-06-30 16:30", text:"Task D-46588", section_id:4},
-		{ start_date: "2009-06-30 12:00", end_date: "2009-06-30 18:00", text:"Task D-12458", section_id:4}
-	],"json");
+	scheduler.init('scheduler_here',new Date(),"week");
+	scheduler.parse(calendarJSON,"json");
+	/*
+	$('save').click(function(){
+		//TODO ajax call to load json calendar to user
+		scheduler.toJSON();
+	});*/
 }
 /////////////////////////////////////////////////////////////////////////////////
