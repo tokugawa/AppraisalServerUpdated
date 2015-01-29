@@ -29,12 +29,22 @@ $(document).ready(function(){
 //Load Pages Functions
 function login(response){
 
-	if(response.loginStatus == 'success'){
-		console.log(response);
+	if(response.loginStatus == 'administrator'){
+		//console.log(response);
 		showPreloader();
 		$('#template-body').empty();
 		$('#template-body').load('./index.html', function(){
 			loadOverview();
+			hidePreloader();
+		});
+	}
+	else if(response.loginStatus == 'appraiser'){
+		//TODO load appraiser template
+		//console.log(response);
+		showPreloader();
+		$('#template-body').empty();
+		$('#template-body').load('./index.html', function(){
+			loadAppraiserOverview();
 			hidePreloader();
 		});
 	}
@@ -47,7 +57,11 @@ function loadOverview(){
 	//TODO ajax calls for dynamic content
 	showPreloader();
 	$('#content-location').empty();
-	$('#content-location').load('./overview.html', function(){
+	$('#content-location').load('./overview.html', function(response){
+
+		if(response == 'No Session'){
+			document.location.href = '/';
+		}
 
 		Index.init(); // init index page
  		Tasks.initDashboardWidget(); // init tash dashboard widget
@@ -65,12 +79,27 @@ function loadOverview(){
 	  	hidePreloader();
 	});
 }
+function loadAppraiserOverview(){
+	//TODO ajax calls for dynamic content
+	showPreloader();
+	$('#content-location').empty();
+	$('#content-location').load('./overview-appraiser.html', function(response){
+
+		if(response == 'No Session'){
+			document.location.href = '/';
+		}
+	});
+}
 function loadUsersHome(){
 
 	//TODO ajax calls for dynamic content
 	showPreloader();
 	$('#content-location').empty();
-	$('#content-location').load('./users-home.html', function(){
+	$('#content-location').load('./users-home.html', function(response){
+
+		if(response == 'No Session'){
+			document.location.href = '/';
+		}
 
 		loadTableData('users-table', users, 2, userTableColumns, userTableColumnDefs);
 		$('.dataTable').each(function(){
@@ -85,7 +114,11 @@ function loadUsersIndividual(userId){
 	//TODO ajax calls for dynamic content
 	showPreloader();
 	$('#content-location').empty();
-	$('#content-location').load('./users-individual.html', function(){
+	$('#content-location').load('./users-individual.html', function(response){
+
+		if(response == 'No Session'){
+			document.location.href = '/';
+		}
 
 		$('#user-id-title').html(userId);
 		createUserOrdersTables(userId, orders);
@@ -177,7 +210,11 @@ function loadOrdersHome(){
 	//TODO ajax calls for dynamic content
 	showPreloader();
 	$('#content-location').empty();
-	$('#content-location').load('./orders-home.html', function(){
+	$('#content-location').load('./orders-home.html', function(response){
+
+		if(response == 'No Session'){
+			document.location.href = '/';
+		}
 
 		loadTableData('orders-table', orders, 2, orderTableColumns, orderTableColumnDefs);
 		$('.dataTable').each(function(){
@@ -210,7 +247,11 @@ function loadOrdersIndividual(orderId){
 	//TODO ajax calls for dynamic content
 	showPreloader();
 	$('#content-location').empty();
-	$('#content-location').load('./orders-individual.html', function(){
+	$('#content-location').load('./orders-individual.html', function(response){
+
+		if(response == 'No Session'){
+			document.location.href = '/';
+		}
 
 		//TODO
 		$('#order-number').html(orderId);
@@ -237,7 +278,11 @@ function loadTasks(){
 	//TODO ajax calls for dynamic content
 	showPreloader();
 	$('#content-location').empty();
-	$('#content-location').load('./tasks.html', function(){
+	$('#content-location').load('./tasks.html', function(response){
+
+		if(response == 'No Session'){
+			document.location.href = '/';
+		}
 
 		new Morris.Donut({
 		  	element: 'pending-tasks-chart',
@@ -283,7 +328,11 @@ function loadCalendar(){
 	//TODO ajax call for specific calendar
 	showPreloader();
 	$('#content-location').empty();
-	$('#content-location').load('./calendar.html', function(){
+	$('#content-location').load('./calendar.html', function(response){
+
+		if(response == 'No Session'){
+			document.location.href = '/';
+		}
 
 		initCalendar();
 
@@ -295,7 +344,11 @@ function loadSupport(){
 	//TODO ajax calls for dynamic content
 	showPreloader();
 	$('#content-location').empty();
-	$('#content-location').load('./support.html', function(){
+	$('#content-location').load('./support.html', function(response){
+
+		if(response == 'No Session'){
+			document.location.href = '/';
+		}
 
 		//TODO
 		hidePreloader();
@@ -698,19 +751,19 @@ function disableInput(){
 }
 function loadSelectRoles(){
 
-	//$("#login-role").html('').append("<option>Loading options</option>");
-	$("#login-role").html('').append(''+
+	//$("#role").html('').append("<option>Loading options</option>");
+	$("#role").html('').append(''+
 		'<option>Appraiser</option>'+
 		'<option>Administrator</option>'+
 	'');
     /*$.ajax({ //TODO ajax call to load roles
         url: 'http://www.your_server.com/your_page',
         success: function (data) {
-            $("#login-role").empty().append(data); //your data being: <option>1</option> <option>2</option> <option>3</option><option>4</option>
+            $("#role").empty().append(data); //your data being: <option>1</option> <option>2</option> <option>3</option><option>4</option>
         }
     });*/
-	//$("#login-role").selectpicker('refresh');
-	$("#login-role").hide().show();
+	//$("#role").selectpicker('refresh');
+	$("#role").hide().show();
 }
 //////////////////////////////////////////////////////////////////////
 
