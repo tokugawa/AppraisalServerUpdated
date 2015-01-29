@@ -1,69 +1,73 @@
 var express = require('express');
 var router = express.Router();
-var bodyParser = require('body-parser');
-//var session = require('express-session');
 
-router.use(bodyParser.urlencoded({ extended: false }));
-router.use(bodyParser.json())
 
-//https://github.com/strongloop/express/blob/master/examples/auth/index.js
-/*router.use(session({
-  resave: false, // don't save session if unmodified
-  saveUninitialized: false, // don't create session until something stored
-  secret: 'shhhh, very secret'
-}));*/
 ///////////////////////////////////////////////////////////////////////////
 
 /* GET home page. */
 router.get('/', function(req, res) {
-  res.render('login.html');
+  res.render('login');
 });
 
 router.get('/index.html', function(req, res) {
-  res.render('index.html');
+  console.log(req.session.redSession);
+  if(req.session.redSession && req.session.loggedIn){ //check this for all routes after Login
+
+    res.render('index');
+  }
+  else{
+    res.send('No Session');
+  }
+  
 });
 
+
+router.get('/logout', function(req, res) {
+  req.session.destroy(); 
+  res.redirect('/');
+});
+
+
 router.get('/overview.html', function(req, res) {
-  res.render('overview.html');
+  res.render('overview');
 });
 
 router.get('/users-home.html', function(req, res) {
-  res.render('users-home.html');
+  res.render('users-home');
 });
 
 
 router.get('/orders-home.html', function(req, res) {
-  res.render('orders-home.html');
+  res.render('orders-home');
 });
 
 router.get('/orders-individual.html', function(req, res) {
-  res.render('orders-individual.html');
+  res.render('orders-individual');
 });
 
 router.get('/overview.html', function(req, res) {
-  res.render('overview.html');
+  res.render('overview');
 });
 
 
 router.get('/users-individual.html', function(req, res) {
-  res.render('users-individual.html');
+  res.render('users-individual');
 });
 
 router.get('/tasks.html', function(req, res) {
-  res.render('tasks.html');
+  res.render('tasks');
 });
 
 router.get('/calendar.html', function(req, res) {
-  res.render('calendar.html');
+  res.render('calendar');
 });
 
 //POST
 router.post('/login', function(req, res) {
-  console.log(req.param('username'));
-  console.log(req.body);
-  console.log(req.route);
-  //console.log(req);
-  if(req.param('username')=='123' && req.param('password')=='test'){
+
+  if(req.param('username')==='123'&& req.param('password')==='test'){
+    req.session.redSession = req.param('username');
+    req.session.loggedIn = true;
     res.send({'loginStatus' : 'success'});
   }
   else{

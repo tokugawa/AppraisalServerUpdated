@@ -21,9 +21,9 @@ if(cluster.isMaster){
 
     cluster.setupMaster({silent: false});
 
-    require('os').cpus().forEach(function () {
+    //require('os').cpus().forEach(function () {
         cluster.fork();
-    });
+    //});
     //cluster.fork();
     require('portscanner').checkPortStatus(process.env.PORT || port, '127.0.0.1', function (error, status) {
         if (status === 'open') {
@@ -47,10 +47,11 @@ else {
     var express = require('express');
     var path = require('path');
     var favicon = require('serve-favicon');
-    var cors = require('cors');
-
-   
+    var cors = require('cors');   
     var cookieParser = require('cookie-parser');
+    var session = require('express-session');
+    var redisStore = require('connect-redis')(session);
+
     var bodyParser = require('body-parser');
 
 
@@ -67,26 +68,41 @@ else {
     var formData = require('./routes/FormDataRouter');
 
     var app = express();
+    app.use(favicon(__dirname + '/public/img/favicon.ico'));
+    
+    var client = require('./util/RadisClient').getInstance();
+    
+  
 
 
     app.set('port', process.env.PORT || 3000);
 
 
     // view engine setup
-    //app.set('views', path.join(__dirname, 'views'));
-    //app.set('view engine', 'ejs');
+
 
     app.set('views', path.join(__dirname, 'views'));
-    app.engine('html', require('ejs').renderFile);
+    app.set('view engine', 'ejs');
+    //app.engine('html', require('ejs').renderFile);
 
     // uncomment after placing your favicon in /public
-    //app.use(favicon(__dirname + '/public/favicon.ico'));
+    
     //app.use(logger('dev'));
     app.use(log4js.connectLogger(log4js.getLogger("http"), { level: 'auto' }));
 
     app.use(bodyParser.json());
     app.use(bodyParser.urlencoded({ extended: false }));
     app.use(cookieParser());
+    app.use(cookieParser('yoursecretcode'));
+    app.use(session(
+        {
+            secret: 'sjnvsdi-9npwjwe-0l3ne n;f0-20-2323 ,2 ,flwefn', 
+            store: new redisStore({ host: 'tarpon.redistogo.com', port: 10646, client: client }),
+            saveUninitialized: false, // don't create session until something stored,
+            resave: false // don't save session if unmodified
+        }
+    ));
+    //app.use(session({secret: 'yourothersecretcode', saveUninitialized: true, resave: true}));
     app.use(express.static(path.join(__dirname, 'public')));
 
 
@@ -108,6 +124,7 @@ else {
     app.post('/api/v1/formData', formData);
     app.get('/api/v1/formData', formData);
 
+    /**/
 
 
     // catch 404 and forward to error handler

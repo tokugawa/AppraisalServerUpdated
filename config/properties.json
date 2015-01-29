@@ -19,6 +19,15 @@
 	"DB_COLLECTION_IMAGE": "ImageList",
 	"DB_COLLECTION_APPRAISAL": "AppraisalDetail"
 	},
+
+	"RADIS": {
+		"USER_NAME": "redistogo",
+		"PASSWORD" : "87ef10ccb5338c81f19b1e9ece9c8a50",
+		"HOST" : "tarpon.redistogo.com",
+		"PORT" : "10646"
+
+
+	},
 	
 	"ENV_VAR":{
 		"MAX_LISTENERS" : 10
