@@ -21,38 +21,43 @@ var OrderSchema = new mongoose.Schema({
 		
 		order_id	 							: { type: Number , required: true, unique: true } ,
         order_property_primary_holder	     	: { 
-        	customer_id: {type:Schema.Types.ObjectId, required: true, ref: 'Customer'}
+        	customer_id: {type:Schema.Types.ObjectId, required: true, ref: 'CustomerCollection'}
         },
 		order_property_detail    				: { 
 
-			property_id : { type: Schema.Types.ObjectId, required: true, ref:'Property' },
-			address_id	: { type: Schema.Types.ObjectId, required: true, ref: 'Address' }
+			property_id : { type: Schema.Types.ObjectId, required: true, ref:'PropertyCollection' },
+			address_id	: { type: Schema.Types.ObjectId, required: true, ref: 'AddressCollection' }
 
 		},
+		order_client							: {	type: Schema.Types.ObjectId, ref: 'ClientCollection'}
 		order_received_date     				: { type: Date, default: Date.now },
 		order_due_date							: { type: Date },
-		order_priority_ind 						: { type: String, lowercase: false, trim: true},
-		order_image								: {	type: Schema.Types.ObjectId, ref: 'Image'},
-		order_evaluation_detail					: {	type: Schema.Types.ObjectId, ref: 'Evaluation'},
-		order_progress_status					: { type: String, lowercase: false, trim: true}, 
+		order_priority_ind 						: { type: Number },
+		order_image								: {	type: Schema.Types.ObjectId, ref: 'ImageURLCollection'},
+		order_evaluation_detail					: {	type: Schema.Types.ObjectId, ref: 'FormDataCollection'},
+		order_progress_status					: { type: Number, required: true }, 
 		order_assigned_to						: { 
 
-			order_current_appraiser		: {type: Schema.Types.ObjectId, ref: 'User' },
-			order_previous_appraiser 	: [{ type: Schema.Types.ObjectId, ref: 'User'}]
+			order_current_appraiser	  	: {  type: Schema.Types.ObjectId, ref: 'UserCollection' },
+			order_previous_appraiser 	: [{ type: Schema.Types.ObjectId, ref: 'UserCollection'}]
 
-		}
+		},
+		order_status_current 					: { type: String , required: true },
+		order_status_past						: [{ type: String }],
+		order_status_next						: { type: String }
+
 
 	},
 	{
 
-		collection: 'OrderDetailCollection'
+		collection: 'OrderCollection'
 	}
 
 );
 
-OrderSchema.methods.generateOrderNumber = function(){
+OrderSchema.methods.generateOrderNumber = function(cb){
 
-	return orderID.getNextOrderID();
+	return orderID.getNextOrderID(cb);
 
 }
 

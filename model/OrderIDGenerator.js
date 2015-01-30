@@ -16,7 +16,7 @@ var conn = require('../util/ConnectDBInstance').getInstance();
 
 var OrderIDSchema = new mongoose.Schema({
 
-		orderID : { type: Number, required: true, unique: true,  min: 99999 , max: 999999}
+		orderID : { type: Number, required: true, unique: true,  min: 999999 , max: 99999999}
 
 	},
 	{
