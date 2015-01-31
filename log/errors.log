@@ -3,3 +3,156 @@
 [2015-01-29 22:08:18.440] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout3/img/avatar2.jpg HTTP/1.1" 404 1174 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/600.2.5 (KHTML, like Gecko) Version/8.0.2 Safari/600.2.5"
 [2015-01-29 22:08:18.444] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout3/img/avatar3.jpg HTTP/1.1" 404 1174 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/600.2.5 (KHTML, like Gecko) Version/8.0.2 Safari/600.2.5"
 [2015-01-29 22:08:18.447] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout3/img/avatar1.jpg HTTP/1.1" 404 1174 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/600.2.5 (KHTML, like Gecko) Version/8.0.2 Safari/600.2.5"
+[2015-01-30 08:39:56.890] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout3/img/avatar2.jpg HTTP/1.1" 404 1154 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.94 Safari/537.36"
+[2015-01-30 08:39:56.906] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout3/img/avatar3.jpg HTTP/1.1" 404 1154 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.94 Safari/537.36"
+[2015-01-30 08:39:56.913] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout3/img/avatar1.jpg HTTP/1.1" 404 1154 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.94 Safari/537.36"
+[2015-01-30 08:40:06.491] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout3/img/avatar2.jpg HTTP/1.1" 404 1154 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.94 Safari/537.36"
+[2015-01-30 08:40:06.492] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout3/img/avatar3.jpg HTTP/1.1" 404 1154 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.94 Safari/537.36"
+[2015-01-30 08:40:06.493] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout3/img/avatar1.jpg HTTP/1.1" 404 1154 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.94 Safari/537.36"
+[2015-01-30 08:40:06.540] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout/img/loading.gif HTTP/1.1" 404 1154 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.94 Safari/537.36"
+[2015-01-30 10:11:10.240] [ERROR] http - 127.0.0.1 - - "GET /api/v1/checkUserCredential?userName=[object%20Object]&password=[object%20Object]&apiKey=df5cb700-395b-11e4-916c-0800200c9a66&_=1422630666498 HTTP/1.1" 401 21 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.94 Safari/537.36"
+[2015-01-30 10:12:26.200] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout3/img/avatar2.jpg HTTP/1.1" 404 1154 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.94 Safari/537.36"
+[2015-01-30 10:12:26.201] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout3/img/avatar3.jpg HTTP/1.1" 404 1154 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.94 Safari/537.36"
+[2015-01-30 10:12:26.202] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout3/img/avatar1.jpg HTTP/1.1" 404 1154 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.94 Safari/537.36"
+[2015-01-30 10:13:42.706] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout3/img/avatar2.jpg HTTP/1.1" 404 1154 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.94 Safari/537.36"
+[2015-01-30 10:13:42.719] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout3/img/avatar3.jpg HTTP/1.1" 404 1154 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.94 Safari/537.36"
+[2015-01-30 10:13:42.721] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout3/img/avatar1.jpg HTTP/1.1" 404 1154 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.94 Safari/537.36"
+[2015-01-30 10:13:42.813] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout/img/loading.gif HTTP/1.1" 404 1154 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.94 Safari/537.36"
+[2015-01-30 10:14:06.206] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout/img/loading.gif HTTP/1.1" 404 1154 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.94 Safari/537.36"
+[2015-01-30 10:21:59.344] [ERROR] http - 127.0.0.1 - - "GET /api/v1/checkUserCredential?userName=undefined&password=undefined&apiKey=df5cb700-395b-11e4-916c-0800200c9a66&_=1422631306174 HTTP/1.1" 401 21 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.94 Safari/537.36"
+[2015-01-30 10:22:35.732] [ERROR] http - 127.0.0.1 - - "GET /api/v1/checkUserCredential?userName=123&password=undefined&apiKey=df5cb700-395b-11e4-916c-0800200c9a66&_=1422631350158 HTTP/1.1" 401 21 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.94 Safari/537.36"
+[2015-01-30 10:23:20.171] [ERROR] http - 127.0.0.1 - - "GET /api/v1/checkUserCredential?userName=123&password=undefined&apiKey=df5cb700-395b-11e4-916c-0800200c9a66&_=1422631396615 HTTP/1.1" 401 21 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.94 Safari/537.36"
+[2015-01-30 10:45:40.728] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout3/img/avatar2.jpg HTTP/1.1" 404 1154 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.94 Safari/537.36"
+[2015-01-30 10:45:40.731] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout3/img/avatar3.jpg HTTP/1.1" 404 1154 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.94 Safari/537.36"
+[2015-01-30 10:45:40.732] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout3/img/avatar1.jpg HTTP/1.1" 404 1154 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.94 Safari/537.36"
+[2015-01-30 10:45:40.771] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout/img/loading.gif HTTP/1.1" 404 1154 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.94 Safari/537.36"
+[2015-01-30 10:57:23.704] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout/img/loading.gif HTTP/1.1" 404 1154 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.94 Safari/537.36"
+[2015-01-30 10:57:26.149] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout/img/loading.gif HTTP/1.1" 404 1154 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.94 Safari/537.36"
+[2015-01-30 10:57:37.842] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout/img/loading.gif HTTP/1.1" 404 1154 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.94 Safari/537.36"
+[2015-01-30 11:23:13.786] [ERROR] app - Worker server died (ID: 1, PID: 9652)
+[2015-01-30 11:23:59.027] [ERROR] http - 127.0.0.1 - - "POST /login HTTP/1.1" 500 1209 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.94 Safari/537.36"
+[2015-01-30 11:24:02.763] [ERROR] http - 127.0.0.1 - - "POST /login HTTP/1.1" 500 1209 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.94 Safari/537.36"
+[2015-01-30 11:25:31.997] [ERROR] http - 127.0.0.1 - - "POST /login HTTP/1.1" 500 1209 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.94 Safari/537.36"
+[2015-01-30 11:29:24.542] [ERROR] http - 127.0.0.1 - - "POST /login HTTP/1.1" 500 1209 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.94 Safari/537.36"
+[2015-01-30 11:34:07.714] [ERROR] app - Worker server died (ID: 1, PID: 9428)
+[2015-01-30 11:34:55.465] [ERROR] app - Worker server died (ID: 1, PID: 7676)
+[2015-01-30 11:35:24.745] [ERROR] http - 127.0.0.1 - - "POST /login HTTP/1.1" 500 1210 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.94 Safari/537.36"
+[2015-01-30 11:37:21.737] [ERROR] app - Worker server died (ID: 1, PID: 9768)
+[2015-01-30 11:49:17.002] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout3/img/avatar2.jpg HTTP/1.1" 404 1154 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.94 Safari/537.36"
+[2015-01-30 11:49:17.003] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout3/img/avatar3.jpg HTTP/1.1" 404 1154 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.94 Safari/537.36"
+[2015-01-30 11:49:17.004] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout3/img/avatar1.jpg HTTP/1.1" 404 1154 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.94 Safari/537.36"
+[2015-01-30 11:49:17.105] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout/img/loading.gif HTTP/1.1" 404 1154 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.94 Safari/537.36"
+[2015-01-30 13:23:26.892] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout3/img/avatar2.jpg HTTP/1.1" 404 1154 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.94 Safari/537.36"
+[2015-01-30 13:23:26.894] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout3/img/avatar3.jpg HTTP/1.1" 404 1154 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.94 Safari/537.36"
+[2015-01-30 13:23:26.896] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout3/img/avatar1.jpg HTTP/1.1" 404 1154 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.94 Safari/537.36"
+[2015-01-30 13:23:26.939] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout/img/loading.gif HTTP/1.1" 404 1154 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.94 Safari/537.36"
+[2015-01-30 14:29:00.989] [ERROR] app - Worker server died (ID: 1, PID: 5972)
+[2015-01-30 14:34:34.868] [ERROR] app - Worker server died (ID: 1, PID: 3172)
+[2015-01-30 15:11:32.744] [ERROR] app - Worker server died (ID: 1, PID: 4496)
+[2015-01-30 15:20:09.703] [ERROR] app - Worker server died (ID: 1, PID: 8784)
+[2015-01-30 15:20:28.086] [ERROR] app - Worker server died (ID: 1, PID: 5872)
+[2015-01-30 15:21:26.140] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout3/img/avatar2.jpg HTTP/1.1" 404 1154 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.94 Safari/537.36"
+[2015-01-30 15:21:26.142] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout3/img/avatar3.jpg HTTP/1.1" 404 1154 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.94 Safari/537.36"
+[2015-01-30 15:21:26.142] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout3/img/avatar1.jpg HTTP/1.1" 404 1154 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.94 Safari/537.36"
+[2015-01-30 15:21:26.194] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout/img/loading.gif HTTP/1.1" 404 1154 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.94 Safari/537.36"
+[2015-01-30 23:56:15.967] [ERROR] app - Worker server died (ID: 1, PID: 3616)
+[2015-01-30 23:57:03.995] [ERROR] app - Worker server died (ID: 1, PID: 12036)
+[2015-01-31 00:31:37.216] [ERROR] app - Worker server died (ID: 1, PID: 9196)
+[2015-01-31 00:32:58.804] [ERROR] app - Worker server died (ID: 1, PID: 10768)
+[2015-01-31 00:33:58.459] [ERROR] http - 127.0.0.1 - - "GET / HTTP/1.1" 500 1328 "" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-01-31 00:36:13.099] [ERROR] app - Worker server died (ID: 1, PID: 9292)
+[2015-01-31 00:36:58.166] [ERROR] app - Worker server died (ID: 1, PID: 11628)
+[2015-01-31 00:38:00.775] [ERROR] app - Worker server died (ID: 1, PID: 1712)
+[2015-01-31 00:40:53.230] [ERROR] http - 127.0.0.1 - - "GET / HTTP/1.1" 500 1328 "" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-01-31 00:40:56.952] [ERROR] http - 127.0.0.1 - - "GET / HTTP/1.1" 500 1328 "" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-01-31 00:41:28.598] [ERROR] app - Worker server died (ID: 1, PID: 6576)
+[2015-01-31 00:42:47.128] [ERROR] http - 127.0.0.1 - - "GET / HTTP/1.1" 500 1328 "" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-01-31 00:45:40.891] [ERROR] http - 127.0.0.1 - - "GET / HTTP/1.1" 500 1257 "" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-01-31 00:52:45.424] [ERROR] app - Worker server died (ID: 1, PID: 1216)
+[2015-01-31 00:53:51.439] [ERROR] app - Worker server died (ID: 1, PID: 10672)
+[2015-01-31 00:54:37.846] [ERROR] http - 127.0.0.1 - - "POST /login HTTP/1.1" 500 1279 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-01-31 00:55:58.527] [ERROR] http - 127.0.0.1 - - "POST /login HTTP/1.1" 500 1279 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-01-31 01:14:20.300] [ERROR] http - 127.0.0.1 - - "POST /login HTTP/1.1" 500 1279 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-01-31 01:19:17.669] [ERROR] http - 127.0.0.1 - - "POST /login HTTP/1.1" 500 1279 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-01-31 01:23:38.592] [ERROR] http - 127.0.0.1 - - "POST /login HTTP/1.1" 500 1279 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-01-31 01:24:47.629] [ERROR] app - Worker server died (ID: 1, PID: 9672)
+[2015-01-31 01:26:07.422] [ERROR] app - Worker server died (ID: 1, PID: 6796)
+[2015-01-31 01:27:06.770] [ERROR] app - Worker server died (ID: 1, PID: 9704)
+[2015-01-31 01:28:14.455] [ERROR] app - Worker server died (ID: 1, PID: 9588)
+[2015-01-31 01:28:42.821] [ERROR] app - Worker server died (ID: 1, PID: 11152)
+[2015-01-31 01:35:36.734] [ERROR] app - Worker server died (ID: 1, PID: 10424)
+[2015-01-31 01:36:49.769] [ERROR] app - Worker server died (ID: 1, PID: 9904)
+[2015-01-31 01:37:19.850] [ERROR] app - Worker server died (ID: 1, PID: 10404)
+[2015-01-31 01:37:43.398] [ERROR] app - Worker server died (ID: 1, PID: 11592)
+[2015-01-31 01:41:11.993] [ERROR] app - Worker server died (ID: 1, PID: 8500)
+[2015-01-31 01:42:12.098] [ERROR] app - Worker server died (ID: 1, PID: 428)
+[2015-01-31 01:46:15.157] [ERROR] app - Worker server died (ID: 1, PID: 11408)
+[2015-01-31 01:47:50.992] [ERROR] app - Worker server died (ID: 1, PID: 12044)
+[2015-01-31 01:48:35.264] [ERROR] app - Worker server died (ID: 1, PID: 9572)
+[2015-01-31 01:51:57.929] [ERROR] app - Worker server died (ID: 1, PID: 11932)
+[2015-01-31 01:54:36.933] [ERROR] app - Worker server died (ID: 1, PID: 11924)
+[2015-01-31 01:55:44.222] [ERROR] app - Worker server died (ID: 1, PID: 12016)
+[2015-01-31 02:02:57.651] [ERROR] app - Worker server died (ID: 1, PID: 4552)
+[2015-01-31 02:03:45.569] [ERROR] app - Worker server died (ID: 1, PID: 11572)
+[2015-01-31 02:04:54.725] [ERROR] app - Worker server died (ID: 1, PID: 5696)
+[2015-01-31 02:05:28.589] [ERROR] app - Worker server died (ID: 1, PID: 9336)
+[2015-01-31 02:06:17.508] [ERROR] app - Worker server died (ID: 1, PID: 11528)
+[2015-01-31 02:10:12.787] [ERROR] app - Worker server died (ID: 1, PID: 10344)
+[2015-01-31 02:12:06.952] [ERROR] app - Worker server died (ID: 1, PID: 12116)
+[2015-01-31 02:14:07.472] [ERROR] app - Worker server died (ID: 1, PID: 12172)
+[2015-01-31 02:16:21.250] [ERROR] app - Worker server died (ID: 1, PID: 11720)
+[2015-01-31 02:21:58.387] [ERROR] app - Worker server died (ID: 1, PID: 11604)
+[2015-01-31 02:25:24.979] [ERROR] app - Worker server died (ID: 1, PID: 1968)
+[2015-01-31 02:25:53.128] [ERROR] http - 127.0.0.1 - - "POST /login HTTP/1.1" 401 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-01-31 02:26:17.311] [ERROR] http - 127.0.0.1 - - "POST /login HTTP/1.1" 401 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-01-31 02:26:22.592] [ERROR] http - 127.0.0.1 - - "POST /login HTTP/1.1" 401 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-01-31 02:26:27.818] [ERROR] http - 127.0.0.1 - - "POST /login HTTP/1.1" 401 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-01-31 02:27:52.194] [ERROR] http - 127.0.0.1 - - "POST /login HTTP/1.1" 401 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-01-31 02:29:33.065] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout3/img/avatar2.jpg HTTP/1.1" 404 1134 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-01-31 02:29:33.362] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout3/img/avatar3.jpg HTTP/1.1" 404 1134 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-01-31 02:29:33.377] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout3/img/avatar1.jpg HTTP/1.1" 404 1134 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-01-31 02:29:33.444] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout/img/loading.gif HTTP/1.1" 404 1134 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-01-31 02:33:56.340] [ERROR] http - 127.0.0.1 - - "POST /login HTTP/1.1" 401 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-01-31 02:37:54.341] [ERROR] http - 127.0.0.1 - - "POST /login HTTP/1.1" 401 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-01-31 02:40:31.441] [ERROR] http - 127.0.0.1 - - "POST /login HTTP/1.1" 401 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-01-31 02:41:37.001] [ERROR] http - 127.0.0.1 - - "POST /login HTTP/1.1" 401 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-01-31 02:54:00.900] [ERROR] http - 127.0.0.1 - - "POST /login HTTP/1.1" 401 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-01-31 02:54:05.136] [ERROR] http - 127.0.0.1 - - "POST /login HTTP/1.1" 401 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-01-31 02:54:08.296] [ERROR] http - 127.0.0.1 - - "POST /login HTTP/1.1" 401 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-01-31 02:54:13.357] [ERROR] http - 127.0.0.1 - - "POST /login HTTP/1.1" 401 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-01-31 02:55:33.564] [ERROR] http - 127.0.0.1 - - "POST /login HTTP/1.1" 401 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-01-31 02:55:57.518] [ERROR] http - 127.0.0.1 - - "POST /login HTTP/1.1" 401 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-01-31 02:56:02.502] [ERROR] http - 127.0.0.1 - - "POST /login HTTP/1.1" 401 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-01-31 02:56:04.138] [ERROR] http - 127.0.0.1 - - "POST /login HTTP/1.1" 401 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-01-31 02:56:05.457] [ERROR] http - 127.0.0.1 - - "POST /login HTTP/1.1" 401 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-01-31 02:56:05.921] [ERROR] http - 127.0.0.1 - - "POST /login HTTP/1.1" 401 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-01-31 02:56:06.115] [ERROR] http - 127.0.0.1 - - "POST /login HTTP/1.1" 401 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-01-31 02:56:06.295] [ERROR] http - 127.0.0.1 - - "POST /login HTTP/1.1" 401 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-01-31 02:56:09.133] [ERROR] http - 127.0.0.1 - - "POST /login HTTP/1.1" 401 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-01-31 02:56:15.091] [ERROR] http - 127.0.0.1 - - "POST /login HTTP/1.1" 401 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-01-31 02:56:20.391] [ERROR] http - 127.0.0.1 - - "POST /login HTTP/1.1" 401 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-01-31 02:56:41.674] [ERROR] http - 127.0.0.1 - - "POST /login HTTP/1.1" 401 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-01-31 02:56:47.125] [ERROR] http - 127.0.0.1 - - "POST /login HTTP/1.1" 401 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-01-31 02:59:05.703] [ERROR] http - 127.0.0.1 - - "POST /login HTTP/1.1" 401 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-01-31 02:59:09.231] [ERROR] http - 127.0.0.1 - - "POST /login HTTP/1.1" 401 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-01-31 02:59:10.549] [ERROR] http - 127.0.0.1 - - "POST /login HTTP/1.1" 401 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-01-31 02:59:11.971] [ERROR] http - 127.0.0.1 - - "POST /login HTTP/1.1" 401 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-01-31 02:59:55.510] [ERROR] http - 127.0.0.1 - - "POST /login HTTP/1.1" 401 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-01-31 02:59:58.193] [ERROR] http - 127.0.0.1 - - "POST /login HTTP/1.1" 401 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-01-31 02:59:59.272] [ERROR] http - 127.0.0.1 - - "POST /login HTTP/1.1" 401 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-01-31 02:59:59.921] [ERROR] http - 127.0.0.1 - - "POST /login HTTP/1.1" 401 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-01-31 03:00:00.098] [ERROR] http - 127.0.0.1 - - "POST /login HTTP/1.1" 401 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-01-31 03:04:52.514] [ERROR] http - 127.0.0.1 - - "POST /login HTTP/1.1" 401 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-01-31 03:05:40.908] [ERROR] http - 127.0.0.1 - - "POST /login HTTP/1.1" 401 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-01-31 03:05:56.624] [ERROR] http - 127.0.0.1 - - "POST /login HTTP/1.1" 401 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-01-31 03:05:57.514] [ERROR] http - 127.0.0.1 - - "POST /login HTTP/1.1" 401 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-01-31 03:10:58.351] [ERROR] http - 127.0.0.1 - - "POST /login HTTP/1.1" 401 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-01-31 03:11:04.673] [ERROR] http - 127.0.0.1 - - "GET /login HTTP/1.1" 404 1134 "" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-01-31 03:23:30.354] [ERROR] app - Worker server died (ID: 1, PID: 13252)
+[2015-01-31 03:24:09.673] [ERROR] app - Worker server died (ID: 1, PID: 10284)
+[2015-01-31 03:24:44.989] [ERROR] app - Worker server died (ID: 1, PID: 13284)
+[2015-01-31 03:26:51.833] [ERROR] app - Worker server died (ID: 1, PID: 11868)
+[2015-01-31 03:27:58.870] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout3/img/avatar2.jpg HTTP/1.1" 404 1134 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-01-31 03:27:58.881] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout3/img/avatar1.jpg HTTP/1.1" 404 1134 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-01-31 03:27:58.882] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout3/img/avatar3.jpg HTTP/1.1" 404 1134 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-01-31 03:27:59.138] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout/img/loading.gif HTTP/1.1" 404 1134 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"

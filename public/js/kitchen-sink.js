@@ -6,6 +6,7 @@
 //Initial Page Load
 var loggedInId;
 var chartColors = ['#f36a5a', '#5C9BD1', '#4DB3A2', '#8877a9'];
+var appServer = "http://localhost:3000";
 
 $(document).ready(function(){
 
@@ -23,6 +24,18 @@ $(document).ready(function(){
       	},'json');
       	return false;
    	});
+	/*$('#login-button').click(function(){
+		$.ajax({
+            url: appServer+ "/api/v1/checkUserCredential?userName=" + $('#username').val() + '&password=' + $('#password').val() + '&apiKey=df5cb700-395b-11e4-916c-0800200c9a66',
+            beforeSend: function(xhr) {
+                //myApp.showPreloader();
+                xhr.overrideMimeType("text/plain; charset=x-user-defined");
+            }
+        })
+        .done(function(data) {
+        	console.log(data);
+        });
+	});*/
 });
 ///////////////////////////////////
 
@@ -753,8 +766,8 @@ function loadSelectRoles(){
 
 	//$("#role").html('').append("<option>Loading options</option>");
 	$("#role").html('').append(''+
-		'<option>Appraiser</option>'+
 		'<option>Administrator</option>'+
+		'<option>Appraiser</option>'+
 	'');
     /*$.ajax({ //TODO ajax call to load roles
         url: 'http://www.your_server.com/your_page',

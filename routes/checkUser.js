@@ -55,7 +55,6 @@ var authenticateAPIKey = function(req, res, next){
 
 var validateUserCredential = function (req, res) {
 
-		
 		var userName = req.userName;
 		var password = req.password;
 		log.info('passeds value=' + userName , password);

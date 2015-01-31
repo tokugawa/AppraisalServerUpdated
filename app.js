@@ -37,8 +37,6 @@ if(cluster.isMaster){
         //cluster.fork(); //switch on it in prod env
     });
 
-
-
     
 }
 
@@ -51,13 +49,12 @@ else {
     var cookieParser = require('cookie-parser');
     var session = require('express-session');
     var redisStore = require('connect-redis')(session);
+    var passport = require('passport');
 
     var bodyParser = require('body-parser');
 
+    require('./config/passport')(passport);
 
-
-
-    var routes = require('./routes/index');
     var users = require('./routes/users').list;
     var user = require('./routes/checkUser');
     var userCreate = require('./routes/CreateUser');
@@ -71,8 +68,6 @@ else {
     app.use(favicon(__dirname + '/public/img/favicon.ico'));
     
     var client = require('./util/RadisClient').getInstance();
-    
-  
 
 
     app.set('port', process.env.PORT || 3000);
@@ -104,10 +99,12 @@ else {
     ));
     //app.use(session({secret: 'yourothersecretcode', saveUninitialized: true, resave: true}));
     app.use(express.static(path.join(__dirname, 'public')));
+    app.use(passport.initialize());
+    app.use(passport.session());
 
 
     //routers
-
+    var routes = require('./routes/index')(passport);
     app.use('/', routes);
     app.use('/users', users);
     app.get('/api/v1/checkUserCredential', user);
@@ -200,7 +197,7 @@ else {
 
 
 
-
+    //require('./routes/index.js')(app, passport); 
 
 
     var server = app.listen(app.get('port'), function() {

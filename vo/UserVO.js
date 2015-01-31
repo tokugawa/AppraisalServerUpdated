@@ -82,8 +82,6 @@ var UserVO = (function(){
 		};
 
 
-
-
 		this.validateUser = function(userName , password, cb){
 			
 			var validationResult = false;
@@ -117,11 +115,42 @@ var UserVO = (function(){
 					cb(false);
 				}
 			});
+		}
 
+		this.validateUserWithRole = function(username, role, password, cb){
 
-			
+			var validationResult = false;
+			//log.info(conn);
 
+			log.info(' UseVO: validateUserAndRole Starts')
 
+			user.findOne({user_id: username, role: role }, function findOneCb(err, data){
+				//log.info('in Call back');
+				if (err){
+					log.error(err);
+					throw new paException('UserVO', 'Get User Exception for id = ' + username);
+					cb(null);
+
+				}
+
+				if(data){
+					console.log(data);
+					//var userObj = new user();
+					log.info(data._id);
+					if(data.validatePassword(password)){
+						//log.info('validated');
+						cb(true);
+					}
+					else{
+						cb(false);
+									
+					}
+				}
+				if(!data){
+
+					cb(false);
+				}
+			});
 		}
 	};
 
@@ -134,7 +163,8 @@ var UserVO = (function(){
             }
             //log.debug('sending object = ' + instance);
             return instance;
-        }
+        },
+        user: user
     };
 
 	
