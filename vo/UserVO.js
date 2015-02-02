@@ -68,19 +68,36 @@ var UserVO = (function(){
 							log.info('Class:UserVO - Info: Successful');
 							cb(true);
 						}
-
-
 					});
-
-
 				}
-
-
 			});
-			
-
 		};
 
+		this.getAllUsers = function(cb){
+
+			//console.log('\nStarting to get all users');
+			var dataArray = [];
+
+			user.find({}, function(err, cursor){
+
+				if(cursor){
+					cursor.forEach(function(item){
+						//console.log(item);
+						if(item){
+							dataArray.push(item);
+						}
+						else{
+							//console.log('No Data');
+						}
+					});
+					cb(dataArray);
+				}
+				else{
+					//console.log(err);
+					cb(null)
+				}
+			});
+		}
 
 		this.validateUser = function(userName , password, cb){
 			

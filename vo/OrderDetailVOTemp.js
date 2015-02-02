@@ -51,19 +51,35 @@ var OrderDetailVOTemp = (function(){
 						cb(null, data);
 
 					}
-					
 				}
-
-
 			});
-
-
-
 		}
 
+		this.getAllOrders = function(cb){
 
+			//console.log('\nStarting to get all users');
+			var dataArray = [];
 
-	
+			Order.find({}, function(err, cursor){
+
+				if(cursor){
+					cursor.forEach(function(item){
+						//console.log(item);
+						if(item){
+							dataArray.push(item);
+						}
+						else{
+							//console.log('No Data');
+						}
+					});
+					cb(dataArray);
+				}
+				else{
+					//console.log(err);
+					cb(null)
+				}
+			});
+		}
 	}
 
 	return {

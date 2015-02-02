@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
-
+var User = require('../vo/UserVO').getInstance();
+var Order = require('../vo/OrderDetailVOTemp').getInstance();
 ///////////////////////////////////////////////////////////////////////////
 
 module.exports = function(passport){
@@ -210,7 +211,7 @@ module.exports = function(passport){
           if (err) { return next(err); }
           req.session.redSession = req.param('username');
           req.session.loggedIn = true;
-          return res.send({'loginStatus' : req.param('role').toLowerCase()});
+          return res.send({'loginStatus' : req.param('role').toLowerCase() });
         });
       }
       else{
@@ -218,12 +219,35 @@ module.exports = function(passport){
       }
     })(req, res, next);
   });
+
+  router.post('/getAllUsers', isLoggedIn, function(req, res){
+
+    User.getAllUsers(function(result){
+      if(result){
+        res.send({'query' : result });
+      }
+      else{
+        res.send({'query' : 'failed' });
+      }
+    });
+  });
+
+  router.post('/getAllOrders', isLoggedIn, function(req, res){
+
+    Order.getAllOrders(function(result){
+      if(result){
+        res.send({'query' : result });
+      }
+      else{
+        res.send({'query' : 'failed' });
+      }
+    });
+  });
   ///////////////////////////////////////////////////////////////////////////
 
 
   return router;
 }
-
 
 // route middleware to ensure user is logged in
 function isLoggedIn(req, res, next) {

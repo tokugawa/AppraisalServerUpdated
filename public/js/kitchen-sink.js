@@ -114,12 +114,17 @@ function loadUsersHome(){
 			document.location.href = '/';
 		}
 
-		loadTableData('users-table', users, 2, userTableColumns, userTableColumnDefs);
-		$('.dataTable').each(function(){
+		$.post('/getAllUsers', function(result){
 
-			$(this).wrap('<div class="scrollStyle" />');
+			console.log(result);
+			loadTableData('users-table', result.query, 2, userTableColumns, userTableColumnDefs);
+			$('.dataTable').each(function(){
+				$(this).wrap('<div class="scrollStyle" />');
+			});
+		}).done(function(){
+			hidePreloader();
 		});
-		hidePreloader();
+
 	});
 }
 function loadUsersIndividual(userId){
@@ -229,10 +234,15 @@ function loadOrdersHome(){
 			document.location.href = '/';
 		}
 
-		loadTableData('orders-table', orders, 2, orderTableColumns, orderTableColumnDefs);
-		$('.dataTable').each(function(){
+		$.post('/getAllOrders', function(result){
 
-			$(this).wrap('<div class="scrollStyle" />');
+			console.log(result);
+			loadTableData('orders-table', result.query, 2, orderTableColumns, orderTableColumnDefs);
+			$('.dataTable').each(function(){
+				$(this).wrap('<div class="scrollStyle" />');
+			});
+		}).done(function(){
+			hidePreloader();
 		});
 
 		new Morris.Donut({
@@ -426,10 +436,10 @@ var users = [
 ];
 
 var userTableColumns = [
-	    		{data: "id"},
+	    		{data: "user_id"},
 	    		{data: "firstName"},
 	    		{data: "lastName"},
-				{data: "orders.length"},
+				{data: "order_list.length"},
 ];
 var userTableColumnDefs = [
 		    	{ "title": "ID", "targets": 0 },
@@ -451,24 +461,24 @@ var orders = [
 	new Order(100011, users[0], "Rosalin Toselli", "Wells Fargo", "221b Baker St","Albuquerque", "New Mexico", 90210, false),
 ];
 var orderTableColumns = [
-	{data: "id"},
+	{data: "orderID"},
 	{data: "appraiser.lastName"},
 	{data: "appraisee"},
-	{data: "company"},
-	{data: "street"},
+	{data: "order_party_name"},
 	{data: "city"},
 	{data: "state"},
 	{data: "zip"},
+	{data: "orderStatus"}
 ];
 var orderTableColumnDefs = [
 	{ "title": "ID", "targets": 0 },
 	{ "title": "Appraiser", "targets": 1 },
 	{ "title": "Appraisee", "targets": 2 },
 	{ "title": "Company", "targets": 3 },
-	{ "title": "Street", "targets": 4 },
-	{ "title": "City", "targets": 5 },
-	{ "title": "State", "targets": 6 },
-	{ "title": "Zip", "targets": 7 },
+	{ "title": "City", "targets": 4 },
+	{ "title": "State", "targets": 5 },
+	{ "title": "Zip", "targets": 6 },
+	{ "title": "Status", "targets": 7 },
 ];
 
 users[0].orders = ([orders[1], orders[6], orders[9]]);
