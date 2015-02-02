@@ -10,7 +10,7 @@ module.exports = function(passport){
     res.render('login');
   });
 
-  router.get('/index.html', function(req, res) {
+  /*router.get('/index.html', function(req, res) {
     //console.log(req.session.redSession);
     if(req.session.redSession && req.session.loggedIn){ //check this for all routes after Login
 
@@ -22,14 +22,21 @@ module.exports = function(passport){
       //res.redirect('/logout');
       res.send('No Session');
     }
+  });*/
+
+  router.get('/index.html', isLoggedIn, function(req, res){
+    res.render('index',{
+      session: req.session
+    });
   });
 
   router.get('/logout', function(req, res) {
     req.session.destroy(); 
+    req.logout();
     res.redirect('/');
   });
 
-  router.get('/overview.html', function(req, res) {
+  /*router.get('/overview.html', function(req, res) {
     if(req.session.redSession && req.session.loggedIn){ //check this for all routes after Login
 
       res.render('overview',{
@@ -40,9 +47,15 @@ module.exports = function(passport){
       //res.redirect('/logout');
       res.send('No Session');
     }
+  });*/
+
+  router.get('/overview.html', isLoggedIn, function(req, res){
+    res.render('overview',{
+      session: req.session
+    });
   });
 
-  router.get('/overview-appraiser.html', function(req, res) {
+  /*router.get('/overview-appraiser.html', function(req, res) {
     if(req.session.redSession && req.session.loggedIn){ //check this for all routes after Login
 
       res.render('overview-appraiser',{
@@ -53,9 +66,14 @@ module.exports = function(passport){
       //res.redirect('/logout');
       res.send('No Session');
     }
+  });*/
+  router.get('/overview-appraiser.html', isLoggedIn, function(req, res){
+    res.render('overview-appraiser',{
+      session: req.session
+    });
   });
 
-  router.get('/users-home.html', function(req, res) {
+  /*router.get('/users-home.html', function(req, res) {
     if(req.session.redSession && req.session.loggedIn){ //check this for all routes after Login
 
       res.render('users-home',{
@@ -66,9 +84,14 @@ module.exports = function(passport){
       //res.redirect('/logout');
       res.send('No Session');
     }
+  });*/
+  router.get('/users-home.html', isLoggedIn, function(req, res){
+    res.render('users-home',{
+      session: req.session
+    });
   });
 
-  router.get('/orders-home.html', function(req, res) {
+  /*router.get('/orders-home.html', function(req, res) {
     if(req.session.redSession && req.session.loggedIn){ //check this for all routes after Login
 
       res.render('orders-home',{
@@ -79,9 +102,14 @@ module.exports = function(passport){
       //res.redirect('/logout');
       res.send('No Session');
     }
+  });*/
+  router.get('/orders-home.html', isLoggedIn, function(req, res){
+    res.render('orders-home',{
+      session: req.session
+    });
   });
 
-  router.get('/orders-individual.html', function(req, res) {
+  /*router.get('/orders-individual.html', function(req, res) {
     if(req.session.redSession && req.session.loggedIn){ //check this for all routes after Login
 
       res.render('orders-individual',{
@@ -92,22 +120,14 @@ module.exports = function(passport){
       //res.redirect('/logout');
       res.send('No Session');
     }
+  });*/
+  router.get('/orders-individual.html', isLoggedIn, function(req, res){
+    res.render('orders-individual',{
+      session: req.session
+    });
   });
 
-  router.get('/overview.html', function(req, res) {
-    if(req.session.redSession && req.session.loggedIn){ //check this for all routes after Login
-
-      res.render('overview',{
-        session: req.session
-      });
-    }
-    else{
-      //res.redirect('/logout');
-      res.send('No Session');
-    }
-  });
-
-  router.get('/users-individual.html', function(req, res) {
+  /*router.get('/users-individual.html', function(req, res) {
     if(req.session.redSession && req.session.loggedIn){ //check this for all routes after Login
 
       res.render('users-individual',{
@@ -118,9 +138,14 @@ module.exports = function(passport){
       //res.redirect('/logout');
       res.send('No Session');
     }
+  });*/
+  router.get('/users-individual.html', isLoggedIn, function(req, res){
+    res.render('users-individual',{
+      session: req.session
+    });
   });
 
-  router.get('/tasks.html', function(req, res) {
+  /*router.get('/tasks.html', function(req, res) {
     if(req.session.redSession && req.session.loggedIn){ //check this for all routes after Login
 
       res.render('tasks',{
@@ -131,9 +156,14 @@ module.exports = function(passport){
       //res.redirect('/logout');
       res.send('No Session');
     }
+  });*/
+  router.get('/tasks.html', isLoggedIn, function(req, res){
+    res.render('tasks',{
+      session: req.session
+    });
   });
 
-  router.get('/calendar.html', function(req, res) {
+  /*router.get('/calendar.html', function(req, res) {
     if(req.session.redSession && req.session.loggedIn){ //check this for all routes after Login
 
       res.render('calendar',{
@@ -144,6 +174,11 @@ module.exports = function(passport){
       //res.redirect('/logout');
       res.send('No Session');
     }
+  });*/
+  router.get('/calendar.html', isLoggedIn, function(req, res){
+    res.render('calendar',{
+      session: req.session
+    });
   });
 
   //POST
@@ -195,5 +230,5 @@ function isLoggedIn(req, res, next) {
   if (req.isAuthenticated())
     return next();
 
-  res.redirect('/');
+  res.send('No Session');
 }

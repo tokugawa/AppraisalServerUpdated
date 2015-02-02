@@ -37,8 +37,8 @@ module.exports = function(passport) {
         process.nextTick(function() {
             User.findOne({ 'user_id' : username, 'role' : req.param('role').toLowerCase() }, function(err, user) {
                 
-                console.log(user.generateHash(password));
-                console.log(user.password);
+                //console.log(user.generateHash(password));
+                //console.log(user.password);
 
                 if (err) { 
                     return done(err); 
