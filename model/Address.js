@@ -22,7 +22,7 @@ var AddressSchema = new mongoose.Schema({
 		address_city 							: { type: String , required: true  },
 		address_state							: { type: String , required: true  },
 		address_zip								: { type: Number , required: true, min: 10000, max: 99999  },
-		address_country							: { type: String , required: true  },
+		address_county							: { type: String , required: true  },
 		address_lat								: { type: Number  },
 		address_long							: { type: Number  },
 		address_verified						: { type: Boolean , default:false},

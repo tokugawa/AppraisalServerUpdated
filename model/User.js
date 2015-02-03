@@ -37,7 +37,7 @@ var UserSchema = new mongoose.Schema({
 
 	{
 
-		collection: 'UserCollection'
+		collection: 'UsersCollection'
 	}
 
 )

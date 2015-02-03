@@ -80,6 +80,34 @@ var OrderDetailVOTemp = (function(){
 				}
 			});
 		}
+		
+		this.getOrdersForUser = function(userId, cb){
+
+			var dataArray = [];
+			//TODO send three arrays: All Orders, Completed Orders, Open Orders
+			//var completedOrders = [];
+			//var openOrders = [];
+
+			Order.find({"appraiser_id" : userId }, function(err, cursor){
+
+				if(cursor){
+					cursor.forEach(function(item){
+						//console.log(item);
+						if(item){
+							dataArray.push(item);
+						}
+						else{
+							//console.log('No Data');
+						}
+					});
+					cb(dataArray);
+				}
+				else{
+					//console.log(err);
+					cb(null)
+				}
+			});
+		}
 	}
 
 	return {

@@ -439,13 +439,15 @@ var userTableColumns = [
 	    		{data: "user_id"},
 	    		{data: "firstName"},
 	    		{data: "lastName"},
-				{data: "order_list.length"},
+	    		{data: "user_role"},
+				{data: "active_order_list.length"},
 ];
 var userTableColumnDefs = [
 		    	{ "title": "ID", "targets": 0 },
 		    	{ "title": "First Name", "targets": 1 },
 		    	{ "title": "Last Name", "targets": 2 },
-		    	{ "title": "Order Count", "targets": 3 },
+		    	{ "title": "Role", "targets": 3 },
+		    	{ "title": "Active Order Count", "targets": 4 },
 ];
 var orders = [
 	new Order(100001, users[1], "Dave Thomas", "Appraisals'4'U", "221b Baker St","Albuquerque", "New Mexico", 90210, true),
@@ -461,14 +463,14 @@ var orders = [
 	new Order(100011, users[0], "Rosalin Toselli", "Wells Fargo", "221b Baker St","Albuquerque", "New Mexico", 90210, false),
 ];
 var orderTableColumns = [
-	{data: "orderID"},
-	{data: "appraiser.lastName"},
+	{data: "order_id"},
+	{data: "order_assigned_to.order_current_appraiser.lastName"},
 	{data: "appraisee"},
 	{data: "order_party_name"},
-	{data: "city"},
-	{data: "state"},
-	{data: "zip"},
-	{data: "orderStatus"}
+	{data: "order_property_detail.address_id.address_city"},
+	{data: "order_property_detail.address_id.address_state"},
+	{data: "order_property_detail.address_id.address_zip"},
+	{data: "order_status_current"}
 ];
 var orderTableColumnDefs = [
 	{ "title": "ID", "targets": 0 },
@@ -907,7 +909,7 @@ function initCalendar(){
 	scheduler.config.limit_time_select = true;
 
 
-	scheduler.init('scheduler_here',new Date(),"week");
+	scheduler.init('scheduler_here', new Date(), "week");
 	scheduler.parse(calendarJSON,"json");
 	/*
 	$('save').click(function(){

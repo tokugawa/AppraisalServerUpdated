@@ -84,6 +84,7 @@ var UserVO = (function(){
 					cursor.forEach(function(item){
 						//console.log(item);
 						if(item){
+							item.populate('active_order_list');
 							dataArray.push(item);
 						}
 						else{

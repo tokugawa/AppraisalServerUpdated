@@ -53,7 +53,7 @@ else {
 
     var bodyParser = require('body-parser');
 
-    require('./config/passport')(passport);
+    require('./util/passport')(passport);
 
     var users = require('./routes/users').list;
     var user = require('./routes/checkUser');

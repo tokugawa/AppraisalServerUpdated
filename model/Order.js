@@ -39,7 +39,7 @@ var OrderSchema = new mongoose.Schema({
 		order_assigned_to						: { 
 
 			order_current_appraiser	  	: {  type: Schema.Types.ObjectId, ref: 'UserCollection' },
-			order_previous_appraiser 	: [{ type: Schema.Types.ObjectId, ref: 'UserCollection'}]
+			order_previous_appraisers 	: [{ type: Schema.Types.ObjectId, ref: 'UserCollection'}]
 
 		},
 		order_status_current 					: { type: String , required: true },
