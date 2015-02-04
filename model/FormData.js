@@ -15,8 +15,8 @@ var conn = require('../util/ConnectDBInstance').getInstance();
 
 var FormDataSchema = new mongoose.Schema({
 
-		order_id	: { type: Number, required: true, unique: true},
-		formData 	: {type: String, required: true}
+		order_id	: { type: Number, required: true, unique: true },
+		formData 	: { type: String, required: true }
 
 	},
 
@@ -33,4 +33,4 @@ var FormDataSchema = new mongoose.Schema({
 
 
 // create the model and expose it to our app
-module.exports = conn.model('FormData', FormDataSchema);
+module.exports = conn.model('FormDataCollection', FormDataSchema);

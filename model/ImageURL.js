@@ -16,7 +16,7 @@ var conn = require('../util/ConnectDBInstance').getInstance();
 var ImageUrlSchema = new mongoose.Schema({
 
 		order_id: { type: Number, required: true, unique: true},
-		imageUrlList : [{type: String}]
+		imageUrlList : [{ type: String }]
 
 	},
 
@@ -33,4 +33,4 @@ var ImageUrlSchema = new mongoose.Schema({
 
 
 // create the model and expose it to our app
-module.exports = conn.model('ImageURL', ImageUrlSchema);
+module.exports = conn.model('ImageURLCollection', ImageUrlSchema);

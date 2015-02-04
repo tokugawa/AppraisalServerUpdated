@@ -20,14 +20,14 @@ var CustomerSchema = new mongoose.Schema({
 		customer_since		     				: { type: Date, default: Date.now },
 		customer_first_name						: { type: String , required: true },
 		customer_last_name 						: { type: String , required: true  },
-		customer_address						: {	type: Schema.Types.ObjectId, ref: 'AddressCollection'},
+		customer_address						: {	type: mongoose.Schema.Types.ObjectId, ref: 'AddressCollection' },
 		customer_primary_contact				: {	type: Number , required: true },
-		customer_cell_number 					: { type: Number}, 
-		customer_work_number 					: { type: Number}, 
-		customer_email		 					: { type: String, required: true}, 
+		customer_cell_number 					: { type: Number }, 
+		customer_work_number 					: { type: Number }, 
+		customer_email		 					: { type: String, required: true }, 
 		customer_preferred_contact_number		: {	type: Number , required: true },
 		customer_preferred_contact_time			: [{ type: String, required: true }],
-		customer_last_contacted	     			: {type: Date}
+		customer_last_contacted	     			: { type: Date }
 
 		
 
@@ -42,4 +42,4 @@ var CustomerSchema = new mongoose.Schema({
 
 
 
-module.exports = conn.model('Customer', CustomerSchema);
+module.exports = conn.model('CustomerCollection', CustomerSchema);

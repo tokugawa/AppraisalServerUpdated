@@ -394,3 +394,37 @@
 [2015-02-03 16:26:46.687] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout/img/loading.gif HTTP/1.1" 404 1154 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.94 Safari/537.36"
 [2015-02-03 16:26:59.724] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout/img/loading.gif HTTP/1.1" 404 1154 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.94 Safari/537.36"
 [2015-02-03 16:27:18.441] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout/img/loading.gif HTTP/1.1" 404 1154 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.94 Safari/537.36"
+[2015-02-03 21:24:41.500] [ERROR] app - Worker server died (ID: 1, PID: 38272)
+[2015-02-03 21:25:50.531] [ERROR] app - Worker server died (ID: 1, PID: 37992)
+[2015-02-03 21:26:35.591] [ERROR] app - Worker server died (ID: 1, PID: 38808)
+[2015-02-03 21:28:54.935] [ERROR] app - Worker server died (ID: 1, PID: 38264)
+[2015-02-03 21:29:18.325] [ERROR] app - Worker server died (ID: 1, PID: 37028)
+[2015-02-03 21:29:31.793] [ERROR] app - Worker server died (ID: 1, PID: 38732)
+[2015-02-03 21:30:03.712] [ERROR] app - Worker server died (ID: 1, PID: 28148)
+[2015-02-03 21:30:20.396] [ERROR] app - Worker server died (ID: 1, PID: 38108)
+[2015-02-03 21:30:48.869] [ERROR] app - Worker server died (ID: 1, PID: 37724)
+[2015-02-03 21:31:06.886] [ERROR] app - Worker server died (ID: 1, PID: 35824)
+[2015-02-03 21:33:16.345] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout3/img/avatar2.jpg HTTP/1.1" 404 1134 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-02-03 21:33:16.346] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout3/img/avatar3.jpg HTTP/1.1" 404 1134 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-02-03 21:33:16.347] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout3/img/avatar1.jpg HTTP/1.1" 404 1134 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-02-03 21:33:16.831] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout/img/loading.gif HTTP/1.1" 404 1134 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-02-03 21:34:31.341] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout/img/loading.gif HTTP/1.1" 404 1134 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-02-03 21:39:46.015] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout3/img/avatar2.jpg HTTP/1.1" 404 1134 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-02-03 21:39:46.022] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout3/img/avatar1.jpg HTTP/1.1" 404 1134 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-02-03 21:39:46.023] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout3/img/avatar3.jpg HTTP/1.1" 404 1134 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-02-03 21:39:46.410] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout/img/loading.gif HTTP/1.1" 404 1134 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-02-03 21:39:54.281] [ERROR] app - Worker server died (ID: 1, PID: 38748)
+[2015-02-03 21:46:27.027] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout/img/loading.gif HTTP/1.1" 404 1134 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-02-03 21:46:29.280] [ERROR] app - Worker server died (ID: 1, PID: 39652)
+[2015-02-03 21:54:34.829] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout3/img/avatar1.jpg HTTP/1.1" 404 1134 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-02-03 21:54:34.830] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout3/img/avatar2.jpg HTTP/1.1" 404 1134 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-02-03 21:54:34.831] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout3/img/avatar3.jpg HTTP/1.1" 404 1134 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-02-03 21:54:35.314] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout/img/loading.gif HTTP/1.1" 404 1134 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-02-03 21:54:37.166] [ERROR] app - Worker server died (ID: 1, PID: 39396)
+[2015-02-03 21:56:12.973] [ERROR] app - Worker server died (ID: 1, PID: 39556)
+[2015-02-03 22:10:59.177] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout3/img/avatar1.jpg HTTP/1.1" 404 1134 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-02-03 22:10:59.179] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout3/img/avatar3.jpg HTTP/1.1" 404 1134 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-02-03 22:10:59.181] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout3/img/avatar2.jpg HTTP/1.1" 404 1134 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-02-03 22:10:59.472] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout/img/loading.gif HTTP/1.1" 404 1134 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"
+[2015-02-03 22:11:00.999] [ERROR] app - Worker server died (ID: 1, PID: 38456)
+[2015-02-03 22:20:40.216] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout/img/loading.gif HTTP/1.1" 404 1134 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36"

@@ -39,5 +39,5 @@ var OrderSchema = new mongoose.Schema({
 
 
 
-module.exports = conn.model('Order', OrderSchema);
+module.exports = conn.model('Orders', OrderSchema);
 

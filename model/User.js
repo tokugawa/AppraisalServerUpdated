@@ -22,17 +22,17 @@ var SALT_WORK_FACTOR = resourceLoader.getResourceById('Constant','SALT_WORK_FACT
 var UserSchema = new mongoose.Schema({
 
 		
-		user_id		 		: { type: String, required: true, unique: true},
-        password     		: { type:String, required: true },
-		firstName    		: { type:String, required: true },
-		lastName     		: { type:String, required: true },
+		user_id		 		: { type: String, required: true, unique: true },
+        password     		: { type: String, required: true },
+		firstName    		: { type: String, required: true },
+		lastName     		: { type: String, required: true },
 		user_created 		: { type: Date, default: Date.now },
-		user_address 		: { type: mongoose.Schema.Types.ObjectId, ref: 'AddressCollection'},
-		isUserActive 		: { type:Boolean,required: true } ,
-		user_role	 		: {type:String, required: true},
-		active_order_list   : [{type:mongoose.Schema.Types.ObjectId, ref: 'OrderCollection'}],
-		pending_order_list	: [{type:mongoose.Schema.Types.ObjectId, ref: 'OrderCollection'}],
-		completed_order_list : [{type:mongoose.Schema.Types.ObjectId, ref: 'OrderCollection'}]
+		user_address 		: { type: mongoose.Schema.Types.ObjectId, ref: 'AddressCollection' },
+		isUserActive 		: { type: Boolean,required: true } ,
+		user_role	 		: { type: String, required: true },
+		active_order_list   : [{ type: mongoose.Schema.Types.ObjectId, ref: 'OrderCollection' }],
+		pending_order_list	: [{ type: mongoose.Schema.Types.ObjectId, ref: 'OrderCollection' }],
+		completed_order_list : [{ type: mongoose.Schema.Types.ObjectId, ref: 'OrderCollection' }]
 	},
 
 	{

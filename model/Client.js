@@ -19,9 +19,9 @@ var ClientSchema = new mongoose.Schema({
 		
 		client_since		     				: { type: Date, default: Date.now },
 		client_name								: { type: String , required: true },
-		client_supply_address					: {	type: Schema.Types.ObjectId, ref: 'AddressCollection'},
+		client_supply_address					: {	type: mongoose.Schema.Types.ObjectId, ref: 'AddressCollection' },
 		client_primary_contact					: {	type: Number , required: true },
-		client_support_email		 			: { type: String,  required: true}
+		client_support_email		 			: { type: String,  required: true }
 		
 
 		
@@ -37,4 +37,4 @@ var ClientSchema = new mongoose.Schema({
 
 
 
-module.exports = conn.model('Client', ClientSchema);
+module.exports = conn.model('ClientCollection', ClientSchema);

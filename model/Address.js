@@ -27,7 +27,7 @@ var AddressSchema = new mongoose.Schema({
 		address_long							: { type: Number  },
 		address_verified						: { type: Boolean , default:false},
 		address_verified_date					: { type: Date },
-		address_x_ref							: { type: Schema.Types.ObjectId}
+		address_x_ref							: { type: mongoose.Schema.Types.ObjectId }
 
 		
 
@@ -42,4 +42,4 @@ var AddressSchema = new mongoose.Schema({
 
 
 
-module.exports = conn.model('Address', AddressSchema);
+module.exports = conn.model('AddressCollection', AddressSchema);
