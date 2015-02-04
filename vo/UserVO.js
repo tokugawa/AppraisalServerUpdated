@@ -100,6 +100,48 @@ var UserVO = (function(){
 			});
 		}
 
+		this.getOrdersCompletedPerAppraiser = function(cb){
+
+			var dataArray = [];
+			user.find({}).exec(function(err, cursor){
+
+				if(cursor){
+					cursor.forEach(function(item){
+
+						if(item){
+							//console.log(item.completed_order_list.length);
+							dataArray.push({ 
+								'label': (item.firstName+' '+item.lastName), 
+								'value': item.completed_order_list.length 
+							});
+						}
+					});
+					cb(dataArray);
+				}
+				else{
+
+					cb(null);
+				}
+			});
+		}
+
+		this.getUserWithOrders = function(userId, cb){
+
+			user.findOne({user_id: userId})
+			.populate('active_order_list pending_order_list completed_order_list')
+			.exec(function(err, item){
+
+				if(item){
+					//console.log(item.completed_order_list.length);
+					cb(item);
+				}
+				else{
+
+					cb(null);
+				}
+			});
+		}
+
 		this.validateUser = function(userName , password, cb){
 			
 			var validationResult = false;

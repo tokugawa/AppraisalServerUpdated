@@ -243,6 +243,42 @@ module.exports = function(passport){
       }
     });
   });
+
+  router.post('/getOrdersCompletedPerAppraiser', isLoggedIn, function(req, res){
+
+    User.getOrdersCompletedPerAppraiser(function(result){
+      if(result){
+        res.send({'query' : result });
+      }
+      else{
+        res.send({'query' : 'failed' });
+      }
+    });
+  });
+
+  router.post('/getCompletedPendingActiveOrderCount', isLoggedIn, function(req, res){
+
+    Order.getCompletedPendingActiveOrderCount(function(result){
+      if(result){
+        res.send({'query' : result });
+      }
+      else{
+        res.send({'query' : 'failed' });
+      }
+    });
+  });
+
+  router.post('/getUserWithOrders', isLoggedIn, function(req, res){
+
+    User.getUserWithOrders(req.param('user_id'), function(result){
+      if(result){
+        res.send({'query' : result });
+      }
+      else{
+        res.send({'query' : 'failed' });
+      }
+    });
+  });
   ///////////////////////////////////////////////////////////////////////////
 
 

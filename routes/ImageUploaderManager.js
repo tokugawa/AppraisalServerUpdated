@@ -107,16 +107,9 @@ module.exports = function (router) {
                     res.send({message: 'IMGLST', list:data});
                 }
 
-
-
             });
-                
-
-
            
         }
-
-          
       
     });
 

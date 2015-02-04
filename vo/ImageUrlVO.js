@@ -100,11 +100,7 @@ var ImageUrlVO = (function(){
 
 				}
 
-
-
 			});
-
-			
 
 	};
 

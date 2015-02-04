@@ -121,6 +121,8 @@ function loadUsersHome(){
 			$('.dataTable').each(function(){
 				$(this).wrap('<div class="scrollStyle" />');
 			});
+		}).fail(function(){
+			console.log('Error getting AllUsers');
 		}).done(function(){
 			hidePreloader();
 		});
@@ -139,7 +141,57 @@ function loadUsersIndividual(userId){
 		}
 
 		$('#user-id-title').html(userId);
-		createUserOrdersTables(userId, orders);
+
+		//createUserOrdersTables(userId, orders);
+		$.post('/getUserWithOrders', {'user_id': userId}, function(result){
+
+			console.log(result);
+			var totalOrders = [];
+			//TODO array.apply()
+			totalOrders.concat(result.query.active_order_list);
+			totalOrders.concat(result.query.pending_order_list);
+			totalOrders.concat(result.query.completed_order_list);
+			console.log(result.query.active_order_list);
+
+			loadTableData('orders-table-all', totalOrders, 2, userOrderTableColumns, userOrderTableColumnDefs);//all
+			loadTableData('orders-table-current', result.query.active_order_list, 2, userOrderTableColumns, userOrderTableColumnDefs);//current
+			//loadTableData('orders-table-pending', result.query[0].pending_order_list, 2, userOrderTableColumns, userOrderTableColumnDefs);//pending
+			loadTableData('orders-table-completed', result.query.completed_order_list, 2, userOrderTableColumns, userOrderTableColumnDefs);//completed
+
+			$('#orders-table-all-div').css('display', 'block');
+
+			//Initiate table switching functions
+			$('#user-orders-table-button-group label').click(function() {
+			    
+			    var str = $(this).text().replace(/\s+/g, '');
+			    if(str == 'All'){
+			    	console.log($(this).text());
+		    		$('#orders-table-all-div').css('display', 'block');
+		    		$('#orders-table-current-div').css('display', 'none');
+		    		$('#orders-table-completed-div').css('display', 'none');
+			    }
+			    else if(str == 'Current'){
+			    	console.log($(this).text());
+			    	$('#orders-table-all-div').css('display', 'none');
+		    		$('#orders-table-current-div').css('display', 'block');
+		    		$('#orders-table-completed-div').css('display', 'none');
+			    }
+			    else if(str == 'Completed'){
+			    	console.log($(this).text());
+			    	$('#orders-table-all-div').css('display', 'none');
+		    		$('#orders-table-current-div').css('display', 'none');
+		    		$('#orders-table-completed-div').css('display', 'block');
+			    }
+			});
+
+			$('.dataTable').each(function(){
+				$(this).wrap('<div class="scrollStyle" />');
+			});
+		}).fail(function(){
+			console.log('Error getting AllUsers');
+		}).done(function(){
+			hidePreloader();
+		});
 
 		//Generate data for completed orders completion rate chart
 		var completedOrders = function(){
@@ -202,10 +254,6 @@ function loadUsersIndividual(userId){
 		else{
 			$('#appraiser-completion-rate-chart').append("No data found for this user");
 		}
-		$('.dataTable').each(function(){
-
-			$(this).wrap('<div class="scrollStyle" />');
-		});
 
 		//Add user information
 		for(var x=0; x<users.length; x++){
@@ -243,25 +291,38 @@ function loadOrdersHome(){
 			});
 		}).done(function(){
 			hidePreloader();
+		}).fail(function(){
+			console.log('Error retreiving AllOrders');
 		});
 
-		new Morris.Donut({
-		  	element: 'orders-completed',
-		  	data: [
-		    	{ label: 'Completed', value: 90 },
-			    { label: 'Not Completed', value: 10 }
-		  	],
-	    	colors: chartColors
-	  	});
-	  	new Morris.Donut({
-		  	element: 'orders-completed-per-appraiser',
-		  	data: [
-		    	{ label: 'Steve Harvey', value: 17 },
-			    { label: 'Evan Pearl', value: 32 },
-			    { label: 'Howard Stern', value: 5 }
-		  	],
-	    	colors: chartColors
-	  	});
+		$.post('/getOrdersCompletedPerAppraiser', function(result){
+
+			console.log(result);
+			new Morris.Donut({
+			  	element: 'orders-completed-per-appraiser',
+			  	data: result.query,
+		    	colors: chartColors
+		  	});
+		}).done(function(){
+			hidePreloader();
+		}).fail(function(){
+			console.log('Error retreiving OrdersCompletedPerAppraiser');
+		});
+
+		$.post('/getCompletedPendingActiveOrderCount', function(result){
+
+			console.log(result);
+			new Morris.Donut({
+			  	element: 'orders-completed',
+			  	data: result.query,
+		    	colors: chartColors
+		  	});
+		}).done(function(){
+			hidePreloader();
+		}).fail(function(){
+			console.log('Error retreiving CompletedPendingActiveOrderCount');
+		});
+	  	
 	  	hidePreloader();
 	});
 }
@@ -481,6 +542,15 @@ var orderTableColumnDefs = [
 	{ "title": "State", "targets": 5 },
 	{ "title": "Zip", "targets": 6 },
 	{ "title": "Status", "targets": 7 },
+];
+
+var userOrderTableColumns = [
+	{data: "order_id"},
+	{data: "order_status_current"}
+];
+var userOrderTableColumnDefs = [
+	{ "title": "ID", "targets": 0 },
+	{ "title": "Status", "targets": 1 },
 ];
 
 users[0].orders = ([orders[1], orders[6], orders[9]]);
@@ -709,59 +779,6 @@ function validateNewOrder(){
 
 }
 //END Validations
-
-//users orders tables
-function createUserOrdersTables(userId, orders){
-
-	var allOrders = [];
-	var currentOrders = [];
-	var completedOrders = [];
-
-	//Create orders tables for all, current, and completed orders
-	for(var x=0; x<orders.length; x++){
-
-		if(orders[x].appraiser.id == userId){
-			allOrders.push(orders[x]);
-			if(orders[x].completedStatus == false){
-				currentOrders.push(orders[x]);
-			}
-			else{
-				completedOrders.push(orders[x]);
-			}
-		}
-	}
-	
-	//Load orders tables for the user
-	loadTableData('orders-table-all', allOrders, 2, orderTableColumns, orderTableColumnDefs);//all
-	loadTableData('orders-table-current', currentOrders, 2, orderTableColumns, orderTableColumnDefs);//current
-	loadTableData('orders-table-completed', completedOrders, 2, orderTableColumns, orderTableColumnDefs);//completed
-	$('#orders-table-all-div').css('display', 'block');
-
-	//Initiate table switching functions
-	$('#user-orders-table-button-group label').click(function() {
-	    
-	    var str = $(this).text().replace(/\s+/g, '');
-	    if(str == 'All'){
-	    	console.log($(this).text());
-    		$('#orders-table-all-div').css('display', 'block');
-    		$('#orders-table-current-div').css('display', 'none');
-    		$('#orders-table-completed-div').css('display', 'none');
-	    }
-	    else if(str == 'Current'){
-	    	console.log($(this).text());
-	    	$('#orders-table-all-div').css('display', 'none');
-    		$('#orders-table-current-div').css('display', 'block');
-    		$('#orders-table-completed-div').css('display', 'none');
-	    }
-	    else if(str == 'Completed'){
-	    	console.log($(this).text());
-	    	$('#orders-table-all-div').css('display', 'none');
-    		$('#orders-table-current-div').css('display', 'none');
-    		$('#orders-table-completed-div').css('display', 'block');
-	    }
-	});
-}
-///////////////////////////////////////////////////////////////////////
 
 //Element manipulation
 function changeTab(element){

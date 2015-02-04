@@ -80,6 +80,43 @@ var OrderVO = (function(){
 				}
 			});
 		}
+
+		this.getCompletedPendingActiveOrderCount = function(cb){
+
+			var dataArray = [
+				{'label':'Active Orders', 'value': 0},
+				{'label':'Pending Orders', 'value': 0},
+				{'label':'Completed Orders', 'value': 0},
+			];
+
+			Order.find({}, function(err, cursor){
+
+				if(cursor){
+					cursor.forEach(function(item){
+						//console.log(item);
+						if(item){
+							if(item.order_status_current.toLowerCase() == 'active'){
+								dataArray[0].value++;
+							}
+							if(item.order_status_current.toLowerCase() == 'pending'){
+								dataArray[1].value++;
+							}
+							if(item.order_status_current.toLowerCase() == 'completed'){
+								dataArray[2].value++;
+							}
+						}
+						else{
+							//console.log('No Data');
+						}
+					});
+					cb(dataArray);
+				}
+				else{
+					//console.log(err);
+					cb(null)
+				}
+			});
+		}
 		
 		this.getOrdersForUser = function(userId, cb){
 
