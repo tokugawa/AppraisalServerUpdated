@@ -279,6 +279,18 @@ module.exports = function(passport){
       }
     });
   });
+
+  router.post('/getOrderById', isLoggedIn, function(req, res){
+
+    Order.getOrderById(req.param('order_id'), function(result){
+      if(result){
+        res.send({'query' : result });
+      }
+      else{
+        res.send({'query' : 'failed' });
+      }
+    });
+  });
   ///////////////////////////////////////////////////////////////////////////
 
 

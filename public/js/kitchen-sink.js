@@ -165,19 +165,19 @@ function loadUsersIndividual(userId){
 			    
 			    var str = $(this).text().replace(/\s+/g, '');
 			    if(str == 'All'){
-			    	console.log($(this).text());
+			    	//console.log($(this).text());
 		    		$('#orders-table-all-div').css('display', 'block');
 		    		$('#orders-table-current-div').css('display', 'none');
 		    		$('#orders-table-completed-div').css('display', 'none');
 			    }
 			    else if(str == 'Current'){
-			    	console.log($(this).text());
+			    	//onsole.log($(this).text());
 			    	$('#orders-table-all-div').css('display', 'none');
 		    		$('#orders-table-current-div').css('display', 'block');
 		    		$('#orders-table-completed-div').css('display', 'none');
 			    }
 			    else if(str == 'Completed'){
-			    	console.log($(this).text());
+			    	//console.log($(this).text());
 			    	$('#orders-table-all-div').css('display', 'none');
 		    		$('#orders-table-current-div').css('display', 'none');
 		    		$('#orders-table-completed-div').css('display', 'block');
@@ -339,21 +339,25 @@ function loadOrdersIndividual(orderId){
 
 		//TODO
 		$('#order-number').html(orderId);
-		
-		for(var x=0; x<orders.length; x++){
-			if(orders[x].id == orderId){
-				$('#order-assigned-appraiser').val(orders[x].appraiser.lastName);
-				$('#order-customer').val(orders[x].company);
-				$('#order-email').val(orders[x].email);
-				//$('#order-phone-number').val(orders[x].phoneNumber);
-				$('#order-address-one').val(orders[x].street);
-				//$('#order-address-one').val(orders[x].addressOne);
-				//$('#order-address-two').val(orders[x].addressTwo);
-				$('#order-city').val(orders[x].city);
-				//$('#order-state').val(useordersrs[x].state);
-				//$('#order-zip').val(useordersrs[x].zip);
-			}
-		}
+		$.post('/getOrderById', {"order_id" : orderId}, function(result){
+
+			console.log(result);
+			$('#order-assigned-appraiser').val('Placeholder');
+			$('#order-customer').val('Placeholder');
+			$('#order-email').val('Placeholder');
+			//$('#order-phone-number').val('Placeholder');
+			$('#order-address-one').val(result.query.address_id.address_line_1);
+			$('#order-address-two').val(result.query.address_id.address_line_2);
+			$('#order-city').val(result.query.address_id.city);
+			$('#order-state').val(result.query.address_id.state);
+			$('#order-zip').val(result.query.address_id.zip);
+			
+		}).done(function(){
+			hidePreloader();
+		}).fail(function(){
+			console.log('Error retreiving OrderByID');
+		});
+
 		hidePreloader();
 	});
 }

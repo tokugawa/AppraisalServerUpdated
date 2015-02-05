@@ -145,6 +145,23 @@ var OrderVO = (function(){
 				}
 			});
 		}
+
+		this.getOrderById = function(orderId, cb){
+
+			console.log(orderId);
+			Order.findOne({ "order_id" : orderId})
+			.populate('address_id')
+			.exec(function(err, item){
+
+				if(item){
+					cb(item);
+				}
+				else{
+					cb(null);
+				}
+			});
+
+		}
 	}
 
 	return {
