@@ -146,12 +146,8 @@ function loadUsersIndividual(userId){
 		$.post('/getUserWithOrders', {'user_id': userId}, function(result){
 
 			console.log(result);
-			var totalOrders = [];
-			//TODO array.apply()
-			totalOrders.concat(result.query.active_order_list);
-			totalOrders.concat(result.query.pending_order_list);
-			totalOrders.concat(result.query.completed_order_list);
-			console.log(result.query.active_order_list);
+			var totalOrders = $.merge($.merge($.merge([], result.query.active_order_list),  result.query.pending_order_list), result.query.completed_order_list);
+			console.log(totalOrders);
 
 			loadTableData('orders-table-all', totalOrders, 2, userOrderTableColumns, userOrderTableColumnDefs);//all
 			loadTableData('orders-table-current', result.query.active_order_list, 2, userOrderTableColumns, userOrderTableColumnDefs);//current
@@ -199,7 +195,7 @@ function loadUsersIndividual(userId){
 			var com = [];
 
 			for(var x=0; x<orders.length; x++){
-				if(orders[x].appraiser.id==userId && orders[x].completedStatus){
+				if(x%2==0 && orders[x].completedStatus){
 					com.push(new Completed(userId, orders[x].id, randomDate(new Date(2014, 0, 1), new Date()), ((Math.random() *10 )+"").substring(0,5)));
 				}
 			}

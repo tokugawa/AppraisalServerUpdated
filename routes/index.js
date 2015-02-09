@@ -284,9 +284,11 @@ module.exports = function(passport){
 
     Order.getOrderById(req.param('order_id'), function(result){
       if(result){
+        console.log('getOrderById SUCCESS');
         res.send({'query' : result });
       }
       else{
+        console.log('getOrderById Failed');
         res.send({'query' : 'failed' });
       }
     });
