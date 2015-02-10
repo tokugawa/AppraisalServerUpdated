@@ -12,7 +12,7 @@
 // load the things we need
 var mongoose = require('mongoose');
 var conn = require('../util/ConnectDBInstance').getInstance();
-var orderID = require('../vo/orderIDVO');
+var orderID = require('../vo/OrderIDVO');
 
 
 

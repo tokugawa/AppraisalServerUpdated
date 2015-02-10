@@ -5,7 +5,7 @@
       "appenders": [
         {
           "type": "dateFile",
-          "filename": "log/access.log",
+          "filename": "applog/access.log",
           "pattern": "-yyyy-MM-dd",
           "category": "http"
         },
@@ -14,7 +14,7 @@
           "level": "WARN",
           "appender": {
             "type": "file",
-            "filename": "log/errorsProduction.log",
+            "filename": "applog/errorsProduction.log",
             "maxLogSize": 10485760,
             "numBackups": 3,
             "layout": { 
