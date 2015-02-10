@@ -883,7 +883,7 @@ function showPreloader(){
 	$('body').append(''+
 		'<div id="preloader-wrapper">'+
 			'<span style="width:100%; height:100%; display:inline-block;">'+
-		    	'<img id="preloader" src="../img/preloader.gif" />'+
+		    	'<img id="preloader" src="../img/preloader.GIF" />'+
 	    	'</span>'+
 		'</div>'+
 	'');
