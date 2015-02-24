@@ -848,7 +848,7 @@ function badLoginShake(elementId, wrapperId){
 
     var heading = $('#'+elementId).clone().removeClass('form-shake');
     $('#'+elementId).remove();
-    $('#'+wrapperId).append(heading);
+    heading.insertAfter('#h1-title');
     $('#'+elementId).addClass('form-shake');
 
     $('form').on('submit', function(e){
