@@ -32,7 +32,7 @@ var Index = function() {
 
             var setMap = function(name, pins) {
                 var data = {
-                    map: 'world_en',
+                    map: 'usa_en',
                     backgroundColor: null,
                     borderColor: '#333333',
                     borderOpacity: 0.5,
@@ -75,28 +75,18 @@ var Index = function() {
 
             //Set pins and display map
             //pins = {"ru":"\u003ca href=\"#\"\u003epin_ru\u003c/a\u003e", "pk":"\u003ca href=\"#\"\u003epin_pk\u003c/a\u003e"};
-            pins = {"us":"\u003ca \u003e 512 \u003c/a\u003e"};
-            setMap("world", pins);
             pins = {"ct":"\u003ca \u003e 13 \u003c/a\u003e", "nc":"\u003ca \u003e 67 \u003c/a\u003e", "nm":"\u003ca \u003e 45 \u003c/a\u003e"};
             setMap("usa", pins);
-            pins = {};
-            setMap("europe", pins);
-            pins = {};
-            setMap("russia", pins);
-            pins = {};
-            setMap("germany", pins);
 
-            showMap("world", pins);
-
-            jQuery('#regional_stat_world').click(function() {
+            /*jQuery('#regional_stat_world').click(function() {
                 showMap("world");
-            });
+            });*/
 
             jQuery('#regional_stat_usa').click(function() {
                 showMap("usa");
             });
 
-            jQuery('#regional_stat_europe').click(function() {
+            /*jQuery('#regional_stat_europe').click(function() {
                 showMap("europe");
             });
             jQuery('#regional_stat_russia').click(function() {
@@ -104,10 +94,11 @@ var Index = function() {
             });
             jQuery('#regional_stat_germany').click(function() {
                 showMap("germany");
-            });
+            });*/
 
             $('#region_statistics_loading').hide();
             $('#region_statistics_content').show();
+            showMap('usa');
         },
 
         initCharts: function() {
