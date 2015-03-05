@@ -183,52 +183,65 @@ function loadUsersIndividual(userId){
 			$('.dataTable').each(function(){
 				$(this).wrap('<div class="scrollStyle" />');
 			});
-		}).fail(function(){
-			console.log('Error getting AllUsers');
-		}).done(function(){
-			hidePreloader();
-		});
 
-		//Generate data for completed orders completion rate chart
-		var completedOrders = function(){
+			//Generate data for completed orders completion rate chart
+			var completedOrders = function(){
 
-			var com = [];
+				var com = [];
 
-			for(var x=0; x<orders.length; x++){
-				if(x%2==0 && orders[x].completedStatus){
-					com.push(new Completed(userId, orders[x].id, randomDate(new Date(2014, 0, 1), new Date()), ((Math.random() *10 )+"").substring(0,5)));
+				for(var x=0; x<result.query.completed_order_list.length; x++){
+					if((result.query.completed_order_list)[x].order_completed_date != null && (result.query.completed_order_list)[x].order_completed_date != ''){
+						//com.push(new Completed(userId, orders[x].id, randomDate(new Date(2014, 0, 1), new Date()), ((Math.random() *10 )+"").substring(0,5)));
+						com.push(new Completed((result.query.completed_order_list)[x].order_id, (result.query.completed_order_list)[x].order_received_date, (result.query.completed_order_list)[x].order_completed_date));
+					}
 				}
+				return com;
+			}();
+
+			//Fill completed orders time chart
+			if(completedOrders.length > 0){
+				new Morris.Bar({
+			  	
+				  	element: 'appraiser-completion-rate-chart',
+				  	data: completedOrders,
+				  	xkey: 'orderId',
+				  	ykeys: ['timeTaken'],
+				  	labels: ['Time Taken']
+				});
 			}
-			return com;
-		}();
+			else{
+				$('#appraiser-completion-rate-chart').append("No data found for this user");
+			}
 
-		//Generate data for monthly completion line chart
-		/*var completedOrdersByDate = function(){
+			var monthlyData = function(){
 
-			var com = [];
+				var com = [
+					{ month: dateToYearMonth(Date.now()), completed: 0 },
+				    { month: dateToYearMonth(subtractMonth(Date.now(), 1)), completed: 0 },
+				    { month: dateToYearMonth(subtractMonth(Date.now(), 2)), completed: 0 },
+			    	{ month: dateToYearMonth(subtractMonth(Date.now(), 3)), completed: 0 },
+			    	{ month: dateToYearMonth(subtractMonth(Date.now(), 4)), completed: 0 }
+				];
 
-			for(var x=0; x<completedOrders.length; x++){
-				if(completedOrders[x]){
-					com.push({
-
-					});
+				for(var x=0; x<result.query.completed_order_list.length; x++){
+					for(var y=0; y<com.length; y++){
+						if((result.query.completed_order_list)[x].order_completed_date != null && (result.query.completed_order_list)[x].order_completed_date != ''
+							&& dateToYearMonth(result.query.completed_order_list)[x].order_completed_date==com[y].month){
+							console.log('here');
+							com[y].completed++;
+						}
+					}
 				}
-			}
-			return com;
-		}();*/
 
-		new Morris.Line({
+				return com;
+			}();
+
+			new Morris.Line({
 		  	// ID of the element in which to draw the chart.
 		  	element: 'appraiser-monthly-completion-chart',
 		  	// Chart data records -- each entry in this array corresponds to a point on
 		  	// the chart.
-		  	data: [
-			    { month: '2014-01', completed: 20 },
-			    { month: '2014-02', completed: 10 },
-			    { month: '2014-03', completed: 5 },
-		    	{ month: '2014-04', completed: 5 },
-		    	{ month: '2014-05', completed: 20 }
-		  	],
+		  	data: monthlyData,
 		  	// The name of the data record attribute that contains x-values.
 		  	xkey: 'month',
 		  	// A list of names of data record attributes that contain y-values.
@@ -237,19 +250,12 @@ function loadUsersIndividual(userId){
 		  	// chart.
 		  	labels: ['Completed']
 		});
-		if(completedOrders.length > 0){
-			new Morris.Bar({
-		  	
-			  	element: 'appraiser-completion-rate-chart',
-			  	data: completedOrders,
-			  	xkey: 'orderId',
-			  	ykeys: ['timeTaken'],
-			  	labels: ['Time Taken']
-			});
-		}
-		else{
-			$('#appraiser-completion-rate-chart').append("No data found for this user");
-		}
+
+		}).fail(function(){
+			console.log('Error getting AllUsers');
+		}).done(function(){
+			hidePreloader();
+		});
 
 		//Add user information
 		for(var x=0; x<users.length; x++){
@@ -473,11 +479,12 @@ function Admin(id, firstName, lastName, username, password){
 	this.username = username;
 	this.password = password;
 }
-function Completed(userId, orderId, dateCompleted, timeTaken){
-	this.userId = userId;
+function Completed(orderId, dateReceived, dateCompleted){
 	this.orderId = orderId;
-	this.dateCompleted = dateCompleted;
-	this.timeTaken = timeTaken;
+	this.dateReceived = new Date(dateReceived);
+	this.dateCompleted = new Date(dateCompleted);
+	this.timeTaken = (Math.abs(this.dateCompleted.getTime() - this.dateReceived.getTime())) / (1000*60*60*60);
+	console.log(this.timeTaken);
 }
 function Task(id, type, description, loadFunction, dateAssigned, dateCompleted){
 	this.id = id;
@@ -840,6 +847,26 @@ function dateToMMDDYYYY(date){//Convert Date() to dd/mm/yyyy
 	f = new Date(from[2], from[1] - 1, from[0]);*/
 
 	return datetime;
+}
+
+function subtractMonth(date, months){
+
+	var now = new Date(date);
+
+	if(now.getMonth()-months < 0){
+		now.setFullYear(now.getFullYear()-1);
+	}
+
+	now.setMonth((now.getMonth()+(12-months))%12);
+
+	return now;
+}
+
+function dateToYearMonth(time){
+
+	var time = new Date(time);
+
+	return ''+time.getFullYear()+'-'+(time.getMonth()+1);
 }
 ///////////////////////////////////////////////////////////////////////////////
 

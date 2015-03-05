@@ -31,6 +31,7 @@ var OrderSchema = new mongoose.Schema({
 		},
 		order_client							: {	type: mongoose.Schema.Types.ObjectId, ref: 'ClientCollection'},
 		order_received_date     				: { type: Date, default: Date.now },
+		order_completed_date					: { type: Date },
 		order_due_date							: { type: Date },
 		order_priority_ind 						: { type: Number },
 		order_image								: {	type: mongoose.Schema.Types.ObjectId, ref: 'ImageURLCollection'},
