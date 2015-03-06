@@ -213,6 +213,7 @@ function loadUsersIndividual(userId){
 				$('#appraiser-completion-rate-chart').append("No data found for this user");
 			}
 
+			//Chart for orders completed each month
 			var monthlyData = function(){
 
 				var com = [
@@ -237,40 +238,36 @@ function loadUsersIndividual(userId){
 			}();
 
 			new Morris.Line({
-		  	// ID of the element in which to draw the chart.
-		  	element: 'appraiser-monthly-completion-chart',
-		  	// Chart data records -- each entry in this array corresponds to a point on
-		  	// the chart.
-		  	data: monthlyData,
-		  	// The name of the data record attribute that contains x-values.
-		  	xkey: 'month',
-		  	// A list of names of data record attributes that contain y-values.
-		  	ykeys: ['completed'],
-		  	// Labels for the ykeys -- will be displayed when you hover over the
-		  	// chart.
-		  	labels: ['Completed']
-		});
+			  	// ID of the element in which to draw the chart.
+			  	element: 'appraiser-monthly-completion-chart',
+			  	// Chart data records -- each entry in this array corresponds to a point on
+			  	// the chart.
+			  	data: monthlyData,
+			  	// The name of the data record attribute that contains x-values.
+			  	xkey: 'month',
+			  	// A list of names of data record attributes that contain y-values.
+			  	ykeys: ['completed'],
+			  	// Labels for the ykeys -- will be displayed when you hover over the
+			  	// chart.
+			  	labels: ['Completed']
+			});
+
+			//Add user information
+			$('#user-first-name').val(result.query.firstName);
+			$('#user-last-name').val(result.query.lastName);
+			//$('#user-email').val(users[x].email);
+			//$('#user-phone-number').val(users[x].phoneNumber);
+			$('#user-address-one').val(result.query.user_address.address_line_1);
+			$('#user-address-two').val(result.query.user_address.address_line_2);
+			$('#user-state').val(result.query.user_address.address_state);
+			$('#user-city').val(result.query.user_address.address_city);
+			$('#user-zip').val(result.query.user_address.address_zip);
 
 		}).fail(function(){
 			console.log('Error getting AllUsers');
 		}).done(function(){
 			hidePreloader();
 		});
-
-		//Add user information
-		for(var x=0; x<users.length; x++){
-			if(users[x].id == userId){
-				$('#user-first-name').val(users[x].firstName);
-				$('#user-last-name').val(users[x].lastName);
-				$('#user-email').val(users[x].email);
-				$('#user-phone-number').val(users[x].phoneNumber);
-				$('#user-address-one').val(users[x].addressOne);
-				$('#user-address-two').val(users[x].addressTwo);
-				$('#user-city').val(users[x].city);
-				$('#user-zip').val(users[x].zip);
-			}
-		}
-		hidePreloader();
 	});
 }
 function loadOrdersHome(){

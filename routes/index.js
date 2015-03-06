@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 var User = require('../vo/UserVO').getInstance();
 var Order = require('../vo/OrderVO').getInstance();
+var Address = require('../vo/AddressVO').getInstance();
 ///////////////////////////////////////////////////////////////////////////
 
 module.exports = function(passport){

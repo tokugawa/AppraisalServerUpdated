@@ -128,7 +128,7 @@ var UserVO = (function(){
 		this.getUserWithOrders = function(userId, cb){
 
 			user.findOne({user_id: userId})
-			.populate('active_order_list pending_order_list completed_order_list')
+			.populate('active_order_list pending_order_list completed_order_list user_address')
 			.exec(function(err, item){
 
 				if(item){
@@ -227,11 +227,6 @@ var UserVO = (function(){
         user: user
     };
 
-	
-
 })();
 
 module.exports = UserVO;
-
-
-

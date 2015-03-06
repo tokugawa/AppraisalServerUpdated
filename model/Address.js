@@ -29,8 +29,6 @@ var AddressSchema = new mongoose.Schema({
 		address_verified_date					: { type: Date },
 		address_x_ref							: { type: mongoose.Schema.Types.ObjectId }
 
-		
-
 	},
 	{
 
@@ -38,8 +36,5 @@ var AddressSchema = new mongoose.Schema({
 	}
 
 );
-
-
-
 
 module.exports = conn.model('AddressCollection', AddressSchema);
