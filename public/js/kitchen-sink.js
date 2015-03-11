@@ -932,10 +932,10 @@ function hidePreloader(){
 /////////////////////////////////////////////////////////////////////////////////
 
 //DB Functions
-function insertUser(email, firstName, lastName, address1, address2, city, state, zip, notes){
+function insertUser(email, firstName, lastName, address1, address2, city, state, zip, role){
 
 	console.log('starting to post to insert new user');
-	$.post('/insertNewUser', {'email':email, 'firstName':firstName, 'lastName':lastName, 'addressLine1':address1, 'addressLine2':address2, 'city':city, 'state':state, 'zip':zip, 'notes':notes}, function(response){
+	$.post('/insertNewUser', {'email':email, 'firstName':firstName, 'lastName':lastName, 'addressLine1':address1, 'addressLine2':address2, 'city':city, 'state':state, 'zip':zip, 'role':role}, function(response){
 
 		console.log('insertUser successful');
 	}, 'json').fail(function(){

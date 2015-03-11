@@ -24,7 +24,7 @@ var UserVO = (function(){
 	var instance;
 	function createInstance() {
 
-		this.createNewUser = function (userName, password, firstName, lastName, user_address, isUserActive, cb  ){
+		this.createNewUser = function (userName, password, firstName, lastName, user_address, isUserActive, userRole, cb  ){
 
 			log.info(' Class:UserVO Method:createNewUser starts');
 			var newUser = new user();
@@ -33,13 +33,16 @@ var UserVO = (function(){
 		
 			newUser.user_id		  		= userName;
 			//newUser.user_id_id		= newUser.generateID();
-			newUser.password 		= passwordHashed ;
-			newUser.firstName		= firstName;
-			newUser.lastName 		= lastName;
-			newUser.user_address 	= user_address;
-			newUser.isUserActive	= isUserActive;
-			newUser.order_list 		= new Array();
-			newUser.invitation_code = generateInvitationCode();
+			newUser.password 			= passwordHashed;
+			newUser.firstName			= firstName;
+			newUser.lastName 			= lastName;
+			//newUser.user_address 		= user_address;
+			newUser.isUserActive		= isUserActive;
+			newUser.active_order_list 	= new Array();
+			newUser.pending_order_list 	= new Array();
+			newUser.completed_order_list= new Array();
+			newUser.invitation_code 	= generateInvitationCode();
+			newUser.user_role 			= userRole;
 
 			log.info('user_id ' , userName);
 			log.info(' user user_address' , user_address);
@@ -66,7 +69,7 @@ var UserVO = (function(){
 						else {
 
 							log.info('Class:UserVO - Info: Successful');
-							cb(true);
+							cb(newUser.invitation_code);
 						}
 					});
 				}

@@ -297,8 +297,7 @@ module.exports = function(passport){
 
   router.post('/insertNewUser', isLoggedIn, function(req, res){
 
-    console.log('\n\nINSERTING NEW USER\n');
-    User.createNewUser(req.param('email'), '', req.param('firstName'), req.param('lastName'), '', true, function(result){
+    User.createNewUser(req.param('email'), '', req.param('firstName'), req.param('lastName'), '', true, req.param('role'), function(result){
       if(result){
         console.log('insertNewUser SUCCESS');
         res.send({'query' : result });

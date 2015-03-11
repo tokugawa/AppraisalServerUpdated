@@ -1132,3 +1132,31 @@
   path: 'user_address' }
 [2015-03-11 15:44:40.271] [ERROR] PAException - Exception at :UserVO Save User Exception
 [2015-03-11 15:44:40.278] [ERROR] app - Worker server died (ID: 1, PID: 5480)
+[2015-03-11 15:56:56.957] [ERROR] UserVO - { message: 'Cast to ObjectId failed for value "" at path "user_address"',
+  name: 'CastError',
+  type: 'ObjectId',
+  value: '',
+  path: 'user_address' }
+[2015-03-11 15:56:56.958] [ERROR] PAException - Exception at :UserVO Save User Exception
+[2015-03-11 15:56:56.965] [ERROR] app - Worker server died (ID: 1, PID: 5040)
+[2015-03-11 15:58:16.600] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout3/img/avatar2.jpg HTTP/1.1" 404 1154 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36"
+[2015-03-11 15:58:16.601] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout3/img/avatar3.jpg HTTP/1.1" 404 1154 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36"
+[2015-03-11 15:58:16.602] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout3/img/avatar1.jpg HTTP/1.1" 404 1154 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36"
+[2015-03-11 15:58:33.942] [ERROR] UserVO - { message: 'Validation failed',
+  name: 'ValidationError',
+  errors: 
+   { user_role: 
+      { message: 'Path `user_role` is required.',
+        name: 'ValidatorError',
+        path: 'user_role',
+        type: 'required' },
+     password: 
+      { message: 'Path `password` is required.',
+        name: 'ValidatorError',
+        path: 'password',
+        type: 'required' } } }
+[2015-03-11 15:58:33.943] [ERROR] PAException - Exception at :UserVO Save User Exception
+[2015-03-11 15:58:33.950] [ERROR] app - Worker server died (ID: 1, PID: 3756)
+[2015-03-11 16:01:31.019] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout3/img/avatar2.jpg HTTP/1.1" 404 1154 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36"
+[2015-03-11 16:01:31.023] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout3/img/avatar3.jpg HTTP/1.1" 404 1154 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36"
+[2015-03-11 16:01:31.025] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout3/img/avatar1.jpg HTTP/1.1" 404 1154 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36"
