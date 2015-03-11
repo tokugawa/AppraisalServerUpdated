@@ -705,42 +705,51 @@ function validateZipCode(zip){ //validates a zipcode(12345 or 12345-1234)
 function validateNewUser(){
 
 	var validated = true;
+	//original border color #e5e5e5
 
-	if(!validateEmail($('#new-user-email').val())){
+	$('#user-new-email').css('border', '1px solid #e5e5e5');
+	if(!validateEmail($('#user-new-email').val())){
 		validated = false;
-		//$('#new-user-email').css('border', '1px solid tomato');
+		$('#user-new-email').css('border', '1px solid tomato');
 	}
-	if(!validatePassword($('#new-user-password').val())){
+	$('#user-new-first-name').css('border', '1px solid #e5e5e5');
+	if(!validateTextFilled($('#user-new-first-name').val())){
 		validated = false;
-		//$('#new-user-password').css('border', '1px solid tomato');
+		$('#user-new-first-name').css('border', '1px solid tomato');
 	}
-	if(!validateTextFilled($('#new-user-first-name').val())){
+	$('#user-new-last-name').css('border', '1px solid #e5e5e5');
+	if(!validateTextFilled($('#user-new-last-name').val())){
 		validated = false;
-		//$('#new-user-first-name').css('border', '1px solid tomato');
+		$('#user-new-last-name').css('border', '1px solid tomato');
 	}
-	if(!validateTextFilled($('#new-user-last-name').val())){
+	$('#user-new-address-line-one').css('border', '1px solid #e5e5e5');
+	if(!validateTextFilled($('#user-new-address-line-one').val())){
 		validated = false;
-		//$('#new-user-last-name').css('border', '1px solid tomato');
+		$('#new-user-address-line-one').css('border', '1px solid tomato');
 	}
-	if(!validateTextFilled($('#new-user-address-line-one').val())){
+	/*if(!validateTextFilled($('#user-new-address-line-two').val())){
 		validated = false;
-		//$('#new-user-address-line-one').css('border', '1px solid tomato');
-	}
-	/*if(!validateTextFilled($('#new-user-address-line-two').val())){
-		validated = false;
-		$('#new-user-address-line-two').css('border', '1px solid tomato');
+		$('#user-new-address-line-two').css('border', '1px solid tomato');
 	}*/
-	if(!validateTextFilled($('#new-user-city').val())){
+	$('#user-new-city').css('border', '1px solid #e5e5e5');
+	if(!validateTextFilled($('#user-new-city').val())){
 		validated = false;
-		//$('#new-user-city').css('border', '1px solid tomato');
+		$('#user-new-city').css('border', '1px solid tomato');
 	}
-	if(!validateTextFilled($('#new-user-state').val())){
+	$('#user-new-state').css('border', '1px solid #e5e5e5');
+	if(!validateTextFilled($('#user-new-state').val())){
 		validated = false;
-		//$('#new-user-state').css('border', '1px solid tomato');
+		$('#user-new-state').css('border', '1px solid tomato');
 	}
-	if(!validateZipCode($('#new-user-zip').val())){
+	$('#user-new-zip').css('border', '1px solid #e5e5e5');
+	if(!validateZipCode($('#user-new-zip').val())){
 		validated = false;
-		//$('#new-user-zip').css('border', '1px solid tomato');
+		$('#user-new-zip').css('border', '1px solid tomato');
+	}
+	$('#user-new-role').css('border', '1px solid #e5e5e5');
+	if(!validateTextFilled($('#user-new-role').val())){
+		validated = false;
+		$('#user-new-role').css('border', '1px solid tomato');
 	}
 
 	if(validated)
@@ -822,10 +831,11 @@ function randomDate(start, end) {
 //Creation functions
 function createUser(){
 	//TODO
+	console.log($('#user-new-email').val());
 	if(validateNewUser()){
-		users.push(new User(users[users.length-1].id + 1, $('#user-new-first-name').val(), $('#user-new-last-name').val(), [], $('#user-new-email').val(), $('#user-new-phone-number').val(), 
-			$('#user-new-address-line-one').val(), $('#user-new-address-line-two').val(), $('#user-new-city').val(), $('#user-new-state').val(), $('#user-new-zip').val()));
-		loadTableData('users-table', users, 2, userTableColumns, userTableColumnDefs);
+		insertUser($('#user-new-email').val(), $('#user-new-first-name').val(), $('#user-new-last-name').val(), 
+				$('#user-new-address-line-one').val(), $('#user-new-address-line-two').val(), $('#user-new-city').val(), 
+				$('#user-new-state').val(), $('#user-new-zip').val(), $('#user-new-role').val());
 		$('#create-user-modal').modal('hide');
 		return true;
 	}
@@ -917,6 +927,19 @@ function hidePreloader(){
 
 	$('#preloader-wrapper').fadeOut(300, function(){
 		$('#preloader-wrapper').remove();
+	});
+}
+/////////////////////////////////////////////////////////////////////////////////
+
+//DB Functions
+function insertUser(email, firstName, lastName, address1, address2, city, state, zip, notes){
+
+	console.log('starting to post to insert new user');
+	$.post('/insertNewUser', {'email':email, 'firstName':firstName, 'lastName':lastName, 'addressLine1':address1, 'addressLine2':address2, 'city':city, 'state':state, 'zip':zip, 'notes':notes}, function(response){
+
+		console.log('insertUser successful');
+	}, 'json').fail(function(){
+		console.log('Error on insertUser');
 	});
 }
 /////////////////////////////////////////////////////////////////////////////////

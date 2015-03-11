@@ -32,7 +32,8 @@ var UserSchema = new mongoose.Schema({
 		user_role	 		: { type: String, required: true },
 		active_order_list   : [{ type: mongoose.Schema.Types.ObjectId, ref: 'OrderCollection' }],
 		pending_order_list	: [{ type: mongoose.Schema.Types.ObjectId, ref: 'OrderCollection' }],
-		completed_order_list : [{ type: mongoose.Schema.Types.ObjectId, ref: 'OrderCollection' }]
+		completed_order_list : [{ type: mongoose.Schema.Types.ObjectId, ref: 'OrderCollection' }],
+		invitation_code		: { type: String, required: true }
 	},
 
 	{
@@ -51,8 +52,6 @@ UserSchema.methods.generateHash = function(password) {
 UserSchema.methods.validatePassword = function(password) {
     return bcrypt.compareSync(password, this.password);
 };
-
-
 
 UserSchema.methods.isValidPassword = function() {
     return (this.password);

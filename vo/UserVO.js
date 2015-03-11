@@ -39,6 +39,7 @@ var UserVO = (function(){
 			newUser.user_address 	= user_address;
 			newUser.isUserActive	= isUserActive;
 			newUser.order_list 		= new Array();
+			newUser.invitation_code = generateInvitationCode();
 
 			log.info('user_id ' , userName);
 			log.info(' user user_address' , user_address);
@@ -228,5 +229,15 @@ var UserVO = (function(){
     };
 
 })();
+
+function generateInvitationCode(){
+    var text = "";
+    var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+
+    for( var i=0; i < 10; i++ )
+        text += possible.charAt(Math.floor(Math.random() * possible.length));
+
+    return text;
+}
 
 module.exports = UserVO;
