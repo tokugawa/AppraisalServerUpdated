@@ -22,7 +22,7 @@ var AddressVO = (function(){
 	var instance;
 	function createInstance() {
 
-		this.createNewAddress = function (address_line_1, address_line_2, address_city, address_state, address_zip, address_county, address_lat, address_long, address_verified, address_verified_date, address_x_ref){
+		this.createNewAddress = function (address_line_1, address_line_2, address_city, address_state, address_zip, address_county, address_lat, address_long, address_verified, address_verified_date, address_x_ref, cb){
 
 			log.info(' Class:AddressVO Method:createNewAddress starts');
 			var newAddress = new address();
@@ -37,37 +37,44 @@ var AddressVO = (function(){
 			newAddress.address_long				= address_long;
 			newAddress.address_verified 		= address_verified;
 			newAddress.address_verified_date	= address_verified_date;
-			newAddress.address_x_ref			= address_x_ref;
+			//newAddress.address_x_ref			= address_x_ref;
 
 			//TODO Check Address Insert
-			/*address.findOne({user_id: userName }, function findOneCb(err, data){
+			address.findOne({
+					address_line_1: address_line_1, 
+					address_line_2: address_line_2, 
+					address_city: address_city, 
+					address_state: address_state, 
+					address_zip: address_zip })
+			.exec(function findOneCb(err, data){
 				if(err){
 					log.error(err);
 					cb(null);
 				}
 				if(data){
 
-					log.error('Class:UserVO - Error Message: UserId already taken');
-					cb(false);
+					log.info('Class:UserVO - Error Message: Address already exists');
+					console.log(data);
+					cb(data);
 				}
 
 				if(!data){
 					log.info(' Class:UserVO - Info:No duplicate record found');
-					newUser.save(function saveUserCb(err, doc){
+					newAddress.save(function saveAddressCb(err, doc){
 						if(err) {
 							log.error(err);
-							throw new paException('UserVO', 'Save User Exception');
+							throw new paException('AddressVO', 'Save Address Exception');
 							cb(null);
 
 						}
 						else {
 
-							log.info('Class:UserVO - Info: Successful');
+							log.info('Class:AddressVO - Info: Successful');
 							cb(true);
 						}
 					});
 				}
-			});*/
+			});
 		};
 
 		this.getAllAddresses = function(cb){

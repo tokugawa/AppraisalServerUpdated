@@ -27,7 +27,7 @@ var UserSchema = new mongoose.Schema({
 		firstName    		: { type: String, required: true },
 		lastName     		: { type: String, required: true },
 		user_created 		: { type: Date, default: Date.now },
-		//user_address 		: { type: mongoose.Schema.Types.ObjectId, ref: 'AddressCollection' },
+		user_address 		: { type: mongoose.Schema.Types.ObjectId, ref: 'AddressCollection' },
 		isUserActive 		: { type: Boolean, required: true } ,
 		user_role	 		: { type: String, required: true },
 		active_order_list   : [{ type: mongoose.Schema.Types.ObjectId, ref: 'OrderCollection' }],

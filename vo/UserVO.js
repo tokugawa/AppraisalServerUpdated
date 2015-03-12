@@ -36,7 +36,7 @@ var UserVO = (function(){
 			newUser.password 			= passwordHashed;
 			newUser.firstName			= firstName;
 			newUser.lastName 			= lastName;
-			//newUser.user_address 		= user_address;
+			newUser.user_address 		= user_address;
 			newUser.isUserActive		= isUserActive;
 			newUser.active_order_list 	= new Array();
 			newUser.pending_order_list 	= new Array();
@@ -75,6 +75,20 @@ var UserVO = (function(){
 				}
 			});
 		};
+
+		this.updateUser = function(userId, fields, cb){
+
+			if(user.update({user_id: userId}, fields)){
+
+				log.info('Class:UserVO - Info: Update Error');
+				cb(err);
+			}
+			else{
+
+				log.info('Class:UserVO - Info: Successful');
+				cb(user.getUserWithOrders(userId, null));
+			}
+		}
 
 		this.getAllUsers = function(cb){
 

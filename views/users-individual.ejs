@@ -91,7 +91,7 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-12" >
+			<div class="col-md-6" >
 				<div class="portlet light">
 					<div class="portlet-title">
 						<div class="caption caption-md">
@@ -102,75 +102,112 @@
 					</div>
 				  	<div class="portlet-body">
 				  		<form class="form-horizontal">
-					  		<div class="form-group">
-					  			<div class="col-md-2">
-				  					<label for="user-first-name">First Name</label>
-					  			</div>
-								<div class="col-md-4">
-									<input type="text" id="user-first-name" class="disableToggle form-control" disabled="disabled" style="width:100%;"/>
-								</div>
-								<div class="col-md-2">
-				  					<label for="user-last-name">Last Name</label>
-					  			</div>
-								<div class="col-md-4">
-									<input type="text" id="user-last-name" class="disableToggle form-control" disabled="disabled" style="width:100%;"/>
-								</div>
-					  		</div>
-					  		<div class="form-group">
-					  			<div class="col-md-2">
+				  			<div class="form-group">
+					  			<div class="col-md-4">
 									<label for="user-email">Email</label>
 								</div>
-								<div class="col-md-4">
-									<input type="text" id="user-email" class="disableToggle form-control" disabled="disabled" style="width:100%;"/>
+								<div class="col-md-8">
+									<input type="text" id="user-email" class="form-control user-infor" disabled="disabled" style="width:100%;"/>
 								</div>
-								<div class="col-md-2">
-									<label for="user-phone-number">Phone Number</label>
+							</div>
+							<div class="form-group">
+					  			<div class="col-md-4">
+									<label for="user-password">Password</label>
 								</div>
+								<div class="col-md-8">
+									<input type="password" id="user-password" class="form-control user-infor" disabled="disabled" style="width:100%;"/>
+								</div>
+							</div>
+					  		<div class="form-group">
+					  			<div class="col-md-4">
+				  					<label for="user-first-name">First Name</label>
+					  			</div>
+								<div class="col-md-8">
+									<input type="text" id="user-first-name" class="form-control user-infor" disabled="disabled" style="width:100%;"/>
+								</div>
+							</div>
+							<div class="form-group">
 								<div class="col-md-4">
-									<input type="text" id="user-phone-number" class="disableToggle form-control" disabled="disabled" style="width:100%;"/>
+				  					<label for="user-last-name">Last Name</label>
+					  			</div>
+								<div class="col-md-8">
+									<input type="text" id="user-last-name" class="form-control user-infor" disabled="disabled" style="width:100%;"/>
 								</div>
 					  		</div>
 							<div class="form-group">
-								<div class="col-md-2">
+								<div class="col-md-4">
+									<label for="user-phone-number">Phone Number</label>
+								</div>
+								<div class="col-md-8">
+									<input type="text" id="user-phone-number" class="form-control user-infor" disabled="disabled" style="width:100%;"/>
+								</div>
+					  		</div>
+							<div class="form-group">
+								<div class="pull-right" >
+									<a class="btn btn-default" id="save-user-info" role="button" style="display:none;" onclick="disableInput('user-infor'); $('#save-user-info').css('display', 'none');">Save</a>
+						  			<a class="btn btn-default" role="button" onclick="enableDisabled('user-infor'); $('#save-user-info').css('display', 'inline-block');">Edit</a>
+				  				</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6" >
+				<div class="portlet light">
+					<div class="portlet-title">
+						<div class="caption caption-md">
+							<i class="icon-bar-chart theme-font-color hide"></i>
+							<span class="caption-subject theme-font-color bold uppercase">Address</span>
+							<span class="caption-helper hide">default</span>
+						</div>
+					</div>
+				  	<div class="portlet-body">
+				  		<form class="form-horizontal">
+							<div class="form-group">
+								<div class="col-md-4">
 									<label for="user-address-one">Address Line 1</label>
 								</div>
-								<div class="col-md-4">
-									<input type="text" id="user-address-one" class="disableToggle form-control" disabled="disabled" style="width:100%;"/>
+								<div class="col-md-8">
+									<input type="text" id="user-address-one" class="form-control user-address" disabled="disabled" style="width:100%;"/>
 								</div>
-								<div class="col-md-2">
+							</div>
+							<div class="form-group">
+								<div class="col-md-4">
 									<label for="user-address-two">Address Line 2</label>
 								</div>
-								<div class="col-md-4">
-									<input type="text" id="user-address-two" class="disableToggle form-control" disabled="disabled" style="width:100%;"/>
+								<div class="col-md-8">
+									<input type="text" id="user-address-two" class="form-control user-address" disabled="disabled" style="width:100%;"/>
 								</div>
 							</div>
 							<div class="form-group">
-								<div class="col-md-2">
+								<div class="col-md-4">
 									<label for="user-city">City</label>
 								</div>
-								<div class="col-md-4">
-									<input type="text" id="user-city" class="disableToggle form-control" disabled="disabled" style="width:100%;"/>
-								</div>
-								<div class="col-md-2">
-									<label for="user-state">State</label>
-								</div>
-								<div class="col-md-4">
-									<input type="text" id="user-state" class="disableToggle form-control" disabled="disabled" style="width:100%;"/>
+								<div class="col-md-8">
+									<input type="text" id="user-city" class="form-control user-address" disabled="disabled" style="width:100%;"/>
 								</div>
 							</div>
 							<div class="form-group">
-								<div class="col-md-2">
+								<div class="col-md-4">
+									<label for="user-state">State</label>
+								</div>
+								<div class="col-md-8">
+									<input type="text" id="user-state" class="form-control user-address" disabled="disabled" style="width:100%;"/>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-md-4">
 									<label for="user-zip">Zip Code</label>
 								</div>
-								<div class="col-md-4">
-									<input type="text" id="user-zip" class="disableToggle form-control" disabled="disabled" style="width:100%;"/>
+								<div class="col-md-8">
+									<input type="text" id="user-zip" class="form-control user-address" disabled="disabled" style="width:100%;"/>
 								</div>
-								<div class="col-md-6">
-									<div class="pull-right" >
-										<a class="btn btn-default" id="save-user-info" role="button" style="display:none;" onclick="disableInput(); $('#save-user-info').css('display', 'none');">Save</a>
-							  			<a class="btn btn-default" role="button" onclick="enableDisabled(); $('#save-user-info').css('display', 'inline-block');">Edit</a>
-					  				</div>
-								</div>
+							</div>
+							<div class="form-group">
+								<div class="pull-right" >
+									<a class="btn btn-default" id="save-user-address" role="button" style="display:none;" onclick="disableInput('user-address'); $('#save-user-address').css('display', 'none');">Save</a>
+						  			<a class="btn btn-default" role="button" onclick="enableDisabled('user-address'); $('#save-user-address').css('display', 'inline-block');">Edit</a>
+				  				</div>
 							</div>
 						</form>
 					</div>

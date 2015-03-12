@@ -19,12 +19,12 @@ var AddressSchema = new mongoose.Schema({
 		
 		address_line_1							: { type: String , required: true },
 		address_line_2	 						: { type: String  },
-		address_city 							: { type: String , required: true  },
-		address_state							: { type: String , required: true  },
-		address_zip								: { type: Number , required: true, min: 10000, max: 99999  },
-		address_county							: { type: String , required: true  },
-		address_lat								: { type: Number  },
-		address_long							: { type: Number  },
+		address_city 							: { type: String , required: true },
+		address_state							: { type: String , required: true },
+		address_zip								: { type: Number , required: true, min: 10000, max: 99999 },
+		address_county							: { type: String },
+		address_lat								: { type: Number },
+		address_long							: { type: Number },
 		address_verified						: { type: Boolean , default:false},
 		address_verified_date					: { type: Date },
 		address_x_ref							: { type: mongoose.Schema.Types.ObjectId }

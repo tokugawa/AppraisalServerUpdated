@@ -12,20 +12,6 @@ module.exports = function(passport){
     res.render('login');
   });
 
-  /*router.get('/index.html', function(req, res) {
-    //console.log(req.session.redSession);
-    if(req.session.redSession && req.session.loggedIn){ //check this for all routes after Login
-
-      res.render('index',{
-        session: req.session
-      });
-    }
-    else{
-      //res.redirect('/logout');
-      res.send('No Session');
-    }
-  });*/
-
   router.get('/index.html', isLoggedIn, function(req, res){
     res.render('index',{
       session: req.session
@@ -38,172 +24,56 @@ module.exports = function(passport){
     res.redirect('/');
   });
 
-  /*router.get('/overview.html', function(req, res) {
-    if(req.session.redSession && req.session.loggedIn){ //check this for all routes after Login
-
-      res.render('overview',{
-        session: req.session
-      });
-    }
-    else{
-      //res.redirect('/logout');
-      res.send('No Session');
-    }
-  });*/
-
   router.get('/overview.html', isLoggedIn, function(req, res){
     res.render('overview',{
       session: req.session
     });
   });
 
-  /*router.get('/overview-appraiser.html', function(req, res) {
-    if(req.session.redSession && req.session.loggedIn){ //check this for all routes after Login
-
-      res.render('overview-appraiser',{
-        session: req.session
-      });
-    }
-    else{
-      //res.redirect('/logout');
-      res.send('No Session');
-    }
-  });*/
   router.get('/overview-appraiser.html', isLoggedIn, function(req, res){
     res.render('overview-appraiser',{
       session: req.session
     });
   });
 
-  /*router.get('/users-home.html', function(req, res) {
-    if(req.session.redSession && req.session.loggedIn){ //check this for all routes after Login
-
-      res.render('users-home',{
-        session: req.session
-      });
-    }
-    else{
-      //res.redirect('/logout');
-      res.send('No Session');
-    }
-  });*/
   router.get('/users-home.html', isLoggedIn, function(req, res){
     res.render('users-home',{
       session: req.session
     });
   });
 
-  /*router.get('/orders-home.html', function(req, res) {
-    if(req.session.redSession && req.session.loggedIn){ //check this for all routes after Login
-
-      res.render('orders-home',{
-        session: req.session
-      });
-    }
-    else{
-      //res.redirect('/logout');
-      res.send('No Session');
-    }
-  });*/
   router.get('/orders-home.html', isLoggedIn, function(req, res){
     res.render('orders-home',{
       session: req.session
     });
   });
 
-  /*router.get('/orders-individual.html', function(req, res) {
-    if(req.session.redSession && req.session.loggedIn){ //check this for all routes after Login
-
-      res.render('orders-individual',{
-        session: req.session
-      });
-    }
-    else{
-      //res.redirect('/logout');
-      res.send('No Session');
-    }
-  });*/
   router.get('/orders-individual.html', isLoggedIn, function(req, res){
     res.render('orders-individual',{
       session: req.session
     });
   });
 
-  /*router.get('/users-individual.html', function(req, res) {
-    if(req.session.redSession && req.session.loggedIn){ //check this for all routes after Login
-
-      res.render('users-individual',{
-        session: req.session
-      });
-    }
-    else{
-      //res.redirect('/logout');
-      res.send('No Session');
-    }
-  });*/
   router.get('/users-individual.html', isLoggedIn, function(req, res){
     res.render('users-individual',{
       session: req.session
     });
   });
 
-  /*router.get('/tasks.html', function(req, res) {
-    if(req.session.redSession && req.session.loggedIn){ //check this for all routes after Login
-
-      res.render('tasks',{
-        session: req.session
-      });
-    }
-    else{
-      //res.redirect('/logout');
-      res.send('No Session');
-    }
-  });*/
   router.get('/tasks.html', isLoggedIn, function(req, res){
     res.render('tasks',{
       session: req.session
     });
   });
 
-  /*router.get('/calendar.html', function(req, res) {
-    if(req.session.redSession && req.session.loggedIn){ //check this for all routes after Login
-
-      res.render('calendar',{
-        session: req.session
-      });
-    }
-    else{
-      //res.redirect('/logout');
-      res.send('No Session');
-    }
-  });*/
   router.get('/calendar.html', isLoggedIn, function(req, res){
     res.render('calendar',{
       session: req.session
     });
   });
+  ////////////////////////////////////////////////////////////////////////
 
   //POST
-  /*router.post('/login', function(req, res) {
-
-    //console.log(req.body);
-
-    //Verify User Credentials
-    var status = userVO.validateUserWithRole(req.param('username'), req.param('role').toLowerCase(), req.param('password'), function(status){
-      if(status){
-        req.session.redSession = req.param('username');
-        req.session.loggedIn = true;
-        res.send({'loginStatus' : req.param('role').toLowerCase()});
-      }
-      else if(status == null){
-        res.send({'loginStatus' : 'error'});
-      }
-      else{
-        res.send({'loginStatus' : 'fail'});
-      }
-    });
-    /////////////////////////////////////////////////////
-  });*/
   router.post('/login', function(req, res, next){
     passport.authenticate('local-login', function(err, user){
 
@@ -297,13 +167,61 @@ module.exports = function(passport){
 
   router.post('/insertNewUser', isLoggedIn, function(req, res){
 
-    User.createNewUser(req.param('email'), '', req.param('firstName'), req.param('lastName'), '', true, req.param('role'), function(result){
+    Address.createNewAddress(req.param('addressLine1'), req.param('addressLine2'), req.param('city'), req.param('state'), req.param('zip'), '', '', '', '', '', '', function(result){
+
       if(result){
-        console.log('insertNewUser SUCCESS');
+        console.log('insertNewAddress SUCCESS');
+        User.createNewUser(req.param('email'), '', req.param('firstName'), req.param('lastName'), result._id, false, req.param('role'), function(result){
+          if(result){
+            console.log('insertNewUser SUCCESS');
+            res.send({'query' : result });
+          }
+          else{
+            console.log('insertNewUser Failed');
+            res.send({'query' : 'failed' });
+          }
+        });
+      }
+      else{
+        console.log('insertNewAddress Failed');
+        res.send({'query' : 'failed' });
+      }
+    });
+
+  });
+
+  router.post('/updateUser', isLoggedIn, function(req, res){
+
+    Address.createNewAddress(req.param('addressLine1'), req.param('addressLine2'), req.param('city'), req.param('state'), req.param('zip'), '', '', '', '', '', '', function(result){
+
+      if(result){
+        console.log('insertNewAddress SUCCESS');
+        //TODO
+        var updateParams = {};
+
+        if(User.updateUser(req.param('username'), updateParams)){
+          console.log('insertNewUser SUCCESS');
+          res.send({'query' : result });
+        }
+        else{
+          console.log('insertNewUser Failed');
+          res.send({'query' : 'failed' });
+        }
+      }
+      else{
+        console.log('insertNewAddress Failed');
+        res.send({'query' : 'failed' });
+      }
+  });
+
+  router.post('/getAllAddresses', isLoggedIn, function(req, res){
+
+    Address.getAllAddresses(function(result){
+
+      if(result){
         res.send({'query' : result });
       }
       else{
-        console.log('insertNewUser Failed');
         res.send({'query' : 'failed' });
       }
     });

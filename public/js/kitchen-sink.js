@@ -91,6 +91,8 @@ function loadOverview(){
 	  	});
 	  	hidePreloader();
 	});
+
+	//getAllAddresses();
 }
 function loadAppraiserOverview(){
 	//TODO ajax calls for dynamic content
@@ -712,6 +714,11 @@ function validateNewUser(){
 		validated = false;
 		$('#user-new-email').css('border', '1px solid tomato');
 	}
+	$('#user-new-confirm-email').css('border', '1px solid #e5e5e5');
+	if(($('#user-new-email').val())!=($('#user-new-confirm-email').val())){
+		validated = false;
+		$('#user-new-confirm-email').css('border', '1px solid tomato');
+	}
 	$('#user-new-first-name').css('border', '1px solid #e5e5e5');
 	if(!validateTextFilled($('#user-new-first-name').val())){
 		validated = false;
@@ -798,11 +805,11 @@ function changeTab(element){
 	$('.main-nav-item.active').removeClass('active');
 	$(element).addClass('active');
 }
-function enableDisabled(){
-	$('.disableToggle').removeAttr("disabled");
+function enableDisabled(groupName){
+	$('.'+groupName).removeAttr("disabled");
 }
-function disableInput(){
-	$('.disableToggle').attr("disabled", "disabled");
+function disableInput(groupName){
+	$('.'+groupName).attr("disabled", "disabled");
 }
 function loadSelectRoles(){
 
@@ -835,7 +842,8 @@ function createUser(){
 	if(validateNewUser()){
 		insertUser($('#user-new-email').val(), $('#user-new-first-name').val(), $('#user-new-last-name').val(), 
 				$('#user-new-address-line-one').val(), $('#user-new-address-line-two').val(), $('#user-new-city').val(), 
-				$('#user-new-state').val(), $('#user-new-zip').val(), $('#user-new-role').val());
+				$('#user-new-state').val(), $('#user-new-zip').val(), $("#user-new-role option:selected").text(),
+				'loadUsersHome()');
 		$('#create-user-modal').modal('hide');
 		return true;
 	}
@@ -932,14 +940,23 @@ function hidePreloader(){
 /////////////////////////////////////////////////////////////////////////////////
 
 //DB Functions
-function insertUser(email, firstName, lastName, address1, address2, city, state, zip, role){
+function insertUser(email, firstName, lastName, address1, address2, city, state, zip, role, cb){
 
 	console.log('starting to post to insert new user');
-	$.post('/insertNewUser', {'email':email, 'firstName':firstName, 'lastName':lastName, 'addressLine1':address1, 'addressLine2':address2, 'city':city, 'state':state, 'zip':zip, 'role':role}, function(response){
+	$.post('/insertNewUser', {'email':email, 'firstName':firstName, 'lastName':lastName, 'addressLine1':address1, 
+			'addressLine2':address2, 'city':city, 'state':state, 'zip':zip, 'role':role}, function(response){
 
 		console.log('insertUser successful');
+		console.log(response);
+		eval(cb);
 	}, 'json').fail(function(){
 		console.log('Error on insertUser');
+	});
+}
+function getAllAddresses(){
+
+	$.post('/getAllAddresses', function(response){
+		console.log(response);
 	});
 }
 /////////////////////////////////////////////////////////////////////////////////

@@ -7,9 +7,6 @@
 
 
 /****** Import Libs *******/
-
-
-
 var log4js = require('log4js');
 var log = log4js.getLogger("OrderVO");
 var paException = require('../util/PAException');
