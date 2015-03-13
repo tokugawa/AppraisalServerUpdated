@@ -190,28 +190,9 @@ module.exports = function(passport){
 
   });
 
-  router.post('/updateUser', isLoggedIn, function(req, res){
+  router.post('/updateUserInfo', isLoggedIn, function(req, res){
 
-    Address.createNewAddress(req.param('addressLine1'), req.param('addressLine2'), req.param('city'), req.param('state'), req.param('zip'), '', '', '', '', '', '', function(result){
-
-      if(result){
-        console.log('insertNewAddress SUCCESS');
-        //TODO
-        var updateParams = {};
-
-        if(User.updateUser(req.param('username'), updateParams)){
-          console.log('insertNewUser SUCCESS');
-          res.send({'query' : result });
-        }
-        else{
-          console.log('insertNewUser Failed');
-          res.send({'query' : 'failed' });
-        }
-      }
-      else{
-        console.log('insertNewAddress Failed');
-        res.send({'query' : 'failed' });
-      }
+    
   });
 
   router.post('/getAllAddresses', isLoggedIn, function(req, res){
