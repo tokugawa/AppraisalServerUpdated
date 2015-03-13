@@ -144,7 +144,7 @@
 					  		</div>
 							<div class="form-group">
 								<div class="pull-right" >
-									<a class="btn btn-default" id="save-user-info" role="button" style="display:none;" onclick="disableInput('user-infor'); $('#save-user-info').css('display', 'none');">Save</a>
+									<a class="btn btn-default" id="save-user-info" role="button" style="display:none;" onclick="disableInput('user-infor'); $('#save-user-info').css('display', 'none'); updateUserInfo($('#user-id-title').val(), $('#user-email').val(), $('#user-password').val(), $('#user-first-name').val(), $('#user-last-name').val());">Save</a>
 						  			<a class="btn btn-default" role="button" onclick="enableDisabled('user-infor'); $('#save-user-info').css('display', 'inline-block');">Edit</a>
 				  				</div>
 							</div>

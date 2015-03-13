@@ -78,16 +78,22 @@ var UserVO = (function(){
 
 		this.updateUser = function(userId, fields, cb){
 
-			if(user.update({user_id: userId}, fields)){
-
-				log.info('Class:UserVO - Info: Update Error');
-				cb(err);
-			}
-			else{
-
-				log.info('Class:UserVO - Info: Successful');
-				cb(user.getUserWithOrders(userId, null));
-			}
+			console.log(fields);
+			user.findOne({user_id: userId, password: fields.password }, function findOneCb(err, data){
+				if(err){
+					log.error(err);
+					cb(null);
+				}
+				else{
+					if(!data){
+						//User and password doesn't exists, password must be updated
+						var newUser = new user();
+						newPassword = newUser.generateHash(fields.password);
+					}
+					user.update({user_id: userId}, fields);
+					cb(fields.user_id);
+				}
+			});
 		}
 
 		this.getAllUsers = function(cb){

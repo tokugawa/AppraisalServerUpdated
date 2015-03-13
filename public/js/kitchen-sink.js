@@ -255,9 +255,10 @@ function loadUsersIndividual(userId){
 			});
 
 			//Add user information
+			$('#user-email').val(result.query.user_id);
+			$('#user-password').val(result.query.password);
 			$('#user-first-name').val(result.query.firstName);
 			$('#user-last-name').val(result.query.lastName);
-			//$('#user-email').val(users[x].email);
 			//$('#user-phone-number').val(users[x].phoneNumber);
 			$('#user-address-one').val(result.query.user_address.address_line_1);
 			$('#user-address-two').val(result.query.user_address.address_line_2);
@@ -942,15 +943,23 @@ function hidePreloader(){
 //DB Functions
 function insertUser(email, firstName, lastName, address1, address2, city, state, zip, role, cb){
 
-	console.log('starting to post to insert new user');
 	$.post('/insertNewUser', {'email':email, 'firstName':firstName, 'lastName':lastName, 'addressLine1':address1, 
 			'addressLine2':address2, 'city':city, 'state':state, 'zip':zip, 'role':role}, function(response){
 
-		console.log('insertUser successful');
 		console.log(response);
 		eval(cb);
 	}, 'json').fail(function(){
 		console.log('Error on insertUser');
+	});
+}
+function updateUserInfo(username, email, password, firstName, lastName){
+
+	$.post('/updateUserInfo', {'username':username, 'email':email, 'password':password, 'firstName':firstName, 'lastName':lastName}, function(response){
+
+		console.log('updateUserInfo successful');
+		console.log(response);
+	}, 'json').fail(function(){
+		console.log('Error on updateUserInfo');
 	});
 }
 function getAllAddresses(){
