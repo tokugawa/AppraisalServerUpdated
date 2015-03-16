@@ -342,17 +342,21 @@ function loadOrdersIndividual(orderId){
 		//TODO
 		$('#order-number').html(orderId);
 		$.post('/getOrderById', {"order_id" : orderId}, function(result){
-
-			console.log(result);
-			$('#order-assigned-appraiser').val('Placeholder');
-			$('#order-customer').val('Placeholder');
-			$('#order-email').val('Placeholder');
-			//$('#order-phone-number').val('Placeholder');
-			$('#order-address-one').val(result.query.address_id.address_line_1);
-			$('#order-address-two').val(result.query.address_id.address_line_2);
-			$('#order-city').val(result.query.address_id.city);
-			$('#order-state').val(result.query.address_id.state);
-			$('#order-zip').val(result.query.address_id.zip);
+			if(result.query == "failed"){
+				console.log('getOrderById failed');
+			}
+			else{
+				console.log(result);
+				$('#order-assigned-appraiser').val('Placeholder');
+				$('#order-customer').val('Placeholder');
+				$('#order-email').val('Placeholder');
+				//$('#order-phone-number').val('Placeholder');
+				$('#order-address-one').val(result.query.address_id.address_line_1);
+				$('#order-address-two').val(result.query.address_id.address_line_2);
+				$('#order-city').val(result.query.address_id.city);
+				$('#order-state').val(result.query.address_id.state);
+				$('#order-zip').val(result.query.address_id.zip);
+			}
 			
 		}).done(function(){
 			hidePreloader();

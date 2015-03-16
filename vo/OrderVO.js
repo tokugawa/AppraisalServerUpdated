@@ -146,18 +146,19 @@ var OrderVO = (function(){
 		this.getOrderById = function(orderId, cb){
 
 			console.log(orderId);
-			Order.findOne({ "order_id" : orderId})
-			.populate('address_id')
+			Order.findOne({ "order_id" : orderId })
+			//.populate('address_id')
 			.exec(function(err, item){
 
 				if(item){
+					//console.log(item);
 					cb(item);
 				}
 				else{
+					//console.log(err);
 					cb(null);
 				}
 			});
-
 		}
 	}
 
