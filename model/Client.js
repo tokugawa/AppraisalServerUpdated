@@ -15,20 +15,13 @@ var conn = require('../util/ConnectDBInstance').getInstance();
 
 
 var ClientSchema = new mongoose.Schema({
-
 		
-		client_since		     				: { type: Date, default: Date.now },
 		client_name								: { type: String , required: true },
-		client_supply_address					: {	type: mongoose.Schema.Types.ObjectId, ref: 'AddressCollection' },
-		client_primary_contact					: {	type: Number , required: true },
-		client_support_email		 			: { type: String,  required: true }
-		
-
-		
-
+		client_address							: {	type: mongoose.Schema.Types.ObjectId, ref: 'AddressCollection' },
+		client_phone							: {	type: Number , required: true },
+		client_email		 					: { type: String,  required: true }
 	},
 	{
-
 		collection: 'ClientCollection'
 	}
 

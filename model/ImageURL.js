@@ -17,11 +17,9 @@ var ImageUrlSchema = new mongoose.Schema({
 
 		order_id: { type: Number, required: true, unique: true},
 		imageUrlList : [{ type: String }]
-
 	},
 
 	{
-
 		collection: 'ImageURLCollection'
 	}
 

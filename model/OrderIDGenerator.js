@@ -17,16 +17,12 @@ var conn = require('../util/ConnectDBInstance').getInstance();
 var OrderIDSchema = new mongoose.Schema({
 
 		orderID : { type: Number, required: true, unique: true,  min: 999999 , max: 99999999}
-
 	},
 	{
-
 		collection: 'OrderIDCollection'
 	}
 
 );
-
-
 
 module.exports = conn.model('OrderID', OrderIDSchema);
 

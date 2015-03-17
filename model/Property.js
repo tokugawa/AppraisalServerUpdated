@@ -16,21 +16,16 @@ var conn = require('../util/ConnectDBInstance').getInstance();
 
 var PropertySchema = new mongoose.Schema({
 
-		
-		property_primary_holder							: [{ type: mongoose.Schema.Types.ObjectId , ref: 'CustomerCollection' }],
-		property_secondary_holder	 					: [{ type: mongoose.Schema.Types.ObjectId , ref: 'CustomerCollection' }],
+		primary_holder_first_name						: { type: String  },
+		primary_holder_last_name						: { type: String  },
+		property_holders								: [{ type: mongoose.Schema.Types.ObjectId , ref: 'CustomerCollection' }],
 		property_address 								: { type: mongoose.Schema.Types.ObjectId , ref: 'AddressCollection' },
-		
-
 	},
 	{
-
 		collection: 'PropertyCollection'
 	}
 
 );
-
-
 
 
 module.exports = conn.model('PropertyCollection', PropertySchema);

@@ -17,20 +17,12 @@ var FormDataSchema = new mongoose.Schema({
 
 		order_id	: { type: Number, required: true, unique: true },
 		formData 	: { type: String, required: true }
-
 	},
 
 	{
-
 		collection: 'FormDataCollection'
 	}
-
-
-
-
 );
-
-
 
 // create the model and expose it to our app
 module.exports = conn.model('FormDataCollection', FormDataSchema);

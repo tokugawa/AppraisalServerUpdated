@@ -19,7 +19,7 @@ var orderID = require('../vo/OrderIDVO');
 var OrderSchema = new mongoose.Schema({
 
 		
-		order_id	 							: { type: Number , required: true, unique: true } ,
+		order_id	 							: { type: Number , required: true, unique: true },
         order_property_primary_holder	     	: { 
         	customer_id: { type: mongoose.Schema.Types.ObjectId, required: true, ref: 'CustomerCollection' }
         },

@@ -36,10 +36,8 @@ var UserSchema = new mongoose.Schema({
 		invitation_code		: { type: String, required: true }
 	},
 	{
-
 		collection: 'UsersCollection'
 	}
-
 )
 
 // generating a hash
