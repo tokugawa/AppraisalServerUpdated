@@ -1012,3 +1012,22 @@ function initCalendar(){
 	});*/
 }
 /////////////////////////////////////////////////////////////////////////////////
+
+//REST API V2 Test Functions
+function authenticate(){
+
+	$.post('/api/v2/authenticate', {user_id: '123', password: 'test'}, function(result){
+
+		console.log(result);
+	})
+	.fail(function(err){
+
+		console.log('authentication failed');
+		console.log(err);
+	})
+	.done(function(){
+
+		console.log('AUTHENTICATION DONE');
+	});
+}
+////////////////////////////////////////////////////////////////////////////////

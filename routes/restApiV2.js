@@ -1,15 +1,33 @@
+/*******************************************************************************************************/
+/*********************************restApiV2.js is the REST server routes.*******************************/
+/*
+/*========================================== Change Log ===============================================*/
+/* Author: Brandon Rodenmayer       Date: March, 2015         Desc: Initial Built
+/*******************************************************************************************************/
+
 var express = require('express');
 var router = express.Router();
+var mongoInterface = require('./MongoInterface.js').getInstance();
 ///////////////////////////////////////////////////////////////////////////
 
-module.exports = function(passport){
+module.exports = function(){
 
   //Generate temporary API Key
-  router.route('/authenticate')
+  router.route('/api/v2/authenticate')
     .post(function(req, res){
 
-      //TODO validate username and password and generate a temporary API Key
-      //res.send({api_key: api_key});
+      console.log('Starting to authenticate user API V2');
+      //console.log(req.param('user_id'));
+      //console.log(req.param('password'));
+      mongoInterface.authenticateUser({user_id: req.param('user_id'), password: req.param('password')}, function(result){
+
+        if(result){
+          res.send({query: result});
+        }
+        else{
+          res.send({query: 'failed'});
+        }
+      });
     });
 
   //REST API

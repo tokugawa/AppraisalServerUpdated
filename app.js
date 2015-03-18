@@ -121,6 +121,8 @@ else {
     app.post('/api/v1/formData', formData);
     app.get('/api/v1/formData', formData);
 
+    var apiV2 = require('./routes/restApiV2')();
+    app.use('/', apiV2);
     /**/
 
 

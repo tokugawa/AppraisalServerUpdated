@@ -13,16 +13,15 @@
 var mongoose 		= require('mongoose');
 var conn = require('../util/ConnectDBInstance').getInstance();
 
-var ApiKeySchema = new mongoose.Schema({
+var ApiKeysSchema = new mongoose.Schema({
 
-		user_id									: { type: String, required: true },
+		user_id									: { type: String, required: true, unique: true },
 		api_key			 						: { type: String, required: true  },
 		expiration								: { type: Date, required: true  }
 	},
 	{
-		collection: 'AddressCollection'
+		collection: 'ApiKeysCollection'
 	}
-
 );
 
-module.exports = conn.model('AddressCollection', AddressSchema);
+module.exports = conn.model('ApiKeysCollection', ApiKeysSchema);

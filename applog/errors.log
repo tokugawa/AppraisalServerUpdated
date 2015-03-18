@@ -1313,3 +1313,37 @@
 [2015-03-17 14:04:15.366] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout3/img/avatar2.jpg HTTP/1.1" 404 1154 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36"
 [2015-03-17 14:04:15.368] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout3/img/avatar3.jpg HTTP/1.1" 404 1154 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36"
 [2015-03-17 14:04:15.400] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout3/img/avatar1.jpg HTTP/1.1" 404 1154 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36"
+[2015-03-18 10:33:03.333] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout3/img/avatar3.jpg HTTP/1.1" 404 1154 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36"
+[2015-03-18 10:33:03.334] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout3/img/avatar2.jpg HTTP/1.1" 404 1154 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36"
+[2015-03-18 10:33:03.376] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout3/img/avatar1.jpg HTTP/1.1" 404 1154 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36"
+[2015-03-18 10:33:27.635] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout3/img/avatar2.jpg HTTP/1.1" 404 1154 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36"
+[2015-03-18 10:33:27.657] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout3/img/avatar3.jpg HTTP/1.1" 404 1154 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36"
+[2015-03-18 10:33:27.658] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout3/img/avatar1.jpg HTTP/1.1" 404 1154 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36"
+[2015-03-18 11:39:38.569] [ERROR] app - Worker server died (ID: 1, PID: 8572)
+[2015-03-18 11:39:51.215] [ERROR] app - Worker server died (ID: 1, PID: 9648)
+[2015-03-18 11:40:48.340] [ERROR] app - Worker server died (ID: 1, PID: 2900)
+[2015-03-18 11:41:08.684] [ERROR] app - Worker server died (ID: 1, PID: 9588)
+[2015-03-18 11:41:41.092] [ERROR] app - Worker server died (ID: 1, PID: 8940)
+[2015-03-18 11:43:26.020] [ERROR] app - Worker server died (ID: 1, PID: 8188)
+[2015-03-18 11:43:48.521] [ERROR] app - Worker server died (ID: 1, PID: 9596)
+[2015-03-18 11:44:06.868] [ERROR] app - Worker server died (ID: 1, PID: 9032)
+[2015-03-18 11:44:36.905] [ERROR] app - Worker server died (ID: 1, PID: 9036)
+[2015-03-18 13:39:26.664] [ERROR] http - 127.0.0.1 - - "POST /authenticate HTTP/1.1" 404 1154 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36"
+[2015-03-18 13:59:33.757] [ERROR] http - 127.0.0.1 - - "POST /authenticate HTTP/1.1" 404 1154 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36"
+[2015-03-18 14:24:29.672] [ERROR] app - Worker server died (ID: 1, PID: 4520)
+[2015-03-18 14:26:11.072] [ERROR] http - 127.0.0.1 - - "POST /api/v2/authenticate HTTP/1.1" 404 1139 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36"
+[2015-03-18 14:27:19.521] [ERROR] http - 127.0.0.1 - - "POST /api/v2/authenticate HTTP/1.1" 500 1275 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36"
+[2015-03-18 14:32:12.258] [ERROR] http - 127.0.0.1 - - "POST /api/v2/authenticate HTTP/1.1" 500 1275 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36"
+[2015-03-18 14:33:23.392] [ERROR] http - 127.0.0.1 - - "POST /api/v2/authenticate HTTP/1.1" 500 1275 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36"
+[2015-03-18 14:34:33.980] [ERROR] http - 127.0.0.1 - - "POST /api/v2/authenticate HTTP/1.1" 500 1275 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36"
+[2015-03-18 14:37:24.086] [ERROR] http - 127.0.0.1 - - "POST /api/v2/authenticate HTTP/1.1" 500 1275 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36"
+[2015-03-18 14:43:50.539] [ERROR] app - Worker server died (ID: 1, PID: 2000)
+[2015-03-18 14:44:27.323] [ERROR] app - Worker server died (ID: 1, PID: 11092)
+[2015-03-18 14:45:26.148] [ERROR] app - Worker server died (ID: 1, PID: 10964)
+[2015-03-18 14:46:15.029] [ERROR] app - Worker server died (ID: 1, PID: 10320)
+[2015-03-18 15:38:16.025] [ERROR] APIKeyVO - Class:APIKeysVO - Error Message: API Key already exists for user
+[2015-03-18 15:53:43.016] [ERROR] APIKeyVO - Class:APIKeysVO - Error Message: API Key already exists for user
+[2015-03-18 15:54:29.825] [ERROR] APIKeyVO - Class:APIKeysVO - Error Message: API Key already exists for user
+[2015-03-18 15:57:39.696] [ERROR] APIKeyVO - Class:APIKeysVO - Error Message: API Key already exists for user
+[2015-03-18 16:23:37.490] [ERROR] http - 127.0.0.1 - - "POST /api/v2/authenticate HTTP/1.1" 500 1562 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36"
+[2015-03-18 16:25:35.680] [ERROR] APIKeyVO - Class:APIKeysVO - Error Message: API Key already exists for user
