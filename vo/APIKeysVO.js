@@ -49,7 +49,11 @@ var APIKeysVO = (function(){
 					//console.log(data.expiration);
 					if(data.expiration < (new Date())){
 
-						newApiKeys.save(function saveAPIKeyCb(err, doc){
+						apiKeys.update(
+								{user_id: newApiKeys.user_id},
+								{api_key: newApiKeys.api_key, expiration: newApiKeys.expiration}
+						)
+						.exec(function(err, item){
 							if(err) {
 								log.error(err);
 								throw new paException('APIKeysVO', 'Save APIKeys Exception');
@@ -85,20 +89,22 @@ var APIKeysVO = (function(){
 			});
 		};
 
-		this.updateKey = function(userId, apiKey, cb){
+		this.updateKey = function(apiKey, cb){
 
-			apiKeys.findAndModify({
-				query: {user_id: userId, api_key: apiKey},
-				new: true,
-				update: {api_key: generateApiKey(), expiration: generateExpiration()}
-			})
+			console.log('APIKeysVO find and updateKey start');
+			
+			apiKeys.update(
+				{api_key: apiKey},//query
+				{$set:{expiration: generateExpiration()}}//update
+			)
 			.exec(function(err, item){
 
 				if(item){
-					console.log(item.api_key);
-					cb(item.api_key);
+					//console.log(item);
+					cb(item);
 				}
 				else{
+					//console.log('findAndModify FAILED');
 					cb(null);
 				}
 			});
@@ -106,6 +112,16 @@ var APIKeysVO = (function(){
 
 		this.destroyKey = function(userId, cb){
 
+			apiKeys.remove({user_id: userId})
+			.exec(function(err, item){
+				if(item){
+					console.log(item.api_key);
+					cb(item);
+				}
+				else{
+					cb(null);
+				}
+			});
 		}
 	};
 

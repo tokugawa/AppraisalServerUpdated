@@ -16,7 +16,7 @@ var conn = require('../util/ConnectDBInstance').getInstance();
 var ApiKeysSchema = new mongoose.Schema({
 
 		user_id									: { type: String, required: true, unique: true },
-		api_key			 						: { type: String, required: true  },
+		api_key			 						: { type: String, required: true, unique: true },
 		expiration								: { type: Date, required: true  }
 	},
 	{

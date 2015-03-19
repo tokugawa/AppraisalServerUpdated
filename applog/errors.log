@@ -1347,3 +1347,60 @@
 [2015-03-18 15:57:39.696] [ERROR] APIKeyVO - Class:APIKeysVO - Error Message: API Key already exists for user
 [2015-03-18 16:23:37.490] [ERROR] http - 127.0.0.1 - - "POST /api/v2/authenticate HTTP/1.1" 500 1562 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36"
 [2015-03-18 16:25:35.680] [ERROR] APIKeyVO - Class:APIKeysVO - Error Message: API Key already exists for user
+[2015-03-19 09:02:23.445] [ERROR] APIKeyVO - Class:APIKeysVO - Error Message: API Key already exists for user
+[2015-03-19 09:02:23.466] [ERROR] APIKeyVO - { name: 'MongoError',
+  err: 'E11000 duplicate key error index: app22192444.ApiKeysCollection.$user_id_1  dup key: { : "123" }',
+  code: 11000,
+  n: 0,
+  lastOp: '0',
+  connectionId: 44685,
+  ok: 1 }
+[2015-03-19 09:02:23.468] [ERROR] PAException - Exception at :APIKeysVO Save APIKeys Exception
+[2015-03-19 09:02:23.485] [ERROR] app - Worker server died (ID: 1, PID: 8076)
+[2015-03-19 09:09:24.207] [ERROR] app - Worker server died (ID: 1, PID: 4520)
+[2015-03-19 09:11:06.825] [ERROR] APIKeyVO - Class:APIKeysVO - Error Message: API Key already exists for user
+[2015-03-19 09:11:13.892] [ERROR] APIKeyVO - Class:APIKeysVO - Error Message: API Key already exists for user
+[2015-03-19 09:54:36.972] [ERROR] APIKeyVO - Class:APIKeysVO - Error Message: API Key already exists for user
+[2015-03-19 10:15:14.365] [ERROR] http - 127.0.0.1 - - "POST /api/v2/destroyApiKey HTTP/1.1" 404 1139 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36"
+[2015-03-19 10:16:13.506] [ERROR] http - 127.0.0.1 - - "POST /api/v2/destroyApiKey HTTP/1.1" 500 1547 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36"
+[2015-03-19 10:18:01.993] [ERROR] http - 127.0.0.1 - - "POST /api/v2/destroyApiKey HTTP/1.1" 500 1547 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36"
+[2015-03-19 10:19:09.214] [ERROR] APIKeyVO - Class:APIKeysVO - Error Message: API Key already exists for user
+[2015-03-19 10:19:13.616] [ERROR] http - 127.0.0.1 - - "POST /api/v2/destroyApiKey HTTP/1.1" 500 1547 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36"
+[2015-03-19 10:19:20.105] [ERROR] APIKeyVO - Class:APIKeysVO - Error Message: API Key already exists for user
+[2015-03-19 10:19:37.059] [ERROR] http - 127.0.0.1 - - "POST /api/v2/destroyApiKey HTTP/1.1" 500 1547 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36"
+[2015-03-19 11:10:27.825] [ERROR] http - 127.0.0.1 - - "GET /api/v2/users?api_key=1da075b1-b05b-43a9-97f0-e7aac608e66a&_=1426777825887 HTTP/1.1" 500 1561 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36"
+[2015-03-19 11:14:33.966] [ERROR] APIKeyVO - Class:APIKeysVO - Error Message: API Key already exists for user
+[2015-03-19 11:14:47.483] [ERROR] http - 127.0.0.1 - - "GET /api/v2/users?_=1426778072266 HTTP/1.1" 500 1561 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36"
+[2015-03-19 11:17:27.649] [ERROR] http - 127.0.0.1 - - "GET /api/v2/users?_=1426778072267 HTTP/1.1" 500 1561 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36"
+[2015-03-19 11:17:43.477] [ERROR] APIKeyVO - Class:APIKeysVO - Error Message: API Key already exists for user
+[2015-03-19 11:17:59.267] [ERROR] http - 127.0.0.1 - - "GET /api/v2/users?_=1426778072268 HTTP/1.1" 500 1561 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36"
+[2015-03-19 11:21:00.570] [ERROR] http - 127.0.0.1 - - "GET /api/v2/users?api_key=asd&_=1426778459303 HTTP/1.1" 500 1561 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36"
+[2015-03-19 11:21:55.170] [ERROR] APIKeyVO - Class:APIKeysVO - Error Message: API Key already exists for user
+[2015-03-19 11:22:05.187] [ERROR] http - 127.0.0.1 - - "GET /api/v2/users?api_key=currentApiKey&_=1426778506643 HTTP/1.1" 500 1561 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36"
+[2015-03-19 11:22:36.068] [ERROR] http - 127.0.0.1 - - "GET /api/v2/users?api_key=18ee2a80-5c25-4da6-b79f-c25f7c9e42d2&_=1426778550408 HTTP/1.1" 500 1561 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36"
+[2015-03-19 11:26:28.301] [ERROR] app - Worker server died (ID: 1, PID: 9428)
+[2015-03-19 11:27:27.450] [ERROR] http - 127.0.0.1 - - "GET /api/v2/users?api_key=18ee2a80-5c25-4da6-b79f-c25f7c9e42d2&_=1426778550409 HTTP/1.1" 500 1561 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36"
+[2015-03-19 11:31:11.951] [ERROR] http - 127.0.0.1 - - "GET /api/v2/users?api_key=18ee2a80-5c25-4da6-b79f-c25f7c9e42d2&_=1426778550410 HTTP/1.1" 500 1561 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36"
+[2015-03-19 11:32:01.736] [ERROR] app - Worker server died (ID: 1, PID: 9560)
+[2015-03-19 11:32:17.327] [ERROR] http - 127.0.0.1 - - "GET /api/v2/users?api_key=18ee2a80-5c25-4da6-b79f-c25f7c9e42d2&_=1426778550411 HTTP/1.1" 500 1561 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36"
+[2015-03-19 11:33:39.443] [ERROR] http - 127.0.0.1 - - "GET /api/v2/users?api_key=18ee2a80-5c25-4da6-b79f-c25f7c9e42d2&_=1426778550412 HTTP/1.1" 500 1561 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36"
+[2015-03-19 11:36:59.162] [ERROR] app - Worker server died (ID: 1, PID: 9416)
+[2015-03-19 11:37:35.981] [ERROR] http - 127.0.0.1 - - "GET /api/v2/users?api_key=18ee2a80-5c25-4da6-b79f-c25f7c9e42d2&_=1426778550413 HTTP/1.1" 500 1561 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36"
+[2015-03-19 11:40:58.733] [ERROR] app - Worker server died (ID: 1, PID: 10404)
+[2015-03-19 11:41:17.673] [ERROR] http - 127.0.0.1 - - "GET /api/v2/users?api_key=18ee2a80-5c25-4da6-b79f-c25f7c9e42d2&_=1426778550414 HTTP/1.1" 500 1561 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36"
+[2015-03-19 11:42:57.827] [ERROR] app - Worker server died (ID: 1, PID: 10788)
+[2015-03-19 11:43:13.758] [ERROR] http - 127.0.0.1 - - "GET /api/v2/users?api_key=18ee2a80-5c25-4da6-b79f-c25f7c9e42d2&_=1426778550415 HTTP/1.1" 500 1561 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36"
+[2015-03-19 13:14:21.350] [ERROR] http - 127.0.0.1 - - "GET /api/v2/users?api_key=18ee2a80-5c25-4da6-b79f-c25f7c9e42d2&_=1426778550416 HTTP/1.1" 500 1561 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36"
+[2015-03-19 13:14:33.758] [ERROR] APIKeyVO - Class:APIKeysVO - Error Message: API Key already exists for user
+[2015-03-19 13:15:08.016] [ERROR] http - 127.0.0.1 - - "GET /api/v2/users?api_key=ffe6bb4b-22ed-4582-8dd0-bfcbeec78767&_=1426778550417 HTTP/1.1" 500 1561 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36"
+[2015-03-19 13:26:18.431] [ERROR] http - 127.0.0.1 - - "GET /api/v2/users?api_key=ffe6bb4b-22ed-4582-8dd0-bfcbeec78767&_=1426778550418 HTTP/1.1" 500 1561 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36"
+[2015-03-19 13:37:27.666] [ERROR] http - 127.0.0.1 - - "GET /api/v2/users?api_key=ffe6bb4b-22ed-4582-8dd0-bfcbeec78767&_=1426778550419 HTTP/1.1" 500 1561 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36"
+[2015-03-19 13:41:46.009] [ERROR] http - 127.0.0.1 - - "GET /api/v2/users?api_key=ffe6bb4b-22ed-4582-8dd0-bfcbeec78767&_=1426778550421 HTTP/1.1" 500 1561 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36"
+[2015-03-19 13:43:06.910] [ERROR] http - 127.0.0.1 - - "GET /api/v2/users?api_key=ffe6bb4b-22ed-4582-8dd0-bfcbeec78767&_=1426778550422 HTTP/1.1" 500 1561 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36"
+[2015-03-19 13:46:41.948] [ERROR] app - Worker server died (ID: 1, PID: 9824)
+[2015-03-19 13:49:01.649] [ERROR] app - Worker server died (ID: 1, PID: 7644)
+[2015-03-19 13:49:22.130] [ERROR] app - Worker server died (ID: 1, PID: 11084)
+[2015-03-19 13:51:11.272] [ERROR] http - 127.0.0.1 - - "GET /api/v2/users?api_key=4e713366-a627-4956-947b-05b3cfb7fee6&_=1426778550430 HTTP/1.1" 500 1561 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36"
+[2015-03-19 14:01:15.387] [ERROR] http - 127.0.0.1 - - "GET /api/v2/users?api_key=4e713366-a627-4956-947b-05b3cfb7fee6&_=1426778550431 HTTP/1.1" 500 1561 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36"
+[2015-03-19 14:03:19.465] [ERROR] app - Worker server died (ID: 1, PID: 1904)
+[2015-03-19 14:05:39.666] [ERROR] app - Worker server died (ID: 1, PID: 1904)

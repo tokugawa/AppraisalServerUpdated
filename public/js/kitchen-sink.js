@@ -1014,11 +1014,14 @@ function initCalendar(){
 /////////////////////////////////////////////////////////////////////////////////
 
 //REST API V2 Test Functions
-function authenticate(){
+var currentApiKey = '';
+
+function v2Authenticate(){
 
 	$.post('/api/v2/authenticate', {user_id: '123', password: 'test'}, function(result){
 
 		console.log(result);
+		currentApiKey = result.query;
 	})
 	.fail(function(err){
 
@@ -1028,6 +1031,39 @@ function authenticate(){
 	.done(function(){
 
 		console.log('AUTHENTICATION DONE');
+	});
+}
+function v2DeleteKey(){
+
+	$.post('/api/v2/destroyApiKey/123', function(result){
+
+		console.log(result);
+		currentApiKey = '';
+	})
+	.fail(function(err){
+
+		console.log('destroy failed');
+		console.log(err);
+	})
+	.done(function(){
+
+		console.log('DESTROY DONE');
+	});
+}
+function v2GetUsers(){
+
+	$.get('/api/v2/users', {api_key: currentApiKey}, function(result){
+
+		console.log(result);
+	})
+	.fail(function(err){
+
+		console.log('getUsers failed');
+		console.log(err);
+	})
+	.done(function(){
+
+		console.log('GET USERS DONE');
 	});
 }
 ////////////////////////////////////////////////////////////////////////////////

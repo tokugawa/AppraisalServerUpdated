@@ -26,34 +26,51 @@ var mongoInterface = (function(){
 		this.authenticateUser = function(options, cb){
 
 			console.log('About to validateUser in mongoInterface');
+			console.log(options.api_key);
 			//if(options.password && options.user_id){
-			if(true){
+			User.validateUser(options.user_id, options.password, function(result){
 
-				User.validateUser(options.user_id, options.password, function(result){
+				console.log('mongoInterface validateUser');
+				if(result){
+					APIKeys.addKey(options.user_id, function(keyResult){
 
-					console.log('mongoInterface validateUser');
-					if(result){
-						APIKeys.addKey(options.user_id, function(keyResult){
+						if(keyResult){
+							//console.log(keyResult);
+							cb(keyResult);
+						}
+						else{
+							cb(null);
+						}
+					});
+				}
+				else{
+					cb(null);
+				}
+			});
+		}
 
-							if(keyResult){
-								console.log(keyResult);
-								cb(keyResult);
-							}
-							else{
-								cb(null);
-							}
-						});
-					}
-					else{
-						cb(null);
-					}
-				});
-			}
-			else if(options.api_key && options.user_id){
+		this.updateKey = function(options, cb){
 
-				APIKeys.updateKey(options.user_id, options.api_key, function(result){
+			console.log('About to valiadate and updateKey in mongoInterface');
+			
+			APIKeys.updateKey(options.api_key, function(result){
 
-					console.log('mongoInterface updateKey with validation');
+				console.log('mongoInterface updateKey with validation');
+				if(result){
+					console.log(result);
+					cb(result);
+				}
+				else{
+					cb(null);
+				}
+			});
+		}
+
+		this.destroyApiKey = function(options, cb){
+
+			APIKeys.destroyKey(options.user_id, function(result){
+
+				console.log('mongoInterface destroyApiKey');
 					if(result){
 						console.log(result);
 						cb(result);
@@ -61,16 +78,19 @@ var mongoInterface = (function(){
 					else{
 						cb(null);
 					}
-				});
-			}
-			else{
-				cb(null);
-			}
+			});
 		}
 
 		this.getUsers = function(options, cb){
 
-			//TODO return a list of users
+			User.getAllUsers(function(result){
+		      if(result){
+		        cb(result);
+		      }
+		      else{
+		       	cb(null);
+		      }
+		    });
 		}
 	}
 

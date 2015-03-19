@@ -29,18 +29,50 @@ module.exports = function(){
         }
       });
     });
+  //Destroy current API Key for user
+  router.route('/api/v2/destroyApiKey/:userId')
+    .post(function(req, res){
 
-  //REST API
-  router.route('/users')
+      console.log('Starting to destroy the current API Key for '+req.params.userId);
+      mongoInterface.destroyApiKey({user_id: req.params.userId}, function(result){
+
+        if(result){
+          res.send({query: 'success'});
+        }
+        else{
+          res.send({query: 'failed'});
+        }
+      });
+    });
+
+  //Users
+  router.route('/api/v2/users')
     .post(function(req, res){
 
       //TODO insert new user
     })
     .get(function(req, res){
 
-      //TODO get list of all users
+      mongoInterface.updateKey({api_key: req.param('api_key')}, function(result){
+
+        if(result){
+          console.log('key updated');
+          mongoInterface.getUsers({}, function(result){
+
+            if(result){
+              res.send({query: result});
+            }
+            else{
+              res.send({query: 'failed'});
+            }
+          });
+        }
+        else{
+          res.send({query: 'failed'});
+        }
+      });
     });
-  router.route('/users/:user_id')
+  router.route('/api/v2/users/:user_id')
     .get(function(req, res){
 
       //TODO get specific user
@@ -53,7 +85,8 @@ module.exports = function(){
 
       //TODO delete specific user by user_id
     });
-  router.route('/tasks/user_id')
+  //Tasks
+  router.route('/api/v2/tasks/user_id')
     .post(function(req, res){
 
       //TODO insert a new task for user
@@ -62,7 +95,7 @@ module.exports = function(){
 
       //TODO get list of all tasks for a user
     });
-  router.route('/tasks/:task_id')
+  router.route('/api/v2/tasks/:task_id')
     .get(function(req, res){
 
       //TODO get specific task
@@ -75,7 +108,8 @@ module.exports = function(){
 
       //TODO delete a specific task
     });
-  router.route('/orders')
+  //Orders
+  router.route('/api/v2/orders')
     .post(function(req, res){
 
       //TODO insert a new order
@@ -84,7 +118,7 @@ module.exports = function(){
 
       //TODO get list of all orders
     });
-  router.route('/orders/:order_id')
+  router.route('/api/v2/orders/:order_id')
     .get(function(req, res){
 
       //TODO get specific information for an order
@@ -97,7 +131,8 @@ module.exports = function(){
 
       //TODO delete a specific order
     });
-  router.route('/customers')
+  //Customers
+  router.route('/api/v2/customers')
     .post(function(req, res){
 
       //TODO insert a new customer
@@ -106,7 +141,7 @@ module.exports = function(){
 
       //TODO get list of all customers
     });
-  router.route('/customers/:customer_id')
+  router.route('/api/v2/customers/:customer_id')
     .get(function(req, res){
 
       //TODO get specific information for a customer
@@ -119,7 +154,8 @@ module.exports = function(){
 
       //TODO delete a specific customer
     });
-  router.route('/properties')
+  //Properties
+  router.route('/api/v2/properties')
     .post(function(req, res){
 
       //TODO insert a new property
@@ -128,7 +164,7 @@ module.exports = function(){
 
       //TODO get list of all properties
     });
-  router.route('/properties/:property_id')
+  router.route('/api/v2/properties/:property_id')
     .get(function(req, res){
 
       //TODO get specific property
@@ -141,7 +177,8 @@ module.exports = function(){
 
       //TODO delete a specific property
     });
-  router.route('/clients')
+  //Clients
+  router.route('/api/v2/clients')
     .post(function(req, res){
 
       //TODO insert a new client
@@ -150,7 +187,7 @@ module.exports = function(){
 
       //TODO get list of all clients
     });
-  router.route('/clients/:client_id')
+  router.route('/api/v2/clients/:client_id')
     .get(function(req, res){
 
       //TODO get specific client
@@ -163,7 +200,8 @@ module.exports = function(){
 
       //TODO delete a specific client
     });
-  router.route('/addresses')
+  //Addresses
+  router.route('/api/v2/addresses')
     .post(function(req, res){
 
       //TODO insert a new address
@@ -172,7 +210,7 @@ module.exports = function(){
 
       //TODO get list of all addresses
     });
-  router.route('/addresses/:address_id')
+  router.route('/api/v2/addresses/:address_id')
     .get(function(req, res){
 
       //TODO get specific address
