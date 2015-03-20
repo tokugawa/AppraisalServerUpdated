@@ -1066,4 +1066,79 @@ function v2GetUsers(){
 		console.log('GET USERS DONE');
 	});
 }
+function v2GetUser(){
+
+	$.get('/api/v2/users/123', {api_key: currentApiKey}, function(result){
+
+		console.log(result);
+	})
+	.fail(function(err){
+
+		console.log('getUser failed');
+		console.log(err);
+	})
+	.done(function(){
+
+		console.log('GET USER DONE');
+	});
+}
+function v2GetAddresses(){
+
+	$.get('/api/v2/addresses', {api_key: currentApiKey}, function(result){
+
+		console.log(result);
+	})
+	.fail(function(err){
+
+		console.log('getAddresses failed');
+		console.log(err);
+	})
+	.done(function(){
+
+		console.log('GET ADDRESSES DONE');
+	});
+}
+function v2CreateAddress(){
+
+	$.post('/api/v2/addresses', 
+		{
+			api_key: currentApiKey,
+			address_line_1: 'Another Test Address Line One',
+          	address_line_2: 'Line Two',
+          	city: 'Charlotte',
+          	state: 'NC',
+          	zip: '28262',
+          	county: 'Mecklenburg',
+          	lat: '',
+          	long: ''
+		}, function(result){
+
+		console.log(result);
+	})
+	.fail(function(err){
+
+		console.log('createAddresses failed');
+		console.log(err);
+	})
+	.done(function(){
+
+		console.log('CREATE ADDRESSES DONE');
+	});
+}
+function v2GetAddress(){
+
+	$.get('/api/v2/addresses/550c71068c440514226635d0', {api_key: currentApiKey}, function(result){
+
+		console.log(result);
+	})
+	.fail(function(err){
+
+		console.log('getAddress failed');
+		console.log(err);
+	})
+	.done(function(){
+
+		console.log('GET ADDRESS DONE');
+	});
+}
 ////////////////////////////////////////////////////////////////////////////////

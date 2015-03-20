@@ -30,11 +30,11 @@ module.exports = function(){
       });
     });
   //Destroy current API Key for user
-  router.route('/api/v2/destroyApiKey/:userId')
+  router.route('/api/v2/destroyApiKey/:user_id')
     .post(function(req, res){
 
       console.log('Starting to destroy the current API Key for '+req.params.userId);
-      mongoInterface.destroyApiKey({user_id: req.params.userId}, function(result){
+      mongoInterface.destroyApiKey({user_id: req.params.user_id}, function(result){
 
         if(result){
           res.send({query: 'success'});
@@ -49,7 +49,36 @@ module.exports = function(){
   router.route('/api/v2/users')
     .post(function(req, res){
 
-      //TODO insert new user
+      //TODO CHECK ABILITY
+      console.log('Inserting a new user REST');
+      mongoInterface.updateKey({api_key: req.param('api_key')}, function(result){
+
+        if(result){
+          console.log('key updated');
+          mongoInterface.createUser(
+            {
+              email: req.param('email'),
+              password: req.param('password'),
+              first_name: req.param('first_name'),
+              last_name: req.param('last_name'),
+              address_id: req.param('address_id'),
+              user_active: false,
+              role: req.param('role')
+            }, 
+            function(result){
+
+              if(result){
+                res.send({query: result});
+              }
+              else{
+                res.send({query: 'failed'});
+              }
+            });
+        }
+        else{
+          res.send({query: 'failed'});
+        }
+      });
     })
     .get(function(req, res){
 
@@ -75,7 +104,24 @@ module.exports = function(){
   router.route('/api/v2/users/:user_id')
     .get(function(req, res){
 
-      //TODO get specific user
+      mongoInterface.updateKey({api_key: req.param('api_key')}, function(result){
+
+        if(result){
+          console.log('key updated');
+          mongoInterface.getUser({user_id: req.params.user_id}, function(result){
+
+            if(result){
+              res.send({query: result});
+            }
+            else{
+              res.send({query: 'failed'});
+            }
+          });
+        }
+        else{
+          res.send({query: 'failed'});
+        }
+      });
     })
     .put(function(req, res){
 
@@ -204,16 +250,78 @@ module.exports = function(){
   router.route('/api/v2/addresses')
     .post(function(req, res){
 
-      //TODO insert a new address
+      mongoInterface.updateKey({api_key: req.param('api_key')}, function(result){
+
+        if(result){
+          console.log('key updated');
+          mongoInterface.createAddress(
+            {
+              address_line_1: req.param('address_line_1'),
+              address_line_2: req.param('address_line_2'),
+              city: req.param('city'),
+              state: req.param('state'),
+              zip: req.param('zip'),
+              county: req.param('county'),
+              lat: req.param('lat'),
+              long: req.param('long')
+            }, function(result){
+
+            if(result){
+              res.send({query: result});
+            }
+            else{
+              res.send({query: 'failed'});
+            }
+          });
+        }
+        else{
+          res.send({query: 'failed'});
+        }
+      });
     })
     .get(function(req, res){
 
-      //TODO get list of all addresses
+      mongoInterface.updateKey({api_key: req.param('api_key')}, function(result){
+
+        if(result){
+          console.log('key updated');
+          mongoInterface.getAddresses({}, function(result){
+
+            if(result){
+              res.send({query: result});
+            }
+            else{
+              res.send({query: 'failed'});
+            }
+          });
+        }
+        else{
+          res.send({query: 'failed'});
+        }
+      });
     });
   router.route('/api/v2/addresses/:address_id')
     .get(function(req, res){
 
       //TODO get specific address
+      mongoInterface.updateKey({api_key: req.param('api_key')}, function(result){
+
+        if(result){
+          console.log('key updated');
+          mongoInterface.getAddress({address_id: req.params.address_id}, function(result){
+
+            if(result){
+              res.send({query: result});
+            }
+            else{
+              res.send({query: 'failed'});
+            }
+          });
+        }
+        else{
+          res.send({query: 'failed'});
+        }
+      });
     })
     .put(function(req, res){
 

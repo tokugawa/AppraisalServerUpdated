@@ -70,7 +70,7 @@ var AddressVO = (function(){
 						else {
 
 							log.info('Class:AddressVO - Info: Successful');
-							cb(true);
+							cb(doc._id);
 						}
 					});
 				}
@@ -100,6 +100,20 @@ var AddressVO = (function(){
 				else{
 					//console.log(err);
 					cb(null)
+				}
+			});
+		}
+
+		this.getAddress = function(addressId, cb){
+
+			address.findOne({_id: addressId})
+			.exec(function(err, item){
+
+				if(item){
+					cb(item);
+				}
+				else{
+					cb(null);
 				}
 			});
 		}
