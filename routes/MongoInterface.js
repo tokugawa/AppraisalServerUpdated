@@ -17,6 +17,7 @@ var User = require('../vo/UserVO').getInstance();
 var Order = require('../vo/OrderVO').getInstance();
 var Address = require('../vo/AddressVO').getInstance();
 var APIKeys = require('../vo/APIKeysVO').getInstance();
+var Client = require('../vo/ClientVO').getInstance();
 
 var mongoInterface = (function(){
 
@@ -157,6 +158,50 @@ var mongoInterface = (function(){
 		this.getAddress = function(options, cb){
 
 			Address.getAddress(options.address_id, function(result){
+
+				if(result){
+					cb(result);
+			    }
+		      	else{
+		       		cb(null);
+		      	}
+			});
+		}
+
+		//Get all clients
+		this.getClients = function(options, cb){
+
+			Client.getAllClients(function(result){
+
+				if(result){
+					cb(result);
+			    }
+		      	else{
+		       		cb(null);
+		      	}
+			});
+		}
+
+		//Create a client
+		this.createClient = function(options, cb){
+
+			console.log(options);
+			Client.createNewClient(options.name, options.address_id, options.phone, options.email,
+				function(result){
+
+					if(result){
+						cb(result);
+				    }
+			      	else{
+			       		cb(null);
+			      	}
+				});
+		}
+
+		//Get a single client
+		this.getClient = function(options, cb){
+
+			Client.getClient(options.client_id, function(result){
 
 				if(result){
 					cb(result);

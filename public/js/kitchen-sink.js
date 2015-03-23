@@ -1141,4 +1141,60 @@ function v2GetAddress(){
 		console.log('GET ADDRESS DONE');
 	});
 }
+function v2CreateClient(){
+
+	$.post('/api/v2/clients', 
+		{
+			api_key: currentApiKey,
+			name: 'Appraisers Corp.',
+			address_id: '550c71068c440514226635d0',
+			phone: '1234567890',
+			email: 'admin@appraiesrs.com'
+
+		}, function(result){
+
+		console.log(result);
+	})
+	.fail(function(err){
+
+		console.log('createClient failed');
+		console.log(err);
+	})
+	.done(function(){
+
+		console.log('CREATE CLIENT DONE');
+	});
+}
+function v2GetClients(){
+
+	$.get('/api/v2/clients', {api_key: currentApiKey}, function(result){
+
+		console.log(result);
+	})
+	.fail(function(err){
+
+		console.log('getClients failed');
+		console.log(err);
+	})
+	.done(function(){
+
+		console.log('GET CLIENTS DONE');
+	});
+}
+function v2GetClient(){
+
+	$.get('/api/v2/clients/551027e1c1c164f80fb0fd85', {api_key: currentApiKey}, function(result){
+
+		console.log(result);
+	})
+	.fail(function(err){
+
+		console.log('getClient failed');
+		console.log(err);
+	})
+	.done(function(){
+
+		console.log('GET CLIENT DONE');
+	});
+}
 ////////////////////////////////////////////////////////////////////////////////

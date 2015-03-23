@@ -27,7 +27,4 @@ var ClientSchema = new mongoose.Schema({
 
 );
 
-
-
-
 module.exports = conn.model('ClientCollection', ClientSchema);

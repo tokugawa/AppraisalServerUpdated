@@ -227,16 +227,76 @@ module.exports = function(){
   router.route('/api/v2/clients')
     .post(function(req, res){
 
-      //TODO insert a new client
+      //TODO TEST
+      mongoInterface.updateKey({api_key: req.param('api_key')}, function(result){
+
+        if(result){
+          console.log('key updated');
+          mongoInterface.createClient(
+            {
+              name: req.param('name'),
+              address_id: req.param('address_id'),
+              phone: req.param('phone'),
+              email: req.param('email')
+
+            }, function(result){
+
+            if(result){
+              res.send({query: result});
+            }
+            else{
+              res.send({query: 'failed'});
+            }
+          });
+        }
+        else{
+          res.send({query: 'failed'});
+        }
+      });
     })
     .get(function(req, res){
 
-      //TODO get list of all clients
+      mongoInterface.updateKey({api_key: req.param('api_key')}, function(result){
+
+        if(result){
+          console.log('key updated');
+          mongoInterface.getClients({}, function(result){
+
+            if(result){
+              res.send({query: result});
+            }
+            else{
+              res.send({query: 'failed'});
+            }
+          });
+        }
+        else{
+          res.send({query: 'failed'});
+        }
+      });
     });
   router.route('/api/v2/clients/:client_id')
     .get(function(req, res){
 
-      //TODO get specific client
+      //TODO TEST
+      mongoInterface.updateKey({api_key: req.param('api_key')}, function(result){
+
+        if(result){
+          console.log('key updated');
+          mongoInterface.getClient({client_id: req.params.client_id}, function(result){
+
+            if(result){
+              res.send({query: result});
+            }
+            else{
+              res.send({query: 'failed'});
+            }
+          });
+        }
+        else{
+          res.send({query: 'failed'});
+        }
+      });
     })
     .put(function(req, res){
 

@@ -1411,3 +1411,10 @@
 [2015-03-20 15:25:47.975] [ERROR] APIKeyVO - Class:APIKeysVO - Error Message: API Key already exists for user
 [2015-03-20 15:25:58.011] [ERROR] http - 127.0.0.1 - - "POST /api/v2/address/550c71068c440514226635d0 HTTP/1.1" 404 1139 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36"
 [2015-03-20 15:26:30.407] [ERROR] http - 127.0.0.1 - - "POST /api/v2/addresses/550c71068c440514226635d0 HTTP/1.1" 404 1139 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36"
+[2015-03-23 10:36:04.703] [ERROR] app - Worker server died (ID: 1, PID: 4908)
+[2015-03-23 10:36:52.698] [ERROR] APIKeyVO - Class:APIKeysVO - Error Message: API Key already exists for user
+[2015-03-23 10:42:54.825] [ERROR] app - Worker server died (ID: 1, PID: 8460)
+[2015-03-23 10:44:57.211] [ERROR] app - Worker server died (ID: 1, PID: 8216)
+[2015-03-23 10:46:07.276] [ERROR] app - Worker server died (ID: 1, PID: 5352)
+[2015-03-23 10:46:43.344] [ERROR] app - Worker server died (ID: 1, PID: 10044)
+[2015-03-23 10:48:31.185] [ERROR] app - Worker server died (ID: 1, PID: 6356)
