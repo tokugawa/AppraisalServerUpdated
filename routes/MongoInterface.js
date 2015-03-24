@@ -18,6 +18,7 @@ var Order = require('../vo/OrderVO').getInstance();
 var Address = require('../vo/AddressVO').getInstance();
 var APIKeys = require('../vo/APIKeysVO').getInstance();
 var Client = require('../vo/ClientVO').getInstance();
+var Customer = require('../vo/CustomerVO').getInstance();
 
 var mongoInterface = (function(){
 
@@ -202,6 +203,98 @@ var mongoInterface = (function(){
 		this.getClient = function(options, cb){
 
 			Client.getClient(options.client_id, function(result){
+
+				if(result){
+					cb(result);
+			    }
+		      	else{
+		       		cb(null);
+		      	}
+			});
+		}
+
+		//Get all customers
+		this.getCustomers = function(options, cb){
+
+			//TODO Test
+			Customer.getAllCustomers(function(result){
+
+				if(result){
+					cb(result);
+			    }
+		      	else{
+		       		cb(null);
+		      	}
+			});
+		}
+
+		//Create a customer
+		this.createCustomer = function(options, cb){
+
+			//TODO TEST
+			console.log(options);
+			Customer.createNewCustomer(options.first_name, options.last_name, options.address_id, options.primary_phone, options.cell_phone, options.work_phone, options.email,
+				function(result){
+
+					if(result){
+						cb(result);
+				    }
+			      	else{
+			       		cb(null);
+			      	}
+				}
+			);
+		}
+
+		//Get a single customer
+		this.getCustomer = function(options, cb){
+
+			//TODO TEST
+			Customer.getCustomer(options.customer_id, function(result){
+
+				if(result){
+					cb(result);
+			    }
+		      	else{
+		       		cb(null);
+		      	}
+			});
+		}
+
+		//Get all properties
+		this.getProperties = function(options, cb){
+
+			Property.getAllProperties(function(result){
+
+				if(result){
+					cb(result);
+			    }
+		      	else{
+		       		cb(null);
+		      	}
+			});
+		}
+
+		//Create a property
+		this.createProperty = function(options, cb){
+
+			console.log(options);
+			Property.createNewClient(options.primary_holder_first_name, options.primary_holder_last_name, options.property_holders, options.address_id,
+				function(result){
+
+					if(result){
+						cb(result);
+				    }
+			      	else{
+			       		cb(null);
+			      	}
+				});
+		}
+
+		//Get a single property
+		this.getProperty = function(options, cb){
+
+			Property.getProperty(options.propertys_id, function(result){
 
 				if(result){
 					cb(result);

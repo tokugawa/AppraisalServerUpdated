@@ -24,7 +24,7 @@ var UserVO = (function(){
 	var instance;
 	function createInstance() {
 
-		this.createNewUser = function (userName, password, firstName, lastName, user_address, isUserActive, userRole, cb  ){
+		this.createNewUser = function (userName, password, firstName, lastName, user_address, isUserActive, userRole, cb){
 
 			log.info(' Class:UserVO Method:createNewUser starts');
 			var newUser = new user();

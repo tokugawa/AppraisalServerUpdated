@@ -1418,3 +1418,10 @@
 [2015-03-23 10:46:07.276] [ERROR] app - Worker server died (ID: 1, PID: 5352)
 [2015-03-23 10:46:43.344] [ERROR] app - Worker server died (ID: 1, PID: 10044)
 [2015-03-23 10:48:31.185] [ERROR] app - Worker server died (ID: 1, PID: 6356)
+[2015-03-24 07:52:09.861] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout3/img/avatar2.jpg HTTP/1.1" 404 1139 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36"
+[2015-03-24 07:52:10.202] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout3/img/avatar3.jpg HTTP/1.1" 404 1139 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36"
+[2015-03-24 07:52:10.257] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout3/img/avatar1.jpg HTTP/1.1" 404 1139 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36"
+[2015-03-24 10:28:19.399] [ERROR] APIKeyVO - Class:APIKeysVO - Error Message: API Key already exists for user
+[2015-03-24 10:29:11.576] [ERROR] app - Worker server died (ID: 1, PID: 9644)
+[2015-03-24 10:29:29.166] [ERROR] app - Worker server died (ID: 1, PID: 9964)
+[2015-03-24 10:30:16.608] [ERROR] app - Worker server died (ID: 1, PID: 9380)

@@ -181,16 +181,77 @@ module.exports = function(){
   router.route('/api/v2/customers')
     .post(function(req, res){
 
-      //TODO insert a new customer
+      mongoInterface.updateKey({api_key: req.param('api_key')}, function(result){
+
+        if(result){
+          console.log('key updated');
+          mongoInterface.createCustomer(
+            {
+              first_name: req.param('first_name'),
+              last_name: req.param('last_name'),
+              address_id: req.param('address_id'),
+              primary_phone: req.param('primary_phone'),
+              work_phone: req.param('work_phone'),
+              cell_phone: req.param('cell_phone'),
+              email: req.param('email')
+
+            }, function(result){
+
+            if(result){
+              res.send({query: result});
+            }
+            else{
+              res.send({query: 'failed'});
+            }
+          });
+        }
+        else{
+          res.send({query: 'failed'});
+        }
+      });
     })
     .get(function(req, res){
 
-      //TODO get list of all customers
+      mongoInterface.updateKey({api_key: req.param('api_key')}, function(result){
+
+        if(result){
+          console.log('key updated');
+          mongoInterface.getCustomers({}, function(result){
+
+            if(result){
+              res.send({query: result});
+            }
+            else{
+              res.send({query: 'failed'});
+            }
+          });
+        }
+        else{
+          res.send({query: 'failed'});
+        }
+      });
     });
   router.route('/api/v2/customers/:customer_id')
     .get(function(req, res){
 
-      //TODO get specific information for a customer
+      mongoInterface.updateKey({api_key: req.param('api_key')}, function(result){
+
+        if(result){
+          console.log('key updated');
+          mongoInterface.getCustomer({customer_id: req.params.customer_id}, function(result){
+
+            if(result){
+              res.send({query: result});
+            }
+            else{
+              res.send({query: 'failed'});
+            }
+          });
+        }
+        else{
+          res.send({query: 'failed'});
+        }
+      });
     })
     .put(function(req, res){
 
@@ -204,16 +265,74 @@ module.exports = function(){
   router.route('/api/v2/properties')
     .post(function(req, res){
 
-      //TODO insert a new property
+      mongoInterface.updateKey({api_key: req.param('api_key')}, function(result){
+
+        if(result){
+          console.log('key updated');
+          mongoInterface.createProperty(
+            {
+              primary_holder_first_name: req.param('primary_holder_first_name'),
+              primary_holder_last_name: req.param('primary_holder_last_name'),
+              property_holders: req.param('property_holders'),
+              address_id: req.param('address_id')
+
+            }, function(result){
+
+            if(result){
+              res.send({query: result});
+            }
+            else{
+              res.send({query: 'failed'});
+            }
+          });
+        }
+        else{
+          res.send({query: 'failed'});
+        }
+      });
     })
     .get(function(req, res){
 
-      //TODO get list of all properties
+      mongoInterface.updateKey({api_key: req.param('api_key')}, function(result){
+
+        if(result){
+          console.log('key updated');
+          mongoInterface.getPropertys({}, function(result){
+
+            if(result){
+              res.send({query: result});
+            }
+            else{
+              res.send({query: 'failed'});
+            }
+          });
+        }
+        else{
+          res.send({query: 'failed'});
+        }
+      });
     });
   router.route('/api/v2/properties/:property_id')
     .get(function(req, res){
 
-      //TODO get specific property
+      mongoInterface.updateKey({api_key: req.param('api_key')}, function(result){
+
+        if(result){
+          console.log('key updated');
+          mongoInterface.getProperty({property_id: req.params.property_id}, function(result){
+
+            if(result){
+              res.send({query: result});
+            }
+            else{
+              res.send({query: 'failed'});
+            }
+          });
+        }
+        else{
+          res.send({query: 'failed'});
+        }
+      });
     })
     .put(function(req, res){
 
@@ -227,7 +346,6 @@ module.exports = function(){
   router.route('/api/v2/clients')
     .post(function(req, res){
 
-      //TODO TEST
       mongoInterface.updateKey({api_key: req.param('api_key')}, function(result){
 
         if(result){
@@ -278,7 +396,6 @@ module.exports = function(){
   router.route('/api/v2/clients/:client_id')
     .get(function(req, res){
 
-      //TODO TEST
       mongoInterface.updateKey({api_key: req.param('api_key')}, function(result){
 
         if(result){

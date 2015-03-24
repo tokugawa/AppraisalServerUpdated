@@ -3,6 +3,7 @@
 /*
 /*========================================== Change Log ===============================================*/
 /* Author: Somenath Ghosh       Date: Jan, 2015         Desc: Initial Built
+/* Contributer: Brandon Rodenmayer    Date: March, 2015    Desc: Removed Unecessary Fields
 /*******************************************************************************************************/
 
 
@@ -22,10 +23,10 @@ var CustomerSchema = new mongoose.Schema({
 		customer_primary_phone					: {	type: Number , required: true },
 		customer_cell_phone						: { type: Number }, 
 		customer_work_phone	 					: { type: Number }, 
-		customer_email		 					: { type: String, required: true }, 
-		customer_preferred_contact_number		: {	type: Number , required: true },
-		customer_preferred_contact_time			: [{ type: String, required: true }],
-		customer_last_contacted	     			: { type: Date }
+		customer_email		 					: { type: String }, 
+		//customer_preferred_contact_number		: {	type: Number , required: true },
+		//customer_preferred_contact_time			: [{ type: String, required: true }],
+		//customer_last_contacted	     			: { type: Date }
 
 	},
 	{

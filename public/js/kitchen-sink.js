@@ -1197,4 +1197,63 @@ function v2GetClient(){
 		console.log('GET CLIENT DONE');
 	});
 }
+function v2CreateCustomer(){
+
+	$.post('/api/v2/customers', 
+		{
+			api_key: currentApiKey,
+			first_name: 'Test',
+			last_name: 'Customer',
+			address_id: '550c71068c440514226635d0',
+			primary_phone: '1234567890',
+			work_phone: '3216549850',
+			cell_phone: '1234567890',
+			email: 'test.customer@customers.com',
+
+		}, function(result){
+
+		console.log(result);
+	})
+	.fail(function(err){
+
+		console.log('createCustomer failed');
+		console.log(err);
+	})
+	.done(function(){
+
+		console.log('CREATE CUSTOMER DONE');
+	});
+}
+function v2GetCustomers(){
+
+	$.get('/api/v2/customers', {api_key: currentApiKey}, function(result){
+
+		console.log(result);
+	})
+	.fail(function(err){
+
+		console.log('getCustomers failed');
+		console.log(err);
+	})
+	.done(function(){
+
+		console.log('GET CUSTOMERS DONE');
+	});
+}
+function v2GetCustomer(){
+
+	$.get('/api/v2/customers/5511751c2882b3fc25c3bdff', {api_key: currentApiKey}, function(result){
+
+		console.log(result);
+	})
+	.fail(function(err){
+
+		console.log('getCustomer failed');
+		console.log(err);
+	})
+	.done(function(){
+
+		console.log('GET CUSTOMER DONE');
+	});
+}
 ////////////////////////////////////////////////////////////////////////////////
