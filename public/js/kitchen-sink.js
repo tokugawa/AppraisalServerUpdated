@@ -1256,4 +1256,118 @@ function v2GetCustomer(){
 		console.log('GET CUSTOMER DONE');
 	});
 }
+function v2CreateProperty(){
+
+	$.post('/api/v2/properties', 
+		{
+			api_key: currentApiKey,
+			primary_holder_first_name: 'PROPERTY',
+			primary_holder_last_name: 'HOLDER',
+			property_holders: ['54d12f0a61ff01ddacae518c', '5511751c2882b3fc25c3bdff'],
+			address_id: '550c71068c440514226635d0'
+
+		}, function(result){
+
+		console.log(result);
+	})
+	.fail(function(err){
+
+		console.log('createProperty failed');
+		console.log(err);
+	})
+	.done(function(){
+
+		console.log('CREATE PROPERTY DONE');
+	});
+}
+function v2GetProperties(){
+
+	$.get('/api/v2/properties', {api_key: currentApiKey}, function(result){
+
+		console.log(result);
+	})
+	.fail(function(err){
+
+		console.log('getProperties failed');
+		console.log(err);
+	})
+	.done(function(){
+
+		console.log('GET PROPERTIES DONE');
+	});
+}
+function v2GetProperty(){
+
+	$.get('/api/v2/properties/54d12c2b61ff01ddacae5181', {api_key: currentApiKey}, function(result){
+
+		console.log(result);
+	})
+	.fail(function(err){
+
+		console.log('getProperty failed');
+		console.log(err);
+	})
+	.done(function(){
+
+		console.log('GET PROPERTY DONE');
+	});
+}
+function v2CreateOrder(){
+
+	$.post('/api/v2/orders', 
+		{
+			api_key: currentApiKey,
+			property_primary_holder: '5511751c2882b3fc25c3bdff',
+            property_id: '54d12c2b61ff01ddacae5181',
+            address_id: '550c71068c440514226635d0',
+            client: '551027e1c1c164f80fb0fd85',
+            due_date: '08/18/2015',
+            priority_index: '1'
+
+		}, function(result){
+
+		console.log(result);
+	})
+	.fail(function(err){
+
+		console.log('createOrder failed');
+		console.log(err);
+	})
+	.done(function(){
+
+		console.log('CREATE ORDER DONE');
+	});
+}
+function v2GetOrders(){
+
+	$.get('/api/v2/orders', {api_key: currentApiKey}, function(result){
+
+		console.log(result);
+	})
+	.fail(function(err){
+
+		console.log('getOrders failed');
+		console.log(err);
+	})
+	.done(function(){
+
+		console.log('GET ORDERS DONE');
+	});
+}
+function v2GetOrder(){
+
+	$.get('/api/v2/orders/100001', {api_key: currentApiKey}, function(result){
+
+		console.log(result);
+	})
+	.fail(function(err){
+
+		console.log('getOrder failed');
+		console.log(err);
+	})
+	.done(function(){
+
+		console.log('GET ORDER DONE');
+	});
+}
 ////////////////////////////////////////////////////////////////////////////////

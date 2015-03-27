@@ -7,9 +7,6 @@
 
 
 /****** Import Libs *******/
-
-
-
 var log4js = require('log4js');
 var log = log4js.getLogger("FormDataVO");
 var paException = require('../util/PAException');
@@ -17,11 +14,15 @@ var paException = require('../util/PAException');
 var FormData = require('../model/FormData.js');
 var Order = require('../model/OrderModelTemp.js');
 
-
 var FormDataVO = (function(){
 
 	var instance;
 	function createInstance() {
+
+		this.createNewFormData = function(orderId, cb){
+
+			//TODO 
+		}
 
 		this.addOrUpdate = function (orderID, orderStatus, formData, cb  ){
 
@@ -70,26 +71,16 @@ var FormDataVO = (function(){
 											console.log('update failed', result);
 											cb(false);
 										}
-
 									}
-
-
-
 								);
-
 							}
 							else{
 								cb(true, data.formData);
 
 							}
-
 							//cb(true, data.formData);
 						}
-
 					});
-
-
-
 				}
 
 
@@ -139,11 +130,7 @@ var FormDataVO = (function(){
 														console.log('update failed', result);
 														cb(false);
 													}
-
 												}
-
-
-
 											);
 
 										}
@@ -151,26 +138,13 @@ var FormDataVO = (function(){
 											cb(true, data.formData);
 
 										}
-										
-
-										
 									}
-
 								});
-								
 							}
-
 					});
-
 				}
-
-
-
 			});
-
-			
-
-	};
+		};
 
 		this.retrieveFormData = function(orderID , cb){
 
@@ -191,16 +165,9 @@ var FormDataVO = (function(){
 
 					cb(false);
 				}
-
-
 			});
-
 		};
-
-
 	}
-
-
 
 	return {
         getInstance: function () {
@@ -213,9 +180,6 @@ var FormDataVO = (function(){
             return instance;
         }
     };
-
-	
-
 })();
 
 module.exports = FormDataVO;

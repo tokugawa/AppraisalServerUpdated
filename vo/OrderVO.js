@@ -5,24 +5,76 @@
 /* Author: Somenath Ghosh       Date: Sep, 2014         Desc: Initial Built
 /*******************************************************************************************************/
 
-
 /****** Import Libs *******/
 var log4js = require('log4js');
 var log = log4js.getLogger("OrderVO");
 var paException = require('../util/PAException');
 
-
 /*var conn = require('../util/ConnectDBInstance').getInstance();*/
-var Order = require('../model/Order.js');
-
+var order = require('../model/Order.js');
 
 var OrderVO = (function(){
 
 	var instance;
 	function createInstance() {
 
+		//TODO CREATE ORDER
+		this.createNewOrder = function(propertyPrimaryHoler, propertyId, addressId, client, dueDate, priorityIndex, imageId, evaluationDetail, cb){
+
+			var newOrder = new order();
+
+			newOrder.order_id 						= order.generateOrderNumber();
+			newOrder.order_property_primary_holder 	= propertyPrimaryHolder;
+			newOrder.order_property_id 				= propertyId;
+			newOrder.order_address_id 				= addressId;
+			newOrder.order_client 					= client;
+			newOrder.order_received_date 			= (new Date());
+			newOrder.order_completed_date 			= '';
+			newOrder.order_due_date 				= dueDate;
+			newOrder.order_priority_index 			= priority_index;
+			newOrder.order_image					= imageId;
+			newOrder.order_evaluation_detail 		= evaluationDetail;
+			newOrder.progress_status 				= '';
+			newOrder.order_assigned_to 				= {
+														order_current_appraiser: '',
+														order_previous_appraiser: []
+													};
+			newOrder.order_status_current			= 'created';
+			newOrder.order_status_past 				= [];
+			newOrder.order_status_next 				= 'assigned';
+
+			log.info('order_id ' , newOrder.order_id);
+			order.findOne({ order_id: newOrder.order_id }, function findOneCb(err, data){
+				if(err){
+					log.error(err);
+					cb(null);
+				}
+				if(data){
+
+					log.error('Class:OrderVO - Error Message: OrderId already taken');
+					cb(false);
+				}
+
+				if(!data){
+					log.info(' Class:OrderVO - Info: No duplicate record found');
+					newOrder.save(function saveOrderCb(err, doc){
+						if(err) {
+							log.error(err);
+							throw new paException('OrderVO', 'Save Order Exception');
+							cb(null);
+						}
+						else {
+
+							log.info('Class:OrderVO - Info: Successful');
+							cb(doc);
+						}
+					});
+				}
+			});
+		}
+
 		this.getOrderDetail = function(orderPartyID, orderStatus, cb){
-			Order.find({orderStatus: orderStatus}, function returnCb(err, data){
+			order.find({orderStatus: orderStatus}, function returnCb(err, data){
 
 				if(err) { 
 					log.error('Mongoose Error Occured');
@@ -57,7 +109,7 @@ var OrderVO = (function(){
 			//console.log('\nStarting to get all users');
 			var dataArray = [];
 
-			Order.find({}, function(err, cursor){
+			order.find({}, function(err, cursor){
 
 				if(cursor){
 					cursor.forEach(function(item){
@@ -86,7 +138,7 @@ var OrderVO = (function(){
 				{'label':'Completed Orders', 'value': 0},
 			];
 
-			Order.find({}, function(err, cursor){
+			order.find({}, function(err, cursor){
 
 				if(cursor){
 					cursor.forEach(function(item){
@@ -122,7 +174,7 @@ var OrderVO = (function(){
 			//var completedOrders = [];
 			//var openOrders = [];
 
-			Order.find({"appraiser_id" : userId }, function(err, cursor){
+			order.find({"appraiser_id" : userId }, function(err, cursor){
 
 				if(cursor){
 					cursor.forEach(function(item){
@@ -145,17 +197,17 @@ var OrderVO = (function(){
 
 		this.getOrderById = function(orderId, cb){
 
-			console.log(orderId);
-			Order.findOne({'order_id' : orderId})
+			//console.log(orderId);
+			order.findOne({'order_id': orderId})
 			//.populate('address_id')
 			.exec(function(err, item){
 
 				if(item){
-					console.log(item);
+					//console.log(item);
 					cb(item);
 				}
 				else{
-					console.log('Not Found');
+					//console.log('Not Found');
 					cb(null);
 				}
 			});
@@ -166,16 +218,13 @@ var OrderVO = (function(){
         getInstance: function () {
 
             if (!instance) {
-                log.warn('Creating first instance of OrderDetailVOTemp');
+                log.warn('Creating first instance of OrderVO');
                 instance = new createInstance();
             }
            
             return instance;
         }
     };
-
-	
-
 })();
 
 module.exports = OrderVO;

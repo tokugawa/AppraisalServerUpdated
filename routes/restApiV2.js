@@ -132,7 +132,7 @@ module.exports = function(){
       //TODO delete specific user by user_id
     });
   //Tasks
-  router.route('/api/v2/tasks/user_id')
+  router.route('/api/v2/tasks/:user_id')
     .post(function(req, res){
 
       //TODO insert a new task for user
@@ -158,16 +158,76 @@ module.exports = function(){
   router.route('/api/v2/orders')
     .post(function(req, res){
 
-      //TODO insert a new order
+      //TODO
+      mongoInterface.updateKey({api_key: req.param('api_key')}, function(result){
+
+        if(result){
+          console.log('key updated');
+          mongoInterface.createOrder(
+            {
+              property_primary_holder: req.param('property_primary_holder'),
+              property_id: req.param('property_id'),
+              address_id: req.param('address_id'),
+              client: req.param('client'),
+              due_date: req.param('due_date'),
+              priority_index: req.param('priority_index')
+            }, function(result){
+
+            if(result){
+              res.send({query: result});
+            }
+            else{
+              res.send({query: 'failed'});
+            }
+          });
+        }
+        else{
+          res.send({query: 'failed'});
+        }
+      });
     })
     .get(function(req, res){
 
-      //TODO get list of all orders
+      mongoInterface.updateKey({api_key: req.param('api_key')}, function(result){
+
+        if(result){
+          console.log('key updated');
+          mongoInterface.getOrders({}, function(result){
+
+            if(result){
+              res.send({query: result});
+            }
+            else{
+              res.send({query: 'failed'});
+            }
+          });
+        }
+        else{
+          res.send({query: 'failed'});
+        }
+      });
     });
   router.route('/api/v2/orders/:order_id')
     .get(function(req, res){
 
-      //TODO get specific information for an order
+      mongoInterface.updateKey({api_key: req.param('api_key')}, function(result){
+
+        if(result){
+          console.log('key updated');
+          mongoInterface.getOrder({order_id: req.params.order_id}, function(result){
+
+            if(result){
+              res.send({query: result});
+            }
+            else{
+              res.send({query: 'failed'});
+            }
+          });
+        }
+        else{
+          res.send({query: 'failed'});
+        }
+      });
     })
     .put(function(req, res){
 
@@ -265,6 +325,7 @@ module.exports = function(){
   router.route('/api/v2/properties')
     .post(function(req, res){
 
+      //console.log(req.body);
       mongoInterface.updateKey({api_key: req.param('api_key')}, function(result){
 
         if(result){
@@ -273,7 +334,7 @@ module.exports = function(){
             {
               primary_holder_first_name: req.param('primary_holder_first_name'),
               primary_holder_last_name: req.param('primary_holder_last_name'),
-              property_holders: req.param('property_holders'),
+              property_holders: req.param('property_holders[]'),
               address_id: req.param('address_id')
 
             }, function(result){
@@ -297,7 +358,7 @@ module.exports = function(){
 
         if(result){
           console.log('key updated');
-          mongoInterface.getPropertys({}, function(result){
+          mongoInterface.getProperties({}, function(result){
 
             if(result){
               res.send({query: result});

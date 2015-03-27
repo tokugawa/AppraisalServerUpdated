@@ -5,12 +5,10 @@
 /* Author: Brandon Rodenmayer       Date: March, 2015         Desc: Initial Built
 /*******************************************************************************************************/
 
-
 /****** Import Libs *******/
 var log4js = require('log4js');
 var log = log4js.getLogger("MongoInterface");
 var paException = require('../util/PAException');
-
 
 /*var conn = require('../util/ConnectDBInstance').getInstance();*/
 var User = require('../vo/UserVO').getInstance();
@@ -19,6 +17,9 @@ var Address = require('../vo/AddressVO').getInstance();
 var APIKeys = require('../vo/APIKeysVO').getInstance();
 var Client = require('../vo/ClientVO').getInstance();
 var Customer = require('../vo/CustomerVO').getInstance();
+var Property = require('../vo/PropertyVO').getInstance();
+var ImageUrl = require('../vo/ImageUrlVO').getInstance();
+var FormData = require('../vo/FormDataVO').getInstance();
 
 var mongoInterface = (function(){
 
@@ -152,7 +153,8 @@ var mongoInterface = (function(){
 			      	else{
 			       		cb(null);
 			      	}
-				});
+				}
+			);
 		}
 
 		//Get a single address
@@ -279,7 +281,7 @@ var mongoInterface = (function(){
 		this.createProperty = function(options, cb){
 
 			console.log(options);
-			Property.createNewClient(options.primary_holder_first_name, options.primary_holder_last_name, options.property_holders, options.address_id,
+			Property.createNewProperty(options.primary_holder_first_name, options.primary_holder_last_name, options.property_holders, options.address_id,
 				function(result){
 
 					if(result){
@@ -294,7 +296,54 @@ var mongoInterface = (function(){
 		//Get a single property
 		this.getProperty = function(options, cb){
 
-			Property.getProperty(options.propertys_id, function(result){
+			Property.getProperty(options.property_id, function(result){
+
+				if(result){
+					cb(result);
+			    }
+		      	else{
+		       		cb(null);
+		      	}
+			});
+		}
+
+		//Get all orders
+		this.getOrders = function(options, cb){
+
+			Order.getAllOrders(function(result){
+
+				if(result){
+					cb(result);
+			    }
+		      	else{
+		       		cb(null);
+		      	}
+			});
+		}
+
+		//Create an order
+		this.createOrder = function(options, cb){
+
+			console.log(options); //TODO CREATE ORDER
+			Order.createNewOrder(options.property_primary_holder, options.property_id, options.address_id, options.client, 
+				options.due_date, options.priority_index, ImageUrl.createNewImageUrl(function(id){return id}), 
+				FormData.createNewFormData(function(id){return id}), 
+				function(result){
+
+					if(result){
+						cb(result);
+				    }
+			      	else{
+			       		cb(null);
+			      	}
+				}
+			);
+		}
+
+		//Get a single order
+		this.getOrder = function(options, cb){
+
+			Order.getOrderById(options.order_id, function(result){
 
 				if(result){
 					cb(result);

@@ -13,7 +13,6 @@
 var mongoose 		= require('mongoose');
 var conn = require('../util/ConnectDBInstance').getInstance();
 
-
 var PropertySchema = new mongoose.Schema({
 
 		primary_holder_first_name						: { type: String  },
@@ -24,7 +23,6 @@ var PropertySchema = new mongoose.Schema({
 	{
 		collection: 'PropertyCollection'
 	}
-
 );
 
 

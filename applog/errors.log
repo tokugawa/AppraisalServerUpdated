@@ -1425,3 +1425,52 @@
 [2015-03-24 10:29:11.576] [ERROR] app - Worker server died (ID: 1, PID: 9644)
 [2015-03-24 10:29:29.166] [ERROR] app - Worker server died (ID: 1, PID: 9964)
 [2015-03-24 10:30:16.608] [ERROR] app - Worker server died (ID: 1, PID: 9380)
+[2015-03-26 10:28:12.284] [ERROR] APIKeyVO - Class:APIKeysVO - Error Message: API Key already exists for user
+[2015-03-26 10:30:54.536] [ERROR] app - Worker server died (ID: 1, PID: 8748)
+[2015-03-26 10:31:34.799] [ERROR] app - Worker server died (ID: 1, PID: 8564)
+[2015-03-26 10:44:53.543] [ERROR] app - Worker server died (ID: 1, PID: 9024)
+[2015-03-26 10:53:37.484] [ERROR] PropertyVO - { message: 'Cast to ObjectId failed for value "[\'54d12f0a61ff01ddacae518c\', \'5511751c2882b3fc25c3bdff\']" at path "property_holders"',
+  name: 'CastError',
+  type: 'ObjectId',
+  value: '[\'54d12f0a61ff01ddacae518c\', \'5511751c2882b3fc25c3bdff\']',
+  path: 'property_holders' }
+[2015-03-26 10:53:37.488] [ERROR] PropertyVO - { message: 'Cast to ObjectId failed for value "[\'54d12f0a61ff01ddacae518c\', \'5511751c2882b3fc25c3bdff\']" at path "property_holders"',
+  name: 'CastError',
+  type: 'ObjectId',
+  value: [ '[\'54d12f0a61ff01ddacae518c\', \'5511751c2882b3fc25c3bdff\']' ],
+  path: 'property_holders' }
+[2015-03-26 10:53:37.489] [ERROR] PAException - Exception at :PropertyVO Save Property Exception
+[2015-03-26 10:53:37.501] [ERROR] app - Worker server died (ID: 1, PID: 4596)
+[2015-03-26 10:55:55.807] [ERROR] APIKeyVO - Class:APIKeysVO - Error Message: API Key already exists for user
+[2015-03-27 08:52:01.747] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout3/img/avatar2.jpg HTTP/1.1" 404 1139 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36"
+[2015-03-27 08:52:01.788] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout3/img/avatar3.jpg HTTP/1.1" 404 1139 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36"
+[2015-03-27 08:52:01.826] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout3/img/avatar1.jpg HTTP/1.1" 404 1139 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36"
+[2015-03-27 14:53:57.396] [ERROR] app - Worker server died (ID: 1, PID: 9608)
+[2015-03-27 14:54:26.302] [ERROR] app - Worker server died (ID: 1, PID: 6040)
+[2015-03-27 14:56:11.932] [ERROR] APIKeyVO - Class:APIKeysVO - Error Message: API Key already exists for user
+[2015-03-27 14:56:18.199] [ERROR] CustomerVO - { message: 'Validation failed',
+  name: 'ValidationError',
+  errors: 
+   { customer_first_name: 
+      { message: 'Path `customer_first_name` is required.',
+        name: 'ValidatorError',
+        path: 'customer_first_name',
+        type: 'required' },
+     customer_last_name: 
+      { message: 'Path `customer_last_name` is required.',
+        name: 'ValidatorError',
+        path: 'customer_last_name',
+        type: 'required' },
+     customer_primary_phone: 
+      { message: 'Path `customer_primary_phone` is required.',
+        name: 'ValidatorError',
+        path: 'customer_primary_phone',
+        type: 'required' } } }
+[2015-03-27 14:56:18.202] [ERROR] PAException - Exception at :CustomerVO Save Customer Exception
+[2015-03-27 14:56:18.215] [ERROR] app - Worker server died (ID: 1, PID: 4252)
+[2015-03-27 14:59:46.883] [ERROR] app - Worker server died (ID: 1, PID: 4408)
+[2015-03-27 15:02:11.324] [ERROR] ImageUrlVO - { message: 'Cast to number failed for value "function (id){return id}" at path "order_id"',
+  name: 'CastError',
+  type: 'number',
+  path: 'order_id' }
+[2015-03-27 15:02:11.343] [ERROR] app - Worker server died (ID: 1, PID: 10416)

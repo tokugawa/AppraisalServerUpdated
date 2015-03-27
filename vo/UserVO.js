@@ -30,7 +30,6 @@ var UserVO = (function(){
 			var newUser = new user();
 			var passwordHashed = newUser.generateHash(password);
 
-		
 			newUser.user_id		  		= userName;
 			//newUser.user_id_id		= newUser.generateID();
 			newUser.password 			= passwordHashed;
@@ -64,7 +63,6 @@ var UserVO = (function(){
 							log.error(err);
 							throw new paException('UserVO', 'Save User Exception');
 							cb(null);
-
 						}
 						else {
 
@@ -110,9 +108,6 @@ var UserVO = (function(){
 						//console.log(item);
 						if(item){
 							dataArray.push(item);
-						}
-						else{
-							//console.log('No Data');
 						}
 					});
 					cb(dataArray);

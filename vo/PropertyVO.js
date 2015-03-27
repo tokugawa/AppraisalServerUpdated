@@ -41,7 +41,6 @@ var PropertyVO = (function(){
 					primary_holder_last_name: 	primaryHolderLastName,
 					property_holders: 			propertyHolders,
 					address: 					addressId
-
 				}, 
 				function findOneCb(err, data){
 					if(err){

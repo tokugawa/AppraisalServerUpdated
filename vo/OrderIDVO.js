@@ -41,23 +41,14 @@ var OrderIDVO = (function(){
 
 						if(flag){
 							cb(true, data.orderID);
-
 						}
-
 						else{
-
 							cb(null,null);
-
 						}
-
 					});
-					
 				}
-
 			});
-
 		}
-
 	};
 
 
@@ -74,8 +65,6 @@ var OrderIDVO = (function(){
         }
     };
 
-
-
 })();
 
 
@@ -91,16 +80,12 @@ var updateOrderIDGenerator = function(data,callback){
 				log.error('Functon:updateOrderIDGenerator - Error Occured while processing Update');
 				callback(null);
 			}
-
 			if(result){
 
 				callback(true);
 			}
-
 		}
 	);
-
 }
-
 
 module.exports = OrderIDVO;

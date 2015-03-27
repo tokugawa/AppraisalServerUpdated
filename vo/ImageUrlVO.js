@@ -16,7 +16,7 @@ var paException = require('../util/PAException');
 
 
 /*var conn = require('../util/ConnectDBInstance').getInstance();*/
-var ImageURL = require('../model/ImageURL.js');
+var ImageUrl = require('../model/ImageURL.js');
 
 
 var ImageUrlVO = (function(){
@@ -24,9 +24,46 @@ var ImageUrlVO = (function(){
 	var instance;
 	function createInstance() {
 
-		this.addOrUpdate = function (orderID, imageUrlList, cb  ){
+		this.createNewImageUrl = function(orderId, cb){
 
-			log.info(' Class:ImageUrlVO Method:addOrUpdate starts');
+			var newImageUrl = new ImageUrl();
+
+			newImageUrl.order_id 		= orderId;
+			newImageUrl.imageUrlList 	= [];
+
+			log.info('order_id ', orderId);
+			ImageUrl.findOne({order_id: orderId }, function findOneCb(err, data){
+				if(err){
+					log.error(err);
+					cb(null);
+				}
+				if(data){
+
+					log.error('Class:ImageURLVO - Error Message: OrderId already taken');
+					cb(data._id);
+				}
+
+				if(!data){
+					log.info('Class:ImageURLVO - Info: No duplicate record found');
+					newImageUrl.save(function saveOrderCb(err, doc){
+						if(err) {
+							log.error(err);
+							throw new paException('ImageURLVO', 'Save Order Exception');
+							cb(null);
+						}
+						else {
+
+							log.info('Class:ImageURLVO - Info: Successful');
+							cb(doc._id);
+						}
+					});
+				}
+			});
+		}
+
+		this.addOrUpdate = function (orderID, imageUrlList, cb ){
+
+			log.info('Class:ImageUrlVO Method:addOrUpdate starts');
 
 			ImageURL.findOne({order_id : orderID}, function findOneCb(err, data){
 
@@ -53,13 +90,8 @@ var ImageUrlVO = (function(){
 
 							cb(true, imageUrlList);
 						}
-
 					});
-
-
-
 				}
-
 
 				if(data){
 					ImageURL.update(
@@ -78,8 +110,6 @@ var ImageUrlVO = (function(){
 									if(err){
 										log.error(err.message);
 										cb(null);
-
-
 									}
 
 									if(!data){
@@ -91,18 +121,12 @@ var ImageUrlVO = (function(){
 
 										cb(true, data.imageUrlList);
 									}
-
 								})
-								
 							}
-
 					});
-
 				}
-
 			});
-
-	};
+		};
 
 		this.retrieveImage = function(orderID , cb){
 
@@ -122,16 +146,9 @@ var ImageUrlVO = (function(){
 
 					cb(false);
 				}
-
-
 			});
-
 		};
-
-
 	}
-
-
 
 	return {
         getInstance: function () {
@@ -144,9 +161,6 @@ var ImageUrlVO = (function(){
             return instance;
         }
     };
-
-	
-
 })();
 
 module.exports = ImageUrlVO;

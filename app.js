@@ -6,11 +6,8 @@ var log = log4js.getLogger("app");
 
 var port = 3000;
 
-
-
 if(cluster.isMaster){
 
-   
     if (process.env.NODE_ENV === 'production') {
       /*log4js.configure('./config/log4jsConfigProduction.json');*/
       log4js.configure('./config/log4jsConfig.json');
@@ -36,8 +33,6 @@ if(cluster.isMaster){
         log.error('Worker server died (ID: %d, PID: %d)', worker.id, worker.process.pid);
         //cluster.fork(); //switch on it in prod env
     });
-
-    
 }
 
 else {
@@ -125,7 +120,6 @@ else {
     app.use('/', apiV2);
     /**/
 
-
     // catch 404 and forward to error handler
     app.use(function(req, res, next) {
         var err = new Error('Not Found');
@@ -196,8 +190,6 @@ else {
         });
 
     });*/
-
-
 
     //require('./routes/index.js')(app, passport); 
 
