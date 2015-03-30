@@ -13,7 +13,7 @@ var conn = require('../util/ConnectDBInstance').getInstance();
 
 var ImageUrlSchema = new mongoose.Schema({
 
-		order_id: { type: Number, required: true, unique: true},
+		order_id: { type: String, required: true, unique: true},
 		imageUrlList: [{ type: String }]
 	},
 	{

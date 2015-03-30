@@ -19,11 +19,23 @@ var OrderVO = (function(){
 	function createInstance() {
 
 		//TODO CREATE ORDER
-		this.createNewOrder = function(propertyPrimaryHoler, propertyId, addressId, client, dueDate, priorityIndex, imageId, evaluationDetail, cb){
+		this.createNewOrder = function(propertyPrimaryHolder, propertyId, addressId, client, dueDate, priorityIndex, cb){
 
 			var newOrder = new order();
 
-			newOrder.order_id 						= order.generateOrderNumber();
+		 	newOrder.generateOrderNumber(function(id){
+
+				console.log('New Order ID: '+id);
+
+				if(newOrder.order_id > 0){
+					newOrder.order_id = id;
+				}
+				else{
+					cb(null)
+				}
+			});
+			
+
 			newOrder.order_property_primary_holder 	= propertyPrimaryHolder;
 			newOrder.order_property_id 				= propertyId;
 			newOrder.order_address_id 				= addressId;
@@ -31,12 +43,12 @@ var OrderVO = (function(){
 			newOrder.order_received_date 			= (new Date());
 			newOrder.order_completed_date 			= '';
 			newOrder.order_due_date 				= dueDate;
-			newOrder.order_priority_index 			= priority_index;
-			newOrder.order_image					= imageId;
-			newOrder.order_evaluation_detail 		= evaluationDetail;
-			newOrder.progress_status 				= '';
+			newOrder.order_priority_index 			= priorityIndex;
+			newOrder.order_image					= '';
+			newOrder.order_evaluation_detail 		= '';
+			newOrder.order_progress_status 				= '';
 			newOrder.order_assigned_to 				= {
-														order_current_appraiser: '',
+														order_current_appraiser: null,
 														order_previous_appraiser: []
 													};
 			newOrder.order_status_current			= 'created';

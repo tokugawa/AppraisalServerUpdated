@@ -14,10 +14,7 @@ var mongoose 		= require('mongoose');
 var conn = require('../util/ConnectDBInstance').getInstance();
 
 
-
-
 var OrderSchema = new mongoose.Schema({
-
 		
 		orderID	 							: {type: Number, require: true},
 		order_received_date					: {type: String, require: true},
@@ -31,13 +28,10 @@ var OrderSchema = new mongoose.Schema({
         
 	},
 	{
-
 		collection: 'OrderDetailTemp'
 	}
 
 );
-
-
 
 module.exports = conn.model('Orders', OrderSchema);
 

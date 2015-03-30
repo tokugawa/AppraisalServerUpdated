@@ -37,21 +37,19 @@ var OrderIDVO = (function(){
 				}
 				if(data){
 
-					updateOrderIDGenerator(function(flag){
+					updateOrderIDGenerator(data, function(flag){
 
 						if(flag){
-							cb(true, data.orderID);
+							cb(data.orderID, true);
 						}
 						else{
-							cb(null,null);
+							cb(null, false);
 						}
 					});
 				}
 			});
 		}
 	};
-
-
 
 	return {
         getInstance: function () {
@@ -64,25 +62,26 @@ var OrderIDVO = (function(){
             return instance;
         }
     };
-
 })();
 
 
-var updateOrderIDGenerator = function(data,callback){
+var updateOrderIDGenerator = function(data, callback){
 
+	console.log('Order ID Generator stuff');
+	console.log(data[0].orderID);
 	orderIDGenerator.update(
 
-		{_id: data._id},
-		{$set : {orderID : data.orderID+1}},
-		function updateCb(err, result ){
+		{_id: data[0]._id},
+		{$set : {orderID: data[0].orderID+1}},
+		function updateCb(err, result){
 
 			if(err) {
 				log.error('Functon:updateOrderIDGenerator - Error Occured while processing Update');
-				callback(null);
+				callback(null, false);
 			}
 			if(result){
 
-				callback(true);
+				callback(result.orderId, true);
 			}
 		}
 	);

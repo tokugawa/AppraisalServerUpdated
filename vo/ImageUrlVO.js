@@ -17,6 +17,7 @@ var paException = require('../util/PAException');
 
 /*var conn = require('../util/ConnectDBInstance').getInstance();*/
 var ImageUrl = require('../model/ImageURL.js');
+var order = require('../model/Order.js');
 
 
 var ImageUrlVO = (function(){
@@ -32,7 +33,7 @@ var ImageUrlVO = (function(){
 			newImageUrl.imageUrlList 	= [];
 
 			log.info('order_id ', orderId);
-			ImageUrl.findOne({order_id: orderId }, function findOneCb(err, data){
+			ImageUrl.findOne({order_id: orderId}, function findOneCb(err, data){
 				if(err){
 					log.error(err);
 					cb(null);
@@ -123,7 +124,8 @@ var ImageUrlVO = (function(){
 									}
 								})
 							}
-					});
+						}
+					);
 				}
 			});
 		};

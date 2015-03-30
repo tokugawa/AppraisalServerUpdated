@@ -11,24 +11,20 @@ var log4js = require('log4js');
 var log = log4js.getLogger("FormDataVO");
 var paException = require('../util/PAException');
 
-var FormData = require('../model/FormData.js');
-var Order = require('../model/OrderModelTemp.js');
+var formData = require('../model/FormData.js');
+var order = require('../model/Order.js');
 
 var FormDataVO = (function(){
 
 	var instance;
 	function createInstance() {
 
-		this.createNewFormData = function(orderId, cb){
-
-			//TODO 
-		}
-
+		//Creates new FormData or updates the old one
 		this.addOrUpdate = function (orderID, orderStatus, formData, cb  ){
 
 			log.info(' Class:FormData Method:addOrUpdate starts');
 
-			FormData.findOne({order_id : orderID}, function findOneCb(err, data){
+			formData.findOne({order_id : orderID}, function findOneCb(err, data){
 
 				if(err){
 					log.error(' Error occured while findOneCb addOrUpdate');
@@ -54,7 +50,7 @@ var FormDataVO = (function(){
 							//console.log(orderStatus);
 							if(orderStatus){
 								console.log(orderID);
-								Order.update(
+								order.update(
 									{orderID: orderID},
 									{$set : {orderStatus : orderStatus}},
 									function updateOrderCb(err, result){
@@ -76,7 +72,6 @@ var FormDataVO = (function(){
 							}
 							else{
 								cb(true, data.formData);
-
 							}
 							//cb(true, data.formData);
 						}
@@ -85,20 +80,20 @@ var FormDataVO = (function(){
 
 
 				if(data){
-					FormData.update(
+					formData.update(
 
 						{order_id: orderID},
 						{$set : {formData : formData}},
 						function updateCb(err, result ){
 
 							if(err){
-								log.error(' Error occured while Saving updateCb');
+								log.error('Error occured while Saving updateCb');
 								log.error(err);
 								cb(null);
 							}
 
 							if(result){
-								FormData.findOne({order_id: orderID}, function(err, data) {
+								formData.findOne({order_id: orderID}, function(err, data) {
 									if(err){
 										log.error(err.message);
 										cb(null);
@@ -113,7 +108,7 @@ var FormDataVO = (function(){
 										//console.log(orderStatus);
 										if(orderStatus){
 											//console.log(orderID);
-											Order.update(
+											order.update(
 												{orderID: orderID},
 												{$set : {orderStatus : orderStatus}},
 												function updateOrderCb(err, result){
@@ -132,26 +127,25 @@ var FormDataVO = (function(){
 													}
 												}
 											);
-
 										}
 										else{
 											cb(true, data.formData);
-
 										}
 									}
 								});
 							}
-					});
+						}
+					);
 				}
 			});
 		};
 
 		this.retrieveFormData = function(orderID , cb){
 
-			FormData.findOne({order_id: orderID}, function findOneCb(err, data){
+			formData.findOne({order_id: orderID}, function findOneCb(err, data){
 
 				if(err){
-					log.error(' Error occured while findOneCb retrieveFormData');
+					log.error('Error occured while findOneCb retrieveFormData');
 					log.error(err);
 					cb(null);
 				}
@@ -172,7 +166,7 @@ var FormDataVO = (function(){
 	return {
         getInstance: function () {
 
-            if (!instance) {
+            if (!instance){
                 log.warn('Creating first instance of FormDataVO');
                 instance = new createInstance();
             }

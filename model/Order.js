@@ -11,7 +11,7 @@
 // load the things we need
 var mongoose = require('mongoose');
 var conn = require('../util/ConnectDBInstance').getInstance();
-var orderID = require('../vo/OrderIDVO');
+var orderID = require('../vo/OrderIDVO').getInstance();
 
 var OrderSchema = new mongoose.Schema({
 
@@ -45,7 +45,15 @@ var OrderSchema = new mongoose.Schema({
 
 OrderSchema.methods.generateOrderNumber = function(cb){
 
-	return orderID.getNextOrderID(cb);
+	orderID.getNextOrderID(function(success, id){
+
+		if(success){
+			cb(id);
+		}
+		else{
+			cb(-1);
+		}
+	});
 }
 
 module.exports = conn.model('OrderCollection', OrderSchema);

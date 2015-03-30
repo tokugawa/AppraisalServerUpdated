@@ -326,8 +326,7 @@ var mongoInterface = (function(){
 
 			console.log(options); //TODO CREATE ORDER
 			Order.createNewOrder(options.property_primary_holder, options.property_id, options.address_id, options.client, 
-				options.due_date, options.priority_index, ImageUrl.createNewImageUrl(function(id){return id}), 
-				FormData.createNewFormData(function(id){return id}), 
+				options.due_date, options.priority_index,
 				function(result){
 
 					if(result){
@@ -338,6 +337,8 @@ var mongoInterface = (function(){
 			      	}
 				}
 			);
+			//TODO Create Form Data
+			//TODO Create Image URL
 		}
 
 		//Get a single order

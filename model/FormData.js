@@ -15,10 +15,9 @@ var conn = require('../util/ConnectDBInstance').getInstance();
 
 var FormDataSchema = new mongoose.Schema({
 
-		order_id	: { type: Number, required: true, unique: true },
+		order_id	: { type: String, required: true, unique: true },
 		formData 	: { type: String, required: true }
 	},
-
 	{
 		collection: 'FormDataCollection'
 	}

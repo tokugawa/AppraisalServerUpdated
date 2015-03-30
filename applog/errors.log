@@ -1474,3 +1474,125 @@
   type: 'number',
   path: 'order_id' }
 [2015-03-27 15:02:11.343] [ERROR] app - Worker server died (ID: 1, PID: 10416)
+[2015-03-30 09:03:06.769] [ERROR] APIKeyVO - Class:APIKeysVO - Error Message: API Key already exists for user
+[2015-03-30 09:03:20.723] [ERROR] ImageUrlVO - { message: 'Cast to number failed for value "function (id){return id}" at path "order_id"',
+  name: 'CastError',
+  type: 'number',
+  path: 'order_id' }
+[2015-03-30 09:03:20.772] [ERROR] app - Worker server died (ID: 1, PID: 8128)
+[2015-03-30 10:15:11.083] [ERROR] app - Worker server died (ID: 1, PID: 6716)
+[2015-03-30 10:15:35.663] [ERROR] app - Worker server died (ID: 1, PID: 6408)
+[2015-03-30 10:22:29.985] [ERROR] app - Worker server died (ID: 1, PID: 2136)
+[2015-03-30 10:50:04.594] [ERROR] app - Worker server died (ID: 1, PID: 10004)
+[2015-03-30 10:50:30.834] [ERROR] app - Worker server died (ID: 1, PID: 5188)
+[2015-03-30 10:53:17.215] [ERROR] OrderVO - { message: 'Cast to ObjectId failed for value "" at path "order_assigned_to.order_current_appraiser"',
+  name: 'CastError',
+  type: 'ObjectId',
+  value: '',
+  path: 'order_assigned_to.order_current_appraiser' }
+[2015-03-30 10:53:17.218] [ERROR] PAException - Exception at :OrderVO Save Order Exception
+[2015-03-30 10:53:17.231] [ERROR] app - Worker server died (ID: 1, PID: 9500)
+[2015-03-30 10:55:51.829] [ERROR] app - Worker server died (ID: 1, PID: 6032)
+[2015-03-30 13:24:24.969] [ERROR] APIKeyVO - Class:APIKeysVO - Error Message: API Key already exists for user
+[2015-03-30 13:24:29.467] [ERROR] OrderVO - { message: 'Cast to ObjectId failed for value "" at path "order_assigned_to.order_current_appraiser"',
+  name: 'CastError',
+  type: 'ObjectId',
+  value: '',
+  path: 'order_assigned_to.order_current_appraiser' }
+[2015-03-30 13:24:29.470] [ERROR] PAException - Exception at :OrderVO Save Order Exception
+[2015-03-30 13:24:29.483] [ERROR] app - Worker server died (ID: 1, PID: 10928)
+[2015-03-30 13:40:38.585] [ERROR] app - Worker server died (ID: 1, PID: 2460)
+[2015-03-30 13:41:30.636] [ERROR] OrderIDVO - Functon:updateOrderIDGenerator - Error Occured while processing Update
+[2015-03-30 13:41:30.649] [ERROR] app - Worker server died (ID: 1, PID: 10756)
+[2015-03-30 13:44:49.041] [ERROR] OrderIDVO - Functon:updateOrderIDGenerator - Error Occured while processing Update
+[2015-03-30 13:44:49.051] [ERROR] app - Worker server died (ID: 1, PID: 10564)
+[2015-03-30 13:53:40.765] [ERROR] OrderIDVO - Functon:updateOrderIDGenerator - Error Occured while processing Update
+[2015-03-30 13:53:40.772] [ERROR] OrderVO - { message: 'Cast to ObjectId failed for value "" at path "order_assigned_to.order_current_appraiser"',
+  name: 'CastError',
+  type: 'ObjectId',
+  value: '',
+  path: 'order_assigned_to.order_current_appraiser' }
+[2015-03-30 13:53:40.775] [ERROR] PAException - Exception at :OrderVO Save Order Exception
+[2015-03-30 13:53:40.788] [ERROR] app - Worker server died (ID: 1, PID: 8492)
+[2015-03-30 13:56:49.290] [ERROR] OrderIDVO - Functon:updateOrderIDGenerator - Error Occured while processing Update
+[2015-03-30 13:56:49.292] [ERROR] OrderVO - { message: 'Cast to ObjectId failed for value "" at path "order_assigned_to.order_current_appraiser"',
+  name: 'CastError',
+  type: 'ObjectId',
+  value: '',
+  path: 'order_assigned_to.order_current_appraiser' }
+[2015-03-30 13:56:49.293] [ERROR] PAException - Exception at :OrderVO Save Order Exception
+[2015-03-30 13:56:49.301] [ERROR] app - Worker server died (ID: 1, PID: 10280)
+[2015-03-30 14:02:20.079] [ERROR] OrderIDVO - Functon:updateOrderIDGenerator - Error Occured while processing Update
+[2015-03-30 14:02:20.081] [ERROR] OrderVO - { message: 'Cast to ObjectId failed for value "" at path "order_assigned_to.order_current_appraiser"',
+  name: 'CastError',
+  type: 'ObjectId',
+  value: '',
+  path: 'order_assigned_to.order_current_appraiser' }
+[2015-03-30 14:02:20.083] [ERROR] PAException - Exception at :OrderVO Save Order Exception
+[2015-03-30 14:02:20.090] [ERROR] app - Worker server died (ID: 1, PID: 4228)
+[2015-03-30 14:08:27.485] [ERROR] OrderIDVO - Functon:updateOrderIDGenerator - Error Occured while processing Update
+[2015-03-30 14:08:27.504] [ERROR] app - Worker server died (ID: 1, PID: 8824)
+[2015-03-30 14:10:15.802] [ERROR] OrderIDVO - Functon:updateOrderIDGenerator - Error Occured while processing Update
+[2015-03-30 14:10:15.811] [ERROR] app - Worker server died (ID: 1, PID: 11476)
+[2015-03-30 14:10:57.771] [ERROR] OrderIDVO - Functon:updateOrderIDGenerator - Error Occured while processing Update
+[2015-03-30 14:10:57.777] [ERROR] OrderVO - { message: 'Cast to ObjectId failed for value "" at path "order_assigned_to.order_current_appraiser"',
+  name: 'CastError',
+  type: 'ObjectId',
+  value: '',
+  path: 'order_assigned_to.order_current_appraiser' }
+[2015-03-30 14:10:57.779] [ERROR] PAException - Exception at :OrderVO Save Order Exception
+[2015-03-30 14:10:57.788] [ERROR] app - Worker server died (ID: 1, PID: 10312)
+[2015-03-30 14:12:05.274] [ERROR] OrderIDVO - Functon:updateOrderIDGenerator - Error Occured while processing Update
+[2015-03-30 14:12:05.280] [ERROR] OrderVO - { message: 'Cast to ObjectId failed for value "" at path "order_assigned_to.order_current_appraiser"',
+  name: 'CastError',
+  type: 'ObjectId',
+  value: '',
+  path: 'order_assigned_to.order_current_appraiser' }
+[2015-03-30 14:12:05.282] [ERROR] PAException - Exception at :OrderVO Save Order Exception
+[2015-03-30 14:12:05.289] [ERROR] app - Worker server died (ID: 1, PID: 10616)
+[2015-03-30 14:13:18.546] [ERROR] OrderIDVO - Functon:updateOrderIDGenerator - Error Occured while processing Update
+[2015-03-30 14:13:18.551] [ERROR] OrderVO - { message: 'Cast to ObjectId failed for value "" at path "order_assigned_to.order_current_appraiser"',
+  name: 'CastError',
+  type: 'ObjectId',
+  value: '',
+  path: 'order_assigned_to.order_current_appraiser' }
+[2015-03-30 14:13:18.553] [ERROR] PAException - Exception at :OrderVO Save Order Exception
+[2015-03-30 14:13:18.560] [ERROR] app - Worker server died (ID: 1, PID: 10264)
+[2015-03-30 14:19:00.452] [ERROR] OrderIDVO - Functon:updateOrderIDGenerator - Error Occured while processing Update
+[2015-03-30 14:19:00.473] [ERROR] OrderVO - { message: 'Cast to ObjectId failed for value "" at path "order_assigned_to.order_current_appraiser"',
+  name: 'CastError',
+  type: 'ObjectId',
+  value: '',
+  path: 'order_assigned_to.order_current_appraiser' }
+[2015-03-30 14:19:00.477] [ERROR] PAException - Exception at :OrderVO Save Order Exception
+[2015-03-30 14:19:00.487] [ERROR] app - Worker server died (ID: 1, PID: 10556)
+[2015-03-30 14:19:26.418] [ERROR] OrderIDVO - Functon:updateOrderIDGenerator - Error Occured while processing Update
+[2015-03-30 14:19:26.427] [ERROR] OrderVO - { message: 'Cast to ObjectId failed for value "" at path "order_assigned_to.order_current_appraiser"',
+  name: 'CastError',
+  type: 'ObjectId',
+  value: '',
+  path: 'order_assigned_to.order_current_appraiser' }
+[2015-03-30 14:19:26.431] [ERROR] PAException - Exception at :OrderVO Save Order Exception
+[2015-03-30 14:19:26.444] [ERROR] app - Worker server died (ID: 1, PID: 2768)
+[2015-03-30 14:20:59.447] [ERROR] app - Worker server died (ID: 1, PID: 10408)
+[2015-03-30 14:21:35.246] [ERROR] OrderVO - { message: 'Cast to ObjectId failed for value "" at path "order_assigned_to.order_current_appraiser"',
+  name: 'CastError',
+  type: 'ObjectId',
+  value: '',
+  path: 'order_assigned_to.order_current_appraiser' }
+[2015-03-30 14:21:35.248] [ERROR] PAException - Exception at :OrderVO Save Order Exception
+[2015-03-30 14:21:35.256] [ERROR] app - Worker server died (ID: 1, PID: 10672)
+[2015-03-30 14:22:16.245] [ERROR] OrderVO - { message: 'Cast to ObjectId failed for value "" at path "order_assigned_to.order_current_appraiser"',
+  name: 'CastError',
+  type: 'ObjectId',
+  value: '',
+  path: 'order_assigned_to.order_current_appraiser' }
+[2015-03-30 14:22:16.247] [ERROR] PAException - Exception at :OrderVO Save Order Exception
+[2015-03-30 14:22:16.254] [ERROR] app - Worker server died (ID: 1, PID: 5716)
+[2015-03-30 15:24:37.950] [ERROR] OrderVO - { message: 'Cast to ObjectId failed for value "" at path "order_evaluation_detail"',
+  name: 'CastError',
+  type: 'ObjectId',
+  value: '',
+  path: 'order_evaluation_detail' }
+[2015-03-30 15:24:37.953] [ERROR] PAException - Exception at :OrderVO Save Order Exception
+[2015-03-30 15:24:37.966] [ERROR] app - Worker server died (ID: 1, PID: 3796)
