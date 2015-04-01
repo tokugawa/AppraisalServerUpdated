@@ -6,24 +6,24 @@
     "start": "node app.js"
   },
   "dependencies": {
-      "express": "~4.8.6",
-      "body-parser": "~1.6.6",
-      "cookie-parser": "~1.3.2",
-      "express-session":"latest",
-      "serve-favicon": "~2.0.1",
-      "debug": "~1.0.4",
-      "ejs": "~0.8.5",
-	     "log4js":"~0.6.20",
-	     "blueimp-file-upload-expressjs": "~0.2.12",
-  	   "mongoose":"~3.8.16",
-  	   "bcrypt-nodejs" : "latest",
-       "portscanner" : "latest",
-       "cors" : "2.4.2",
-       "mime":"latest",
-       "redis":"latest",
-       "connect-redis":"latest",
-       "passport": "~0.1.18",
-       "passport-local": "~0.1.6"
-	
+    "bcrypt-nodejs": "latest",
+    "blueimp-file-upload-expressjs": "~0.2.12",
+    "body-parser": "~1.6.6",
+    "connect-redis": "latest",
+    "cookie-parser": "~1.3.2",
+    "cors": "2.4.2",
+    "debug": "~1.0.4",
+    "ejs": "~0.8.5",
+    "express": "~4.8.6",
+    "express-session": "latest",
+    "log4js": "~0.6.20",
+    "mime": "latest",
+    "mongoose": "~3.8.16",
+    "passport": "~0.1.18",
+    "passport-local": "~0.1.6",
+    "portscanner": "latest",
+    "redis": "latest",
+    "serve-favicon": "~2.0.1",
+    "xsd-schema-validator": "^0.3.0"
   }
 }

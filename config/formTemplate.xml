@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VALUATION_RESPONSE MISMOVersionID="2.6GSE">
+  <REPORT _ID="???" AppraisalSoftwareProductName="???" AppraisalSoftwareProductVersionIdentifier="???" AppraisalFormType="FNM1004" AppraisalFormTypeOtherDescription="???" AppraisalFormVersionIdentifier="???" USPAPReportDescription="???" AppraiserFileIdentifier="???" AppraiserAdditionalFileIdentifierName="???" AppraiserAdditionalFileIdentifier="???" LoanPurposeType="ConstructionOnly" OtherLoanPurposeDescription="???" LoanOriginationSystemLoanIdentifier="???" AppraiserReportSignedDate="???" SupervisorReportSignedDate="???" AppraisalScopeOfWorkDescription="???" AppraisalIntendedUserDescription="???" AppraisalIntendedUseDescription="???" AppraisalPurposeType="EmployeeRelocation" AppraisalPurposeTypeOtherDescription="???" _TitleDescription="???">
+    <FORM _ID="???" AppraisalReportContentSequenceIdentifier="???" AppraisalReportContentType="CoverPage" AppraisalReportContentTypeOtherDescription="???" AppraisalReportContentIdentifier="???" AppraisalReportContentName="???" AppraisalReportContentDescription="???" AppraisalAddendumText="???" _TitleDescription="???" AppraisalReportContentIsPrimaryFormIndicator="Y">
+      <IMAGE _ID="???" _SequenceIdentifier="???" _Identifier="???" _Name="???" _CaptionComment="???">
+        <EMBEDDED_FILE _ID="???" _Type="???" _Version="???" _Name="???" _Extension="???" _EncodingType="???" _Description="???" MIMEType="???">
+          <DOCUMENT />
+        </EMBEDDED_FILE>
+        <REFERENCED_FILE _ID="???" _Name="???" __IDentifier="???" _Type="PDF" _TypeOtherDescription="???" _Description="???" _PathDescription="???" _URLDescription="???" _CreatorName="???" _CreatorVersionIdentifier="???" />
+      </IMAGE>
+      <MARKET _ID="???" MarketTrendsAdverseFinancingTrendType="Declining" MarketTrendsAdverseFinancingIndicator="Y" SalesConcessionDescription="???" MarketTrendsForeclosureActivityIndicator="Y" NeighborhoodMarketabilityFactorsDescription="???" DataSourceDescription="???" MarketTrendsReconciliationComment="???">
+        <MARKET_INVENTORY _ID="???" _Type="AbsorptionRate" _MonthRangeType="Prior7To12Months" _Count="???" _Rate="???" _Amount="???" _TrendType="Declining" />
+        <SUBJECT_PROJECT _ID="???" MarketTrendsAdverseFinancingType="Declining" ProjectName="???" MarketTrendsForeclosureActivityIndicator="Y" NeighborhoodMarketabilityFactorsDescription="???" MarketTrendsReconciliationComment="???">
+          <MARKET_INVENTORY _ID="???" _Type="AbsorptionRate" _MonthRangeType="Prior7To12Months" _Count="???" _Rate="???" _Amount="???" _TrendType="Declining" />
+        </SUBJECT_PROJECT>
+      </MARKET>
+    </FORM>
+    <EMBEDDED_FILE _ID="???" _Type="???" _Version="???" _Name="???" _Extension="???" _EncodingType="???" _Description="???" MIMEType="???">
+      <DOCUMENT />
+    </EMBEDDED_FILE>
+    <REFERENCED_FILE _ID="???" _Name="???" __IDentifier="???" _Type="PDF" _TypeOtherDescription="???" _Description="???" _PathDescription="???" _URLDescription="???" _CreatorName="???" _CreatorVersionIdentifier="???" />
+  </REPORT>
+  <PARTIES _ID="???">
+    <APPRAISER _ID="???" _Name="???" _CompanyName="???" _StreetAddress="???" _StreetAddress2="???" _City="???" _State="???" _PostalCode="???" _Country="???" _Identifier="???">
+      <CONTACT_DETAIL _Name="???" _Identifier="???" _FirstName="???" _LastName="???" _MiddleName="???" _NameSuffix="???" _SequenceIdentifier="???" _ID="???">
+        <CONTACT_POINT _RoleType="Home" _Type="Email" _TypeOtherDescription="???" _Value="???" _PreferenceIndicator="Y" _RoleTypeOtherDescription="???" _ID="???" />
+      </CONTACT_DETAIL>
+      <APPRAISER_LICENSE _ID="???" _Identifier="???" _ExpirationDate="???" _State="???" _Type="Certificate" _TypeOtherDescription="???" />
+      <INSPECTION _ID="???" AppraisalInspectionPropertyType="Subject" AppraisalInspectionType="ExteriorAndInterior" AppraisalInspectionTypeOtherDescription="???" ExteriorInspectionSufficientIndicator="Y" InspectionDate="???" />
+    </APPRAISER>
+    <SUPERVISOR _ID="???" _Name="???" _CompanyName="???" _StreetAddress="???" _StreetAddress2="???" _City="???" _State="???" _PostalCode="???" _Country="???" _Identifier="???">
+      <CONTACT_DETAIL _Name="???" _Identifier="???" _FirstName="???" _LastName="???" _MiddleName="???" _NameSuffix="???" _SequenceIdentifier="???" _ID="???">
+        <CONTACT_POINT _RoleType="Home" _Type="Email" _TypeOtherDescription="???" _Value="???" _PreferenceIndicator="Y" _RoleTypeOtherDescription="???" _ID="???" />
+      </CONTACT_DETAIL>
+      <APPRAISER_LICENSE _ID="???" _Identifier="???" _ExpirationDate="???" _State="???" _Type="Certificate" _TypeOtherDescription="???" />
+      <INSPECTION _ID="???" AppraisalInspectionPropertyType="Subject" AppraisalInspectionType="ExteriorAndInterior" AppraisalInspectionTypeOtherDescription="???" ExteriorInspectionSufficientIndicator="Y" InspectionDate="???" />
+    </SUPERVISOR>
+    <REVIEW_APPRAISER _ID="???" _Name="???" _CompanyName="???" _StreetAddress="???" _StreetAddress2="???" _City="???" _State="???" _PostalCode="???" _Country="???" _Identifier="???">
+      <CONTACT_DETAIL _Name="???" _Identifier="???" _FirstName="???" _LastName="???" _MiddleName="???" _NameSuffix="???" _SequenceIdentifier="???" _ID="???">
+        <CONTACT_POINT _RoleType="Home" _Type="Email" _TypeOtherDescription="???" _Value="???" _PreferenceIndicator="Y" _RoleTypeOtherDescription="???" _ID="???" />
+      </CONTACT_DETAIL>
+      <APPRAISER_LICENSE _ID="???" _Identifier="???" _ExpirationDate="???" _State="???" _Type="Certificate" _TypeOtherDescription="???" />
+      <INSPECTION _ID="???" AppraisalInspectionPropertyType="Subject" AppraisalInspectionType="ExteriorAndInterior" AppraisalInspectionTypeOtherDescription="???" ExteriorInspectionSufficientIndicator="Y" InspectionDate="???" />
+    </REVIEW_APPRAISER>
+    <REAL_ESTATE_AGENT _ID="???" _Type="Listing" _TypeOtherDescription="???" _UnparsedName="???" _StreetAddress="???" _StreetAddress2="???" _City="???" _State="???" _PostalCode="???" _County="???">
+      <CONTACT_DETAIL _Name="???" _Identifier="???" _FirstName="???" _LastName="???" _MiddleName="???" _NameSuffix="???" _SequenceIdentifier="???" _ID="???">
+        <CONTACT_POINT _RoleType="Home" _Type="Email" _TypeOtherDescription="???" _Value="???" _PreferenceIndicator="Y" _RoleTypeOtherDescription="???" _ID="???" />
+      </CONTACT_DETAIL>
+    </REAL_ESTATE_AGENT>
+    <LENDER _ID="???" _Identifier="???" _UnparsedName="???" _StreetAddress="???" _StreetAddress2="???" _City="???" _State="???" _PostalCode="???" _Country="???" AppraisalFormsUnparsedAddress="???">
+      <CONTACT_DETAIL _Name="???" _Identifier="???" _FirstName="???" _LastName="???" _MiddleName="???" _NameSuffix="???" _SequenceIdentifier="???" _ID="???">
+        <CONTACT_POINT _RoleType="Home" _Type="Email" _TypeOtherDescription="???" _Value="???" _PreferenceIndicator="Y" _RoleTypeOtherDescription="???" _ID="???" />
+      </CONTACT_DETAIL>
+    </LENDER>
+    <BORROWER _ID="???" _FirstName="???" _MiddleName="???" _LastName="???" _UnparsedName="???">
+      <BORROWER_EXTENSION _ID="???">
+        <BORROWER_EXTENSION_SECTION _ID="???" ExtensionSectionOrganizationName="UNIFORM APPRAISAL DATASET" ExtensionSectionTypeDescription="???" ExtensionSectionVersion="1.0">
+          <CONTACT_DETAIL _Name="???" _Identifier="???" _FirstName="???" _LastName="???" _MiddleName="???" _NameSuffix="???" _SequenceIdentifier="???" _ID="???">
+            <CONTACT_POINT _RoleType="Home" _Type="Email" _TypeOtherDescription="???" _Value="???" _PreferenceIndicator="Y" _RoleTypeOtherDescription="???" _ID="???" />
+          </CONTACT_DETAIL>
+          <BORROWER_EXTENSION_SECTION_DATA _ID="???">
+            <BORROWER_NAME GSEBorrowerName="???" />
+          </BORROWER_EXTENSION_SECTION_DATA>
+        </BORROWER_EXTENSION_SECTION>
+      </BORROWER_EXTENSION>
+    </BORROWER>
+    <MANAGEMENT_COMPANY_EXTENSION _ID="???">
+      <MANAGEMENT_COMPANY_EXTENSION_SECTION _ID="???" ExtensionSectionOrganizationName="UNIFORM APPRAISAL DATASET" ExtensionSectionTypeDescription="???" ExtensionSectionVersion="1.0">
+        <CONTACT_DETAIL _Name="???" _Identifier="???" _FirstName="???" _LastName="???" _MiddleName="???" _NameSuffix="???" _SequenceIdentifier="???" _ID="???">
+          <CONTACT_POINT _RoleType="Home" _Type="Email" _TypeOtherDescription="???" _Value="???" _PreferenceIndicator="Y" _RoleTypeOtherDescription="???" _ID="???" />
+        </CONTACT_DETAIL>
+        <MANAGEMENT_COMPANY_EXTENSION_SECTION_DATA _ID="???">
+          <MANAGEMENT_COMPANY GSEManagementCompanyName="???" />
+        </MANAGEMENT_COMPANY_EXTENSION_SECTION_DATA>
+      </MANAGEMENT_COMPANY_EXTENSION_SECTION>
+    </MANAGEMENT_COMPANY_EXTENSION>
+  </PARTIES>
+  <PROPERTY _ID="???" MISMOVersionID="2.6GSE" _SequenceIdentifier="???" _StreetAddress="???" _StreetAddress2="???" _City="???" _State="???" _PostalCode="???" _County="???" _Country="???" BuildingStatusType="Complete" BuildingStatusTypeOtherDescription="???" LandUseType="Residential" LandUseTypeOtherDescription="???" LandUseComment="???" _ConditionDescription="???" _CurrentOccupancyType="Abandoned" _CurrentOccupantUnparsedName="???" _GatedCommunityIndicator="Y" _RightsType="CommunityProperty" _RightsTypeOtherDescription="???" _TaxDelinquentIndicator="Y" _TitleCategoryType="SingleFamily" _TitleCategoryTypeOtherDescription="???" _AppraisedWithinPreviousYearIndicator="Y" _AppraisedWithinPreviousYearDescription="???" ProjectClassificationType="Condominium" ProjectClassificationTypeOtherDescription="???" LeaseExpirationDate="???">
+    <PARSED_STREET_ADDRESS _ID="???" _StreetName="???" _DirectionPrefix="???" _DirectionSuffix="???" _StreetSuffix="???" _HouseNumber="???" _BuildingNumber="???" _ApartmentOrUnit="???" _MilitaryAPOFPO="???" _RuralRoute="???" _PostOfficeBox="???" PlusFourPostalCode="???" SitusCarrierRouteIdentifier="???" />
+    <_IDENTIFICATION _ID="???" AssessorsParcelIdentifier="???" AssessorsSecondParcelIdentifier="???" CountyFIPSCode="???" CensusTractIdentifier="???" LongitudeNumber="???" LatitudeNumber="???" MapReferenceIdentifier="???" MapReferenceSecondIdentifier="???" MSAIdentifier="???" MunicipalityName="???" SchoolDistrictName="???" StateFIPSCode="???">
+      <PROPERTY_IDENTIFICATION_EXTENSION _ID="???">
+        <PROPERTY_IDENTIFICATION_EXTENSION_SECTION _ID="???" ExtensionSectionOrganizationName="UNIFORM APPRAISAL DATASET" ExtensionSectionTypeDescription="???" ExtensionSectionVersion="1.0">
+          <CONTACT_DETAIL _Name="???" _Identifier="???" _FirstName="???" _LastName="???" _MiddleName="???" _NameSuffix="???" _SequenceIdentifier="???" _ID="???">
+            <CONTACT_POINT _RoleType="Home" _Type="Email" _TypeOtherDescription="???" _Value="???" _PreferenceIndicator="Y" _RoleTypeOtherDescription="???" _ID="???" />
+          </CONTACT_DETAIL>
+          <PROPERTY_IDENTIFICATION_EXTENSION_SECTION_DATA _ID="???">
+            <PARCEL_IDENTIFIER _ID="???" GSEAssessorsParcelIdentifier="???" />
+          </PROPERTY_IDENTIFICATION_EXTENSION_SECTION_DATA>
+        </PROPERTY_IDENTIFICATION_EXTENSION_SECTION>
+      </PROPERTY_IDENTIFICATION_EXTENSION>
+    </_IDENTIFICATION>
+    <_LEGAL_DESCRIPTION _ID="???" _TextDescription="???" _Type="MetesAndBounds" _TypeOtherDescription="???">
+      <PLATTED_LAND _ID="???" PropertyLotIdentifier="???" PropertyBlockIdentifier="???" PropertySectionIdentifier="???" PropertySubdivisionIdentifier="???" PropertyTractIdentifier="???" PlatName="???" _BuildingIdentifier="???" _PlatCodeIdentifier="???" _PlatInstrumentIdentifier="???" _UnitNumberIdentifier="???" RecordedDocumentBook="???" RecordedDocumentPage="???" />
+      <UNPLATTED_LAND _ID="???" _DescriptionType="GovernmentSurvey" _DescriptionTypeOtherDescription="???" PropertyTownshipIdentifier="???" PropertyRangeIdentifier="???" PropertySectionIdentifier="???" _AbstractNumberIdentifier="???" _BaseIdentifier="???" _LandGrantIdentifier="???" _MeridianIdentifier="???" _MetesAndBoundsRemainingDescription="???" _QuarterSectionIdentifier="???" />
+      <PARCEL_IDENTIFICATION _ID="???" _Type="ParcelIdentificationNumber" _TypeOtherDescription="???" _Identifier="???" />
+    </_LEGAL_DESCRIPTION>
+    <STRUCTURE _ID="???" PropertyStructureBuiltYear="???" AgeYearsCount="???" BuildingCount="???" BuildingStatusType="Complete" ElevatorCount="???" StoriesCount="???" _AppealDescription="???" PropertyCategoryType="Attached" PropertyCategoryTypeOtherDescription="???" StructureConfigurationType="Duplex" StructureConfigurationTypeOtherDescription="???" _ConditionDescription="???" _ConstructionStatusDescription="???" _DesignDescription="???" PropertyStructureHabitableYearRoundIndicator="Y" _HeatingCoolingMeteredSeparatelyIndicator="Y" _HeatingCoolingMeteredSeparatelyDescription="???" ManufacturedHomeIndicator="Y" _ManufacturedHousingDescription="???" _NeverOccupiedIndicator="Y" _SingleFamilyResidenceIndicator="Y" _StateDescription="???" LivingUnitCount="???" _AccessoryUnitCount="???" GrossBuildingAreaSquareFeetCount="???" GrossLivingAreaSquareFeetCount="???" GrossLivingAreaSquareFeetDataSourceDescription="???" TotalRoomCount="???" TotalBedroomCount="???" TotalBathroomCount="???" CharacteristicsAffectMarketabilityDescription="???" _AdditionsDescription="???" ExteriorInspectionSufficientIndicator="Y" RentControlStatusType="Yes" RentControlDescription="???" _InteriorFloorComment="???" _InteriorWallComment="???" ParkingSpaceAssignmentTypeOtherDescription="???" _AccessoryUnitExistsIndicator="Y" AttachmentType="Attached">
+      <STRUCTURE_DATA_SOURCE _ID="???" DataSourceType="InteriorExteriorInspection" DataSourceTypeOtherDescription="???" _ExistsIndicator="Y" />
+      <EXTERIOR_FEATURE _ID="???" _Type="Foundation" _TypeOtherDescription="???" _ExistsIndicator="Y" _Description="???" />
+      <MANUFACTURED_HOME _ID="???" LengthFeetCount="???" _DeckDescription="???" _MakeIdentifier="???" _ModelIdentifier="???" _ModelYear="???" _ManufactureDate="???" _PorchDescription="???" _SerialNumberIdentifier="???" _HUDCertificationLabelIdentifier="???" _TipOutDescription="???" _WaniganDescription="???" _WidthType="SingleWide" WidthFeetCount="???" _SectionCount="???" _ModificationsDescription="???" _InstallerName="???" _InstalledDate="???" _AttachedToFoundationIndicator="Y" _AttachedToFoundationDescription="???" _WheelsRemovedIndicator="Y" _WheelsDescription="???" _ConnectedToUtilitiesIndicator="Y" _ConnectionToUtilitiesDescription="???" _InteriorSpaceAcceptableToMarketIndicator="Y" _InteriorSpaceAcceptabilityToMarketDescription="???" _HUDDataPlateAttachedIndicator="Y" _HUDDataPlateDataSourceDescription="???" _HUDCertificationLabelAttachedIndicator="Y" _HUDCertificationLabelDataSourceDescription="???" _MeetsHUDRequirementsForLocationIndicator="Y" _MeetsHUDRequirementsForLocationDescription="???" _ManufacturedYear="???">
+        <_SECTION _ID="???" _Type="SectionOne" _TypeOtherDescription="???" DepthFeetCount="???" WidthFeetCount="???" SquareFeetCount="???" />
+        <_QUALITY _ID="???" RatingConditionType="Poor" DataSourceDescription="???" />
+      </MANUFACTURED_HOME>
+      <FOUNDATION _ID="???" _Type="Slab" _TypeOtherDescription="???" _ExistsIndicator="Y" _ConditionDescription="???" _MaterialType="PouredConcrete" _MaterialTypeOtherDescription="???">
+        <_CONDITION _ID="???" _Type="Dampness" _TypeOtherDescription="???" _Comment="???" _ExistsIndicator="Y" />
+      </FOUNDATION>
+      <FOUNDATION_FEATURE _ID="???" _Type="SumpPump" _TypeOtherDescription="???" _DetailDescription="???" _ExistsIndicator="Y" />
+      <BASEMENT _ID="???" _CeilingMaterialDescription="???" _FinishedPercent="???" _FinishDescription="???" _FinishedIndicator="Y" _FirstFloorAreaPercent="???" _FloorMaterialDescription="???" _WallMaterialDescription="???" SquareFeetCount="???">
+        <BASEMENT_FEATURE _ID="???" _Type="OutsideEntry" _TypeOtherDescription="???" _Description="???" _ExistsIndicator="Y" />
+        <ROOM_TYPE_SUMMARY _ID="???" RoomType="Foyer" RoomTypeOtherDescription="???" _Count="???" />
+      </BASEMENT>
+      <INSULATION _ID="???" _Comment="???" EnergyEfficientItemsDescription="???">
+        <_AREA _ID="???" _Type="Roof" _TypeOtherDescription="???" InsulationRatingDescription="???" _ExistsIndicator="Y" />
+        <_ABSENCE _ID="???" _Type="Unknown" _Comment="???" />
+      </INSULATION>
+      <LEVEL _ID="???" _Type="Basement" _TypeOtherDescription="???" SquareFeetCount="???" SquareFeetPerUnitCount="???">
+        <ROOM_TYPE_SUMMARY _ID="???" RoomType="Foyer" RoomTypeOtherDescription="???" _Count="???" />
+      </LEVEL>
+      <INTERIOR_FEATURE _ID="???" _Type="Floors" _TypeOtherDescription="???" _ConditionDescription="???">
+        <WALL_MATERIAL _ID="???" _Type="Drywall" _TypeOtherDescription="???" _ExistsIndicator="Y" />
+        <FLOOR_COVERING _ID="???" _ExistsIndicator="Y" _Type="Carpet" _TypeOtherDescription="???" />
+      </INTERIOR_FEATURE>
+      <FLOOR_COVERING _ID="???" _ExistsIndicator="Y" _Type="Carpet" _TypeOtherDescription="???" />
+      <HEATING _ID="???" _Type="ForcedWarmAir" _TypeOtherDescription="???" _AdditionalUnitDescription="???" _AdditionalUnitName="???" _UnitConditionDescription="???" _FuelDescription="???" _UnitDescription="???" />
+      <COOLING _ID="???" AdequateIndicator="Y" _AdditionalUnitDescription="???" _AdditionalUnitName="???" _CentralizedIndicator="Y" _IndividualIndicator="Y" _OtherIndicator="Y" _UnitDescription="???" _UnitConditionDescription="???" />
+      <KITCHEN_EQUIPMENT _ID="???" _Type="Refrigerator" _TypeOtherDescription="???" _ExistsIndicator="Y" _Count="???" />
+      <ATTIC _ID="???" _ExistsIndicator="Y" SquareFeetCount="???">
+        <ATTIC_FEATURE _ID="???" _Type="Finished" _TypeOtherDescription="???" _ExistsIndicator="Y" />
+        <LEVEL _ID="???" _Type="Basement" _TypeOtherDescription="???" SquareFeetCount="???" SquareFeetPerUnitCount="???">
+          <ROOM_TYPE_SUMMARY _ID="???" RoomType="Foyer" RoomTypeOtherDescription="???" _Count="???" />
+        </LEVEL>
+      </ATTIC>
+      <AMENITY _ID="???" _Type="Fireplace" _TypeOtherDescription="???" _ExistsIndicator="Y" _Count="???" _DetailedDescription="???" SquareFeetCount="???">
+        <FLOOR_COVERING _ID="???" _ExistsIndicator="Y" _Type="Carpet" _TypeOtherDescription="???" />
+      </AMENITY>
+      <CAR_STORAGE _ID="???" AdequateIndicator="Y" _ExistsIndicator="Y" GuestParkingSpacesCount="???" ParkingSpacesCount="???" ParkingSpaceIdentifier="???" ParkingSpaceAssignmentType="Assigned" _AttachmentType="Attached">
+        <CAR_STORAGE_LOCATION _ID="???" _Type="Garage" _TypeOtherDescription="???" _ExistsIndicator="Y" ParkingSpacesCount="???" SquareFeetCount="???" />
+      </CAR_STORAGE>
+      <STRUCTURE_ANALYSIS _ID="???" EffectiveAgeRangeHighYearsCount="???" EffectiveAgeRangeLowYearsCount="???" EffectiveAgeYearsCount="???" RemainingEconomicLifeRangeHighYearsCount="???" RemainingEconomicLifeRangeLowYearsCount="???">
+        <STRUCTURE_ANALYSIS_RATING _ID="???" _ItemType="ExteriorAppeal" _ItemTypeOtherDescription="???" RatingConditionType="Excellent" _Comment="???" />
+        <STRUCTURE_ANALYSIS_EXTENSION _ID="???">
+          <STRUCTURE_ANALYSIS_EXTENSION_SECTION _ID="???" ExtensionSectionOrganizationName="UNIFORM APPRAISAL DATASET" ExtensionSectionTypeDescription="???" ExtensionSectionVersion="1.0">
+            <CONTACT_DETAIL _Name="???" _Identifier="???" _FirstName="???" _LastName="???" _MiddleName="???" _NameSuffix="???" _SequenceIdentifier="???" _ID="???">
+              <CONTACT_POINT _RoleType="Home" _Type="Email" _TypeOtherDescription="???" _Value="???" _PreferenceIndicator="Y" _RoleTypeOtherDescription="???" _ID="???" />
+            </CONTACT_DETAIL>
+            <STRUCTURE_ANALYSIS_EXTENSION_SECTION_DATA _ID="???">
+              <EFFECTIVE_AGE _ID="???" GSEEffectiveAgeDescription="???" />
+            </STRUCTURE_ANALYSIS_EXTENSION_SECTION_DATA>
+          </STRUCTURE_ANALYSIS_EXTENSION_SECTION>
+        </STRUCTURE_ANALYSIS_EXTENSION>
+      </STRUCTURE_ANALYSIS>
+      <_ADDITIONAL_ITEM _ID="???" StructureAdditionalGeneralItemName="???" StructureAdditionalGeneralItemDescription="???" />
+      <_UNIT_GROUP _ID="???" UnitType="UnitOne" LevelCount="???" GrossLivingAreaSquareFeetCount="???" LivingUnitCount="???" TotalRoomCount="???" TotalBedroomCount="???" TotalBathroomCount="???" SquareFeetPerUnitCount="???">
+        <ROOM_TYPE_SUMMARY _ID="???" RoomType="Foyer" RoomTypeOtherDescription="???" _Count="???" />
+      </_UNIT_GROUP>
+      <_UNIT _ID="???" UnitIdentifier="???" LevelCount="???" FloorIdentifier="???" SquareFeetCount="???" AgeYearsCount="???" EffectiveAgeYearsCount="???" ExteriorWallsDescription="???" RoofSurfaceDescription="???" AdditionalImprovementName="???" AdditionalImprovementDescription="???" _SharesCount="???" />
+      <_TYPICAL_TO_NEIGHBORHOOD _ID="???" StructureFeatureType="Overall" StructureFeatureTypeOtherDescription="???" _ExistsIndicator="Y" _AtypicalDescription="???" />
+      <CONDITION_DETAIL_EXTENSION _ID="???">
+        <CONDITION_DETAIL_EXTENSION_SECTION _ID="???" ExtensionSectionOrganizationName="UNIFORM APPRAISAL DATASET" ExtensionSectionTypeDescription="???" ExtensionSectionVersion="1.0">
+          <CONTACT_DETAIL _Name="???" _Identifier="???" _FirstName="???" _LastName="???" _MiddleName="???" _NameSuffix="???" _SequenceIdentifier="???" _ID="???">
+            <CONTACT_POINT _RoleType="Home" _Type="Email" _TypeOtherDescription="???" _Value="???" _PreferenceIndicator="Y" _RoleTypeOtherDescription="???" _ID="???" />
+          </CONTACT_DETAIL>
+          <CONDITION_DETAIL_EXTENSION_SECTION_DATA _ID="???">
+            <CONDITION_DETAIL _SequenceIdentifier="???" GSEImprovementAreaType="Kitchen" GSEImprovementDescriptionType="NotUpdated" GSEEstimateYearOfImprovementType="LessThanOneYearAgo" />
+            <CONDITION_DETAIL _SequenceIdentifier="???" GSEImprovementAreaType="Kitchen" GSEImprovementDescriptionType="NotUpdated" GSEEstimateYearOfImprovementType="LessThanOneYearAgo" />
+          </CONDITION_DETAIL_EXTENSION_SECTION_DATA>
+        </CONDITION_DETAIL_EXTENSION_SECTION>
+      </CONDITION_DETAIL_EXTENSION>
+      <OVERALL_CONDITION_RATING_EXTENSION _ID="???">
+        <OVERALL_CONDITION_RATING_EXTENSION_SECTION _ID="???" ExtensionSectionOrganizationName="UNIFORM APPRAISAL DATASET" ExtensionSectionTypeDescription="???" ExtensionSectionVersion="1.0">
+          <CONTACT_DETAIL _Name="???" _Identifier="???" _FirstName="???" _LastName="???" _MiddleName="???" _NameSuffix="???" _SequenceIdentifier="???" _ID="???">
+            <CONTACT_POINT _RoleType="Home" _Type="Email" _TypeOtherDescription="???" _Value="???" _PreferenceIndicator="Y" _RoleTypeOtherDescription="???" _ID="???" />
+          </CONTACT_DETAIL>
+          <OVERALL_CONDITION_RATING_EXTENSION_SECTION_DATA _ID="???">
+            <OVERALL_CONDITION_RATING GSEOverallConditionType="C1" GSEUpdateLastFifteenYearIndicator="Y" />
+          </OVERALL_CONDITION_RATING_EXTENSION_SECTION_DATA>
+        </OVERALL_CONDITION_RATING_EXTENSION_SECTION>
+      </OVERALL_CONDITION_RATING_EXTENSION>
+      <STRUCTURE_EXTENSION _ID="???">
+        <STRUCTURE_EXTENSION_SECTION _ID="???" ExtensionSectionOrganizationName="UNIFORM APPRAISAL DATASET" ExtensionSectionTypeDescription="???" ExtensionSectionVersion="1.0">
+          <CONTACT_DETAIL _Name="???" _Identifier="???" _FirstName="???" _LastName="???" _MiddleName="???" _NameSuffix="???" _SequenceIdentifier="???" _ID="???">
+            <CONTACT_POINT _RoleType="Home" _Type="Email" _TypeOtherDescription="???" _Value="???" _PreferenceIndicator="Y" _RoleTypeOtherDescription="???" _ID="???" />
+          </CONTACT_DETAIL>
+          <STRUCTURE_EXTENSION_SECTION_DATA _ID="???">
+            <STRUCTURE_INFORMATION GSEYearBuiltEstimationIndicator="Y" GSEStoriesCount="???" />
+          </STRUCTURE_EXTENSION_SECTION_DATA>
+        </STRUCTURE_EXTENSION_SECTION>
+      </STRUCTURE_EXTENSION>
+    </STRUCTURE>
+    <_OFF_SITE_IMPROVEMENT _ID="???" _ExistsIndicator="Y" _Type="Alley" _TypeOtherDescription="???" _Description="???" _OwnershipType="Public" />
+    <SITE _ID="???" _Comment="???" CornerLotIndicator="Y" DepthFeetCount="???" HighestBestUseIndicator="Y" HighestBestUseDescription="???" PropertyAcreageNumber="???" SquareFeetCount="???" _AdverseEasementsIndicator="Y" _AdverseEasementsDescription="???" _AdverseEnvironmentalFactorsComment="???" _AreaDescription="???" _DimensionsDescription="???" _UndergroundUtilitiesIndicator="Y" _ZoningComplianceType="Legal" _ZoningComplianceDescription="???" _ZoningClassificationIdentifier="???" _ZoningClassificationDescription="???" _ZoningPermitRebuildToCurrentDensityIndicator="Y" PropertyZoningCategoryType="Residential" PropertyZoningCategoryTypeOtherDescription="???" WidthFeetCount="???" RatingConditionType="Excellent" CharacteristicsAffectMarketabilityDescription="???">
+      <SITE_FEATURE _ID="???" _Type="Topography" _TypeOtherDescription="???" _Comment="???" />
+      <FLOOD_ZONE _ID="???" NFIPFloodZoneIdentifier="???" NFIPMapIdentifier="???" NFIPMapPanelDate="???" NFIPCommunityName="???" SpecialFloodHazardAreaIndicator="Y">
+        <FLOOD_ZONE_EXTENSION _ID="???">
+          <FLOOD_ZONE_EXTENSION_SECTION _ID="???" ExtensionSectionOrganizationName="UNIFORM APPRAISAL DATASET" ExtensionSectionTypeDescription="???" ExtensionSectionVersion="1.0">
+            <CONTACT_DETAIL _Name="???" _Identifier="???" _FirstName="???" _LastName="???" _MiddleName="???" _NameSuffix="???" _SequenceIdentifier="???" _ID="???">
+              <CONTACT_POINT _RoleType="Home" _Type="Email" _TypeOtherDescription="???" _Value="???" _PreferenceIndicator="Y" _RoleTypeOtherDescription="???" _ID="???" />
+            </CONTACT_DETAIL>
+            <FLOOD_ZONE_EXTENSION_SECTION_DATA _ID="???">
+              <FLOOD_ZONE_INFORMATION _ID="???" GSEFEMASpecialFloodHazardAreaIndicator="Y" GSEFEMAFloodMapIdentifier="???" GSENFIPFloodZoneIdentifier="???" />
+            </FLOOD_ZONE_EXTENSION_SECTION_DATA>
+          </FLOOD_ZONE_EXTENSION_SECTION>
+        </FLOOD_ZONE_EXTENSION>
+      </FLOOD_ZONE>
+      <SITE_UTILITY _ID="???" _Type="Electricity" _TypeOtherDescription="???" _PublicIndicator="Y" _NonPublicIndicator="Y" _NonPublicDescription="???" />
+    </SITE>
+    <PROJECT _ID="???" _Name="???" _CommonElementsDescription="???" _CommonElementsCompletedIndicator="Y" _CommonElementsStatusDescription="???" _CommonElementsLeasedIndicator="Y" _CommonElementsLeaseTermsDescription="???" _ConditionAndQualityDescription="???" _ContainsMultipleDwellingUnitsIndicator="Y" _ContainsMultipleDwellingUnitsDataSourceDescription="???" _ConversionIndicator="Y" _ConversionDate="???" _ConversionOriginalUseDescription="???" _ClassificationType="Condominium" _ClassificationTypeOtherDescription="???" _CurrentStatusDescription="???" _DesignType="TownhouseRowhouse" _DesignTypeOtherDescription="???" _DeveloperControlsProjectManagementIndicator="Y" _DeveloperControlOfProjectManagementDescription="???" _ManagementType="HomeownersAssociation" _ManagementTypeOtherDescription="???" _ManagementAgentName="???" _PhaseIdentifier="???" PropertyCurrentUsageType="PrimaryResidence" _PrimaryOccupancyType="PrincipleResidence" _UnitDensityPerAcreCount="???" LivingUnitCount="???" ElevatorCount="???" StoriesCount="???" _DataSourceType="ManagementAgency" _DataSourceTypeOtherDescription="???" DataSourceDescription="???" _ConcentratedOwnershipIndicator="Y" _ConcentratedOwnershipDescription="???" _CommercialSpaceIndicator="Y" CommercialSpaceDescription="???" _PartOfMasterAssociationIndicator="Y" _PartOfMasterAssociationDescription="???" _TotalSharesCount="???" _PerUnitFinancingAmount="???" _PerUnitLienAmount="???" OwnersWithinProjectMoreThanTwoMonthsDelinquentCount="???" _DeveloperTransferConcessionsIndicator="Y" _DeveloperTransferConcessionsDescription="???" _TaxAbatementsOrExemptionsIndicator="Y" _TaxAbatementsOrExemptionsDescription="???" _StockTransferFeeIndicator="Y" _StockTransferFeeDescription="???">
+      <DEVELOPMENT_STAGE _ID="???" _Type="Complete" _Description="???" _TotalPhasesCount="???" CompletedUnitsCount="???" LivingUnitCount="???" DataSourceDescription="???" PlannedUnitsCount="???" UnitsForSaleCount="???" UnitsSoldCount="???" UnitsRentedCount="???" OwnerOccupiedUnitCount="???" />
+      <PROJECT_RATING _ID="???" ProjectAspectType="Location" ProjectAspectTypeOtherDescription="???" RatingConditionType="Excellent" _Comment="???" />
+      <PROJECT_CAR_STORAGE _ID="???" AdequateIndicator="Y" _AdequacyEffectOnMarketabilityDescription="???" GuestParkingIndicator="Y" GuestParkingSpacesCount="???" ParkingSpacesCount="???" _Description="???" _SpacesToUnitsRatioNumber="???">
+        <CAR_STORAGE_LOCATION _ID="???" _Type="Garage" _TypeOtherDescription="???" _ExistsIndicator="Y" ParkingSpacesCount="???" SquareFeetCount="???" />
+      </PROJECT_CAR_STORAGE>
+      <PROJECT_ANALYSIS _ID="???" _BudgetAnalyzedIndicator="Y" _BudgetAnalysisComment="???" _AdequacyOfBudgetType="Adequate" _AdequacyOfManagementType="Adequate" _CharacteristicsAffectMarketabilityIndicator="Y" CharacteristicsAffectMarketabilityDescription="???" _GroundRentAmount="???" _GroundRentIndicator="Y" _GroundRentDescription="???" _AdditionalFacilitiesFeeIndicator="Y" _AdditionalFacilitiesFeeAmount="???" _AdditionalFacilitiesFeeDescription="???" _UnitChargesIncludeUtilitiesIndicator="Y" _UnitChargesDoNotIncludeUtilitiesComment="???" _UnitChargesRatingType="High" _CompetitiveProjectComparisonType="High" _CompetitiveProjectComparisonDescription="???" _SpecialCharacteristicsIndicator="Y" _SpecialCharacteristicsDescription="???">
+        <UNIT_CHARGE _ID="???" _PeriodType="Annually" _Amount="???" _PerSquareFootAmount="???" _NoUtilitiesIncludedInAssessmentIndicator="Y">
+          <UNIT_CHARGE_UTILITY _ID="???" _Type="Heating" _TypeOtherDescription="???" _IncludedInAssessmentIndicator="Y" />
+        </UNIT_CHARGE>
+      </PROJECT_ANALYSIS>
+      <_PER_UNIT_FEE _ID="???" _PeriodType="Annually" _Amount="???" />
+      <_BLANKET_FINANCING _ID="???" LienPriorityType="FirstLien" LienPriorityTypeOtherDescription="???" LienDescription="???" LiabilityUnpaidBalanceAmount="???" BalloonIndicator="Y" RemainingTermDescription="???" LiabilityMonthlyPaymentAmount="???" CurrentInterestRate="???" LoanAmortizationType="AdjustableRate" LoanAmortizationTypeOtherDescription="???" LienHolderName="???" />
+      <_OCCUPANCY _ID="???" _Type="OwnerOccupied" LivingUnitCount="???" _Percent="???" />
+      <PROJECT_EXTENSION _ID="???">
+        <PROJECT_EXTENSION_SECTION _ID="???" ExtensionSectionOrganizationName="UNIFORM APPRAISAL DATASET" ExtensionSectionTypeDescription="???" ExtensionSectionVersion="1.0">
+          <CONTACT_DETAIL _Name="???" _Identifier="???" _FirstName="???" _LastName="???" _MiddleName="???" _NameSuffix="???" _SequenceIdentifier="???" _ID="???">
+            <CONTACT_POINT _RoleType="Home" _Type="Email" _TypeOtherDescription="???" _Value="???" _PreferenceIndicator="Y" _RoleTypeOtherDescription="???" _ID="???" />
+          </CONTACT_DETAIL>
+          <PROJECT_EXTENSION_SECTION_DATA _ID="???">
+            <PROJECT_COMMERCIAL _ID="???" GSEProjectCommercialSpacePercent="???" />
+          </PROJECT_EXTENSION_SECTION_DATA>
+        </PROJECT_EXTENSION_SECTION>
+      </PROJECT_EXTENSION>
+    </PROJECT>
+    <NEIGHBORHOOD _ID="???" _Name="???" _Description="???" _BoundaryAndCharacteristicsDescription="???" _BuiltupRangeType="Over75Percent" _BuiltupEstimatedPercent="???" _DemandSupplyType="Shortage" _ExtendedMarketingTimeIndicator="Y" _GrowthPaceType="FullyDeveloped" _LandUseChangeStatusType="Likely" _LandUseCurrentDescription="???" _LandUseFutureDescription="???" PropertyNeighborhoodLocationType="Urban" PropertyNeighborhoodLocationTypeOtherDescription="???" _PotentialManufacturedHomeParkDescription="???" _MarketabilityFactorsDescription="???" _MarketConditionsDescription="???" _StreetMeetsStandardsIndicator="Y" _PropertyValueTrendType="Increasing" _TypicalMarketingTimeDurationType="UnderThreeMonths" _PredominantOccupancyType="Owner" _OwnerOccupancyPercent="???" _TenantOccupancyPercent="???" _PercentageVacancyType="VacantZeroToFivePercent" _VacancyPercent="???" _AcceptanceOfCooperativeOwnershipIndicator="Y" _AcceptabilityOfCooperativeOwnershipDescription="???" RatingConditionType="Excellent" AdverseMarketConditionsIndicator="Y">
+      <_HOUSING _ID="???" _Type="SingleFamily" _TypeOtherDescription="???" _OldestYearsCount="???" _NewestYearsCount="???" _HighPriceAmount="???" _LowPriceAmount="???" _PredominantAgeYearsCount="???" _PredominantPriceAmount="???" _PredominantOccupancyType="Owner" _OwnerOccupancyPercent="???" _TenantOccupancyPercent="???" _PercentageVacancyType="VacantZeroToFivePercent" _VacancyPercent="???" />
+      <_TYPICAL_APARTMENT _ID="???" AgeYearsCount="???" _Description="???" _EstimatedVacancyPercent="???" _VacancyTrendType="Increasing" _RentHighPriceAmount="???" _RentLowPriceAmount="???" _RentTrendType="Increasing" RentControlStatusType="Yes" RentControlDescription="???" StoriesCount="???" LivingUnitCount="???" />
+      <_PRESENT_LAND_USE _ID="???" _Type="SingleFamily" _TypeOtherDescription="???" _Percent="???" />
+      <NEIGHBORHOOD_FEATURE _ID="???" _Type="AdequacyOfShopping" _TypeOtherDescription="???" _EstimatedDistanceText="???" RatingConditionType="Excellent" />
+      <_ADVERSE_FEATURE _ID="???" _Type="EmploymentConditions" _TypeOtherDescription="???" _ExistsIndicator="Y" _Comment="???" />
+      <NEIGHBORHOOD_EXTENSION _ID="???">
+        <NEIGHBORHOOD_EXTENSION_SECTION _ID="???" ExtensionSectionOrganizationName="UNIFORM APPRAISAL DATASET" ExtensionSectionTypeDescription="???" ExtensionSectionVersion="1.0">
+          <CONTACT_DETAIL _Name="???" _Identifier="???" _FirstName="???" _LastName="???" _MiddleName="???" _NameSuffix="???" _SequenceIdentifier="???" _ID="???">
+            <CONTACT_POINT _RoleType="Home" _Type="Email" _TypeOtherDescription="???" _Value="???" _PreferenceIndicator="Y" _RoleTypeOtherDescription="???" _ID="???" />
+          </CONTACT_DETAIL>
+          <NEIGHBORHOOD_EXTENSION_SECTION_DATA _ID="???">
+            <NEIGHBORHOOD_BOUNDARIES _ID="???" GSENeighborhoodBoundariesDescription="???" />
+          </NEIGHBORHOOD_EXTENSION_SECTION_DATA>
+        </NEIGHBORHOOD_EXTENSION_SECTION>
+      </NEIGHBORHOOD_EXTENSION>
+    </NEIGHBORHOOD>
+    <_TITLE_TRANSFER_INSPECTION _ID="???" _RequiredIndicator="Y" _Comment="???" />
+    <_TAX _ID="???" _AssessmentStartYear="???" _AssessmentEndYear="???" _CertificateDate="???" _CountyRateAreaIdentifier="???" _ExemptionIndicator="Y" _ImprovementValueAmount="???" _LandValueAmount="???" _TotalAssessedValueAmount="???" _TotalTaxableValueAmount="???" _TotalTaxAmount="???" _TotalSpecialTaxAmount="???" _ToValueRate="???" _TypicalTaxIndicator="Y" _AtypicalComment="???" _YearIdentifier="???" _EndYear="???">
+      <_SPECIAL _ID="???" _Description="???" _Amount="???" />
+      <_EXEMPTION _ID="???" _Description="???" _Indicator="Y" />
+      <PROPERTY_TAX_EXTENSION _ID="???">
+        <PROPERTY_TAX_EXTENSION_SECTION _ID="???" ExtensionSectionOrganizationName="UNIFORM APPRAISAL DATASET" ExtensionSectionTypeDescription="???" ExtensionSectionVersion="1.0">
+          <CONTACT_DETAIL _Name="???" _Identifier="???" _FirstName="???" _LastName="???" _MiddleName="???" _NameSuffix="???" _SequenceIdentifier="???" _ID="???">
+            <CONTACT_POINT _RoleType="Home" _Type="Email" _TypeOtherDescription="???" _Value="???" _PreferenceIndicator="Y" _RoleTypeOtherDescription="???" _ID="???" />
+          </CONTACT_DETAIL>
+          <PROPERTY_TAX_EXTENSION_SECTION_DATA _ID="???">
+            <PROPERTY_TAX_AMOUNT _ID="???" GSEPropertyTaxTotalTaxAmount="???" />
+          </PROPERTY_TAX_EXTENSION_SECTION_DATA>
+        </PROPERTY_TAX_EXTENSION_SECTION>
+      </PROPERTY_TAX_EXTENSION>
+    </_TAX>
+    <SALES_HISTORY _ID="???" _Type="Last" _TypeOtherDescription="???" _SequenceIdentifier="???" DownPaymentAmount="???" LenderUnparsedName="???" LoanTermDescription="???" LoanOriginalMaturityTermMonths="???" PricePerSquareFootAmount="???" PropertySalesDate="???" PropertySalesAmount="???" _AnalysisOfAgreementDescription="???" RecordedDocumentType="Assignment" RecordedDocumentTypeOtherDescription="???" RecordedDocumentIdentifier="???" _ParcelSplitDescription="???" _PendingRecordIndicator="Y" _StampAmount="???" _TransferredOwnershipPercent="???" SalesConcessionAmount="???" SalesConcessionDescription="???" SellingRealEstateAgencyName="???" SellerUnparsedName="???" TitleCompanyName="???" />
+    <LISTING_HISTORY _ID="???" CurrentlyListedIndicator="Y" CurrentListPriceAmount="???" DaysOnMarketCount="???" OriginalListPriceAmount="???" LastListPriceRevisionDate="???" ListedWithinPreviousYearIndicator="Y" ListedWithinPreviousYearDescription="???" />
+    <EMBEDDED_FILE _ID="???" _Type="???" _Version="???" _Name="???" _Extension="???" _EncodingType="???" _Description="???" MIMEType="???">
+      <DOCUMENT />
+    </EMBEDDED_FILE>
+    <PROPERTY_ANALYSIS _ID="???" _Type="AdditionalFeatures" _TypeOtherDescription="???" _ExistsIndicator="Y" _Comment="???" />
+    <_OWNER _ID="???" _Name="???" _StreetAddress="???" _StreetAddress2="???" _City="???" _State="???" _PostalCode="???" _Country="???">
+      <CONTACT_DETAIL _Name="???" _Identifier="???" _FirstName="???" _LastName="???" _MiddleName="???" _NameSuffix="???" _SequenceIdentifier="???" _ID="???">
+        <CONTACT_POINT _RoleType="Home" _Type="Email" _TypeOtherDescription="???" _Value="???" _PreferenceIndicator="Y" _RoleTypeOtherDescription="???" _ID="???" />
+      </CONTACT_DETAIL>
+      <PROPERTY_OWNER_EXTENSION _ID="???">
+        <PROPERTY_OWNER_EXTENSION_SECTION _ID="???" ExtensionSectionOrganizationName="UNIFORM APPRAISAL DATASET" ExtensionSectionTypeDescription="???" ExtensionSectionVersion="1.0">
+          <CONTACT_DETAIL _Name="???" _Identifier="???" _FirstName="???" _LastName="???" _MiddleName="???" _NameSuffix="???" _SequenceIdentifier="???" _ID="???">
+            <CONTACT_POINT _RoleType="Home" _Type="Email" _TypeOtherDescription="???" _Value="???" _PreferenceIndicator="Y" _RoleTypeOtherDescription="???" _ID="???" />
+          </CONTACT_DETAIL>
+          <PROPERTY_OWNER_EXTENSION_SECTION_DATA _ID="???">
+            <PROPERTY_OWNER _ID="???" GSEPropertyOwnerName="???" />
+          </PROPERTY_OWNER_EXTENSION_SECTION_DATA>
+        </PROPERTY_OWNER_EXTENSION_SECTION>
+      </PROPERTY_OWNER_EXTENSION>
+    </_OWNER>
+    <SALES_CONTRACT _ID="???" _Date="???" _Amount="???" _ConditionsOfSaleDescription="???" _ReviewedIndicator="Y" _ReviewComment="???" _TermsAndConditionsConsistentWithTheLocalMarketIndicator="Y" SellerIsOwnerIndicator="Y" SalesConcessionIndicator="Y" DataSourceDescription="???" SalesConcessionDescription="???" _RetailerName="???" _InvoiceReviewedIndicator="Y" _InvoiceReviewComment="???" SalesConcessionAmount="???">
+      <SALES_CONTRACT_EXTENSION _ID="???">
+        <SALES_CONTRACT_EXTENSION_SECTION _ID="???" ExtensionSectionOrganizationName="UNIFORM APPRAISAL DATASET" ExtensionSectionTypeDescription="???" ExtensionSectionVersion="1.0">
+          <CONTACT_DETAIL _Name="???" _Identifier="???" _FirstName="???" _LastName="???" _MiddleName="???" _NameSuffix="???" _SequenceIdentifier="???" _ID="???">
+            <CONTACT_POINT _RoleType="Home" _Type="Email" _TypeOtherDescription="???" _Value="???" _PreferenceIndicator="Y" _RoleTypeOtherDescription="???" _ID="???" />
+          </CONTACT_DETAIL>
+          <SALES_CONTRACT_EXTENSION_SECTION_DATA _ID="???">
+            <SALES_TRANSACTION _ID="???" GSESaleType="Listing" />
+          </SALES_CONTRACT_EXTENSION_SECTION_DATA>
+        </SALES_CONTRACT_EXTENSION_SECTION>
+      </SALES_CONTRACT_EXTENSION>
+      <SALES_CONCESSION_EXTENSION _ID="???">
+        <SALES_CONCESSION_EXTENSION_SECTION _ID="???" ExtensionSectionOrganizationName="UNIFORM APPRAISAL DATASET" ExtensionSectionTypeDescription="???" ExtensionSectionVersion="1.0">
+          <CONTACT_DETAIL _Name="???" _Identifier="???" _FirstName="???" _LastName="???" _MiddleName="???" _NameSuffix="???" _SequenceIdentifier="???" _ID="???">
+            <CONTACT_POINT _RoleType="Home" _Type="Email" _TypeOtherDescription="???" _Value="???" _PreferenceIndicator="Y" _RoleTypeOtherDescription="???" _ID="???" />
+          </CONTACT_DETAIL>
+          <SALES_CONCESSION_EXTENSION_SECTION_DATA _ID="???">
+            <SALES_CONCESSION _ID="???" GSEUndefinedConcessionAmountIndicator="Y" />
+          </SALES_CONCESSION_EXTENSION_SECTION_DATA>
+        </SALES_CONCESSION_EXTENSION_SECTION>
+      </SALES_CONCESSION_EXTENSION>
+    </SALES_CONTRACT>
+    <PROPERTY_EXTENSION _ID="???">
+      <PROPERTY_EXTENSION_SECTION _ID="???" ExtensionSectionOrganizationName="UNIFORM APPRAISAL DATASET" ExtensionSectionTypeDescription="???" ExtensionSectionVersion="1.0">
+        <CONTACT_DETAIL _Name="???" _Identifier="???" _FirstName="???" _LastName="???" _MiddleName="???" _NameSuffix="???" _SequenceIdentifier="???" _ID="???">
+          <CONTACT_POINT _RoleType="Home" _Type="Email" _TypeOtherDescription="???" _Value="???" _PreferenceIndicator="Y" _RoleTypeOtherDescription="???" _ID="???" />
+        </CONTACT_DETAIL>
+        <PROPERTY_EXTENSION_SECTION_DATA _ID="???">
+          <PROPERTY_TYPE _ID="???" GSE_PUDIndicator="???" />
+        </PROPERTY_EXTENSION_SECTION_DATA>
+      </PROPERTY_EXTENSION_SECTION>
+    </PROPERTY_EXTENSION>
+  </PROPERTY>
+  <VALUATION_METHODS _ID="???" _AdditionalDescription="???">
+    <COST_ANALYSIS _ID="???" _Type="Reproduction" _TypeOtherDescription="???" SiteEstimatedValueAmount="???" SiteEstimatedValueComment="???" DataSourceDescription="???" DataSourceEffectiveDate="???" CostServiceQualityRatingDescription="???" NewImprovementTotalCostAmount="???" NewImprovementCostMultiplierFactor="???" NewImprovementCostLocalizedAmount="???" NewImprovementDepreciatedCostAmount="???" SiteOtherImprovementsAsIsAmount="???" ManufacturedHomeInstallationCostAmount="???" EstimatedRemainingEconomicLifeYearsCount="???" ValueIndicatedByCostApproachAmount="???" _Comment="???">
+      <NEW_IMPROVEMENT _ID="???" _SequenceIdentifier="???" _Type="Dwelling" _TypeOtherDescription="???" _CostDescription="???" SquareFeetCount="???" PricePerSquareFootAmount="???" _CostAmount="???" />
+      <DEPRECIATION _ID="???" _PhysicalPercent="???" _PhysicalAmount="???" _FunctionalPercent="???" _FunctionalAmount="???" _ExteriorPercent="???" _ExteriorAmount="???" _TotalAmount="???" />
+      <DATA_IDENTIFICATION _ID="???" NADAManufacturedHousingGuideEditionMonth="???" NADAManufacturedHousingGuideEditionYear="???" ManufacturedHomeBuiltState="???" ManufacturedHomeRegionIdentifier="???" WidthFeetCount="???" LengthFeetCount="???" NADAManufacturedHousingGuideGreyPageIdentifier="???" NADAManufacturedHousingGuideWhitePageIdentifier="???" NADAManufacturedHousingGuideBlackPageIdentifier="???" NADAManufacturedHousingGuideYellowPageIdentifier="???" NADAManufacturedHousingGuideConversionChartPageIdentifier="???" ManufacturedHomeCostDataComment="???" />
+      <COST_ANALYSIS_EXTENSION _ID="???">
+        <COST_ANALYSIS_EXTENSION_SECTION _ID="???" ExtensionSectionOrganizationName="UNIFORM APPRAISAL DATASET" ExtensionSectionTypeDescription="???" ExtensionSectionVersion="1.0">
+          <CONTACT_DETAIL _Name="???" _Identifier="???" _FirstName="???" _LastName="???" _MiddleName="???" _NameSuffix="???" _SequenceIdentifier="???" _ID="???">
+            <CONTACT_POINT _RoleType="Home" _Type="Email" _TypeOtherDescription="???" _Value="???" _PreferenceIndicator="Y" _RoleTypeOtherDescription="???" _ID="???" />
+          </CONTACT_DETAIL>
+          <COST_ANALYSIS_EXTENSION_SECTION_DATA _ID="???">
+            <COST_APPROACH_DATA_SOURCE _ID="???" GSECostDataSourceEffectiveDateDescription="???" />
+          </COST_ANALYSIS_EXTENSION_SECTION_DATA>
+        </COST_ANALYSIS_EXTENSION_SECTION>
+      </COST_ANALYSIS_EXTENSION>
+    </COST_ANALYSIS>
+    <SALES_COMPARISON _ID="???" ValueIndicatedBySalesComparisonApproachAmount="???" _Comment="???" _CurrentSalesAgreementAnalysisComment="???" _UnitOfMeasureDescription="???" _ValuePerUnitAmount="???" _TotalUnitValueAmount="???" _ValuePerRoomAmount="???" _TotalRoomValueAmount="???" _ValuePerBedroomAmount="???" _TotalBedroomValueAmount="???" _ValuePerGrossBuildingAreaAmount="???" _TotalGrossBuildingAreaValueAmount="???">
+      <OTHER_FEATURE _ID="???" PropertyFeatureSequenceIdentifier="???" PropertyFeatureName="???" />
+      <RESEARCH _ID="???" SalesHistoryResearchedIndicator="Y" SalesHistoryNotResearchedComment="???" ComparableListingsResearchedCount="???" ComparableListingsPriceRangeLowAmount="???" ComparableListingsPriceRangeHighAmount="???" ComparableSalesResearchedCount="???" ComparableSalesPriceRangeLowAmount="???" ComparableSalesPriceRangeHighAmount="???">
+        <SUBJECT _ID="???" _HasPriorSalesIndicator="Y" DataSourceDescription="???" />
+        <COMPARABLE _ID="???" _HasPriorSalesIndicator="Y" DataSourceDescription="???" />
+      </RESEARCH>
+      <COMPARABLE_SALE _ID="???" PropertySequenceIdentifier="???" ProjectName="???" ProjectPhaseIdentifier="???" DataSourceDescription="???" DataSourceVerificationDescription="???" ManufacturedHomeIndicator="Y" _FurnishedIndicator="Y" MonthlyRentAmount="???" GrossMonthlyRentMultiplierFactor="???" ClosingDate="???" DaysOnMarketCount="???" FinalListPriceAmount="???" PropertySalesAmount="???" SalesPriceToListPriceRate="???" SalesPricePerGrossBuildingAreaAmount="???" SalesPricePerOwnershipShareAmount="???" SalesPricePerGrossLivingAreaAmount="???" SalesPricePerUnitAmount="???" SalesPricePerRoomAmount="???" SalesPricePerBedroomAmount="???" RentControlStatusType="Yes" SalePriceTotalAdjustmentAmount="???" SalesPriceTotalAdjustmentPositiveIndicator="Y" SalePriceTotalAdjustmentNetPercent="???" SalesPriceTotalAdjustmentGrossPercent="???" AdjustedSalesPriceAmount="???" AdjustedSalesPricePerUnitAmount="???" AdjustedSalesPricePerRoomAmount="???" AdjustedSalesPricePerBedroomAmount="???" ComparablePropertyComment="???">
+        <LOCATION _ID="???" PropertyStreetAddress="???" PropertyStreetAddress2="???" UnitIdentifier="???" PropertyCity="???" PropertyState="???" PropertyPostalCode="???" LongitudeNumber="???" LatitudeNumber="???" ProximityToSubjectDescription="???" AppraisalFormsAdditionalLocationDescription="???" />
+        <ROOM_ADJUSTMENT _ID="???" UnitSequenceIdentifier="???" TotalRoomCount="???" TotalBedroomCount="???" TotalBathroomCount="???" BathroomAdjustmentAmount="???" RoomAdjustmentAmount="???" />
+        <SALE_PRICE_ADJUSTMENT _ID="???" _Type="Additions" _TypeOtherDescription="???" _Description="???" _Amount="???" />
+        <OTHER_FEATURE_ADJUSTMENT _ID="???" PropertyFeatureSequenceIdentifier="???" PropertyFeatureDescription="???" PropertyFeatureAdjustmentAmount="???" />
+        <PRIOR_SALES PropertySalesDate="???" PropertySalesAmount="???" DataSourceDescription="???" DataSourceEffectiveDate="???">
+          <PRIOR_SALES_EXTENSION _ID="???">
+            <PRIOR_SALES_EXTENSION_SECTION _ID="???" ExtensionSectionOrganizationName="UNIFORM APPRAISAL DATASET" ExtensionSectionTypeDescription="???" ExtensionSectionVersion="1.0">
+              <CONTACT_DETAIL _Name="???" _Identifier="???" _FirstName="???" _LastName="???" _MiddleName="???" _NameSuffix="???" _SequenceIdentifier="???" _ID="???">
+                <CONTACT_POINT _RoleType="Home" _Type="Email" _TypeOtherDescription="???" _Value="???" _PreferenceIndicator="Y" _RoleTypeOtherDescription="???" _ID="???" />
+              </CONTACT_DETAIL>
+              <PRIOR_SALES_EXTENSION_SECTION_DATA _ID="???">
+                <PRIOR_SALE _ID="???" GSEPriorSaleDate="???" GSEPriorSaleComment="???" />
+              </PRIOR_SALES_EXTENSION_SECTION_DATA>
+            </PRIOR_SALES_EXTENSION_SECTION>
+          </PRIOR_SALES_EXTENSION>
+        </PRIOR_SALES>
+        <IMAGE _ID="???" _SequenceIdentifier="???" _Identifier="???" _Name="???" _CaptionComment="???">
+          <EMBEDDED_FILE _ID="???" _Type="???" _Version="???" _Name="???" _Extension="???" _EncodingType="???" _Description="???" MIMEType="???">
+            <DOCUMENT />
+          </EMBEDDED_FILE>
+          <REFERENCED_FILE _ID="???" _Name="???" __IDentifier="???" _Type="PDF" _TypeOtherDescription="???" _Description="???" _PathDescription="???" _URLDescription="???" _CreatorName="???" _CreatorVersionIdentifier="???" />
+        </IMAGE>
+        <COMPARISON_DETAIL_EXTENSION _ID="???">
+          <COMPARISON_DETAIL_EXTENSION_SECTION _ID="???" ExtensionSectionOrganizationName="UNIFORM APPRAISAL DATASET" ExtensionSectionTypeDescription="???" ExtensionSectionVersion="1.0">
+            <CONTACT_DETAIL _Name="???" _Identifier="???" _FirstName="???" _LastName="???" _MiddleName="???" _NameSuffix="???" _SequenceIdentifier="???" _ID="???">
+              <CONTACT_POINT _RoleType="Home" _Type="Email" _TypeOtherDescription="???" _Value="???" _PreferenceIndicator="Y" _RoleTypeOtherDescription="???" _ID="???" />
+            </CONTACT_DETAIL>
+            <COMPARISON_DETAIL_EXTENSION_SECTION_DATA _ID="???">
+              <COMPARISON_DETAIL _ID="???" GSEDataSourceDescription="???" GSEDaysOnMarketDescription="???" GSESaleType="Listing" GSEFinancingType="FHA" GSEFinancingTypeOtherDescription="???" GSEContractDateUnknownIndicator="Y" GSEConcessionAmount="???" GSEListingStatusType="Active" GSEQualityOfConstructionRatingType="Q1" GSEAgeEstimationIndicator="Y" GSEOverallConditionType="C1" GSEBasementExitType="WalkUp" GSEBelowGradeRecreationRoomCount="???" GSEBelowGradeBedroomRoomCount="???" GSEBelowGradeBathroomRoomCount="???" GSEBelowGradeOtherRoomCount="???" GSEBelowGradeFinishSquareFeetNumber="???" GSEBelowGradeTotalSquareFeetNumber="???" GSERoomsAboveGradeTotalRoomAdjustmentAmount="???" GSERoomsAboveGradeTotalRoomDescription="???" GSERoomsAboveGradeBedroomDescription="???" GSERoomsAboveGradeBathroomDescription="???" GSERentControlDescription="???" />
+            </COMPARISON_DETAIL_EXTENSION_SECTION_DATA>
+          </COMPARISON_DETAIL_EXTENSION_SECTION>
+        </COMPARISON_DETAIL_EXTENSION>
+        <COMPARISON_VIEW_OVERALL_RATING_EXTENSION _ID="???">
+          <COMPARISON_VIEW_OVERALL_RATING_EXTENSION_SECTION _ID="???" ExtensionSectionOrganizationName="UNIFORM APPRAISAL DATASET" ExtensionSectionTypeDescription="???" ExtensionSectionVersion="1.0">
+            <CONTACT_DETAIL _Name="???" _Identifier="???" _FirstName="???" _LastName="???" _MiddleName="???" _NameSuffix="???" _SequenceIdentifier="???" _ID="???">
+              <CONTACT_POINT _RoleType="Home" _Type="Email" _TypeOtherDescription="???" _Value="???" _PreferenceIndicator="Y" _RoleTypeOtherDescription="???" _ID="???" />
+            </CONTACT_DETAIL>
+            <COMPARISON_VIEW_OVERALL_RATING_EXTENSION_SECTION_DATA _ID="???">
+              <COMPARISON_VIEW_OVERALL_RATING GSEViewOverallRatingType="Neutral" />
+            </COMPARISON_VIEW_OVERALL_RATING_EXTENSION_SECTION_DATA>
+          </COMPARISON_VIEW_OVERALL_RATING_EXTENSION_SECTION>
+        </COMPARISON_VIEW_OVERALL_RATING_EXTENSION>
+        <COMPARISON_VIEW_DETAIL_EXTENSION _ID="???">
+          <COMPARISON_VIEW_DETAIL_EXTENSION_SECTION _ID="???" ExtensionSectionOrganizationName="UNIFORM APPRAISAL DATASET" ExtensionSectionTypeDescription="???" ExtensionSectionVersion="1.0">
+            <CONTACT_DETAIL _Name="???" _Identifier="???" _FirstName="???" _LastName="???" _MiddleName="???" _NameSuffix="???" _SequenceIdentifier="???" _ID="???">
+              <CONTACT_POINT _RoleType="Home" _Type="Email" _TypeOtherDescription="???" _Value="???" _PreferenceIndicator="Y" _RoleTypeOtherDescription="???" _ID="???" />
+            </CONTACT_DETAIL>
+            <COMPARISON_VIEW_DETAIL_EXTENSION_SECTION_DATA _ID="???">
+              <COMPARISON_VIEW_DETAIL _SequenceIdentifier="???" GSEViewType="WaterView" GSEViewTypeOtherDescription="???" />
+            </COMPARISON_VIEW_DETAIL_EXTENSION_SECTION_DATA>
+          </COMPARISON_VIEW_DETAIL_EXTENSION_SECTION>
+        </COMPARISON_VIEW_DETAIL_EXTENSION>
+        <COMPARISON_LOCATION_OVERALL_RATING_EXTENSION _ID="???">
+          <COMPARISON_LOCATION_OVERALL_RATING_EXTENSION_SECTION _ID="???" ExtensionSectionOrganizationName="UNIFORM APPRAISAL DATASET" ExtensionSectionTypeDescription="???" ExtensionSectionVersion="1.0">
+            <CONTACT_DETAIL _Name="???" _Identifier="???" _FirstName="???" _LastName="???" _MiddleName="???" _NameSuffix="???" _SequenceIdentifier="???" _ID="???">
+              <CONTACT_POINT _RoleType="Home" _Type="Email" _TypeOtherDescription="???" _Value="???" _PreferenceIndicator="Y" _RoleTypeOtherDescription="???" _ID="???" />
+            </CONTACT_DETAIL>
+            <COMPARISON_LOCATION_OVERALL_RATING_EXTENSION_SECTION_DATA _ID="???">
+              <COMPARISON_LOCATION_OVERALL_RATING GSEOverallLocationRatingType="Neutral" />
+            </COMPARISON_LOCATION_OVERALL_RATING_EXTENSION_SECTION_DATA>
+          </COMPARISON_LOCATION_OVERALL_RATING_EXTENSION_SECTION>
+        </COMPARISON_LOCATION_OVERALL_RATING_EXTENSION>
+        <COMPARISON_LOCATION_DETAIL_EXTENSION _ID="???">
+          <COMPARISON_LOCATION_DETAIL_EXTENSION_SECTION _ID="???" ExtensionSectionOrganizationName="UNIFORM APPRAISAL DATASET" ExtensionSectionTypeDescription="???" ExtensionSectionVersion="1.0">
+            <CONTACT_DETAIL _Name="???" _Identifier="???" _FirstName="???" _LastName="???" _MiddleName="???" _NameSuffix="???" _SequenceIdentifier="???" _ID="???">
+              <CONTACT_POINT _RoleType="Home" _Type="Email" _TypeOtherDescription="???" _Value="???" _PreferenceIndicator="Y" _RoleTypeOtherDescription="???" _ID="???" />
+            </CONTACT_DETAIL>
+            <COMPARISON_LOCATION_DETAIL_EXTENSION_SECTION_DATA _ID="???">
+              <COMPARISON_LOCATION_DETAIL _ID="???" _SequenceIdentifier="???" GSELocationType="Residential" GSELocationTypeOtherDescription="???" />
+            </COMPARISON_LOCATION_DETAIL_EXTENSION_SECTION_DATA>
+          </COMPARISON_LOCATION_DETAIL_EXTENSION_SECTION>
+        </COMPARISON_LOCATION_DETAIL_EXTENSION>
+        <COMPARISON_DATE_EXTENSION _ID="???">
+          <COMPARISON_DATE_EXTENSION_SECTION _ID="???" ExtensionSectionOrganizationName="UNIFORM APPRAISAL DATASET" ExtensionSectionTypeDescription="???" ExtensionSectionVersion="1.0">
+            <CONTACT_DETAIL _Name="???" _Identifier="???" _FirstName="???" _LastName="???" _MiddleName="???" _NameSuffix="???" _SequenceIdentifier="???" _ID="???">
+              <CONTACT_POINT _RoleType="Home" _Type="Email" _TypeOtherDescription="???" _Value="???" _PreferenceIndicator="Y" _RoleTypeOtherDescription="???" _ID="???" />
+            </CONTACT_DETAIL>
+            <COMPARISON_DATE_EXTENSION_SECTION_DATA _ID="???">
+              <OFFERING_DISPOSITION GSEShortDateDescription="???" />
+            </COMPARISON_DATE_EXTENSION_SECTION_DATA>
+          </COMPARISON_DATE_EXTENSION_SECTION>
+        </COMPARISON_DATE_EXTENSION>
+      </COMPARABLE_SALE>
+    </SALES_COMPARISON>
+    <INCOME_ANALYSIS _ID="???" EstimatedMarketMonthlyRentAmount="???" GrossRentMultiplierFactor="???" ValueIndicatedByIncomeApproachAmount="???" _Comment="???">
+      <RESIDENTIAL_RENT_SCHEDULE EstimatedMarketMonthlyRentAmount="???" EstimatedMarketMonthlyRentEffectiveDate="???" MarketRentalDataComment="???" MarketRentReconciliationComment="???">
+        <OTHER_FEATURE _ID="???" PropertyFeatureSequenceIdentifier="???" PropertyFeatureName="???" />
+        <RESIDENTIAL_RENTAL _ID="???" PropertySequenceIdentifier="???" LeaseStartDate="???" LeaseExpirationDate="???" MonthlyRentAmount="???" RentalMonthlyUtilitiesCostAmount="???" MonthlyFurnitureRentAmount="???" ExpenseAdjustedMonthlyRentAmount="???" DataSourceDescription="???" RentTotalAdjustmentAmount="???" RentTotalAdjustmentPositiveIndicator="Y" RentTotalAdjustmentNetPercent="???" RentTotalAdjustmentGrossPercent="???" MarketAdjustedMonthlyRentAmount="???">
+          <LOCATION _ID="???" PropertyStreetAddress="???" PropertyStreetAddress2="???" UnitIdentifier="???" PropertyCity="???" PropertyState="???" PropertyPostalCode="???" LongitudeNumber="???" LatitudeNumber="???" ProximityToSubjectDescription="???" AppraisalFormsAdditionalLocationDescription="???" />
+          <RENT_ADJUSTMENT _ID="???" _Type="RentConcessions" _TypeOtherDescription="???" _Description="???" _Amount="???" />
+          <ROOM_ADJUSTMENT _ID="???" UnitSequenceIdentifier="???" TotalRoomCount="???" TotalBedroomCount="???" TotalBathroomCount="???" BathroomAdjustmentAmount="???" RoomAdjustmentAmount="???" />
+        </RESIDENTIAL_RENTAL>
+        <OTHER_FEATURE_ADJUSTMENT _ID="???" PropertyFeatureSequenceIdentifier="???" PropertyFeatureDescription="???" PropertyFeatureAdjustmentAmount="???" />
+      </RESIDENTIAL_RENT_SCHEDULE>
+      <MULTIFAMILY_RENT_SCHEDULE RentalActualGrossMonthlyRentAmount="???" RentalActualAdditionalMonthlyIncomeAmount="???" RentalActualTotalMonthlyIncomeAmount="???" RentalEstimatedGrossMonthlyRentAmount="???" RentalEstimatedAdditionalMonthlyIncomeAmount="???" RentalEstimatedTotalMonthlyIncomeAmount="???" MarketRentalDataComment="???" RentalDataAnalysisComment="???">
+        <UNIT_RENT_SCHEDULE _ID="???" UnitSequenceIdentifier="???" LeaseStartDate="???" LeaseExpirationDate="???" UnitUnfurnishedActualRentAmount="???" UnitFurnishedActualRentAmount="???" UnitActualRentAmount="???" UnitUnfurnishedMarketRentAmount="???" UnitFurnishedMarketRentAmount="???" UnitMarketRentAmount="???" />
+        <RENT_INCLUDES_UTILITY _ID="???" _Type="Electric" _TypeOtherDescription="???" _Indicator="Y" />
+      </MULTIFAMILY_RENT_SCHEDULE>
+      <MULTIFAMILY_RENTALS RentalDataAnalysisComment="???">
+        <OTHER_FEATURE _ID="???" PropertyFeatureSequenceIdentifier="???" PropertyFeatureName="???" />
+        <MULTIFAMILY_RENTAL _ID="???" PropertySequenceIdentifier="???" MonthlyRentAmount="???" RentPerGrossBuildingAreaAmount="???" RentControlStatusType="Yes" DataSourceDescription="???" GrossBuildingAreaSquareFeetCount="???">
+          <LOCATION _ID="???" PropertyStreetAddress="???" PropertyStreetAddress2="???" UnitIdentifier="???" PropertyCity="???" PropertyState="???" PropertyPostalCode="???" LongitudeNumber="???" LatitudeNumber="???" ProximityToSubjectDescription="???" AppraisalFormsAdditionalLocationDescription="???" />
+          <RENTAL_UNIT _ID="???" UnitSequenceIdentifier="???" TotalRoomCount="???" TotalBedroomCount="???" TotalBathroomCount="???" SquareFeetCount="???" MonthlyRentAmount="???">
+            <UNIT_EXTENSION _ID="???">
+              <UNIT_EXTENSION_SECTION _ID="???" ExtensionSectionOrganizationName="UNIFORM APPRAISAL DATASET" ExtensionSectionTypeDescription="???" ExtensionSectionVersion="1.0">
+                <CONTACT_DETAIL _Name="???" _Identifier="???" _FirstName="???" _LastName="???" _MiddleName="???" _NameSuffix="???" _SequenceIdentifier="???" _ID="???">
+                  <CONTACT_POINT _RoleType="Home" _Type="Email" _TypeOtherDescription="???" _Value="???" _PreferenceIndicator="Y" _RoleTypeOtherDescription="???" _ID="???" />
+                </CONTACT_DETAIL>
+                <UNIT_EXTENSION_SECTION_DATA _ID="???">
+                  <UNIT_DETAIL _ID="???" GSERentControlDescription="???" GSERentUnitDescription="???" />
+                </UNIT_EXTENSION_SECTION_DATA>
+              </UNIT_EXTENSION_SECTION>
+            </UNIT_EXTENSION>
+          </RENTAL_UNIT>
+          <RENTAL_FEATURE _ID="???" _Type="Lease" _TypeOtherDescription="???" _Description="???" />
+          <OTHER_FEATURE_DESCRIPTION _ID="???" PropertyFeatureSequenceIdentifier="???" PropertyFeatureDescription="???" />
+          <IMAGE _ID="???" _SequenceIdentifier="???" _Identifier="???" _Name="???" _CaptionComment="???">
+            <EMBEDDED_FILE _ID="???" _Type="???" _Version="???" _Name="???" _Extension="???" _EncodingType="???" _Description="???" MIMEType="???">
+              <DOCUMENT />
+            </EMBEDDED_FILE>
+            <REFERENCED_FILE _ID="???" _Name="???" __IDentifier="???" _Type="PDF" _TypeOtherDescription="???" _Description="???" _PathDescription="???" _URLDescription="???" _CreatorName="???" _CreatorVersionIdentifier="???" />
+          </IMAGE>
+        </MULTIFAMILY_RENTAL>
+      </MULTIFAMILY_RENTALS>
+    </INCOME_ANALYSIS>
+    <PRICE_FORECASTING _ID="???" MarketTrendsAdverseFinancingIndicator="Y" MarketTrendsHistoricPricesType="Increasing" MarketTrendsForeclosureActivityIndicator="Y" MarketTrendsInterestRatesType="Increasing" MarketTrendsSalesActivityType="Increasing" NeighborhoodPropertyValueTrendType="Increasing" NeighborhoodDemandSupplyType="OverSupply" NeighborhoodTypicalMarketingMonthsDurationType="OverSixMonths" NeighborhoodTypicalMarketingDaysDurationType="Under30Days" PropertyTypicalMarketingDaysDurationType="Under30Days" MarketTrendsHistoricAnalysisComment="???" MarketTrendsReconciliationComment="???">
+      <COMPETITIVE_LISTINGS _ID="???" _Comment="???">
+        <OTHER_FEATURE _ID="???" PropertyFeatureSequenceIdentifier="???" PropertyFeatureName="???" />
+        <RESEARCH _ID="???" SalesHistoryResearchedIndicator="Y" SalesHistoryNotResearchedComment="???" ComparableListingsResearchedCount="???" ComparableListingsPriceRangeLowAmount="???" ComparableListingsPriceRangeHighAmount="???" ComparableSalesResearchedCount="???" ComparableSalesPriceRangeLowAmount="???" ComparableSalesPriceRangeHighAmount="???">
+          <SUBJECT _ID="???" _HasPriorSalesIndicator="Y" DataSourceDescription="???" />
+          <COMPARABLE _ID="???" _HasPriorSalesIndicator="Y" DataSourceDescription="???" />
+        </RESEARCH>
+        <COMPARABLE_LISTING _ID="???" PropertySequenceIdentifier="???" ComparablePropertyComment="???">
+          <LOCATION _ID="???" PropertyStreetAddress="???" PropertyStreetAddress2="???" UnitIdentifier="???" PropertyCity="???" PropertyState="???" PropertyPostalCode="???" LongitudeNumber="???" LatitudeNumber="???" ProximityToSubjectDescription="???" AppraisalFormsAdditionalLocationDescription="???" />
+          <LISTING_FEATURE _ID="???" _Type="NeighborhoodAppeal" _TypeOtherDescription="???" _Description="???" />
+          <OTHER_FEATURE_DESCRIPTION _ID="???" PropertyFeatureSequenceIdentifier="???" PropertyFeatureDescription="???" />
+          <IMAGE _ID="???" _SequenceIdentifier="???" _Identifier="???" _Name="???" _CaptionComment="???">
+            <EMBEDDED_FILE _ID="???" _Type="???" _Version="???" _Name="???" _Extension="???" _EncodingType="???" _Description="???" MIMEType="???">
+              <DOCUMENT />
+            </EMBEDDED_FILE>
+            <REFERENCED_FILE _ID="???" _Name="???" __IDentifier="???" _Type="PDF" _TypeOtherDescription="???" _Description="???" _PathDescription="???" _URLDescription="???" _CreatorName="???" _CreatorVersionIdentifier="???" />
+          </IMAGE>
+        </COMPARABLE_LISTING>
+      </COMPETITIVE_LISTINGS>
+    </PRICE_FORECASTING>
+  </VALUATION_METHODS>
+  <VALUATION PropertyAppraisedValueAmount="???" PropertyForecastedSalePriceAmount="???" AppraisalEffectiveDate="???">
+    <_RECONCILIATION _ID="???" _ConditionsComment="???" _SummaryComment="???">
+      <_CONDITION_OF_APPRAISAL _ID="???" _Type="AsIs" _TypeOtherDescription="???" />
+      <REPAIRS _ID="???" _TotalCostAmount="???" _Description="???">
+        <REPAIR_ITEM _ID="???" _SequenceIdentifier="???" _Description="???" _CostAmount="???" />
+      </REPAIRS>
+    </_RECONCILIATION>
+  </VALUATION>
+  <APPRAISAL_UPDATE AppraisalUpdateIndicator="Y" AppraisalCompletionCertificateIndicator="Y" AppraisalReviewOriginalAppraisalEffectiveDate="???" AppraisalReviewOriginalAppraisedValueAmount="???" _OriginalLenderUnparsedName="???" _OriginalLenderUnparsedAddress="???" _OriginalAppraiserUnparsedName="???" _OriginalAppraiserCompanyName="???" PropertyMarketValueDecreasedIndicator="Y" PropertyImprovementsCompletedIndicator="Y" AppraisalUpdateComment="???" AppraisalCompletionCertificateComment="???" />
+  <APPRAISAL_REVIEW _ID="???" _OriginalAppraisalEffectiveDate="???" _OriginalAppraisedValueAmount="???" _OriginalAppraisedValueAccurateIndicator="Y" _ExtraordinaryAssumptionsDescription="???" _DisagreementDescription="???" PropertyMarketValueDecreasedIndicator="Y" _ImprovementsCompletedIndicator="Y" _MarketValueChangeComment="???" _ValueConclusionComment="???">
+    <_CATEGORY _ID="???" _Type="ComparableRentals" _TypeOtherDescription="???" _AccuracyType="Accurate" _Comment="???" />
+  </APPRAISAL_REVIEW>
+</VALUATION_RESPONSE>

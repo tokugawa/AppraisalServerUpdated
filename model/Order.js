@@ -45,7 +45,7 @@ var OrderSchema = new mongoose.Schema({
 
 OrderSchema.methods.generateOrderNumber = function(cb){
 
-	orderID.getNextOrderID(function(success, id){
+	orderID.getNextOrderID(function(id, success){
 
 		if(success){
 			cb(id);

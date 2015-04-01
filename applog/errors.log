@@ -1596,3 +1596,39 @@
   path: 'order_evaluation_detail' }
 [2015-03-30 15:24:37.953] [ERROR] PAException - Exception at :OrderVO Save Order Exception
 [2015-03-30 15:24:37.966] [ERROR] app - Worker server died (ID: 1, PID: 3796)
+[2015-04-01 11:34:09.889] [ERROR] APIKeyVO - Class:APIKeysVO - Error Message: API Key already exists for user
+[2015-04-01 11:34:11.387] [ERROR] OrderVO - { message: 'Cast to ObjectId failed for value "" at path "order_evaluation_detail"',
+  name: 'CastError',
+  type: 'ObjectId',
+  value: '',
+  path: 'order_evaluation_detail' }
+[2015-04-01 11:34:11.389] [ERROR] PAException - Exception at :OrderVO Save Order Exception
+[2015-04-01 11:34:11.400] [ERROR] app - Worker server died (ID: 1, PID: 7948)
+[2015-04-01 11:36:14.728] [ERROR] OrderVO - { message: 'Cast to ObjectId failed for value "" at path "order_image"',
+  name: 'CastError',
+  type: 'ObjectId',
+  value: '',
+  path: 'order_image' }
+[2015-04-01 11:36:14.730] [ERROR] PAException - Exception at :OrderVO Save Order Exception
+[2015-04-01 11:36:14.737] [ERROR] app - Worker server died (ID: 1, PID: 1748)
+[2015-04-01 11:36:48.699] [ERROR] OrderVO - { message: 'Validation failed',
+  name: 'ValidationError',
+  errors: 
+   { 'order_property_primary_holder.customer_id': 
+      { message: 'Path `order_property_primary_holder.customer_id` is required.',
+        name: 'ValidatorError',
+        path: 'order_property_primary_holder.customer_id',
+        type: 'required' },
+     order_id: 
+      { message: 'Path `order_id` is required.',
+        name: 'ValidatorError',
+        path: 'order_id',
+        type: 'required' },
+     order_progress_status: 
+      { message: 'Path `order_progress_status` is required.',
+        name: 'ValidatorError',
+        path: 'order_progress_status',
+        type: 'required',
+        value: '' } } }
+[2015-04-01 11:36:48.700] [ERROR] PAException - Exception at :OrderVO Save Order Exception
+[2015-04-01 11:36:48.706] [ERROR] app - Worker server died (ID: 1, PID: 8628)

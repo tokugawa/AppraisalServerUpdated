@@ -8,6 +8,7 @@
 var express = require('express');
 var router = express.Router();
 var mongoInterface = require('./MongoInterface.js').getInstance();
+var ucdpValidator = require('../util/UCDPValidator.js').getInstance();
 ///////////////////////////////////////////////////////////////////////////
 
 module.exports = function(){
@@ -570,5 +571,29 @@ module.exports = function(){
       //TODO delete a specific address
     });
   
+  router.route('/api/v2/xml')
+    .post(function(req, res){
+
+      //TODO
+      mongoInterface.updateKey({api_key: req.param('api_key')}, function(result){
+
+        if(result){
+          console.log('key updated');
+          ucdpValidator.validateForm(req.param('formXML'), function(result){
+
+            if(result){
+              res.send({query: 'form valid'})
+            }
+            else{
+              res.send({query: 'invalid form'})
+            }
+          });
+        }
+        else{
+          res.send({query: 'failed'});
+        }
+      });
+    });
+
   return router;
 }

@@ -29,58 +29,57 @@ var OrderVO = (function(){
 
 				if(newOrder.order_id > 0){
 					newOrder.order_id = id;
+
+					newOrder.order_property_primary_holder 	= propertyPrimaryHolder;
+					newOrder.order_property_id 				= propertyId;
+					newOrder.order_address_id 				= addressId;
+					newOrder.order_client 					= client;
+					newOrder.order_received_date 			= (new Date());
+					newOrder.order_completed_date 			= '';
+					newOrder.order_due_date 				= dueDate;
+					newOrder.order_priority_index 			= priorityIndex;
+					newOrder.order_image					= null;
+					newOrder.order_evaluation_detail 		= null;
+					newOrder.order_progress_status 				= '';
+					newOrder.order_assigned_to 				= {
+																order_current_appraiser: null,
+																order_previous_appraiser: []
+															};
+					newOrder.order_status_current			= 'created';
+					newOrder.order_status_past 				= [];
+					newOrder.order_status_next 				= 'assigned';
+
+					log.info('order_id ' , newOrder.order_id);
+					order.findOne({ order_id: newOrder.order_id }, function findOneCb(err, data){
+						if(err){
+							log.error(err);
+							cb(null);
+						}
+						if(data){
+
+							log.error('Class:OrderVO - Error Message: OrderId already taken');
+							cb(false);
+						}
+
+						if(!data){
+							log.info(' Class:OrderVO - Info: No duplicate record found');
+							newOrder.save(function saveOrderCb(err, doc){
+								if(err) {
+									log.error(err);
+									throw new paException('OrderVO', 'Save Order Exception');
+									cb(null);
+								}
+								else {
+
+									log.info('Class:OrderVO - Info: Successful');
+									cb(doc);
+								}
+							});
+						}
+					});
 				}
 				else{
 					cb(null)
-				}
-			});
-			
-
-			newOrder.order_property_primary_holder 	= propertyPrimaryHolder;
-			newOrder.order_property_id 				= propertyId;
-			newOrder.order_address_id 				= addressId;
-			newOrder.order_client 					= client;
-			newOrder.order_received_date 			= (new Date());
-			newOrder.order_completed_date 			= '';
-			newOrder.order_due_date 				= dueDate;
-			newOrder.order_priority_index 			= priorityIndex;
-			newOrder.order_image					= '';
-			newOrder.order_evaluation_detail 		= '';
-			newOrder.order_progress_status 				= '';
-			newOrder.order_assigned_to 				= {
-														order_current_appraiser: null,
-														order_previous_appraiser: []
-													};
-			newOrder.order_status_current			= 'created';
-			newOrder.order_status_past 				= [];
-			newOrder.order_status_next 				= 'assigned';
-
-			log.info('order_id ' , newOrder.order_id);
-			order.findOne({ order_id: newOrder.order_id }, function findOneCb(err, data){
-				if(err){
-					log.error(err);
-					cb(null);
-				}
-				if(data){
-
-					log.error('Class:OrderVO - Error Message: OrderId already taken');
-					cb(false);
-				}
-
-				if(!data){
-					log.info(' Class:OrderVO - Info: No duplicate record found');
-					newOrder.save(function saveOrderCb(err, doc){
-						if(err) {
-							log.error(err);
-							throw new paException('OrderVO', 'Save Order Exception');
-							cb(null);
-						}
-						else {
-
-							log.info('Class:OrderVO - Info: Successful');
-							cb(doc);
-						}
-					});
 				}
 			});
 		}

@@ -18,7 +18,6 @@ var paException = require('../util/PAException');
 /*var conn = require('../util/ConnectDBInstance').getInstance();*/
 var orderIDGenerator = require('../model/OrderIDGenerator.js');
 
-
 var OrderIDVO = (function(){
 
 	var instance;
@@ -37,13 +36,14 @@ var OrderIDVO = (function(){
 				}
 				if(data){
 
-					updateOrderIDGenerator(data, function(flag){
+					updateOrderIDGenerator(data, function(flag, id){
 
 						if(flag){
-							cb(data.orderID, true);
+							console.log('Order ID Updated');
+							cb(flag, id);
 						}
 						else{
-							cb(null, false);
+							cb(flag, null);
 						}
 					});
 				}
@@ -77,11 +77,11 @@ var updateOrderIDGenerator = function(data, callback){
 
 			if(err) {
 				log.error('Functon:updateOrderIDGenerator - Error Occured while processing Update');
-				callback(null, false);
+				callback(false, null);
 			}
 			if(result){
 
-				callback(result.orderId, true);
+				callback(true, result.orderId);
 			}
 		}
 	);
