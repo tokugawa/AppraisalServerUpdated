@@ -8,8 +8,6 @@
 
 /****** Import Libs *******/
 
-
-
 var log4js = require('log4js');
 var log = log4js.getLogger("OrderIDVO");
 var paException = require('../util/PAException');
@@ -64,7 +62,6 @@ var OrderIDVO = (function(){
     };
 })();
 
-
 var updateOrderIDGenerator = function(data, callback){
 
 	console.log('Order ID Generator stuff');
@@ -81,7 +78,7 @@ var updateOrderIDGenerator = function(data, callback){
 			}
 			if(result){
 
-				callback(true, result.orderId);
+				callback(true, data[0].orderID+1);
 			}
 		}
 	);

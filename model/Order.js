@@ -16,16 +16,14 @@ var orderID = require('../vo/OrderIDVO').getInstance();
 var OrderSchema = new mongoose.Schema({
 
 		order_id	 							: { type: String , required: true, unique: true },
-        order_property_primary_holder	     	: { 
-        	customer_id: { type: mongoose.Schema.Types.ObjectId, required: true, ref: 'CustomerCollection' }
-        },
+        order_property_primary_holder	     	: { type: mongoose.Schema.Types.ObjectId, required: true, ref: 'CustomerCollection' },
 		order_property_id 						: { type: mongoose.Schema.Types.ObjectId, required: true, ref:'PropertyCollection' },
 		order_address_id						: { type: mongoose.Schema.Types.ObjectId, required: true, ref: 'AddressCollection' },
 		order_client							: {	type: mongoose.Schema.Types.ObjectId, ref: 'ClientCollection'},
 		order_received_date     				: { type: Date, default: Date.now },
 		order_completed_date					: { type: Date },
 		order_due_date							: { type: Date },
-		order_priority_ind 						: { type: String },
+		order_priority_index					: { type: String },
 		order_image								: {	type: mongoose.Schema.Types.ObjectId, ref: 'ImageURLCollection'},
 		order_evaluation_detail					: {	type: mongoose.Schema.Types.ObjectId, ref: 'FormDataCollection'},
 		order_progress_status					: { type: String, required: true }, 
@@ -45,7 +43,7 @@ var OrderSchema = new mongoose.Schema({
 
 OrderSchema.methods.generateOrderNumber = function(cb){
 
-	orderID.getNextOrderID(function(id, success){
+	orderID.getNextOrderID(function(success, id){
 
 		if(success){
 			cb(id);

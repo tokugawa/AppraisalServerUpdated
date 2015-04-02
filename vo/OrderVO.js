@@ -27,7 +27,7 @@ var OrderVO = (function(){
 
 				console.log('New Order ID: '+id);
 
-				if(newOrder.order_id > 0){
+				if(id > 0){
 					newOrder.order_id = id;
 
 					newOrder.order_property_primary_holder 	= propertyPrimaryHolder;
@@ -40,7 +40,7 @@ var OrderVO = (function(){
 					newOrder.order_priority_index 			= priorityIndex;
 					newOrder.order_image					= null;
 					newOrder.order_evaluation_detail 		= null;
-					newOrder.order_progress_status 				= '';
+					newOrder.order_progress_status 				= 'submitted';
 					newOrder.order_assigned_to 				= {
 																order_current_appraiser: null,
 																order_previous_appraiser: []
@@ -80,6 +80,62 @@ var OrderVO = (function(){
 				}
 				else{
 					cb(null)
+				}
+			});
+		}
+
+		this.updateOrder = function(orderId, propertyPrimaryHolder, propertyId, addressId, clientId, receivedDate, completedDate, dueDate, priorityIndex, imageId, evaluationId, progressStatus, orderAssignedTo, statusCurrent, statusPast, statusNext){
+
+			//TODO take in parameters and update an order based on the parameters
+			var updateJson = {};
+
+			if(propertyPrimaryHolder == null){
+
+				updateJson.order_property_primary_holder = propertyPrimaryHolder;
+			}
+			if(propertyId == null){
+
+				updateJson.order_property_id = propertyId;
+			}
+			if(addressId == null){
+
+				updateJson.order_address_id = addressId;
+			}
+			if(clientId == null){
+
+				updateJson.order_client = clientId;
+			}
+			if(receivedDate == null){
+
+				updateJson.order_received_date = receivedDate;
+			}
+			if(completedDate == null){
+
+				updateJson.order_completed_date = completedDate;
+			}
+			if(dueDate == null){
+
+				updateJson.order_due_date = dueDate;
+			}
+			if(priorityIndex == null){
+
+				updateJson.order_priority_index = priorityIndex;
+			}
+
+			order.update(
+				{order_id: orderId},
+				updateJson
+			)
+			.exec(function(err, item){
+				if(err) {
+					log.error(err);
+					throw new paException('OrderVO', 'Update Order Exception');
+					cb(null);
+				}
+				else {
+
+					log.info('Class:OrderVO - Info: Successful');
+					cb(item);
 				}
 			});
 		}

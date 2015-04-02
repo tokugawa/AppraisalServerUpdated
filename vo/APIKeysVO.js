@@ -37,7 +37,7 @@ var APIKeysVO = (function(){
 			log.info('user_id ' , userId);
 			log.info('user api_key' , newApiKeys.api_key);
 			log.info('user api_key expiration' , newApiKeys.expiration);
-			console.log('addKey started');
+			//console.log('addKey started');
 			apiKeys.findOne({user_id: userId }, function findOneCb(err, data){
 				if(err){
 					log.error(err);

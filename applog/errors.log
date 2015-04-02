@@ -1632,3 +1632,42 @@
         value: '' } } }
 [2015-04-01 11:36:48.700] [ERROR] PAException - Exception at :OrderVO Save Order Exception
 [2015-04-01 11:36:48.706] [ERROR] app - Worker server died (ID: 1, PID: 8628)
+[2015-04-02 10:04:16.570] [ERROR] APIKeyVO - Class:APIKeysVO - Error Message: API Key already exists for user
+[2015-04-02 10:15:24.995] [ERROR] OrderVO - { message: 'Validation failed',
+  name: 'ValidationError',
+  errors: 
+   { 'order_property_primary_holder.customer_id': 
+      { message: 'Path `order_property_primary_holder.customer_id` is required.',
+        name: 'ValidatorError',
+        path: 'order_property_primary_holder.customer_id',
+        type: 'required' },
+     order_progress_status: 
+      { message: 'Path `order_progress_status` is required.',
+        name: 'ValidatorError',
+        path: 'order_progress_status',
+        type: 'required',
+        value: '' } } }
+[2015-04-02 10:15:24.997] [ERROR] PAException - Exception at :OrderVO Save Order Exception
+[2015-04-02 10:15:25.021] [ERROR] app - Worker server died (ID: 1, PID: 7004)
+[2015-04-02 10:17:11.168] [ERROR] OrderVO - { message: 'Validation failed',
+  name: 'ValidationError',
+  errors: 
+   { order_progress_status: 
+      { message: 'Path `order_progress_status` is required.',
+        name: 'ValidatorError',
+        path: 'order_progress_status',
+        type: 'required',
+        value: '' } } }
+[2015-04-02 10:17:11.170] [ERROR] PAException - Exception at :OrderVO Save Order Exception
+[2015-04-02 10:17:11.183] [ERROR] app - Worker server died (ID: 1, PID: 1628)
+[2015-04-02 10:18:29.043] [ERROR] OrderVO - { message: 'Validation failed',
+  name: 'ValidationError',
+  errors: 
+   { order_progress_status: 
+      { message: 'Path `order_progress_status` is required.',
+        name: 'ValidatorError',
+        path: 'order_progress_status',
+        type: 'required',
+        value: '' } } }
+[2015-04-02 10:18:29.045] [ERROR] PAException - Exception at :OrderVO Save Order Exception
+[2015-04-02 10:18:29.059] [ERROR] app - Worker server died (ID: 1, PID: 4712)
