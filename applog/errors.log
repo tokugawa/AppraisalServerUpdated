@@ -1671,3 +1671,4 @@
         value: '' } } }
 [2015-04-02 10:18:29.045] [ERROR] PAException - Exception at :OrderVO Save Order Exception
 [2015-04-02 10:18:29.059] [ERROR] app - Worker server died (ID: 1, PID: 4712)
+[2015-04-03 14:24:39.074] [ERROR] APIKeyVO - Class:APIKeysVO - Error Message: API Key already exists for user

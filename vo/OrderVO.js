@@ -121,6 +121,34 @@ var OrderVO = (function(){
 
 				updateJson.order_priority_index = priorityIndex;
 			}
+			if(imageId == null){
+
+				updateJson.order_image = imageId;
+			}
+			if(evaluationId == null){
+
+				updateJson.order_evaluation_detail = evaluationId;
+			}
+			if(progressStatus == null){
+
+				updateJson.order_progress_status = progressStatus;
+			}
+			if(orderAssignedTo == null){
+
+				updateJson.order_assigned_to = orderAssignedTo;
+			}
+			if(statusCurrent == null){
+
+				updateJson.order_status_current = statusCurrent;
+			}
+			if(statusPast == null){
+
+				updateJson.order_status_past = statusPast;
+			}
+			if(statusNext == null){
+
+				updateJson.order_status_next = statusNext;
+			}
 
 			order.update(
 				{order_id: orderId},
