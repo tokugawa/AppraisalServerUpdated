@@ -1317,9 +1317,9 @@ function v2CreateOrder(){
 	$.post('/api/v2/orders', 
 		{
 			api_key: currentApiKey,
-			property_primary_holder: '5511751c2882b3fc25c3bdff',
+			//property_primary_holder: '5511751c2882b3fc25c3bdff',
             property_id: '54d12c2b61ff01ddacae5181',
-            address_id: '550c71068c440514226635d0',
+            //address_id: '550c71068c440514226635d0',
             client: '551027e1c1c164f80fb0fd85',
             due_date: '08/18/2015',
             priority_index: '1'
@@ -1368,6 +1368,32 @@ function v2GetOrder(){
 	.done(function(){
 
 		console.log('GET ORDER DONE');
+	});
+}
+function v2UpdateOrder(){
+
+	$.post('/api/v2/orders/1000013', 
+		{
+			api_key: currentApiKey,
+			//property_primary_holder: '5511751c2882b3fc25c3bdff',
+            property_id: '54d12c2b61ff01ddacae5181',
+            //address_id: '550c71068c440514226635d0',
+            client: '551027e1c1c164f80fb0fd85',
+            due_date: '08/18/2015',
+            priority_index: '1'
+
+		}, function(result){
+
+		console.log(result);
+	})
+	.fail(function(err){
+
+		console.log('createOrder failed');
+		console.log(err);
+	})
+	.done(function(){
+
+		console.log('CREATE ORDER DONE');
 	});
 }
 ////////////////////////////////////////////////////////////////////////////////

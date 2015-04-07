@@ -325,7 +325,7 @@ var mongoInterface = (function(){
 		this.createOrder = function(options, cb){
 
 			console.log(options); //TODO CREATE ORDER
-			Order.createNewOrder(options.property_primary_holder, options.property_id, options.address_id, options.client, 
+			Order.createNewOrder(options.property_primary_holder, options.property_id, options.client, 
 				options.due_date, options.priority_index,
 				function(result){
 
@@ -345,6 +345,23 @@ var mongoInterface = (function(){
 		this.getOrder = function(options, cb){
 
 			Order.getOrderById(options.order_id, function(result){
+
+				if(result){
+					cb(result);
+			    }
+		      	else{
+		       		cb(null);
+		      	}
+			});
+		}
+
+		//Update a single order
+		this.updateOrder = function(options, cb){
+
+			Order.updateOrder(options.order_id, options.property_id, options.client_id, 
+				options.received_date, options.completed_date, options.due_date, options.priority_index, options.image_id, 
+				options.evaluation_id, options.progress_status, options.order_assigned_to, 
+				options.status_current, options.status_past, options.status_next, function(result){
 
 				if(result){
 					cb(result);

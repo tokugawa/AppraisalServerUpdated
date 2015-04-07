@@ -16,9 +16,9 @@ var orderID = require('../vo/OrderIDVO').getInstance();
 var OrderSchema = new mongoose.Schema({
 
 		order_id	 							: { type: String , required: true, unique: true },
-        order_property_primary_holder	     	: { type: mongoose.Schema.Types.ObjectId, required: true, ref: 'CustomerCollection' },
+        //order_property_primary_holder	     	: { type: mongoose.Schema.Types.ObjectId, required: true, ref: 'CustomerCollection' },
 		order_property_id 						: { type: mongoose.Schema.Types.ObjectId, required: true, ref:'PropertyCollection' },
-		order_address_id						: { type: mongoose.Schema.Types.ObjectId, required: true, ref: 'AddressCollection' },
+		//order_address_id						: { type: mongoose.Schema.Types.ObjectId, required: true, ref: 'AddressCollection' },
 		order_client							: {	type: mongoose.Schema.Types.ObjectId, ref: 'ClientCollection'},
 		order_received_date     				: { type: Date, default: Date.now },
 		order_completed_date					: { type: Date },

@@ -19,7 +19,7 @@ var OrderVO = (function(){
 	function createInstance() {
 
 		//TODO CREATE ORDER
-		this.createNewOrder = function(propertyPrimaryHolder, propertyId, addressId, client, dueDate, priorityIndex, cb){
+		this.createNewOrder = function(propertyPrimaryHolder, propertyId, client, dueDate, priorityIndex, cb){
 
 			var newOrder = new order();
 
@@ -32,7 +32,7 @@ var OrderVO = (function(){
 
 					newOrder.order_property_primary_holder 	= propertyPrimaryHolder;
 					newOrder.order_property_id 				= propertyId;
-					newOrder.order_address_id 				= addressId;
+					//newOrder.order_address_id 				= addressId;
 					newOrder.order_client 					= client;
 					newOrder.order_received_date 			= (new Date());
 					newOrder.order_completed_date 			= '';
@@ -84,22 +84,14 @@ var OrderVO = (function(){
 			});
 		}
 
-		this.updateOrder = function(orderId, propertyPrimaryHolder, propertyId, addressId, clientId, receivedDate, completedDate, dueDate, priorityIndex, imageId, evaluationId, progressStatus, orderAssignedTo, statusCurrent, statusPast, statusNext){
+		this.updateOrder = function(orderId, propertyId, clientId, receivedDate, completedDate, dueDate, priorityIndex, imageId, evaluationId, progressStatus, orderAssignedTo, statusCurrent, statusPast, statusNext, cb){
 
 			//TODO take in parameters and update an order based on the parameters
 			var updateJson = {};
 
-			if(propertyPrimaryHolder == null){
-
-				updateJson.order_property_primary_holder = propertyPrimaryHolder;
-			}
 			if(propertyId == null){
 
 				updateJson.order_property_id = propertyId;
-			}
-			if(addressId == null){
-
-				updateJson.order_address_id = addressId;
 			}
 			if(clientId == null){
 

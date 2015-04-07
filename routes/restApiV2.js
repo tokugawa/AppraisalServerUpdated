@@ -168,7 +168,7 @@ module.exports = function(){
             {
               property_primary_holder: req.param('property_primary_holder'),
               property_id: req.param('property_id'),
-              address_id: req.param('address_id'),
+              //address_id: req.param('address_id'),
               client: req.param('client'),
               due_date: req.param('due_date'),
               priority_index: req.param('priority_index')
@@ -233,6 +233,43 @@ module.exports = function(){
     .put(function(req, res){
 
       //TODO update a specific order
+      mongoInterface.updateKey({api_key: req.param('api_key')}, function(result){
+
+        if(result){
+          console.log('key updated');
+          mongoInterface.updateOrder(
+            {
+              order_id: req.params.order_id, 
+              property_id: req.param('property_id'),
+              //address_id: req.param('address_id'),
+              client: req.param('client'),
+              received_date: req.param('received_date'),
+              completed_date:req.param('completed_date'),
+              due_date: req.param('due_date'),
+              priority_index: req.param('priority_index'),
+              image_id: req.param('image_id'),
+              evaluation_id: req.param('evaliation_id'),
+              progress_status: req.param('progress_status'),
+              order_assigned_to: req.param('order_assigned_to'),
+              status_current: req.param('status_current'),
+              status_past: req.param('status_past'),
+              status_next: req.param('status_next')
+            }, 
+            function(result){
+
+              if(result){
+                res.send({query: result});
+              }
+              else{
+                res.send({query: 'failed'});
+              }
+            }
+          );
+        }
+        else{
+          res.send({query: 'failed'});
+        }
+      });
     })
     .delete(function(req, res){
 
