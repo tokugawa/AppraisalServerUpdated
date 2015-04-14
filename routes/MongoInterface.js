@@ -307,6 +307,19 @@ var mongoInterface = (function(){
 			});
 		}
 
+		//Delete a single property
+		this.deleteProperty = function(options, cb){
+
+			Property.deleteProperty(options.property_id, function(result){
+				if(result){
+					cb(result);
+			    }
+		      	else{
+		       		cb(null);
+		      	}
+			});
+		}
+
 		//Get all orders
 		this.getOrders = function(options, cb){
 
@@ -363,6 +376,19 @@ var mongoInterface = (function(){
 				options.evaluation_id, options.progress_status, options.order_assigned_to, 
 				options.status_current, options.status_past, options.status_next, function(result){
 
+				if(result){
+					cb(result);
+			    }
+		      	else{
+		       		cb(null);
+		      	}
+			});
+		}
+
+		//Delete a single order
+		this.deleteOrder = function(options, cb){
+
+			Order.deleteOrder(options.order_id, function(result){
 				if(result){
 					cb(result);
 			    }

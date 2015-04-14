@@ -299,6 +299,22 @@ var OrderVO = (function(){
 				}
 			});
 		}
+
+		this.deleteOrder = function(orderId, cb){
+
+			order.remove({order_id: orderId})
+			.exec(function(err, item){
+
+				if(item){
+					//console.log(item);
+					cb(item);
+				}
+				else{
+					//console.log('Not Found');
+					cb(null);
+				}
+			});
+		}
 	}
 
 	return {

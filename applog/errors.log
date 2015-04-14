@@ -1676,3 +1676,11 @@
 [2015-04-08 11:02:44.771] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout3/img/avatar2.jpg HTTP/1.1" 404 1139 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.118 Safari/537.36"
 [2015-04-08 11:02:44.809] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout3/img/avatar3.jpg HTTP/1.1" 404 1139 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.118 Safari/537.36"
 [2015-04-08 11:02:44.846] [ERROR] http - 127.0.0.1 - - "GET /assets/admin/layout3/img/avatar1.jpg HTTP/1.1" 404 1139 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.118 Safari/537.36"
+[2015-04-09 09:55:12.397] [ERROR] http - 127.0.0.1 - - "POST /authenticate HTTP/1.1" 404 1139 "" ""
+[2015-04-09 09:55:13.037] [ERROR] http - 127.0.0.1 - - "POST /authenticate HTTP/1.1" 404 1139 "" ""
+[2015-04-09 09:55:13.923] [ERROR] http - 127.0.0.1 - - "POST /authenticate HTTP/1.1" 404 1139 "" ""
+[2015-04-09 09:55:18.952] [ERROR] http - 127.0.0.1 - - "POST /authenticate HTTP/1.1" 404 1139 "" ""
+[2015-04-09 11:51:52.260] [ERROR] app - Worker server died (ID: 1, PID: 4716)
+[2015-04-09 11:52:07.408] [ERROR] app - Worker server died (ID: 1, PID: 8472)
+[2015-04-14 10:24:11.528] [ERROR] APIKeyVO - Class:APIKeysVO - Error Message: API Key already exists for user
+[2015-04-14 11:24:53.217] [ERROR] APIKeyVO - Class:APIKeysVO - Error Message: API Key already exists for user

@@ -113,6 +113,20 @@ var PropertyVO = (function(){
 				}
 			});
 		}
+
+		this.deleteProperty = function(propertyId, cb){
+
+			property.remove({_id: propertyId})
+			.exec(function(err, item){
+
+				if(item){
+					cb(item);
+				}
+				else{
+					cb(null);
+				}
+			});
+		}
 	};
 
 	return {

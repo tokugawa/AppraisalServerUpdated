@@ -7,6 +7,8 @@
 
 var express = require('express');
 var router = express.Router();
+//var bodyParser = require('body-parser');
+//router.use(bodyParser.json());
 var mongoInterface = require('./MongoInterface.js').getInstance();
 var ucdpValidator = require('../util/UCDPValidator.js').getInstance();
 ///////////////////////////////////////////////////////////////////////////
@@ -18,6 +20,7 @@ module.exports = function(){
     .post(function(req, res){
 
       console.log('Starting to authenticate user API V2');
+      //console.log(req.body);
       //console.log(req.param('user_id'));
       //console.log(req.param('password'));
       mongoInterface.authenticateUser({user_id: req.param('user_id'), password: req.param('password')}, function(result){
@@ -273,7 +276,24 @@ module.exports = function(){
     })
     .delete(function(req, res){
 
-      //TODO delete a specific order
+      mongoInterface.updateKey({api_key: req.param('api_key')}, function(result){
+
+        if(result){
+          console.log('key updated');
+          mongoInterface.deleteOrder({order_id: req.params.order_id}, function(result){
+
+            if(result){
+              res.send({query: result});
+            }
+            else{
+              res.send({query: 'failed'});
+            }
+          });
+        }
+        else{
+          res.send({query: 'failed'});
+        }
+      });
     });
   //Customers
   router.route('/api/v2/customers')
@@ -439,7 +459,24 @@ module.exports = function(){
     })
     .delete(function(req, res){
 
-      //TODO delete a specific property
+      mongoInterface.updateKey({api_key: req.param('api_key')}, function(result){
+
+        if(result){
+          console.log('key updated');
+          mongoInterface.deleteProperty({property_id: req.params.property_id}, function(result){
+
+            if(result){
+              res.send({query: result});
+            }
+            else{
+              res.send({query: 'failed'});
+            }
+          });
+        }
+        else{
+          res.send({query: 'failed'});
+        }
+      });
     });
   //Clients
   router.route('/api/v2/clients')

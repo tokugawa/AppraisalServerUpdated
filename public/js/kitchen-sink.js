@@ -1013,6 +1013,26 @@ function initCalendar(){
 }
 /////////////////////////////////////////////////////////////////////////////////
 
+//Enable $.delete and $.post
+//http://stackoverflow.com/questions/2153917/how-to-send-a-put-delete-request-in-jquery
+jQuery.each( [ "put", "delete" ], function( i, method ) {
+  jQuery[ method ] = function( url, data, callback, type ) {
+    if ( jQuery.isFunction( data ) ) {
+      type = type || callback;
+      callback = data;
+      data = undefined;
+    }
+    return jQuery.ajax({
+      url: url,
+      type: method,
+      dataType: type,
+      data: data,
+      success: callback
+    });
+  };
+});
+////////////////////////////////////////////////////////////////////////////////
+
 //REST API V2 Test Functions
 var currentApiKey = '';
 
@@ -1312,6 +1332,22 @@ function v2GetProperty(){
 		console.log('GET PROPERTY DONE');
 	});
 }
+function v2DeleteProperty(){
+
+	$.delete('/api/v2/properties/54d12c2b61ff01ddacae5181', {api_key: currentApiKey}, function(result){
+
+		console.log(result);
+	})
+	.fail(function(err){
+
+		console.log('deleteProperty failed');
+		console.log(err);
+	})
+	.done(function(){
+
+		console.log('DELETE PROPERTY DONE');
+	});
+}
 function v2CreateOrder(){
 
 	$.post('/api/v2/orders', 
@@ -1356,7 +1392,7 @@ function v2GetOrders(){
 }
 function v2GetOrder(){
 
-	$.get('/api/v2/orders/100001', {api_key: currentApiKey}, function(result){
+	$.get('/api/v2/orders/100022', {api_key: currentApiKey}, function(result){
 
 		console.log(result);
 	})
@@ -1372,7 +1408,7 @@ function v2GetOrder(){
 }
 function v2UpdateOrder(){
 
-	$.post('/api/v2/orders/1000013', 
+	$.post('/api/v2/orders/100022', 
 		{
 			api_key: currentApiKey,
 			//property_primary_holder: '5511751c2882b3fc25c3bdff',
@@ -1394,6 +1430,26 @@ function v2UpdateOrder(){
 	.done(function(){
 
 		console.log('CREATE ORDER DONE');
+	});
+}
+function v2DeleteOrder(){
+
+	$.delete('/api/v2/orders/100022', 
+		{
+			api_key: currentApiKey
+
+		}, function(result){
+
+		console.log(result);
+	})
+	.fail(function(err){
+
+		console.log('deleteOrder failed');
+		console.log(err);
+	})
+	.done(function(){
+
+		console.log('DELETE ORDER DONE');
 	});
 }
 ////////////////////////////////////////////////////////////////////////////////
