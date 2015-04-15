@@ -1684,3 +1684,4 @@
 [2015-04-09 11:52:07.408] [ERROR] app - Worker server died (ID: 1, PID: 8472)
 [2015-04-14 10:24:11.528] [ERROR] APIKeyVO - Class:APIKeysVO - Error Message: API Key already exists for user
 [2015-04-14 11:24:53.217] [ERROR] APIKeyVO - Class:APIKeysVO - Error Message: API Key already exists for user
+[2015-04-15 12:24:49.054] [ERROR] APIKeyVO - Class:APIKeysVO - Error Message: API Key already exists for user
