@@ -117,6 +117,20 @@ var AddressVO = (function(){
 				}
 			});
 		}
+
+		this.deleteAddress = function(addressId, cb){
+
+			address.remove({_id: addressId})
+			.exec(function(err, item){
+
+				if(item){
+					cb(item);
+				}
+				else{
+					cb(null);
+				}
+			});
+		}
 	}
 
 	return {

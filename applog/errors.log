@@ -1685,3 +1685,4 @@
 [2015-04-14 10:24:11.528] [ERROR] APIKeyVO - Class:APIKeysVO - Error Message: API Key already exists for user
 [2015-04-14 11:24:53.217] [ERROR] APIKeyVO - Class:APIKeysVO - Error Message: API Key already exists for user
 [2015-04-15 12:24:49.054] [ERROR] APIKeyVO - Class:APIKeysVO - Error Message: API Key already exists for user
+[2015-04-15 12:33:53.135] [ERROR] http - 127.0.0.1 - - "GET /api/v2/authenticate HTTP/1.1" 404 1139 "" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.118 Safari/537.36"

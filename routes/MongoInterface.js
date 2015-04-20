@@ -171,6 +171,20 @@ var mongoInterface = (function(){
 			});
 		}
 
+		//Delete a specific address
+		this.deleteAddress = function(options, cb){
+
+			Address.deleteAddress(options.address_id, function(result){
+
+				if(result){
+					cb(result);
+			    }
+		      	else{
+		       		cb(null);
+		      	}
+			});
+		}
+
 		//Get all clients
 		this.getClients = function(options, cb){
 
